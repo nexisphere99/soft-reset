@@ -37,44 +37,6 @@
 
 </div>
 
-<<if $day is 2 and not $metDorothy and window.rbRandom(1, 10) lte 3>>
-
-<<SceneDivider "The Towel Philosopher">>
-
-<div class="prose-block">
-<p>A woman in her sixties is folding towels at the next table. She&apos;s methodical   each towel folded into thirds, then thirds again, edges aligned with military precision. She sees you watching.</p>
-</div>
-
-<<Dialogue "Dorothy" "🧺" "You fold or you stuff?" "">>
-<<Dialogue "You" "😳" "What?" "you">>
-<<Dialogue "Dorothy" "🧺" "Your laundry. Some people fold. Some people stuff it in the basket like animals. You look like a stuffer." "">>
-<<Dialogue "You" "🙂" "I'm... a reformed stuffer." "you">>
-<<Dialogue "Dorothy" "🧺" "Good. There's hope for you. You know the secret to towels?" "">>
-<<Dialogue "You" "🙂" "No." "you">>
-<<Dialogue "Dorothy" "🧺" "Same direction every time. Don't think about it. Let your hands learn. After a while, they do it without you." "">>
-
-<div class="prose-block">
-<p>She&apos;s talking about towels. She&apos;s also, somehow, talking about everything else.</p>
-</div>
-
-<<Dialogue "Dorothy" "🧺" "I'm Dorothy." "">>
-<<Dialogue "You" "🙂" "Aida." "you">>
-<<Dialogue "Dorothy" "🧺" "Nice to meet you, Aida. Your machine's done." "">>
-
-<div class="prose-block">
-<p>You pull out the sheets. They&apos;re warm. They smell like detergent instead of stale sweat and expired milk. You fold them. Same direction every time. You let your hands learn.</p>
-<p>They&apos;re still grey. But they&apos;re clean. That counts for something.</p>
-</div>
-
-<div class="choice-block">
-	<<link '<span>🧺 Keep folding</span>' "Laundromat">>
-		<<set $metDorothy to true>>
-		<<set $player.stress to Math.clamp($player.stress - 4, 0, 100)>>
-	<</link>>
-</div>
-
-<</if>>
-
 <div class="choice-block" style="margin-top:2rem;">
 	<<link '<span>← Back outside</span>' "Outside">><</link>>
 </div>

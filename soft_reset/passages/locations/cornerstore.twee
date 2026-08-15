@@ -40,40 +40,7 @@
 
 </div>
 
-<<if $day is 2 and not $metCarmenStore and window.rbRandom(1, 10) lte 4>>
-
-<<SceneDivider "The Aisle Collision">>
-
-<div class="prose-block">
-<p>I round the corner of aisle 3 and nearly collide with another customer. She&apos;s my age   maybe a year older   with dark curly hair, a State University hoodie, and a basket full of what appears to be exclusively Hot Pockets and wine.</p>
-<p>&quot;Oh! Sorry!&quot; She steadies her basket. One of the Hot Pockets makes a break for it   I catch it before it hits the floor.</p>
-</div>
-
-<<Dialogue "Carmen" "🎓" "Nice reflexes. I'm Carmen. Not the lingerie Carmen — I don't know any lingerie Carmen, that would be weird. Just... Carmen." "">>
-<<Dialogue "You" "🙂" "Aida." "you">>
-<<Dialogue "Carmen" "🎓" "Cool name. You go to State? I feel like I've seen you around." "">>
-
-<div class="prose-block">
-<p>She hasn&apos;t. She&apos;s never seen me because I didn&apos;t exist before Thursday. But her face is open and friendly and she&apos;s the first person my age who&apos;s spoken to me since the transformation who isn&apos;t a medical professional or a delivery customer.</p>
-</div>
-
-<<Dialogue "You" "🙂" "Yeah. Second year." "you">>
-<<Dialogue "Carmen" "🎓" "Me too! We should study together sometime. I'm pre-law and I'm dying. Like, actively dying. Torts are killing me." "">>
-
-<div class="prose-block">
-<p>She scribbles her number on the back of a Hot Pocket box, tears off the flap, and hands it to me. &quot;Text me! Or don&apos;t. No pressure. But seriously, torts. I need help.&quot;</p>
-<p>She waves and disappears around the pasta sauce. I stand there holding a piece of cardboard with a phone number on it, written in purple ink, smelling faintly of pepperoni.</p>
-<p>I just made a friend. I think. Do women make friends this fast? Is this how it works?</p>
-</div>
-
-<div class="choice-block">
-	<<link '<span>🍬 Keep shopping</span>' "CornerStore">>
-		<<set $metCarmenStore to true>>
-		<<run window.rbAddMilestone("Made a friend at the corner store. Maybe.")>>
-	<</link>>
-</div>
-
-<<elseif $luckyMartVisits gte 2>>
+<<if $luckyMartVisits gte 2>>
 <<set _rbEnc to window.rbRandom(1, 10)>>
 <<if _rbEnc lte 4>>
 
