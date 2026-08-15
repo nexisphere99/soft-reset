@@ -600,15 +600,15 @@ I don't hate this. I don't love it either. But my body is telling me something, 
 
 | # | Scene | Description | Asset Path |
 |---|---|---|---|
-| 1 | Morning After | Sitting up in bed, tangled hair, puffy eyes, still female | `assets/characters/mc-female-phase1/d02-morning-still-her.webp` |
-| 2 | Thrift Store Exterior | "Second Chances" storefront, hand-painted sign, welcoming | `assets/locations/thriftstore/exterior.webp` |
-| 3 | Dolores | 55yo Latina shopkeeper, reading glasses, floral blouse, warm smile | `assets/characters/supporting/dolores.webp` |
-| 4 | Browsing Women's Section | MC in oversized hoodie browsing women's rack, overwhelmed | `assets/characters/mc-female-phase1/thriftstore-browsing.webp` |
-| 5 | Catcall Scene | MC walking past construction site, workers behind her | `assets/characters/mc-female-phase1/catcall-street.webp` |
-| 6 | Sports Bra Mirror | MC in sports bra + panties, mirror reflection, studying self | `assets/characters/mc-female-phase1/sportsbra-mirror.webp` |
-| 7 | Full Outfit First Time | MC in black tee + blue jeans, mirror, ordinary female | `assets/characters/mc-female-phase1/first-outfit-mirror.webp` |
-| 8 | Delivery Guy Mike | Cute young guy at doorway with pizza box, flirtatious smile | `assets/characters/supporting/mike-delivery.webp` |
-| 9 | Lying in Bed | MC in bed, t-shirt + panties, staring at ceiling, night | `assets/characters/mc-female-phase1/d02-bed-night.webp` |
+| 1 | Morning After | Sitting up in bed, tangled hair, puffy eyes, still female | `assets/characters/mc-female-phase1/d02-morning-still-her.png` |
+| 2 | Thrift Store Exterior | "Second Chances" storefront, hand-painted sign, welcoming | `assets/locations/thriftstore/exterior.png` |
+| 3 | Dolores | 55yo Latina shopkeeper, reading glasses, floral blouse, warm smile | `assets/characters/supporting/dolores.png` |
+| 4 | Browsing Women's Section | MC in oversized hoodie browsing women's rack, overwhelmed | `assets/characters/mc-female-phase1/thriftstore-browsing.png` |
+| 5 | Catcall Scene | MC walking past construction site, workers behind her | `assets/characters/mc-female-phase1/catcall-street.png` |
+| 6 | Sports Bra Mirror | MC in sports bra + panties, mirror reflection, studying self | `assets/characters/mc-female-phase1/sportsbra-mirror.png` |
+| 7 | Full Outfit First Time | MC in black tee + blue jeans, mirror, ordinary female | `assets/characters/mc-female-phase1/first-outfit-mirror.png` |
+| 8 | Delivery Guy Mike | Cute young guy at doorway with pizza box, flirtatious smile | `assets/characters/supporting/mike-delivery.png` |
+| 9 | Lying in Bed | MC in bed, t-shirt + panties, staring at ceiling, night | `assets/characters/mc-female-phase1/d02-bed-night.png` |
 
 ---
 

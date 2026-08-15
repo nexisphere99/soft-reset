@@ -67,7 +67,7 @@
 
 <<if $day is 2 and not $metMike>>
 
-<<ImagePlaceholder "Delivery guy Mike at the door with a pizza box" "float" "assets/scene/day02/mike-delivery.png">>
+<<ImagePlaceholder "Delivery guy Mike at the door with a pizza box" "float" "assets/characters/supporting/mike-delivery.png">>
 
 <div class="prose-block">
 

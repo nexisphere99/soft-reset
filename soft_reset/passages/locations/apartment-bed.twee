@@ -39,7 +39,9 @@
 
 <<elseif $day is 2>>
 
-	<<if $timeslot is "Night" and $d02Ate>>
+	<<if $d02BoughtClothes and not $d02TriedOnClothes>>
+		<<link '<span class="action-icon">👚</span><span class="action-text">Try on the new clothes<span class="action-sub">Bag&apos;s still sitting on the bed</span></span>' "Home_Bedroom_TryOnD2">><</link>>
+	<<elseif $timeslot is "Night" and $d02Ate>>
 		<<link '<span class="action-icon">🛏️</span><span class="action-text">Go to bed<span class="action-sub">It&apos;s been enough for one day.</span></span>' "D02_Bedtime">><</link>>
 	<<elseif $timeslot is "Night">>
 		<p class="text3 small">You should eat something before you crash.</p>
@@ -138,6 +140,12 @@
 
 <p>&quot;Oh thank god.&quot;</p>
 
+</div>
+
+<<ImagePlaceholder "Sports bra on, the relief of compression, mirror" "portrait" "assets/characters/mc-female-phase1/sportsbra-mirror.png">>
+
+<div class="prose-block">
+
 <p>My breasts   held. In place. Minimized, supported, compressed against my chest. The constant bounce, the sway, the awareness of them shifting with every step and every breath that I&apos;ve been dealing with for thirty-six hours   reduced to a gentle pressure. The sports bra doesn&apos;t make them disappear. It makes them manageable. The relief is physical and it runs so deep that I close my eyes and just stand there for a moment, breathing, feeling what it&apos;s like to have my chest held instead of hanging.</p>
 
 <p><strong>The panties.</strong></p>
@@ -159,6 +167,12 @@
 <p>Black fitted tee over the sports bra. It fits close   showing the line of the bra, the indent of my waist, the gentle swell of compressed breasts. Not flashy. Not revealing. Not a statement. Just... clothes. Women&apos;s clothes on a woman&apos;s body.</p>
 
 <p>I look in the mirror.</p>
+
+</div>
+
+<<ImagePlaceholder "First full outfit, mirror   jeans and a t-shirt, unremarkable" "portrait" "assets/characters/mc-female-phase1/first-outfit-mirror.png">>
+
+<div class="prose-block">
 
 <p>A girl looks back. A regular girl in jeans and a t-shirt. Not stunning. Not glamorous. Not &quot;passing&quot;   that word implies there&apos;s something to catch, and nobody looking at this reflection would catch anything except a twenty-year-old woman with messy hair and no makeup and freckles.</p>
 
@@ -275,6 +289,8 @@
 <<HUD>>
 
 <<SceneDivider "Night">>
+
+<<ImagePlaceholder "Lying in bed, night two, panties and a fitted t-shirt" "banner" "assets/characters/mc-female-phase1/d02-bed-night.png">>
 
 <div class="prose-block">
 
