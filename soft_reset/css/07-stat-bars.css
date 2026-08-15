@@ -1,0 +1,43 @@
+/* ==========================================================================
+   SOFT_RESET   07 STAT BARS
+   ========================================================================== */
+
+.stat-bar-wrap { margin: .6rem 0; }
+
+.stat-bar-row {
+  display: grid;
+  grid-template-columns: 5rem 1fr 2.6rem;
+  align-items: center;
+  gap: .7rem;
+}
+
+.stat-bar-label {
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--text2);
+}
+
+.stat-bar-track {
+  height: 10px;
+  background: #ffffff0a;
+  border-radius: var(--r-pill);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.stat-bar-fill {
+  height: 100%;
+  border-radius: var(--r-pill);
+  transition: width var(--t-slow) var(--ease);
+  box-shadow: 0 0 12px currentColor;
+}
+
+.stat-bar-num {
+  text-align: right;
+  font-size: .8rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}

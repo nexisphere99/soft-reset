@@ -1,0 +1,71 @@
+:: Sleep [nobr]
+<div class="sleep-screen">
+	<div class="big-icon">🌙</div>
+	<div class="day-badge">Day <strong>$day</strong>   Complete</div>
+
+	<<if $day is 0>>
+		<h1>The Last Night</h1>
+		<p style="color:var(--text2); max-width:36ch; margin:0 auto;">Something is changing. Something that cannot be undone.</p>
+	<<elseif $day is 1>>
+		<h1>The First Night as Her</h1>
+		<<if $firstOrgasmSolo>>
+			<p style="color:var(--text2); max-width:36ch; margin:0 auto;">The body is real. The tears were real. The orgasm was real. Everything is real. Nothing makes sense.</p>
+		<<else>>
+			<p style="color:var(--text2); max-width:36ch; margin:0 auto;">The body is real. The tears were real. The avoidance was temporary. Everything is real. Nothing makes sense.</p>
+		<</if>>
+
+		<div style="margin-top:2.4rem; padding-top:2rem; border-top:1px solid var(--border);">
+			<div class="day-badge" style="margin-bottom:1rem;">🦋 End of Version <strong>0.1</strong></div>
+			<p style="color:var(--text2); max-width:38ch; margin:0 auto 1.6rem;">That&apos;s everything built so far. Day 2 and beyond   Aida&apos;s life as it actually unfolds   is still being written.</p>
+			<a href="/soft-reset_page" target="_blank" rel="noopener" class="btn-primary">💜 Support SOFT RESET on Patreon</a>
+
+			<p style="color:var(--text3); font-size:.78rem; max-width:34ch; margin:1.8rem auto .8rem;">No more story past this point yet   but the apartment, the neighborhood, and the people in it still work, if you&apos;d rather just wander.</p>
+			<<link '<span class="btn-outline btn-sm">🔓 Keep playing anyway</span>'>>
+				<<set $day += 1>>
+				<<set $timeslot to "Morning">>
+				<<set $acted to false>>
+				<<set $player.energy to 80>>
+				<<set $player.stress to Math.clamp($player.stress - 5, 0, 100)>>
+				<<goto "Home">>
+			<</link>>
+		</div>
+	<<else>>
+		<h1>Another Day Done</h1>
+		<p style="color:var(--text2); max-width:36ch; margin:0 auto;">You made it through. That still counts for something.</p>
+	<</if>>
+
+	<<if $day isnot 1>>
+	<<set _wakeLabel to '<span class="btn-primary">Wake Up → Day ' + ($day + 1) + '</span>'>>
+	<div style="margin-top:2rem;">
+		<<link _wakeLabel>>
+			<<set _fromDay to $day>>
+			<<set $day += 1>>
+			<<set $timeslot to "Morning">>
+			<<set $acted to false>>
+
+			<<if _fromDay is 0>>
+				<<set $player.energy to 100>>
+				<<set $body.phase to 1>>
+				<<set $body.bust to 34>>
+				<<set $body.waist to 24.5>>
+				<<set $body.hips to 35.5>>
+				<<set $body.braCup to "B">>
+				<<set $body.braSize to "32B">>
+				<<set $body.weight to 128>>
+				<<set $body.height to 66>>
+				<<set $body.hairLength to "shoulder">>
+				<<set $body.sensitivity to 1.5>>
+				<<set $body.menstrualDay to -1>>
+				<<set $player.att to 30>>
+				<<set $player.portraitImg to "assets/characters/mc-female-phase1/side_bar.png">>
+				<<run window.rbAddMilestone("Woke up transformed.")>>
+				<<run window.rbAddJournalEntry("Reborn", "I fell asleep as Aiden Cole. I don't know who I'll wake up as.")>>
+				<<goto "D01_Wakeup">>
+			<<else>>
+				<<set $player.energy to 100>>
+				<<goto "Home">>
+			<</if>>
+		<</link>>
+	</div>
+	<</if>>
+</div>

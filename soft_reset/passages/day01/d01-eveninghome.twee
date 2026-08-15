@@ -1,0 +1,57 @@
+:: D01_EveningHome [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Alone on the couch, TV glow, emotional exhaustion" "banner" "assets/characters/mc-female-phase1/evening-alone-couch.png">>
+
+<div class="prose-block">
+
+<p>I put on the stretched-out t-shirt. It hangs off one shoulder, exposing a bare collarbone and the outline of a breast through the thin fabric. The boxer shorts bunch at the waist, held in place by friction and denial. Nothing fits. Nothing feels right. My own clothes feel like a costume, and the body underneath them is the real costume, and somewhere under that there&apos;s supposed to be me, but I&apos;m not sure where I went.</p>
+
+<p>I eat leftover ramen. Cold. From the cup. Standing in the kitchen, then sitting on the couch, then staring at the TV without registering anything on the screen. Some sitcom. Laugh track. People being happy in a way that suggests the writers have never been happy.</p>
+
+<p>My phone rings. Jake.</p>
+
+<p>I stare at the screen. His contact photo   Jake at the gym, flexing in the mirror, grinning like a golden retriever that learned to bench press. That was taken six months ago. I was standing next to him. We looked like the same species. Same height range, same build category, same locker room, same side of the world.</p>
+
+<p>I don&apos;t answer.</p>
+
+<p>I text: &quot;hey can&apos;t talk rn. Sick. Talk soon.&quot;</p>
+
+<<Dialogue "Jake" "💪" "damn get better bro 🙏 I'll bring soup tmrw" "">>
+
+<p>No. No no no. &quot;nah I&apos;m contagious prob. I&apos;ll let u know.&quot;</p>
+
+<<Dialogue "Jake" "💪" "aight. Feel better dude 💪" "">>
+
+<p>Dude. Bro. He called me bro and dude and I want to laugh and I want to scream and I do neither. I put the phone face-down on the couch and stare at the ceiling.</p>
+
+<p>The water stain shaped like a fist. It hasn&apos;t changed. The ceiling hasn&apos;t changed. The apartment hasn&apos;t changed. The ramen cups haven&apos;t changed. The eviction notice is gone because I paid rent last night with pill money, which means the only thing that has changed   the only thing in this entire room that is different from 24 hours ago   is me.</p>
+
+<p>I lie in bed. The boxers slide off my hips for the hundredth time. The t-shirt rides up, exposing my stomach   flat, soft, the curve of my waist visible even lying down. This body presses against the sheets in new ways. My breasts shift when I roll over. My hip bones meet the mattress at a different angle. My hair is everywhere   under my shoulders, across the pillow, in my mouth.</p>
+
+<p>I can&apos;t sleep. For hours. I lie in the dark and feel every inch of a body I didn&apos;t choose and didn&apos;t want and can&apos;t return.</p>
+
+<p>At some point   2 AM, maybe later   I fall asleep. I dream, but I can&apos;t remember what.</p>
+
+<p>I wake up once, at 3:30 AM. My hand is between my legs. My fingers are wet.</p>
+
+<<if $firstOrgasmSolo>>
+<p>I know what that wetness is now. I know what my body is asking for.</p>
+<p>I pull my hand away. Close my eyes. Not tonight.</p>
+<<else>>
+<p>I don&apos;t know what that means. I don&apos;t want to know what that means.</p>
+<p>I pull my hand away. Go back to sleep.</p>
+<</if>>
+
+<p>Tomorrow I&apos;ll deal with this. Whatever &quot;this&quot; is. Whatever I am. Tomorrow.</p>
+
+<p>Tonight, I just survive.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🌙 Close my eyes</span>' "Sleep">>
+		<<set $player.energy to Math.clamp($player.energy - 5, 0, 100)>>
+		<<set $ateDinnerDay1 to true>>
+	<</link>>
+</div>

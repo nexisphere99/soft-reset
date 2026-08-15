@@ -1,0 +1,105 @@
+/* ==========================================================================
+   SOFT_RESET   29 WORLD MAP
+   Tier-1 district map: decorative SVG city backdrop + positioned district
+   cards. Falls back to a plain stacked list under 700px, where absolute
+   positioning over a shrinking map stops being usable.
+   ========================================================================== */
+
+.world-map-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 820px;
+  margin: var(--sp-4) auto 0;
+  aspect-ratio: 8 / 6.4;
+}
+
+.world-map-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+
+.wm-zone { transition: opacity var(--t-med) var(--ease); }
+.wm-zone.is-locked { opacity: .45; }
+.wm-road { stroke-dasharray: 6 8; opacity: .5; }
+.wm-zone-label {
+  font-family: var(--font-head);
+  font-style: italic;
+  font-size: 15px;
+  fill: var(--text3);
+  text-anchor: middle;
+}
+
+.district-card {
+  position: absolute;
+  width: 190px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .3rem;
+  text-align: center;
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur-sm));
+  -webkit-backdrop-filter: blur(var(--blur-sm));
+  border: 1px solid var(--border-hi);
+  border-radius: var(--r-lg);
+  padding: var(--sp-2) var(--sp-2);
+  cursor: pointer;
+  transition: transform var(--t-fast) var(--ease), border-color var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
+  z-index: 2;
+  box-shadow: var(--shadow-sm);
+}
+.district-card:hover {
+  transform: translate(-50%, -50%) translateY(-4px) scale(1.03);
+  box-shadow: var(--shadow-glow-accent);
+  border-color: var(--accent);
+}
+.district-icon { font-size: 1.8rem; }
+.district-name { font-family: var(--font-head); font-weight: 700; font-size: .95rem; color: var(--text); line-height: 1.2; }
+.district-desc { font-size: .66rem; color: var(--text3); }
+
+.district-card.locked {
+  opacity: .55;
+  cursor: default;
+}
+.district-card.locked:hover { transform: translate(-50%, -50%); box-shadow: var(--shadow-sm); border-color: var(--border-hi); }
+.district-card.locked .district-icon { filter: grayscale(1); }
+.district-lock-req { font-size: .62rem; color: var(--rose); font-weight: 700; }
+
+.district-here-card {
+  position: absolute;
+  border-color: var(--accent) !important;
+  box-shadow: var(--shadow-glow-accent) !important;
+}
+.district-here-tag {
+  font-size: .58rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+@media (max-width: 700px) {
+  .world-map-wrap {
+    aspect-ratio: auto;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    max-width: 420px;
+  }
+  .world-map-svg { display: none; }
+  .district-card {
+    position: static;
+    transform: none !important;
+    width: 100%;
+    flex-direction: row;
+    text-align: left;
+    justify-content: flex-start;
+    padding: var(--sp-2) var(--sp-3);
+  }
+  .district-card:hover { transform: none !important; }
+}

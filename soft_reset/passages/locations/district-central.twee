@@ -1,0 +1,87 @@
+:: District_Central [nobr]
+<<HUD>>
+
+<div class="map-here">📍 Central City</div>
+<h1>Glass and <span class="accent">Steel</span></h1>
+
+<div class="prose-block">
+<p class="text2 small">Downtown core. Where the money is. Where NovaCure hides.</p>
+</div>
+
+<div class="location-grid">
+
+<<if $day is 0>>
+	<<if $metDrAmelia>>
+		<div class="loc-card locked">
+			<span class="loc-icon">🏙️</span>
+			<span class="loc-name">Meridian Tower</span>
+			<span class="loc-lock-req">Already been tonight</span>
+		</div>
+	<<elseif $calledNovaCure>>
+		<<link '<div class="loc-card"><span class="loc-icon">🏙️</span><span class="loc-name">Meridian Tower</span><span class="loc-hint">NovaCure Labs, Suite 604</span></div>' "D00_NovaCure_Arrival">><</link>>
+	<<else>>
+		<div class="loc-card locked">
+			<span class="loc-icon">🏙️</span>
+			<span class="loc-name">Meridian Tower</span>
+			<span class="loc-lock-req">No reason to go downtown yet</span>
+		</div>
+	<</if>>
+<<elseif $day is 1>>
+	<<if $novaCureDay1Done>>
+		<div class="loc-card locked">
+			<span class="loc-icon">🏙️</span>
+			<span class="loc-name">Meridian Tower</span>
+			<span class="loc-lock-req">Already been today</span>
+		</div>
+	<<elseif $mustReturnToNovaCure>>
+		<<link '<div class="loc-card"><span class="loc-icon">🏙️</span><span class="loc-name">Meridian Tower</span><span class="loc-hint">Dr. Amelia is expecting you</span></div>' "D01_NovaCure">><</link>>
+	<<else>>
+		<div class="loc-card locked">
+			<span class="loc-icon">🏙️</span>
+			<span class="loc-name">Meridian Tower</span>
+			<span class="loc-lock-req">No reason to go downtown yet</span>
+		</div>
+	<</if>>
+<<else>>
+	<div class="loc-card locked">
+		<span class="loc-icon">🏙️</span>
+		<span class="loc-name">Meridian Tower</span>
+		<span class="loc-lock-req">No appointment today</span>
+	</div>
+<</if>>
+
+<div class="loc-card locked">
+	<span class="loc-icon">🌳</span>
+	<span class="loc-name">Meridian Gardens</span>
+	<span class="loc-lock-req">Not today</span>
+</div>
+
+<div class="loc-card locked">
+	<span class="loc-icon">🍸</span>
+	<span class="loc-name">Nocturne Bar &amp; Lounge</span>
+	<span class="loc-lock-req">Not today</span>
+</div>
+
+<div class="loc-card locked">
+	<span class="loc-icon">🏢</span>
+	<span class="loc-name">The Crown Building</span>
+	<span class="loc-lock-req">You don&apos;t know anyone here</span>
+</div>
+
+<div class="loc-card locked">
+	<span class="loc-icon">🍽️</span>
+	<span class="loc-name">Restaurant Row</span>
+	<span class="loc-lock-req">Not today</span>
+</div>
+
+<div class="loc-card locked">
+	<span class="loc-icon">🏦</span>
+	<span class="loc-name">Business District</span>
+	<span class="loc-lock-req">Not today</span>
+</div>
+
+</div>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<link '<span>🗺️ Back to the city map</span>' "WorldMap">><</link>>
+</div>

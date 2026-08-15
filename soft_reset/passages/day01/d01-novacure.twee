@@ -1,0 +1,158 @@
+:: D01_NovaCure [nobr]
+<<HUD>>
+
+<<if not $dressedDay1>>
+
+<div class="prose-block">
+<p>I&apos;m not walking into Meridian Tower like this. Not in whatever I&apos;m currently wearing   or not wearing. Get dressed first.</p>
+</div>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<link '<span>← Back outside</span>' "Outside">><</link>>
+</div>
+
+<<else>>
+
+<<SceneDivider "The Bus">>
+
+<<ImagePlaceholder "Bus interior   a man's gaze traveling down toward her legs" "banner" "assets/locations/misc/bus-male-gaze.png">>
+
+<div class="prose-block">
+
+<p>The bus. Back seat. Hood up. Knees pressed together   an adjustment I didn&apos;t choose. My body made it automatically, the way my skeleton now sits when I&apos;m not thinking about it. Hips wider. Thighs touching. Knees together.</p>
+
+<p>A man in the middle of the bus turns and looks at me. His eyes start at my face (or what he can see of it under the hood) and travel down. Down to my legs. The joggers have ridden up, showing my ankle   smooth, pale, unmistakably female.</p>
+
+<p>I pull the fabric down. Tuck my ankles under the seat. He turns back around.</p>
+
+<p>That&apos;s the male gaze. I spent twenty years on the other side of it. I never whistled at women on the street, never stared on buses, never made anyone uncomfortable on purpose. But I knew it existed. I understood it theoretically. I did not understand it as a frequency that vibrates through your skin and makes you want to fold yourself into the smallest possible shape.</p>
+
+<p>Now I understand it.</p>
+
+<p>NovaCure. Sixth floor. Suite 604. The same sterile hallway. The same waiting room. The same potted plant that might be fake.</p>
+
+<p>Nurse Patel comes out. She sees me. Her professional mask holds   but her eyes widen for a fraction of a second. Just a flash. Then it&apos;s gone.</p>
+
+<<Dialogue "Nurse Patel" "👩‍⚕️" "...Aiden?" "">>
+<<Dialogue "You" "😶" "Yeah." "you">>
+
+<p>She doesn&apos;t ask follow-up questions. &quot;Okay. Let&apos;s get you into an exam room.&quot;</p>
+
+</div>
+
+<<SceneDivider "Examination">>
+
+<<ImagePlaceholder "Exam room   stirrups visible, Dr. Amelia with a tablet" "banner" "assets/locations/novacure/exam-room-stirrups.png">>
+
+<div class="prose-block">
+
+<p>The examination room is the same one from last night. The paper on the table crinkles when I sit. My feet dangle   I&apos;m three inches shorter and the table is the same height.</p>
+
+<p>Nurse Patel takes vitals. Weight: 128 pounds. I&apos;ve lost twenty pounds. Height: 5&apos;6&quot;. I&apos;ve lost three inches. Blood pressure: elevated. Heart rate: 92   anxiety. She doesn&apos;t comment on any of it. Just writes.</p>
+
+<p>Dr. Amelia enters.</p>
+
+<p>She looks at me. And here&apos;s the thing that makes my blood run cold: she doesn&apos;t look surprised. There is no visible shock on her face. No &quot;oh my God.&quot; No widening of the eyes. Nurse Patel flinched   the human reaction, quickly masked. Dr. Amelia does not flinch. Dr. Amelia looks at me the way you look at a spreadsheet that returned the expected result.</p>
+
+<<Dialogue "Dr. Amelia" "🥼" "Remove your clothes, please. You can keep the undergarments." "">>
+
+<p>I strip. Hoodie off. T-shirt off. Stand in the cold room in bunched-up boxers that are trying to fall off my hips. My arms cross over my breasts. Goosebumps rise across every inch of new skin.</p>
+
+<p>She examines me clinically. Her hands palpate my breasts   I flinch, they&apos;re sensitive, the touch of her cold fingers on the new tissue sends a jolt I&apos;m not prepared for.</p>
+
+<<Dialogue "Dr. Amelia" "🥼" "B-cup. Well-formed." "">>
+
+<p>She says it to her tablet, not to me. She measures my waist. My hips. Notes the numbers without commentary.</p>
+
+<<Dialogue "Dr. Amelia" "🥼" "I need to examine your genitalia. Please lie on the table and place your feet in the stirrups." "">>
+
+<p>I look at the table. The metal arms at the end, splayed like insect legs, with padded foot rests. Stirrups. I&apos;ve seen them on TV. I never imagined my feet in them.</p>
+
+<<Dialogue "You" "😳" "You're fucking kidding." "you">>
+
+<p>She is not kidding.</p>
+
+<p>I lie down. The paper crinkles. I place my feet in the stirrups. My legs are open. The boxers have been pulled down. I am exposed   spread open under fluorescent light   in the most vulnerable position I have ever been in. The position half of the world&apos;s population goes through for routine checkups. The position I never once thought about as a man. The position I&apos;m in right now while a woman in a lab coat inserts a cold metal speculum into a vagina I&apos;ve had for less than twelve hours.</p>
+
+<p>I grip the edges of the table. Tears leak from the corners of my eyes. Not from pain   the speculum is uncomfortable but not painful. From the overwhelming totality of it. From the sound of the speculum clicking open. From the fact that I have something for it to open inside.</p>
+
+<<Dialogue "Dr. Amelia" "🥼" "Vaginal canal present and fully formed. Approximately 5.5 inches depth. Cervix visible and healthy. Lubrication response normal." "">>
+
+<<Dialogue "You" "😢" "Can you PLEASE talk about my body like I'm in the room?" "you">>
+
+<p>She pauses. Looks at me over the speculum. Those cold blue-grey eyes behind the frameless glasses. For a beat   just one   something passes through them. Guilt? Recognition? I can&apos;t tell. It&apos;s gone before I can name it.</p>
+
+<<Dialogue "Dr. Amelia" "🥼" "I apologize. You have a fully functional female reproductive system. Ovaries, uterus, fallopian tubes   all present and healthy." "">>
+
+<p>She removes the speculum. Carefully. &quot;You are, by every biological metric, female.&quot;</p>
+
+</div>
+
+<<SceneDivider "The Confrontation">>
+
+<div class="prose-block">
+
+<p>I&apos;m dressed again. The hoodie and joggers that swallow me. Sitting on the exam table. Dr. Amelia stands. She holds her tablet like a shield.</p>
+
+<<Dialogue "You" "😠" "Change me back." "you">>
+
+<<Dialogue "Dr. Amelia" "🥼" "We are investigating the mechanism of transformation. Reversal is not currently available." "">>
+
+<<Dialogue "You" "😠" "NOT CURRENTLY " "you">>
+
+<<Dialogue "Dr. Amelia" "🥼" "You signed Form 7-C, clause 12(b). Unforeseen physiological outcomes. The consent was " "">>
+
+<p>&quot;I signed up for a PILL TRIAL.&quot; My voice   this new voice, higher and thinner   cracks on the word &quot;trial.&quot; &quot;Not a sex change. Not a   not THIS. I was a MAN yesterday. I had a DICK yesterday. You can&apos;t   you have to &quot;</p>
+
+<<Dialogue "Dr. Amelia" "🥼" "I understand your distress." "">>
+
+<p>&quot;You don&apos;t understand SHIT. You&apos;re standing there with your clipboard and your lab coat and you don&apos;t look surprised. You don&apos;t even look SURPRISED.&quot;</p>
+
+<p>The silence after that is thick enough to drown in. Dr. Amelia adjusts her glasses.</p>
+
+<<Dialogue "Dr. Amelia" "🥼" "NovaCure is prepared to offer support during this period of adjustment." "">>
+
+<p>Support. She calls it support. Here&apos;s what NovaCure&apos;s &quot;support&quot; looks like:</p>
+
+<p>New legal identification. They&apos;ve already prepared it   updated driver&apos;s license, Social Security amendment, school records update. The name change is optional. The default they offer: Aida Cole. Or I can choose my own. They have a form. They have a form for this. They have a FORM for turning a man into a woman and issuing new paperwork.</p>
+
+<p>Updated medical records reflecting female biology.</p>
+
+<p>$800 per month &quot;participant stipend&quot; for six months. Framed as support. Functions as hush money.</p>
+
+<p>Monthly check-in appointments. Dr. Amelia&apos;s direct line &quot;for emergencies.&quot;</p>
+
+<p>I take the new ID card, then the driver&apos;s license clipped behind it. Nurse Patel took the photo five minutes ago   me, sitting on the exam table, shell-shocked, hair a mess, in a hoodie three sizes too big. The woman in the photo has my eyes and my freckles and nothing else I recognize.</p>
+
+<p>The name on both: <<print $player.name>> Cole.</p>
+
+</div>
+
+<<ImagePlaceholder "Close-up of the new civic ID card, trembling hands" "float" "assets/items/misc/new-female-id.png">>
+<<ImagePlaceholder "Close-up of the new driver's license, trembling hands" "float" "assets/items/misc/new-female-driver-license.png">>
+
+<div class="prose-block">
+
+<p>I stare at them. How quickly they processed this. How ready they were. Two cards, two photos, the paperwork, the stipend amount   all of it prepared. Waiting. Almost like they expected it. Almost like this was the point.</p>
+
+<<Dialogue "Dr. Amelia" "🥼" "We'll see you in two weeks for your first check-in. Call the direct line if you experience anything unusual." "">>
+
+<p>Everything is unusual. I AM the unusual. I want to scream this at her. Instead I put the cards in my pocket, walk out on legs that are three inches shorter than yesterday, and take the elevator down in a body I didn&apos;t ask for.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🏙️ Head back outside</span>' "District_Central">>
+		<<set $metDrAmelia to true>>
+		<<set $metNursePatel to true>>
+		<<set $novaCureVisitCount += 1>>
+		<<set $player.money += 800>>
+		<<set $income.novacure += 800>>
+		<<set $timeslot to "Evening">>
+		<<set $player.stress to Math.clamp($player.stress + 5, 0, 100)>>
+		<<set $novaCureDay1Done to true>>
+		<<run window.rbAddJournalEntry("Confirmed", "Fully female, by every biological metric Dr. Amelia could name. No reversal available. $800 a month, a new ID, and a direct line \"for emergencies.\" Her name is Aida Cole now.")>>
+	<</link>>
+</div>
+
+<</if>>

@@ -1,0 +1,37 @@
+:: StoryCaption [nobr]
+<div class="rb-side">
+
+<div class="rb-side-section rb-side-daytime">
+	<div>
+		<div class="rb-side-day">Day <span class="accent">$day</span></div>
+		<div class="rb-side-weekday">$weekDay</div>
+	</div>
+	<div class="rb-side-time"><<= $timeIcons[$timeslot]>> $timeslot</div>
+</div>
+
+<div class="rb-side-section">
+	<div class="rb-money-row">
+		<span class="rb-money-label">Money</span>
+		<span class="rb-money-val"><<= window.rbMoney($player.money)>></span>
+	</div>
+</div>
+
+<div class="rb-side-section">
+	<div class="rb-stat-row"><span class="rb-stat-label">Femininity</span><span class="rb-stat-val" style="color:var(--rose)">$player.fem</span></div>
+	<div class="rb-stat-row"><span class="rb-stat-label">Corruption</span><span class="rb-stat-val" style="color:var(--red)">$player.cor</span></div>
+	<div class="rb-stat-row"><span class="rb-stat-label">Confidence</span><span class="rb-stat-val" style="color:var(--gold)">$player.con</span></div>
+	<div class="rb-stat-row"><span class="rb-stat-label">Attractive</span><span class="rb-stat-val" style="color:var(--accent)">$player.att</span></div>
+	<div class="rb-stat-row"><span class="rb-stat-label">Fitness</span><span class="rb-stat-val" style="color:var(--green)">$player.fit</span></div>
+	<div class="rb-stat-row"><span class="rb-stat-label">Intellect</span><span class="rb-stat-val" style="color:var(--blue)">$player.int</span></div>
+	<div class="rb-stat-row"><span class="rb-stat-label">Energy</span><span class="rb-stat-val" style="color:var(--green)">$player.energy</span></div>
+	<div class="rb-stat-row"><span class="rb-stat-label">Stress</span><span class="rb-stat-val" style="color:var(--red)">$player.stress</span></div>
+</div>
+
+<div class="rb-side-section rb-side-links">
+	<<if Story.has("Journal")>><<link '<span class="rb-side-link">📓 Journal</span>' "Journal">><</link>><<else>><span class="rb-side-link disabled">📓 Journal</span><</if>>
+	<<link '<span class="rb-side-link">📱 Phone</span>'>><<run window.rbPhoneOpen()>><</link>>
+	<<if Story.has("Wardrobe")>><<link '<span class="rb-side-link">👗 Wardrobe</span>' "Wardrobe">><</link>><<else>><span class="rb-side-link disabled">👗 Wardrobe</span><</if>>
+	<<if Story.has("StatsPage")>><<link '<span class="rb-side-link">📊 Full Stats</span>' "StatsPage">><</link>><<else>><span class="rb-side-link disabled">📊 Full Stats</span><</if>>
+</div>
+
+</div>

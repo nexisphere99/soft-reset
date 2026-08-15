@@ -1,0 +1,43 @@
+/* ==========================================================================
+   SOFT_RESET   24 SPECIAL (form inputs, mirror reveal)
+   ========================================================================== */
+
+/* SugarCube <<textbox>> renders a plain <input> */
+.passage input[type="text"],
+.passage input[type="number"],
+.passage input[type="password"] {
+  width: 100%;
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur-sm));
+  border: 1px solid var(--border-hi);
+  border-radius: var(--r-md);
+  padding: .8rem 1.1rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text);
+  transition: border-color var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
+}
+.passage input[type="text"]:focus,
+.passage input[type="number"]:focus,
+.passage input[type="password"]:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+.passage input::placeholder { color: var(--text3); }
+
+.mirror-reveal {
+  max-width: 340px;
+  margin: var(--sp-4) auto;
+  padding: var(--sp-4);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border-hi);
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur));
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.checklist { text-align: left; list-style: none; padding: 0; margin: var(--sp-2) 0; }
+.checklist li { display: flex; gap: .5rem; font-size: .82rem; color: var(--text2); padding: .2rem 0; }
+.checklist li::before { content: ' '; color: var(--rose); flex: none; }

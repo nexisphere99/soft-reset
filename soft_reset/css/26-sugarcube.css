@@ -1,0 +1,42 @@
+/* ==========================================================================
+   SOFT_RESET   26 SUGARCUBE ELEMENT OVERRIDES
+   ========================================================================== */
+
+/* Default <<link>> passage links that aren't wrapped in a component class
+   (bare narrative links) get a subtle inline accent treatment. */
+.passage a:not([class]) {
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent-glow);
+  transition: border-color var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
+}
+.passage a:not([class]):hover {
+  color: var(--rose);
+  border-color: var(--rose);
+}
+
+/* Links inside our custom components should not double-inherit the
+   underline treatment above. */
+.choice-block a, .action-btn, .loc-card, .arch-card, .rb-side-link,
+.btn-primary, .btn-secondary, .btn-outline {
+  border-bottom: none !important;
+}
+
+/* Disabled / already-visited macro links */
+.link-disabled { color: var(--text3) !important; pointer-events: none; cursor: default; }
+
+/* <<textbox>>, <<listbox>>, etc. wrapper spacing */
+.macro-textbox, .macro-listbox { display: block; margin: .4rem 0; }
+
+/* Footer / credits text sometimes emitted by SugarCube */
+#story-caption a { color: var(--accent); }
+
+/* Hide the "Story Menu" default separator elements SugarCube inserts */
+.ui-close, .dialog-close {
+  color: var(--text2) !important;
+}
+
+/* Ensure headings inside narrow dialog boxes still read well */
+#ui-dialog h1, #ui-dialog h2, #ui-dialog h3 { color: var(--text) !important; }
+
+/* Debug bar (if ever enabled) kept unobtrusive */
+#debug-bar { background: var(--surface) !important; color: var(--text2) !important; }

@@ -1,0 +1,119 @@
+:: Home_Kitchen [nobr]
+<<HUD>>
+
+<div class="map-here">📍 Home → Kitchen</div>
+<h1>The <span class="accent">Kitchen</span></h1>
+
+<div class="prose-block">
+<p>A kitchenette, really   counter, stovetop, a cabinet above it with eleven ramen packets standing between you and a very bad month. The microwave died three weeks ago. The single chair at the tiny table has one leg shorter than the others.</p>
+</div>
+
+<div class="action-list">
+
+<<link '<span class="action-icon">☕</span><span class="action-text">Make instant coffee<span class="action-sub">Bitter, but it works.</span></span>' "Home_Kitchen">>
+	<<set $player.energy to Math.clamp($player.energy + 5, 0, 100)>>
+	<<set $player.stress to Math.clamp($player.stress - 2, 0, 100)>>
+<</link>>
+
+<<if $day is 0>>
+	<<if not $ateBreakfast>>
+		<<link '<span class="action-icon">🥣</span><span class="action-text">Eat breakfast<span class="action-sub">Stale cereal, expired milk, and your phone.</span></span>' "Home_Kitchen_Breakfast">><</link>>
+	<<else>>
+		<p class="text3 small">You already ate. Your stomach isn&apos;t impressed, but it&apos;s quiet for now.</p>
+	<</if>>
+<<elseif $day is 1 and $novaCureDay1Done>>
+	<<if not $ateDinnerDay1>>
+		<<link '<span class="action-icon">🍜</span><span class="action-text">Eat something<span class="action-sub">Leftover ramen. Cold, from the cup.</span></span>' "D01_EveningHome">><</link>>
+	<<else>>
+		<p class="text3 small">You&apos;re not hungry anymore. You&apos;re not much of anything anymore.</p>
+	<</if>>
+<</if>>
+
+<<link '<span class="action-icon">🥤</span><span class="action-text">Drink some water<span class="action-sub">Free, at least.</span></span>' "Home_Kitchen">>
+	<<set $player.stress to Math.clamp($player.stress - 1, 0, 100)>>
+<</link>>
+
+<<if $knowsBeanSoupRecipe>>
+	<<link '<span class="action-icon">🍲</span><span class="action-text">Make Luis&apos;s bean soup<span class="action-sub">Cheaper than ramen, tastes like God&apos;s kitchen</span></span>' "Home_Kitchen">>
+		<<set $player.energy to Math.clamp($player.energy + 35, 0, 100)>>
+		<<set $player.stress to Math.clamp($player.stress - 3, 0, 100)>>
+	<</link>>
+<<else>>
+	<<link '<span class="action-icon">🍜</span><span class="action-text">Cook something<span class="action-sub">Instant ramen, cereal, or eggs   whatever&apos;s in the cabinet</span></span>' "Home_Kitchen">>
+		<<set $player.energy to Math.clamp($player.energy + 20, 0, 100)>>
+	<</link>>
+<</if>>
+
+<<if $timeslot is "Evening" or $timeslot is "Night">>
+	<<if $player.money gte 15>>
+		<<link '<span class="action-icon">🛵</span><span class="action-text">Order delivery<span class="action-sub">Somebody else cooks tonight</span></span><span class="action-cost">$15-30</span>' "Home_Kitchen_OrderDelivery">><</link>>
+	<<else>>
+		<div class="action-btn action-locked"><span class="action-icon">🛵</span><span class="action-text">Order delivery<span class="action-sub">Can&apos;t afford it right now</span></span></div>
+	<</if>>
+<</if>>
+
+</div>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<link '<span>← Back to the apartment</span>' "Home">><</link>>
+</div>
+
+:: Home_Kitchen_OrderDelivery [nobr]
+<<HUD>>
+
+<<set _rbCost to window.rbRandom(15, 30)>>
+<<set _rbNpc to window.rbRandom(1, 3)>>
+
+<div class="prose-block">
+
+<<switch _rbNpc>>
+
+<<case 1>>
+<p>A young woman in a delivery jacket hands over the bag without much ceremony. &quot;Enjoy your meal.&quot; Gone before you finish saying thanks.</p>
+
+<<case 2>>
+<p>A guy about your age, checking his phone more than he checks you, hands off the order on autopilot. &quot;Have a good one.&quot;</p>
+
+<<case 3>>
+<p>Wrong order. It happens. The delivery guy is mortified   &quot;oh no, oh man, I am SO sorry&quot;   and offers to run back for the right one. You tell him not to bother. He leaves you a discount code out of sheer guilt.</p>
+
+<</switch>>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>← Back to the kitchen</span>' "Home_Kitchen">>
+		<<run window.rbSpend(_rbCost, "food")>>
+		<<set $player.energy to Math.clamp($player.energy + 30, 0, 100)>>
+		<<set $player.stress to Math.clamp($player.stress - 3, 0, 100)>>
+	<</link>>
+</div>
+
+:: Home_Kitchen_Breakfast [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>Breakfast is stale cereal   store brand, the kind that comes in a bag, not a box, because the bag is $1.29   with the last of the milk. I check the expiration date. Yesterday. I smell it. Fine enough. Pour. Eat standing at the counter because the single chair at my tiny table has one leg shorter than the others and I&apos;m not in the mood for wobbling.</p>
+
+<p>Phone check while chewing.</p>
+
+<p>Three missed calls from Pinnacle Student Loan Services. The automated kind that calls daily, sometimes twice, always from a different number so I can&apos;t block them. $23,400 in student loans. Minimum payment: $487 per month. I haven&apos;t made a payment in four months.</p>
+
+<p>One email from Mrs. Park. Subject line: <strong>FINAL NOTICE</strong>. I open it. &quot;Mr. Cole   You are $1,300 past due (2 months). Pay in full within 7 days or vacate the premises. This is not a request.   M. Park.&quot; I close the email. Stare at the cabinet above the stove. Open it. Count the ramen packets. Eleven. That&apos;s eleven dinners. If I get evicted, I won&apos;t have a kitchen to boil water in.</p>
+
+<p>One notification from the DashDrop app: &quot;Your shift starts at 11:00 AM. Tap to confirm.&quot; I tap. The gig economy doesn&apos;t care that I&apos;m drowning. It just needs me to carry food from point A to point B on an electric scooter that&apos;s one pothole away from dying.</p>
+
+<p>One text from Jake: &quot;Gym tomorrow? 💪&quot; I text back: &quot;maybe.&quot;</p>
+
+<p>Jake Reeves. Closest thing I&apos;ve got to a best friend, which says less about Jake&apos;s significance and more about my isolation. We met freshman orientation   he sat next to me, said &quot;this professor sucks, wanna get food?&quot; and that was it. Two years of gym sessions, bad movies, and the kind of male friendship where genuine emotion is communicated exclusively through shoulder punches and the word &quot;bro.&quot;</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>← Back to the kitchen</span>' "Home_Kitchen">>
+		<<set $ateBreakfast to true>>
+		<<set $player.energy to Math.clamp($player.energy + 8, 0, 100)>>
+		<<run window.rbSendSMS("jake", false, "Gym tomorrow? 💪")>>
+	<</link>>
+</div>

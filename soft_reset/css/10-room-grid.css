@@ -1,0 +1,42 @@
+/* ==========================================================================
+   SOFT_RESET   10 ROOM / APARTMENT INTERIOR GRID
+   ========================================================================== */
+
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-3);
+  margin: var(--sp-4) 0;
+}
+
+.room-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border);
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur-sm));
+  -webkit-backdrop-filter: blur(var(--blur-sm));
+  padding: var(--sp-3);
+  min-height: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: border-color var(--t-fast) var(--ease), transform var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
+}
+.room-card:hover { border-color: var(--border-hi); transform: translateY(-3px); box-shadow: var(--shadow-glow-accent); }
+.room-card::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: var(--grad-soft);
+  opacity: 0;
+  transition: opacity var(--t-fast) var(--ease);
+}
+.room-card:hover::before { opacity: 1; }
+.room-title { font-family: var(--font-head); font-weight: 600; font-size: .98rem; position: relative; z-index: 1; }
+.room-sub { font-size: .72rem; color: var(--text3); position: relative; z-index: 1; margin-top: .15rem; }
+
+@media (max-width: 600px) {
+  .room-grid { grid-template-columns: 1fr; }
+}

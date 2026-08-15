@@ -1,0 +1,129 @@
+:: Home_Bedroom [nobr]
+<<HUD>>
+
+<div class="map-here">📍 Home → My Room</div>
+<h1>My <span class="accent">Room</span></h1>
+
+<div class="prose-block">
+<p>The mattress is on the floor, grey sheets that used to be white, a fist-shaped water stain on the ceiling directly above it. Your grandmother&apos;s hoodie is folded over the one chair with the short leg. Three steps in any direction gets you to another part of your life.</p>
+</div>
+
+<div class="action-list">
+
+<<if $day is 0>>
+
+	<<if not $gotDressed>>
+		<<link '<span class="action-icon">👕</span><span class="action-text">Get dressed<span class="action-sub">Grey hoodie, black joggers, the sneakers held together by denial.</span></span>' "Home_Bedroom">>
+			<<set $gotDressed to true>>
+			<<run window.rbAddJournalEntry("Getting Ready", "The faded grey hoodie   oversized, pilling at the cuffs, the one possession I'd grab if the building caught fire. It was my grandmother's. Black joggers. White sneakers with frayed laces. I grab the DashDrop bag, my helmet, the scooter keys.")>>
+		<</link>>
+	<<else>>
+		<p class="text3 small">You&apos;re dressed. Grey hoodie, black joggers, the sneakers that are one pothole away from retirement.</p>
+	<</if>>
+
+	<<if $flyerFound and not $calledNovaCure>>
+		<<link '<span class="action-icon">📄</span><span class="action-text">Take out the flyer again<span class="action-sub">$2,000. One visit. One pill.</span></span>' "D00_Evening">><</link>>
+	<</if>>
+
+	<<if $metDrAmelia>>
+		<<link '<span class="action-icon">😴</span><span class="action-text">Go to sleep<span class="action-sub">It&apos;s late, and today already changed everything.</span></span>' "D00_LastNight">><</link>>
+	<</if>>
+
+<<elseif $day is 1>>
+
+	<<if not $dressedDay1>>
+		<<link '<span class="action-icon">👚</span><span class="action-text">Try to get dressed<span class="action-sub">Aiden&apos;s clothes. Nothing is going to fit.</span></span>' "Home_Bedroom_DressDay1">><</link>>
+	<<else>>
+		<p class="text3 small">Hood up, head down. Nothing fits, but you&apos;re dressed enough to leave.</p>
+	<</if>>
+
+<</if>>
+
+<<link '<span class="action-icon">🪞</span><span class="action-text">Check the mirror<span class="action-sub">See what&apos;s looking back today</span></span>' "Home_Bedroom_Mirror">><</link>>
+
+<<if $day is 1 and ($timeslot is "Night" or $player.arousal gt 30)>>
+	<<link '<span class="action-icon">🛏️</span><span class="action-text">Take a minute to yourself<span class="action-sub">Nobody&apos;s watching. The door&apos;s locked.</span></span>' "Home_Bedroom_Alone">><</link>>
+<</if>>
+
+</div>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<link '<span>← Back to the apartment</span>' "Home">><</link>>
+</div>
+
+:: Home_Bedroom_Mirror [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<<if $day is 0>>
+<p>I look in the mirror. Angular jaw. Stubble patches. Dark circles. The usual. The word that comes to mind is &quot;tired.&quot; Not a person   a condition.</p>
+<<elseif $day is 1 and $player.fem lt 20>>
+<p>She&apos;s still there. The woman who stole my reflection. B-cups under the t-shirt. Hips I&apos;m still bumping into doorframes with. Freckles that survived the apocalypse of my face. I don&apos;t know who I&apos;m looking at, but she doesn&apos;t look away first.</p>
+<<else>>
+<p>I check the mirror. Same face as this morning, mostly. Still learning the shape of it.</p>
+<</if>>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>← Step away</span>' "Home_Bedroom">><</link>>
+</div>
+
+:: Home_Bedroom_Alone [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I lie back on the mattress. Grey sheets, water-stain ceiling, the specific quiet of an apartment with nobody in it but me.</p>
+
+<<if $firstOrgasmSolo>>
+<p>My hand knows the way now. I&apos;m not discovering anything tonight   just visiting somewhere I&apos;ve already been. Slower this time. No shower water rushing to cover the sound. Just me, and the sounds I make, and the ceiling that&apos;s heard all of it and kept every secret.</p>
+<<else>>
+<p>I haven&apos;t done this yet. Not on purpose, not sober, not lying still enough to actually pay attention. My hand moves anyway   slow, uncertain, learning a map nobody handed me instructions for.</p>
+<</if>>
+
+<p>Afterward, the ceiling looks the same. The water stain hasn&apos;t moved. But something in my chest has, a little, loosened.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>← Back to my room</span>' "Home_Bedroom">>
+		<<set $player.arousal to 0>>
+		<<set $player.stress to Math.clamp($player.stress - 10, 0, 100)>>
+		<<set $player.energy to Math.clamp($player.energy - 5, 0, 100)>>
+		<<if not $firstOrgasmSolo>>
+			<<set $firstOrgasmSolo to true>>
+			<<run window.rbAddMilestone("First orgasm, in this body.")>>
+		<</if>>
+	<</link>>
+</div>
+
+:: Home_Bedroom_DressDay1 [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I go to the closet. My closet. The three hoodies, the four t-shirts, the two joggers, the jeans. Aiden&apos;s clothes. Male clothes.</p>
+
+<p>I try the black hoodie. It swims on me. The shoulders sag past where mine end now, the sleeves go past my hands, the hem hits mid-thigh. On Aiden, this was a fitted hoodie. On whoever I am, it&apos;s a dress. Good. The bigger the better. I want to disappear inside fabric and not come out.</p>
+
+<p>Joggers. I pull them up. They won&apos;t stay. My waist has shrunk by five inches but my hips have grown by three   the waistband sits on top of the hip bones and immediately slides. I cinch the drawstring as tight as it goes. It bunches the fabric at the front in a way that looks ridiculous. The legs are too long now   I&apos;ve lost three inches of height   and pool at my ankles.</p>
+
+<p>Sneakers. I shove my feet in. They&apos;re too big. Size 10 men&apos;s on what feels like size 7 women&apos;s feet. My toes don&apos;t reach the ends. I stuff the toes with balled-up socks and tie the laces tight.</p>
+
+<p>No sports bra. No bra at all. My breasts move freely under the hoodie. Every step, every motion, they shift and bounce and remind me they exist. Walking to the kitchen is a physics experiment in momentum I never asked to conduct.</p>
+
+<p>No female underwear. I keep the boxers, bunched and held in place by the cinched joggers. The fabric gathers in places it shouldn&apos;t and gaps in others. Nothing about this fits. Nothing about any of this fits.</p>
+
+<p>I look in the hallway mirror before I leave. A small woman drowning in men&apos;s clothes. Hood up. Head down. If nobody looks too hard, I could pass as a girl wearing her boyfriend&apos;s clothes. If nobody looks at all, I could pass as a person who is not screaming internally at a frequency only dogs can hear.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>← Back to my room</span>' "Home_Bedroom">>
+		<<set $dressedDay1 to true>>
+		<<set $player.stress to Math.clamp($player.stress - 5, 0, 100)>>
+		<<set $player.energy to Math.clamp($player.energy - 10, 0, 100)>>
+	<</link>>
+</div>

@@ -1,0 +1,40 @@
+:: StatsPage [nobr]
+<<HUD>>
+
+<div class="eyebrow">CHARACTER SHEET</div>
+<h1><span class="accent">$player.name</span></h1>
+<p class="text2 small">Formerly $player.maleName.</p>
+
+<div class="content-col">
+
+<h3>Primary Stats</h3>
+<<StatBar "FEM" $player.fem "var(--rose)">>
+<<StatBar "COR" $player.cor "var(--red)">>
+<<StatBar "CON" $player.con "var(--gold)">>
+<<StatBar "ATT" $player.att "var(--accent)">>
+<<StatBar "FIT" $player.fit "var(--green)">>
+<<StatBar "INT" $player.int "var(--blue)">>
+
+<h3 style="margin-top:1.6rem;">Condition</h3>
+<<StatBar "Energy" $player.energy "var(--green)">>
+<<StatBar "Stress" $player.stress "var(--red)">>
+
+<h3 style="margin-top:1.6rem;">Body</h3>
+<div class="stat-bar-wrap text2 small">
+	<<if $body.phase is 0>>
+		Still yourself, for now. Height $body.height in. · Weight $body.weight lbs.
+	<<else>>
+		Bust $body.bust in · Waist $body.waist in · Hips $body.hips in · Bra $body.braSize
+	<</if>>
+</div>
+
+<h3 style="margin-top:1.6rem;">Finances</h3>
+<div class="stat-bar-wrap text2 small">
+	Cash: <<= window.rbMoney($player.money)>> · Rent: <<= window.rbMoney($rent)>>/mo · Loan balance: <<= window.rbMoney($loans.total)>>
+</div>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<back '<span>← Back</span>'>>
+</div>
+
+</div>

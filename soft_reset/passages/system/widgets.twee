@@ -1,0 +1,154 @@
+:: Widgets [widget nobr]
+
+/* ==========================================================================
+   HUD   sticky top-of-passage stat bar. Call with <<HUD>> at the top of
+   any gameplay passage.
+   ========================================================================== */
+<<widget "HUD">>
+<div class="hud">
+	<div class="hud-item"><span class="hud-label">Day</span><span class="hud-val" style="color:var(--accent)">$day</span></div>
+	<div class="hud-sep"></div>
+	<div class="hud-item"><span class="hud-label">Time</span><span class="hud-val"><<= $timeIcons[$timeslot]>> $timeslot</span></div>
+	<div class="hud-sep"></div>
+	<div class="hud-item"><span class="hud-label">Money</span><span class="hud-val" style="color:var(--gold)"><<= window.rbMoney($player.money)>></span></div>
+	<div class="hud-sep"></div>
+	<div class="hud-item"><span class="hud-label">FEM</span><span class="hud-val" style="color:var(--rose)">$player.fem</span></div>
+	<div class="hud-sep"></div>
+	<div class="hud-item"><span class="hud-label">COR</span><span class="hud-val" style="color:var(--red)">$player.cor</span></div>
+	<div class="hud-sep"></div>
+	<div class="hud-item"><span class="hud-label">Energy</span><span class="hud-val" style="color:var(--green)">$player.energy</span></div>
+</div>
+<</widget>>
+
+/* ==========================================================================
+   StatBar   labeled progress bar.
+   Usage: <<StatBar "FIT" $player.fit "var(--green)">>
+   Note: dynamic attribute values in SugarCube must use the "@attr"
+   directive syntax   plain "_args[1]" text inside class="" / style=""
+   is NOT substituted, it's only substituted in element *content*.
+   ========================================================================== */
+<<widget "StatBar">>
+<<set _rbPct to Math.clamp(Math.round(_args[1]), 0, 100)>>
+<div class="stat-bar-wrap">
+	<div class="stat-bar-row">
+		<span class="stat-bar-label">_args[0]</span>
+		<div class="stat-bar-track">
+			<div class="stat-bar-fill" @style="'width:' + _rbPct + '%; background:' + _args[2] + ';'"></div>
+		</div>
+		<span class="stat-bar-num">_args[1]</span>
+	</div>
+</div>
+<</widget>>
+
+/* ==========================================================================
+   Dialogue   one line of a conversation.
+   Usage: <<Dialogue "Jake" "💪" "Gym tomorrow?" "">>
+          <<Dialogue "You" "🙂" "Maybe." "you">>
+   ========================================================================== */
+<<widget "Dialogue">>
+<div @class="'dl-line ' + (_args[3] != null ? _args[3] : '')">
+	<div class="dl-avatar">_args[1]</div>
+	<div>
+		<div @class="'dl-name dl-name--' + window.rbSlug(_args[0])">_args[0]</div>
+		<div class="dl-bubble">_args[2]</div>
+	</div>
+</div>
+<</widget>>
+
+/* ==========================================================================
+   SceneDivider   centered horizontal-rule label between narrative beats.
+   Usage: <<SceneDivider "Thursday Morning   6:45 AM">>
+   ========================================================================== */
+<<widget "SceneDivider">>
+<div class="scene-divider">_args[0]</div>
+<</widget>>
+
+/* ==========================================================================
+   ImagePlaceholder   dashed-border stand-in for a not-yet-generated image.
+   Usage: <<ImagePlaceholder "Male Aiden   bathroom mirror" "portrait">>
+   variant (_args[1]) is optional: "portrait" | "banner" | "float" | ""
+
+   Optional 3rd arg (_args[2]) is an asset path. When given, this widget
+   tries to load and show that real image, laid over the same frame  
+   if the file doesn't exist yet (still common while art is being
+   generated), the <img> silently removes itself on error and the
+   dashed placeholder underneath is exactly what renders, so passages
+   can carry a real path from day one without waiting on the art.
+   ========================================================================== */
+<<widget "ImagePlaceholder">>
+<div @class="'img-placeholder ' + (_args[1] != null ? _args[1] : '')">
+	<<if _args[2]>>
+		<img class="scene-img" @src="_args[2]" @alt="_args[0]" onload="this.closest('.img-placeholder').classList.add('img-ok')" onerror="this.remove()">
+	<</if>>
+	<span class="ph-icon">🖼️</span>
+	<span class="ph-label">_args[0]</span>
+	<span class="ph-hint">Image will be added</span>
+</div>
+<</widget>>
+
+/* ==========================================================================
+   ObjectiveBanner   shows the current journal objective at the top of a
+   hub/map passage. This is the *only* place the player is told what to
+   do next   story beats are reached by physically navigating to the
+   right location, never by a direct "continue to next scene" link.
+   Usage: <<ObjectiveBanner>>
+   ========================================================================== */
+<<widget "ObjectiveBanner">>
+<div class="objective-banner">
+	<span class="ob-icon">🎯</span>
+	<div>
+		<span class="ob-label">Objective</span>
+		<span class="ob-text">$objective</span>
+	</div>
+</div>
+<</widget>>
+
+/* ==========================================================================
+   Day0Objective   recomputes $objective from the current Day 0 progress
+   flags. Call once at the top of any passage that changes those flags
+   (hubs, and the passages that set flags on their way out) so the
+   banner and Journal always show the truth.
+   ========================================================================== */
+<<widget "Day0Objective">>
+<<if not $gotDressed>>
+	<<set $objective to "You just woke up. Get washed up, eat something, and get dressed before you head out.">>
+<<elseif not $dashdropDone>>
+	<<set $objective to "Your DashDrop shift starts soon. Head outside and find the delivery zone.">>
+<<elseif not $flyerFound>>
+	<<set $objective to "Shift's over. Head outside   campus is on the way home.">>
+<<elseif not $calledNovaCure>>
+	<<set $objective to "You've got something in your pocket worth reading twice. Go home and think it over.">>
+<<elseif not $metDrAmelia>>
+	<<set $objective to "NovaCure is expecting you tonight. Head outside   Meridian Tower is downtown.">>
+<<else>>
+	<<set $objective to "It's late, and today already changed everything. Go home and get some sleep.">>
+<</if>>
+<</widget>>
+
+/* ==========================================================================
+   Day1Objective   recomputes $objective from Day 1's progress flags.
+   ========================================================================== */
+<<widget "Day1Objective">>
+<<if $mustReturnToNovaCure and not $dressedDay1>>
+	<<set $objective to "You need to get dressed before you go anywhere.">>
+<<elseif $mustReturnToNovaCure and not $novaCureDay1Done>>
+	<<set $objective to "You need answers. Head outside   Meridian Tower is downtown.">>
+<<elseif not $ateDinnerDay1>>
+	<<set $objective to "You're home. You should wash and eat something.">>
+<<else>>
+	<<set $objective to "You can't hold your eyes open anymore. It's time to sleep.">>
+<</if>>
+<</widget>>
+
+/* ==========================================================================
+   CurrentObjective   dispatches to the correct day's objective widget.
+   Hubs should always call THIS, never a specific day's widget directly,
+   so adding a new day never means touching Home/Outside again.
+   ========================================================================== */
+<<widget "CurrentObjective">>
+<<switch $day>>
+<<case 0>><<Day0Objective>>
+<<case 1>><<Day1Objective>>
+<<default>><<set $objective to "Another day. Figure out what's next.">>
+<</switch>>
+<</widget>>

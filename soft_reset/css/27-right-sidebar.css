@@ -1,0 +1,167 @@
+/* ==========================================================================
+   SOFT_RESET   27 RIGHT SIDEBAR
+   Persistent panel (mirrors #ui-bar on the opposite edge): portrait,
+   outfit, body stats, relationship meters.
+   ========================================================================== */
+
+:root { --w-rightbar: 240px; }
+
+#rb-rightbar {
+  position: fixed;
+  top: 0; right: 0; bottom: 0;
+  width: var(--w-rightbar);
+  z-index: 50;
+  background: linear-gradient(180deg, #1a0c2ce6, #0a0414f2);
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
+  border-left: 1px solid var(--border);
+  box-shadow: -4px 0 40px #00000060, inset 1px 0 0 var(--border-glow);
+  overflow-y: auto;
+  padding: var(--sp-3) var(--sp-2);
+  transform: translateX(0);
+  transition: transform var(--t-med) var(--ease);
+}
+/* Not eligible on this passage at all (pre-game system screens). */
+#rb-rightbar.hidden { display: none !important; }
+/* Eligible, but the player has retracted it (or it defaults closed on
+   small screens)   slides off-screen instead of disappearing so the
+   open/close motion animates. */
+html:not(.rb-right-visible) #rb-rightbar { transform: translateX(100%); }
+
+/* Content only gets pushed by the panel on wide-enough viewports; on
+   mobile the panel overlays instead (see 28-nav-toggles.css). */
+@media (min-width: 900px) {
+  html.rb-right-visible #story { margin-right: var(--w-rightbar) !important; }
+  html:not(.rb-right-visible) #story { margin-right: 0 !important; }
+}
+
+.rb-right-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.rb-right-section {
+  position: relative;
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur-sm));
+  -webkit-backdrop-filter: blur(var(--blur-sm));
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: var(--sp-2) var(--sp-3);
+  overflow: hidden;
+}
+.rb-right-section::before {
+  content: '';
+  position: absolute; inset: 0 0 auto 0; height: 2px;
+  background: var(--grad-primary);
+  opacity: .8;
+}
+
+.rb-right-title {
+  font-size: .64rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--rose);
+  margin-bottom: .5rem;
+}
+
+.rb-side-note { font-size: .78rem; color: var(--text3); font-style: italic; margin: 0; }
+
+/* Portrait */
+.rb-portrait-section { padding: var(--sp-1); }
+.rb-portrait-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4.4;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: var(--grad-soft);
+}
+.rb-portrait-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.rb-portrait-frame::after {
+  content: '';
+  position: absolute; inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: linear-gradient(160deg, var(--rose), var(--accent2), transparent 75%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: .5;
+  pointer-events: none;
+}
+
+.rb-portrait-tag {
+  position: absolute;
+  left: 50%; bottom: .6rem;
+  transform: translateX(-50%);
+  background: rgba(10, 4, 20, .72);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: .3rem .85rem;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--border-hi);
+  font-family: var(--font-head);
+  font-style: italic;
+  font-weight: 600;
+  font-size: .82rem;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+/* Outfit */
+.rb-outfit-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .3rem 0;
+  font-size: .76rem;
+}
+.rb-outfit-row + .rb-outfit-row { border-top: 1px solid var(--border); }
+.rb-outfit-slot { color: var(--text3); font-weight: 700; letter-spacing: .03em; text-transform: uppercase; font-size: .64rem; }
+.rb-outfit-val { color: var(--text2); font-weight: 600; text-align: right; }
+
+/* Body */
+.rb-body-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem;
+}
+.rb-body-chip {
+  display: flex;
+  flex-direction: column;
+  gap: .1rem;
+  background: #ffffff08;
+  border-radius: var(--r-sm);
+  padding: .4rem .55rem;
+}
+.rb-body-label { font-size: .6rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text3); }
+.rb-body-val { font-size: .82rem; font-weight: 700; color: var(--text); }
+
+/* Relationships */
+.rb-rel-row { padding: .35rem 0; }
+.rb-rel-row + .rb-rel-row { border-top: 1px solid var(--border); }
+.rb-rel-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: .3rem;
+}
+.rb-rel-name { font-size: .78rem; font-weight: 700; color: var(--text); }
+.rb-rel-num { font-size: .72rem; font-weight: 700; color: var(--text3); font-variant-numeric: tabular-nums; }
+.rb-rel-track {
+  height: 6px;
+  background: #ffffff0a;
+  border-radius: var(--r-pill);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.rb-rel-fill {
+  height: 100%;
+  border-radius: var(--r-pill);
+  box-shadow: 0 0 10px currentColor;
+  transition: width var(--t-slow) var(--ease);
+}
+

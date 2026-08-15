@@ -1,0 +1,69 @@
+:: D00_Evening [nobr]
+<<HUD>>
+
+<<SceneDivider "Home   Evening">>
+
+<div class="prose-block">
+
+<p>I heat water on the stovetop   the microwave died three weeks ago, another casualty in the ongoing war between my life and functionality   and pour it over instant ramen. The noodles soften in the styrofoam cup. I sit on the couch. The couch is secondhand, stained in places I choose not to investigate, and sags in the middle like it&apos;s given up on posture the same way I have.</p>
+
+<p>I eat and stare at the eviction notice on the coffee table. Seven days. I have seven days to produce $1,300 or lose the apartment. Where does someone with $47 in their checking account find $1,300?</p>
+
+<p>I take the flyer out of my pocket. Unfold it. Smooth the creases against my thigh.</p>
+
+<p>$2,000. One visit. One pill.</p>
+
+<p>Worst case: it&apos;s shady and the pill makes me sick for a week. I&apos;ve been sick before. I ate gas station sushi once and survived. A pharmaceutical pill can&apos;t be worse than gas station sushi.</p>
+
+<p>Best case: I walk in, swallow a vitamin, walk out with two thousand dollars, pay rent, and buy real food for the first time in a month.</p>
+
+<p>I pick up my phone. Dial the number. My thumb hovers over the call button for a beat.</p>
+
+<p>Two rings.</p>
+
+<<Dialogue "NovaCure Intake" "☎️" "NovaCure Laboratories, participant intake. How can I help you?" "">>
+
+<<Dialogue "You" "🙂" "Hi, I   I saw the flyer. On campus. About the trial." "you">>
+
+<<Dialogue "NovaCure Intake" "☎️" "Of course. Can I get your name and age?" "">>
+
+<<Dialogue "You" "🙂" "Aiden Cole. Twenty." "you">>
+
+<<Dialogue "NovaCure Intake" "☎️" "Any current medications, Mr. Cole?" "">>
+
+<<Dialogue "You" "🙂" "No." "you">>
+
+<<Dialogue "NovaCure Intake" "☎️" "Known allergies?" "">>
+
+<<Dialogue "You" "🙂" "No." "you">>
+
+<<Dialogue "NovaCure Intake" "☎️" "Wonderful. We have availability tonight at 8:30 PM. Can you make it?" "">>
+
+<p>Tonight. I check the clock on the stove. 6:47 PM. &quot;Tonight?&quot;</p>
+
+<<Dialogue "NovaCure Intake" "☎️" "Compensation is processed same-day. Direct deposit. Most of our participants appreciate the promptness." "">>
+
+<p>Same-day deposit. I could have $2,000 in my account before midnight. I could pay Mrs. Park before breakfast.</p>
+
+<<Dialogue "You" "🙂" "I'll be there." "you">>
+
+<p>She gives me the address. Meridian Tower, 6th floor, Suite 604. Check in at reception. Bring valid ID. &quot;Is there anything else I can help with?&quot;</p>
+
+<p>&quot;What does the pill do? Like, what&apos;s it for?&quot;</p>
+
+<<Dialogue "NovaCure Intake" "☎️" "Dr. Amelia will explain the trial parameters when you arrive. It's a very standard process, Mr. Cole." "">>
+
+<p>Standard. Of course. Everything about this is standard. I hang up and sit on the couch and eat instant ramen and tell myself it&apos;s fine. It&apos;s a pill. One pill. It&apos;s fine.</p>
+
+<p>I finish the ramen. Wash the fork. Stare out the window at the darkening street. Make a decision that feels small   so small it barely registers against the weight of everything else   and don&apos;t know yet that it&apos;s the largest decision of my life.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🧥 Get ready to head out</span>' "Home">>
+		<<set $timeslot to "Night">>
+		<<set $player.energy to Math.clamp($player.energy - 15, 0, 100)>>
+		<<set $calledNovaCure to true>>
+		<<run window.rbAddJournalEntry("The Call", "I called the number on the flyer. They have an opening tonight at 8:30 PM. Meridian Tower, Suite 604. Compensation processed same-day.")>>
+	<</link>>
+</div>

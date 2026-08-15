@@ -1,0 +1,84 @@
+:: Campus [nobr]
+<<HUD>>
+
+<<if $dashdropDone and not $flyerFound>>
+
+<<SceneDivider "Campus   Late Afternoon">>
+
+<div class="prose-block">
+
+<p>The route home takes me through campus. It always does   the shortcut between the delivery zone and my apartment cuts straight across the quad, past the lecture halls and the library and all the infrastructure of a future I&apos;m technically enrolled in but can&apos;t quite touch.</p>
+
+<p>Students everywhere in the amber light. A guy plays guitar on the quad steps, badly, to a girl who doesn&apos;t seem to mind. A group shares a blanket and a bag of chips. Two people kiss against a tree with the unselfconscious hunger of people who haven&apos;t learned to be embarrassed by wanting.</p>
+
+<p>I walk through them like a ghost. I&apos;m technically one of them   student ID in my wallet, two classes I attend when my schedule allows, a 2.7 GPA that represents the distance between what I&apos;m capable of and what my circumstances allow. But I&apos;m on the outside of every window. Always looking in. Never knocking.</p>
+
+<p>I pass the campus bulletin board. The usual chaos pinned in layers: club meetings, lost cats, tutoring, roommate wanted, protest this Saturday, DJ set tonight. I don&apos;t read them. Haven&apos;t joined a club, found a cat, needed a tutor, or gone to a party in months.</p>
+
+<p>But something catches my eye.</p>
+
+</div>
+
+<<ImagePlaceholder "Aiden in his hoodie, looking at the pole, dusk light" "banner" "assets/characters/mc-male/flyer-moment.png">>
+
+<div class="prose-block">
+
+<p>I stop. Cross the last stretch of walkway. Stand in front of the pole like it owes me an explanation.</p>
+
+</div>
+
+<<ImagePlaceholder "The NovaCure flyer, stapled to a telephone pole at dusk" "banner" "assets/locations/campus/novacure-flyer.png">>
+
+<div class="prose-block">
+
+<p>Half-hidden under a notice about a missing tabby named Professor Whiskers, there&apos;s a flyer. Plain paper. Generic font. No design, no color. The kind of flyer that&apos;s barely trying to be seen, which is exactly why it stands out   everything else on this board is screaming for attention.</p>
+
+<p>I push Professor Whiskers aside and read.</p>
+
+<blockquote><strong>EARN $2,000   FAST</strong>
+Healthy volunteers needed for Phase-II pharmaceutical trial.
+One visit. One pill. Immediate compensation.
+NovaCure Laboratories   Suite 604, Meridian Tower
+Call: (555) 0147-CURE
+<em>Must be 18-25, no current medications, no allergies.</em></blockquote>
+
+<p>Two thousand dollars.</p>
+
+<p>I read it again. Two thousand dollars. One visit. One pill.</p>
+
+<p>Two thousand dollars is two months of rent. Two thousand dollars is the difference between having an apartment and sleeping on a park bench. Two thousand dollars is breathing room. Space. A buffer between me and the void.</p>
+
+<p>One pill. What kind of pill? Probably some allergy medication. Or a vitamin. They test vitamins, right? Phase-II means it&apos;s already been through Phase-I, which means someone&apos;s already swallowed it and lived. Probably. I didn&apos;t pay attention in bio.</p>
+
+<p>I tear the flyer off the pole. Fold it into a small rectangle. Slip it into the front pocket of my hoodie, next to the crumbs from Mrs. Calloway&apos;s cookie.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🏠 Pocket it and head outside toward home</span>' "Outside">>
+		<<set $flyerFound to true>>
+		<<run window.rbAddMilestone("Found the NovaCure flyer.")>>
+	<</link>>
+</div>
+
+<<elseif not $dashdropDone>>
+
+<div class="prose-block">
+<p>Campus in the late morning. Lecture halls, the library, students who all seem to know exactly where they&apos;re supposed to be. Your shift starts soon   this isn&apos;t the time to linger.</p>
+</div>
+
+<div class="choice-block">
+	<<link '<span>← Back outside</span>' "District_Northgate">><</link>>
+</div>
+
+<<else>>
+
+<div class="prose-block">
+<p>Same quad, same amber light fading toward evening. The flyer is already folded up in your pocket   nothing else on this bulletin board is going to change your night.</p>
+</div>
+
+<div class="choice-block">
+	<<link '<span>← Back outside</span>' "District_Northgate">><</link>>
+</div>
+
+<</if>>

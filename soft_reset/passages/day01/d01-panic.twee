@@ -1,0 +1,59 @@
+:: D01_Panic [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Huddled on the bathroom floor, knees to chest, crying" "portrait" "assets/characters/mc-female-phase1/bathroom-floor-panic.png">>
+
+<div class="prose-block">
+
+<p>I sit on the bathroom floor. Cold tile against my legs   legs that are smooth and wrong and mine.</p>
+
+<p>I pull my knees to my chest. They come closer than they should. The hips flex at a different angle now   wider, more accommodating. Even sitting is different. Even the way my body folds is different.</p>
+
+<p>My breathing is fast. Shallow. The panic response feels different in this body   my heart pounds higher in my chest, the adrenaline hits different, there&apos;s a tightness in my throat that makes the air feel thin. I&apos;m hyperventilating. I know I&apos;m hyperventilating. I can&apos;t stop.</p>
+
+<p>Tears come. Not a decision   an involuntary flood, like a faucet someone turned on without my permission. I haven&apos;t cried in three years. Not when my dad forgot my birthday. Not when my grandmother&apos;s house was sold. Not when the loan letters started piling up. Three years of drought, and now tears are streaming down my face like my body decided to process every unprocessed emotion at once.</p>
+
+<p>&quot;What the FUCK. What the fuck what the fuck &quot;</p>
+
+<p>My voice. My VOICE. It&apos;s not mine. The words are the same but the register is wrong   higher, softer, a mid-alto where there used to be a tired tenor. It cracks when I shout, but it cracks upward, not downward. I hear myself speak and the person speaking is a woman.</p>
+
+<p>I grab my phone from the floor. My hands are shaking. The phone feels too big now   my palm is smaller, my grip is different. I fumble the passcode twice.</p>
+
+<p>I dial NovaCure.</p>
+
+<p>Voicemail. &quot;NovaCure Laboratories is currently closed. Our business hours are 9 AM to &quot;</p>
+
+<p>I hang up. Dial again. Same message. I check the time. 7:48 AM. They don&apos;t open for another hour.</p>
+
+<p>I sit on the bathroom floor. In my dead grandmother&apos;s hoodie that swims on me now. In boxers that won&apos;t stay up on hips that are six inches wider than they were eight hours ago. I sit and I cry and I wait.</p>
+
+<p>At 9:15, I try again. A different voice from last night&apos;s receptionist. I try to explain. The words come out in a torrent of panic and broken sentences.</p>
+
+<<Dialogue "You" "😰" "I need to speak to Dr. Amelia. NOW. Something happened. Something   I'm   my body " "you">>
+
+<<Dialogue "NovaCure Intake" "☎️" "Sir, can you describe " "">>
+
+<<Dialogue "You" "😰" "I WOKE UP AS A WOMAN." "you">>
+
+<p>A long pause. So long I check to see if the call dropped.</p>
+
+<<Dialogue "NovaCure Intake" "☎️" "...2 PM, Mr.  I'm sorry, can you come in at 2 PM? We'll have Dr. Amelia available." "">>
+
+<<Dialogue "You" "😰" "I'll be there." "you">>
+
+<p>I hang up. Five hours. I have to exist in this body for five more hours before anyone can look at me and tell me what happened and fix it. Fix me. Change me back.</p>
+
+<p>I stand up. Catch my reflection in the mirror again. The woman on the bathroom floor. Tear-streaked. Hair a mess. Drowning in a man&apos;s hoodie. Terrified.</p>
+
+<p>She looks like me. She looks like my grandmother. She looks like nobody I&apos;ve ever met.</p>
+
+<p>I look away first.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>Try to hold it together</span>' "Home">>
+		<<set $mustReturnToNovaCure to true>>
+		<<run window.rbAddJournalEntry("Something Happened", "I woke up transformed. NovaCure can see me at 2 PM. I don't know how I'm supposed to exist until then.")>>
+	<</link>>
+</div>

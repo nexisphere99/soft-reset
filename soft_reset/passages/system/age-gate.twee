@@ -1,0 +1,16 @@
+:: AgeGate [nobr]
+<div class="age-gate">
+	<div class="age-gate-icon">🔞</div>
+	<h1>Age Verification</h1>
+	<p class="age-gate-sub">SOFT RESET contains explicit sexual content, mature themes, and graphic descriptions. You must be 18 or older to continue.</p>
+	<div class="age-gate-warning">
+		<p>This game includes: nudity, sexual acts, BDSM, transformation, strong language, drug/alcohol references, and themes of identity and consent.</p>
+	</div>
+	<div style="margin-top:1.5rem; display:flex; flex-direction:column; gap:.6rem; width:100%; max-width:320px;">
+		<<link '<span class="btn-primary btn-block">I am 18 or older   Enter</span>' "D00_Morning">>
+			<<set $player.name to "Aida">>
+			<<set $player.maleName to "Aiden">>
+		<</link>>
+		<<link '<span class="btn-secondary btn-block">I am under 18   Leave</span>' "Start">><</link>>
+	</div>
+</div>

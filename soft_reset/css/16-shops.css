@@ -1,0 +1,43 @@
+/* ==========================================================================
+   SOFT_RESET   16 SHOPS (clothing / sex toy / grocery grids)
+   ========================================================================== */
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+  margin: var(--sp-4) 0;
+}
+
+.shop-item {
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur-sm));
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform var(--t-fast) var(--ease), border-color var(--t-fast) var(--ease);
+}
+.shop-item:hover { transform: translateY(-4px); border-color: var(--border-hi); box-shadow: var(--shadow-glow-accent); }
+.shop-item-img { aspect-ratio: 1; background: var(--grad-soft); }
+.shop-item-body { padding: .6rem .7rem; }
+.shop-item-name { font-size: .8rem; font-weight: 700; }
+.shop-item-price { font-size: .78rem; font-weight: 800; color: var(--gold); margin-top: .2rem; }
+.shop-item.owned { opacity: .55; }
+.shop-item-badge {
+  font-size: .6rem; font-weight: 800; text-transform: uppercase;
+  padding: .1rem .45rem; border-radius: var(--r-pill);
+  background: var(--accent-glow); color: var(--accent);
+}
+
+.shop-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--sp-3);
+}
+.shop-balance { font-weight: 800; color: var(--gold); }
+
+@media (max-width: 600px) {
+  .shop-grid { grid-template-columns: repeat(2, 1fr); }
+}

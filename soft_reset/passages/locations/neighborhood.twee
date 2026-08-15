@@ -1,0 +1,65 @@
+:: Outside [nobr]
+<<CurrentObjective>>
+<<HUD>>
+
+<<if not $leftApartmentOnce>>
+<div class="prose-block">
+<p>I lock the door behind me. The hallway smells like someone else&apos;s breakfast. Something good. Something real. My stomach tightens, whether or not I&apos;ve eaten.</p>
+</div>
+<<set $leftApartmentOnce to true>>
+<</if>>
+
+<<if $novaCureDay1Done and not $seenWalkHomeD1>>
+<<ImagePlaceholder "Walking home past a bar, a whistle, a hand around her keys" "banner" "assets/characters/mc-female-phase1/walk-home-whistle.png">>
+<div class="prose-block">
+<p>The walk home from the bus stop takes seven minutes. It used to take five. Shorter legs. Shorter stride. My hips sway with each step   I&apos;m not doing it on purpose. It&apos;s how this skeleton moves.</p>
+<p>I pass a group of men outside a bar. Four of them. Beers in hand. I don&apos;t look at them. I look at the sidewalk. My hood is up. My hands are in my pockets.</p>
+<p>A whistle. Sharp, two-toned, the universal sound of a man reducing a woman to her outline.</p>
+<p>I walk faster. My heart hammers. My keys are in my pocket   I pull them out, hold one between my fingers, a weapon I didn&apos;t know I&apos;d need until this exact second. This is what women do. This is what women have always done. I never thought about it. Not once. Not in twenty years of being the species that whistles.</p>
+</div>
+<<set $seenWalkHomeD1 to true>>
+<</if>>
+
+<<ObjectiveBanner>>
+
+<div class="map-here">📍 Southbank Residential</div>
+<h1>The <span class="accent">Neighborhood</span></h1>
+
+<div class="location-grid">
+
+<<if $dashdropDone>>
+	<div class="loc-card locked">
+		<span class="loc-icon">🛵</span>
+		<span class="loc-name">DashDrop Zone</span>
+		<span class="loc-lock-req">Shift&apos;s done for today</span>
+	</div>
+<<else>>
+	<<link '<div class="loc-card"><span class="loc-icon">🛵</span><span class="loc-name">DashDrop Zone</span><span class="loc-hint">Start your shift</span></div>' "D00_Delivery1">><</link>>
+<</if>>
+
+<<link '<div class="loc-card"><span class="loc-icon">🏪</span><span class="loc-name">Lucky Mart</span><span class="loc-hint">Corner store   snacks, essentials</span></div>' "CornerStore">><</link>>
+
+<<link '<div class="loc-card"><span class="loc-icon">🧥</span><span class="loc-name">Second Chances</span><span class="loc-hint">Thrift store   secondhand everything</span></div>' "ThriftStore">><</link>>
+
+<div class="loc-card locked">
+	<span class="loc-icon">🏠</span>
+	<span class="loc-name">Jake&apos;s Apartment</span>
+	<span class="loc-lock-req">You told him &quot;maybe.&quot; Text him first.</span>
+</div>
+
+<<link '<div class="loc-card"><span class="loc-icon">🧺</span><span class="loc-name">Suds Laundromat</span><span class="loc-hint">Wash, wait, watch the spin cycle</span></div>' "Laundromat">><</link>>
+
+<div class="loc-card locked">
+	<span class="loc-icon">🏘️</span>
+	<span class="loc-name">Mrs. Park&apos;s Office</span>
+	<span class="loc-lock-req">Rent&apos;s not due yet</span>
+</div>
+
+<<link '<div class="loc-card"><span class="loc-icon">🛤️</span><span class="loc-name">Walking Trail</span><span class="loc-hint">Jog, walk, the pond, a bench</span></div>' "WalkingTrail">><</link>>
+
+</div>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<link '<span>🗺️ Leave the neighborhood</span>' "WorldMap">><</link>>
+	<<link '<span>🏠 Head back home</span>' "Home">><</link>>
+</div>

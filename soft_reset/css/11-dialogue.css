@@ -1,0 +1,81 @@
+/* ==========================================================================
+   SOFT_RESET   11 DIALOGUE
+   ========================================================================== */
+
+.dialogue-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  margin: var(--sp-4) 0;
+  max-width: var(--max-prose);
+}
+
+.dl-line {
+  display: flex;
+  align-items: flex-start;
+  gap: .6rem;
+  max-width: 88%;
+  margin: .7rem 0;
+}
+
+.dl-avatar {
+  flex: none;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  background: var(--glass);
+  border: 1px solid var(--border-hi);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.dl-name {
+  font-size: .66rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--text2);
+  margin-bottom: .2rem;
+}
+
+.dl-bubble {
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur-sm));
+  -webkit-backdrop-filter: blur(var(--blur-sm));
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  border-top-left-radius: 4px;
+  padding: .65rem 1rem;
+  font-size: .9rem;
+  color: var(--text);
+}
+
+/* MC / player lines: right-aligned, reversed avatar order */
+.dl-line.you {
+  flex-direction: row-reverse;
+  margin-left: auto;
+}
+.dl-line.you .dl-name { text-align: right; }
+.dl-line.you .dl-bubble {
+  background: var(--grad-primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--r-md);
+  border-top-right-radius: 4px;
+  box-shadow: var(--shadow-glow-accent);
+}
+.dl-line.you .dl-avatar { background: var(--grad-primary); border: none; box-shadow: var(--shadow-glow-accent); }
+
+/* Per-character name colors */
+.dl-name--jake     { color: var(--blue); }
+.dl-name--marcus   { color: var(--red); }
+.dl-name--sophie   { color: var(--rose); }
+.dl-name--river    { color: var(--green); }
+.dl-name--vanessa  { color: var(--accent); }
+.dl-name--dr\.-amelia,
+.dl-name--dr-amelia  { color: #7fd4d4; }
+.dl-name--nurse-patel { color: var(--green); }
+.dl-name--mrs\.-calloway,
+.dl-name--mrs-calloway { color: var(--gold); }

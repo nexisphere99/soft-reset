@@ -1,0 +1,128 @@
+/* ==========================================================================
+   SOFT_RESET   18 PHONE OVERLAY (iOS-style)
+   ========================================================================== */
+
+#phone-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-overlay);
+  background: rgba(10, 4, 20, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--t-med) var(--ease);
+}
+#phone-overlay.open { opacity: 1; pointer-events: auto; }
+
+.phone-frame {
+  width: 380px;
+  max-width: 92vw;
+  height: 760px;
+  max-height: 88vh;
+  background: linear-gradient(180deg, #1a0c2c, #0a0414);
+  border: 6px solid #1a0c2c;
+  border-radius: 44px;
+  box-shadow: var(--shadow-lg), 0 0 0 1px var(--border-hi), 0 0 60px var(--accent-glow);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  transform: scale(.96) translateY(10px);
+  transition: transform var(--t-med) var(--ease);
+}
+#phone-overlay.open .phone-frame { transform: scale(1) translateY(0); }
+
+.phone-notch {
+  position: absolute;
+  top: 6px; left: 50%; transform: translateX(-50%);
+  width: 120px; height: 24px;
+  background: #0a0414;
+  border-radius: var(--r-pill);
+  z-index: 2;
+}
+
+.phone-statusbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: .6rem 1.1rem .2rem;
+  font-size: .7rem; font-weight: 800; color: var(--text2);
+}
+
+.phone-close {
+  position: absolute;
+  top: -2.6rem; right: 0;
+  background: var(--grad-primary);
+  border: none;
+  color: #fff;
+  width: 2.3rem; height: 2.3rem;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-glow-accent);
+}
+
+.phone-screen {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--sp-2) var(--sp-3);
+}
+
+.phone-app-title {
+  font-family: var(--font-head);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: var(--sp-2) var(--sp-1);
+}
+
+.phone-tabs {
+  display: flex;
+  border-top: 1px solid var(--border);
+  background: rgba(255,255,255,.02);
+  padding: .5rem 0 .8rem;
+}
+.phone-tab {
+  flex: 1;
+  display: flex; flex-direction: column; align-items: center; gap: .18rem;
+  font-size: .6rem; color: var(--text3);
+  cursor: pointer;
+}
+.phone-tab.active {
+  background: var(--grad-primary);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  font-weight: 700;
+}
+.phone-tab-icon { font-size: 1.15rem; }
+
+/* SMS thread list */
+.sms-thread-row {
+  display: flex; align-items: center; gap: .6rem;
+  padding: .6rem .3rem;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+.sms-thread-avatar {
+  width: 2.7rem; height: 2.7rem; border-radius: 50%;
+  background: var(--grad-primary); display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; flex: none;
+}
+.sms-thread-name { font-weight: 700; font-size: .85rem; }
+.sms-thread-preview { font-size: .74rem; color: var(--text3); }
+.sms-thread-time { font-size: .64rem; color: var(--text3); margin-left: auto; }
+
+/* SMS bubbles */
+.sms-bubbles { display: flex; flex-direction: column; gap: .4rem; padding: var(--sp-2) 0; }
+.sms-bubble-row { display: flex; }
+.sms-bubble-row.them { justify-content: flex-start; }
+.sms-bubble-row.you { justify-content: flex-end; }
+.sms-bubble {
+  max-width: 75%;
+  padding: .5rem .85rem;
+  border-radius: 18px;
+  font-size: .82rem;
+}
+.sms-bubble-row.them .sms-bubble { background: var(--glass); color: var(--text); border-bottom-left-radius: 4px; border: 1px solid var(--border); }
+.sms-bubble-row.you .sms-bubble { background: var(--grad-primary); color: #fff; border-bottom-right-radius: 4px; box-shadow: var(--shadow-glow-accent); }

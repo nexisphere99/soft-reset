@@ -1,0 +1,99 @@
+/* ==========================================================================
+   SOFT_RESET   01 TOKENS
+   Design tokens: purple/magenta glass aesthetic.
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,500;1,9..144,600&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Surfaces   deep plum/black, glass over gradient */
+  --bg:            #0a0414;
+  --bg2:           #140823;
+  --surface:       #1c0f30cc;
+  --surface2:      #26123fcc;
+  --card:          #1f1033b3;
+  --card-hover:    #2c1548d9;
+  --glass:         rgba(38, 15, 63, 0.55);
+  --glass-hi:      rgba(58, 22, 92, 0.65);
+  --blur:          20px;
+  --blur-sm:       10px;
+
+  --border:        rgba(255, 255, 255, 0.08);
+  --border-hi:     rgba(240, 120, 235, 0.4);
+  --border-glow:   rgba(217, 70, 239, 0.55);
+
+  /* Accents   purplish-pink core palette */
+  --accent:        #e04fef;   /* primary fuchsia */
+  --accent2:       #9d3df0;   /* violet-magenta */
+  --accent-dim:    #e04fefaa;
+  --accent-glow:   rgba(224, 79, 239, 0.4);
+  --violet:        #8b5cf6;
+  --violet-glow:   rgba(139, 92, 246, 0.38);
+  --rose:          #ff5fa8;   /* hot pink */
+  --rose-dim:      #ff5fa8aa;
+  --rose-glow:     rgba(255, 95, 168, 0.35);
+
+  --grad-primary:  linear-gradient(135deg, #ff5fa8 0%, #e04fef 48%, #9d3df0 100%);
+  --grad-soft:     linear-gradient(135deg, rgba(255,95,168,.16), rgba(157,61,240,.16));
+  --grad-border:   linear-gradient(135deg, #ff8fd4, #b45cf5);
+  --grad-mesh:
+    radial-gradient(ellipse 1000px 700px at 10% -10%, rgba(224,79,239,.22), transparent 60%),
+    radial-gradient(ellipse 900px 650px at 100% 0%, rgba(139,92,246,.18), transparent 55%),
+    radial-gradient(ellipse 800px 900px at 50% 120%, rgba(255,95,168,.14), transparent 60%);
+
+  /* Text */
+  --text:          #fbf2ff;
+  --text2:         #cba7e6;
+  --text3:         #82678f;
+
+  /* Stat / functional colors */
+  --gold:          #fbbf24;
+  --gold-glow:     rgba(251, 191, 36, 0.3);
+  --green:         #34d399;
+  --green-glow:    rgba(52, 211, 153, 0.3);
+  --blue:          #818cf8;
+  --blue-glow:     rgba(129, 140, 248, 0.32);
+  --red:           #fb7185;
+  --red-glow:      rgba(251, 113, 133, 0.32);
+
+  /* Fonts */
+  --font-body:      'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-head:      'Fraunces', Georgia, serif;
+
+  /* Spacing (8px grid, base unit .4rem) */
+  --sp-1: .4rem;
+  --sp-2: .8rem;
+  --sp-3: 1.2rem;
+  --sp-4: 1.6rem;
+  --sp-5: 2.4rem;
+  --sp-6: 3.2rem;
+
+  /* Radii   bigger, softer */
+  --r-sm:   10px;
+  --r-md:   16px;
+  --r-lg:   24px;
+  --r-pill: 999px;
+
+  /* Shadows / glow */
+  --shadow-sm:  0 4px 16px #00000050;
+  --shadow-md:  0 10px 36px #00000060;
+  --shadow-lg:  0 20px 60px #00000075;
+  --shadow-glow-accent: 0 0 0 1px var(--border-glow), 0 0 32px var(--accent-glow);
+  --shadow-glow-rose:   0 0 0 1px var(--rose-glow), 0 0 32px var(--rose-glow);
+
+  /* Layout */
+  --w-uibar: 240px;
+  --max-prose: 58ch;
+  --max-choice: 480px;
+
+  /* Transitions */
+  --ease: cubic-bezier(.4, 0, .2, 1);
+  --t-fast: .15s;
+  --t-med:  .28s;
+  --t-slow: .45s;
+
+  /* Z-index scale */
+  --z-hud: 10;
+  --z-overlay: 900;
+  --z-modal: 950;
+  --z-toast: 999;
+}

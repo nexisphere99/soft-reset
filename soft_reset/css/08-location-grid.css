@@ -1,0 +1,134 @@
+/* ==========================================================================
+   SOFT_RESET   08 LOCATION GRID
+   ========================================================================== */
+
+.location-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+  margin: var(--sp-4) 0;
+}
+
+.loc-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  text-align: center;
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur-sm));
+  -webkit-backdrop-filter: blur(var(--blur-sm));
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-4) var(--sp-2);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform var(--t-fast) var(--ease), border-color var(--t-fast) var(--ease), background var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
+}
+.loc-card::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: var(--grad-soft);
+  opacity: 0;
+  transition: opacity var(--t-fast) var(--ease);
+}
+.loc-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  border-color: var(--border-hi);
+  box-shadow: var(--shadow-glow-accent);
+}
+.loc-card:hover::before { opacity: 1; }
+
+.loc-icon {
+  position: relative;
+  z-index: 1;
+  font-size: 1.7rem;
+  line-height: 1;
+  width: 3.2rem; height: 3.2rem;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  background: var(--grad-primary);
+  box-shadow: var(--shadow-glow-accent);
+}
+.loc-name { position: relative; z-index: 1; font-family: var(--font-head); font-weight: 600; font-size: .95rem; color: var(--text); }
+.loc-hint { position: relative; z-index: 1; font-size: .7rem; color: var(--text3); }
+
+.loc-card.locked {
+  opacity: .5;
+  cursor: default;
+}
+.loc-card.locked .loc-icon { background: #ffffff10; box-shadow: none; filter: grayscale(1); }
+.loc-card.locked:hover { transform: none; box-shadow: none; border-color: var(--border); }
+.loc-card.locked:hover::before { opacity: 0; }
+.loc-lock-req { position: relative; z-index: 1; font-size: .64rem; color: var(--rose); margin-top: .1rem; }
+
+@media (max-width: 600px) {
+  .location-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ==========================================================================
+   Objective banner   glowing quest card. The single "what do I do next"
+   readout. Points at a location, never at a passage.
+   ========================================================================== */
+.objective-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  max-width: var(--max-prose);
+  margin: 0 auto var(--sp-4);
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
+  border: 1px solid var(--border-hi);
+  border-radius: var(--r-lg);
+  padding: .9rem 1.2rem;
+  box-shadow: 0 0 40px var(--accent-glow);
+  overflow: hidden;
+}
+.objective-banner::before {
+  content: '';
+  position: absolute; inset: 0 auto 0 0; width: 4px;
+  background: var(--grad-primary);
+}
+.ob-icon {
+  font-size: 1.4rem; flex: none;
+  width: 2.6rem; height: 2.6rem;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  background: var(--grad-primary);
+  box-shadow: var(--shadow-glow-accent);
+  animation: ob-pulse 2.4s ease-in-out infinite;
+}
+@keyframes ob-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 var(--accent-glow), var(--shadow-glow-accent); }
+  50% { box-shadow: 0 0 0 8px transparent, var(--shadow-glow-accent); }
+}
+.ob-label {
+  display: block;
+  font-size: .64rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  background: var(--grad-primary);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.ob-text { display: block; font-size: .9rem; color: var(--text); font-weight: 600; }
+
+/* ==========================================================================
+   Map hub heading   small "you are here" context line above a location
+   grid (used on the Home and Outside hubs).
+   ========================================================================== */
+.map-here {
+  max-width: var(--max-prose);
+  margin: 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--rose);
+}

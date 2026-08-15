@@ -1,0 +1,24 @@
+:: ThriftStore [nobr]
+<<HUD>>
+
+<<if not $metDolores>>
+<div class="prose-block">
+<p>Racks of secondhand everything, color-coded, a faint smell of other people&apos;s closets. A woman behind the counter   sixties, reading glasses on a beaded chain, a cardigan that&apos;s survived more decades than you&apos;ve been alive   looks up and nods instead of smiling, which somehow feels more genuine.</p>
+</div>
+
+<<Dialogue "Dolores" "🧵" "Let me know if you need a size. Everything's a dollar off on Thursdays." "">>
+
+<<set $metDolores to true>>
+<<else>>
+<div class="prose-block">
+<p>Dolores gives you the same nod as last time. Same racks, mostly   a shop like this turns over slow.</p>
+</div>
+<</if>>
+
+<div class="action-list">
+	<<link '<span class="action-icon">🧥</span><span class="action-text">Flip through the racks<span class="action-sub">Not much in your size, or your budget, right now</span></span>' "ThriftStore">><</link>>
+</div>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<link '<span>← Back outside</span>' "Outside">><</link>>
+</div>

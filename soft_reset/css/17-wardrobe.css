@@ -1,0 +1,44 @@
+/* ==========================================================================
+   SOFT_RESET   17 WARDROBE
+   ========================================================================== */
+
+.wardrobe-slots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--sp-2);
+  margin: var(--sp-4) 0;
+}
+
+.wardrobe-slot {
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur-sm));
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: var(--sp-2);
+  text-align: center;
+}
+.wardrobe-slot-label { font-size: .64rem; text-transform: uppercase; letter-spacing: .06em; color: var(--text3); }
+.wardrobe-slot-item { font-size: .82rem; font-weight: 700; margin-top: .25rem; }
+.wardrobe-slot.empty .wardrobe-slot-item { color: var(--text3); font-weight: 400; font-style: italic; }
+
+.wardrobe-picker {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-2);
+  margin: var(--sp-3) 0;
+}
+.wardrobe-item {
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--glass);
+  padding: .5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color var(--t-fast) var(--ease);
+}
+.wardrobe-item:hover { border-color: var(--border-hi); }
+.wardrobe-item.equipped { border-color: var(--accent); box-shadow: var(--shadow-glow-accent); }
+
+@media (max-width: 600px) {
+  .wardrobe-picker { grid-template-columns: repeat(2, 1fr); }
+}

@@ -1,0 +1,217 @@
+/* ==========================================================================
+   SOFT_RESET   03 SIDEBAR (SugarCube #ui-bar)
+   Glass panel, gradient edge, pill-badge stats.
+   ========================================================================== */
+
+#ui-bar {
+  width: var(--w-uibar) !important;
+  background: linear-gradient(180deg, #1a0c2ce6, #0a0414f2) !important;
+  backdrop-filter: blur(var(--blur)) !important;
+  -webkit-backdrop-filter: blur(var(--blur)) !important;
+  border-right: 1px solid var(--border) !important;
+  box-shadow: 4px 0 40px #00000060, inset -1px 0 0 var(--border-glow);
+}
+
+/* Content is only pushed by the bar on wide-enough viewports; on mobile
+   it overlays instead (see 28-nav-toggles.css). Whether it's open or
+   stowed is decided by nav-toggles.js via the "rb-left-open" class. */
+@media (min-width: 900px) {
+  html.rb-left-open #story { margin-left: var(--w-uibar) !important; }
+  html:not(.rb-left-open) #story { margin-left: 0 !important; }
+}
+
+/* SugarCube's own toggle button is replaced by our circular edge handle
+   (see 28-nav-toggles.css)   hide it but leave it in the DOM so its
+   click still drives SugarCube's real stow bookkeeping. */
+#ui-bar-toggle {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+#ui-bar-body {
+  padding: var(--sp-3) var(--sp-2) var(--sp-3) !important;
+}
+
+/* History back/forward   SugarCube's stock #ui-bar-history controls,
+   left in their default top-of-sidebar spot but reskinned to match.
+   Backward/Forward disabled state is entirely managed by SugarCube
+   itself (based on State.index), we only handle the look. */
+#ui-bar-history {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  margin: .3rem auto 0 !important;
+}
+#ui-bar-history button:not(:first-child) { margin-left: 0 !important; }
+#ui-bar-history button {
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background: var(--glass) !important;
+  border: 1px solid var(--border) !important;
+  backdrop-filter: blur(var(--blur-sm));
+  -webkit-backdrop-filter: blur(var(--blur-sm));
+  color: var(--text2) !important;
+  transition: all var(--t-fast) var(--ease);
+}
+#ui-bar-history button::before { font-size: 1em !important; }
+#ui-bar-history button:hover:not(:disabled) {
+  background: var(--grad-primary) !important;
+  border-color: transparent !important;
+  color: #fff !important;
+  box-shadow: var(--shadow-glow-accent);
+  transform: scale(1.08);
+}
+#ui-bar-history button:active:not(:disabled) { transform: scale(.94); }
+#ui-bar-history button:disabled {
+  opacity: .3;
+  color: var(--text3) !important;
+  cursor: default;
+}
+/* Jump-to isn't part of our two-button design, hide it if it ever renders. */
+#history-jumpto { display: none !important; }
+
+/* Title block */
+#story-title {
+  font-family: var(--font-head);
+  font-size: 1.65rem;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: .01em;
+  text-align: center;
+  background: var(--grad-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: var(--sp-2) 0 0;
+  filter: drop-shadow(0 0 18px var(--accent-glow));
+}
+#story-title::before { content: '🦋 '; filter: none; -webkit-text-fill-color: initial; }
+
+#story-title-separator { display: none !important; }
+
+/* Caption = SOFT_RESET sidebar content */
+#story-caption {
+  margin-top: var(--sp-3);
+  font-size: .85rem;
+}
+
+.rb-side {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.rb-side-section {
+  position: relative;
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur-sm));
+  -webkit-backdrop-filter: blur(var(--blur-sm));
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: var(--sp-2) var(--sp-3);
+  overflow: hidden;
+}
+.rb-side-section::before {
+  content: '';
+  position: absolute; inset: 0 0 auto 0; height: 2px;
+  background: var(--grad-primary);
+  opacity: .8;
+}
+
+.rb-side-daytime {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-2) var(--sp-1);
+}
+.rb-side-day { font-family: var(--font-head); font-weight: 700; font-size: 1.1rem; color: var(--text); }
+.rb-side-day .accent { color: var(--rose); }
+.rb-side-weekday { font-size: .7rem; color: var(--text3); text-transform: uppercase; letter-spacing: .1em; }
+.rb-side-time {
+  display: flex; align-items: center; gap: .35rem;
+  font-size: .8rem; color: var(--text); font-weight: 700;
+  padding: .3rem .7rem;
+  border-radius: var(--r-pill);
+  background: var(--grad-soft);
+  border: 1px solid var(--border-hi);
+}
+
+.rb-stat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .38rem 0;
+  font-size: .78rem;
+}
+.rb-stat-row + .rb-stat-row { border-top: 1px solid var(--border); }
+.rb-stat-label { color: var(--text3); font-weight: 700; letter-spacing: .05em; text-transform: uppercase; font-size: .66rem; }
+.rb-stat-val {
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  padding: .1rem .55rem;
+  border-radius: var(--r-pill);
+  background: #ffffff0d;
+}
+
+.rb-money-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-1) var(--sp-1);
+}
+.rb-money-label { font-size: .7rem; color: var(--text3); text-transform: uppercase; letter-spacing: .1em; font-weight: 700; }
+.rb-money-val {
+  font-family: var(--font-head);
+  font-weight: 700; font-style: italic;
+  font-size: 1.25rem;
+  background: linear-gradient(120deg, var(--gold), #fde68a);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+
+.rb-side-links {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+.rb-side-link {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  padding: .55rem .7rem;
+  border-radius: var(--r-sm);
+  color: var(--text2);
+  font-size: .8rem;
+  font-weight: 600;
+  transition: background var(--t-fast) var(--ease), color var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
+}
+.rb-side-link:hover { background: var(--grad-soft); color: var(--text); transform: translateX(3px); }
+.rb-side-link.disabled { color: var(--text3); opacity: .5; cursor: default; pointer-events: none; }
+
+/* Story menu (Saves/Settings/etc) restyle */
+#story-menu {
+  margin-top: var(--sp-3) !important;
+  padding-top: var(--sp-3) !important;
+  border-top: 1px solid var(--border) !important;
+}
+#story-menu li { margin: 0 0 .4rem !important; }
+#story-menu a, #story-menu button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: var(--glass) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--r-sm) !important;
+  padding: .55rem .8rem !important;
+  font-size: .78rem !important;
+  font-weight: 600 !important;
+  color: var(--text2) !important;
+  transition: all var(--t-fast) var(--ease) !important;
+}
+#story-menu a:hover, #story-menu button:hover {
+  background: var(--grad-primary) !important;
+  border-color: transparent !important;
+  color: #fff !important;
+  box-shadow: var(--shadow-glow-accent);
+}

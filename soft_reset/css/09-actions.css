@@ -1,0 +1,66 @@
+/* ==========================================================================
+   SOFT_RESET   09 ACTION BUTTONS
+   ========================================================================== */
+
+.action-list {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  max-width: 100%;
+  margin: var(--sp-4) 0;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur-sm));
+  -webkit-backdrop-filter: blur(var(--blur-sm));
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: .8rem 1.1rem;
+  cursor: pointer;
+  transition: transform var(--t-fast) var(--ease), border-color var(--t-fast) var(--ease), background var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
+}
+.action-btn:hover {
+  transform: translateX(6px);
+  border-color: var(--border-hi);
+  background: var(--card-hover);
+  box-shadow: var(--shadow-glow-accent);
+}
+
+.action-icon {
+  font-size: 1.1rem; flex: none;
+  width: 2.4rem; height: 2.4rem;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  background: var(--grad-soft);
+  border: 1px solid var(--border);
+}
+.action-text { flex: 1; font-size: .9rem; font-weight: 600; color: var(--text); }
+.action-sub { display: block; font-size: .72rem; color: var(--text3); font-weight: 400; margin-top: .1rem; }
+
+.action-cost {
+  flex: none;
+  font-size: .7rem;
+  font-weight: 800;
+  padding: .2rem .6rem;
+  border-radius: var(--r-pill);
+  background: var(--gold-glow);
+  color: var(--gold);
+}
+
+.action-fem { border-color: var(--rose-glow); }
+.action-fem:hover { border-color: var(--rose); box-shadow: var(--shadow-glow-rose); }
+.action-fem .action-icon { background: linear-gradient(135deg, var(--rose-glow), transparent); }
+
+.action-quest { border-color: var(--accent-glow); }
+.action-quest:hover { border-color: var(--accent); }
+.action-quest .action-icon { background: var(--grad-primary); }
+
+.action-locked {
+  opacity: .45;
+  cursor: default;
+  pointer-events: none;
+}

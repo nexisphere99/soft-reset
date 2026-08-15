@@ -1,0 +1,27 @@
+:: D00_Morning [nobr]
+<<set $day to 0>>
+<<set $timeslot to "Morning">>
+<<set $weekDay to "Thursday">>
+<<HUD>>
+
+<<SceneDivider "Thursday Morning   6:45 AM">>
+
+<<ImagePlaceholder "POV from the mattress   water-stained ceiling, grey dawn light, cracked phone alarm" "banner" "assets/locations/apartment/d00-morning-pov.png">>
+
+<div class="prose-block">
+
+<p>The alarm screams at 6:45 like it always does   that default iPhone tone I&apos;ve come to associate with the specific flavor of dread that accompanies being alive. I reach for the phone without opening my eyes, thumb sliding across the cracked screen to kill it. Snooze. Nine more minutes of not existing.</p>
+
+<p>I hit snooze again at 6:54.</p>
+
+<p>At 7:03, I peel my eyes open and stare at the ceiling. There&apos;s a water stain directly above my mattress, brown and vaguely fist-shaped, that&apos;s been there since I moved in eight months ago. I&apos;ve thought about complaining to Mrs. Park, my landlord, but Mrs. Park is a 5&apos;1&quot; Korean-American woman in her sixties who already thinks I&apos;m a deadbeat, and I&apos;m two months behind on rent, so the water stain stays. Everything stays. That&apos;s the thing about being broke   nothing changes because change costs money.</p>
+
+<p>I sit up. The mattress is on the floor because a bed frame was $80 I didn&apos;t have when I moved in and haven&apos;t had since. The sheets are grey   originally white, but laundry costs $3.50 a load and I space it out. My studio apartment is exactly what you&apos;d expect for $650 a month in a neighborhood that&apos;s &quot;up and coming&quot; the way a boxer is &quot;getting back up&quot; between rounds: half-heartedly and probably just to get hit again.</p>
+
+<p>Studio apartment. One room split into the illusion of several: a mattress in one corner, a kitchenette against the far wall, a bathroom door that barely clears the toilet when it swings open. Home, such as it is.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>Get up and see what the day wants from you</span>' "Home">><</link>>
+</div>

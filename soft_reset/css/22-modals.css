@@ -1,0 +1,56 @@
+/* ==========================================================================
+   SOFT_RESET   22 GENERIC MODAL / OVERLAY
+   ========================================================================== */
+
+.rb-modal-overlay {
+  position: fixed; inset: 0;
+  z-index: var(--z-modal);
+  background: rgba(10, 4, 20, 0.75);
+  backdrop-filter: blur(10px);
+  display: flex; align-items: center; justify-content: center;
+  padding: var(--sp-3);
+}
+
+.rb-modal {
+  background: var(--glass-hi);
+  backdrop-filter: blur(var(--blur));
+  border: 1px solid var(--border-hi);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-lg);
+  max-width: 480px;
+  width: 100%;
+  max-height: 84vh;
+  overflow-y: auto;
+  padding: var(--sp-4);
+}
+.rb-modal-title { font-family: var(--font-head); font-weight: 700; font-style: italic; font-size: 1.2rem; margin-bottom: var(--sp-2); }
+.rb-modal-close {
+  position: absolute; top: var(--sp-2); right: var(--sp-2);
+  width: 2rem; height: 2rem; border-radius: 50%;
+  background: var(--grad-primary); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+}
+
+/* SugarCube's own dialog (Saves/Settings) */
+#ui-dialog {
+  background: var(--glass-hi) !important;
+  backdrop-filter: blur(var(--blur)) !important;
+  border: 1px solid var(--border-hi) !important;
+  border-radius: var(--r-lg) !important;
+  box-shadow: var(--shadow-lg) !important;
+  color: var(--text) !important;
+}
+#ui-dialog-titlebar {
+  background: transparent !important;
+  border-bottom: 1px solid var(--border) !important;
+  color: var(--text) !important;
+  font-family: var(--font-head) !important;
+  font-style: italic;
+}
+#ui-dialog-body { color: var(--text) !important; }
+#ui-overlay { background: rgba(10, 4, 20, 0.75) !important; backdrop-filter: blur(8px); }
+
+.saves-list-story, .saves-list-slot, .saves-list-details {
+  color: var(--text2) !important;
+}

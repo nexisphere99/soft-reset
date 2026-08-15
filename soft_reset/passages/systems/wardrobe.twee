@@ -1,0 +1,30 @@
+:: Wardrobe [nobr]
+<<HUD>>
+
+<div class="eyebrow">CLOSET</div>
+<h1>Your <span class="accent">Wardrobe</span></h1>
+
+<div class="content-col">
+
+<div class="wardrobe-slots">
+	<<for _slot range Object.keys($equipped)>>
+		<div class="wardrobe-slot">
+			<div class="wardrobe-slot-label">_slot</div>
+			<<if $equipped[_slot]>>
+				<div class="wardrobe-slot-item"><<= $equipped[_slot].name>></div>
+			<<else>>
+				<div class="wardrobe-slot-item">  empty  </div>
+			<</if>>
+		</div>
+	<</for>>
+</div>
+
+<<if $wardrobe.length is 0>>
+	<p class="text3 small" style="margin-top:1.4rem;">You don't own any clothes yet beyond what you're wearing. The mall and thrift store will change that soon enough.</p>
+<</if>>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<back '<span>← Back</span>'>>
+</div>
+
+</div>

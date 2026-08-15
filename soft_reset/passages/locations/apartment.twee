@@ -1,0 +1,36 @@
+:: Home [nobr]
+<<CurrentObjective>>
+<<HUD>>
+<<ObjectiveBanner>>
+
+<<if not $rentPaid and not $sawMrsParkRentReminder>>
+<<SceneDivider "In the Hallway">>
+<div class="prose-block">
+<p>The door to 4B opens as I&apos;m coming in. Mrs. Park is standing in the hallway. How long has she been standing there?</p>
+</div>
+<<Dialogue "Mrs. Park" "🔑" "Ms. Cole." "">>
+<<Dialogue "You" "😶" "Mrs. Park." "you">>
+<<Dialogue "Mrs. Park" "🔑" "Rent." "">>
+<<Dialogue "You" "😶" "I know." "you">>
+<<Dialogue "Mrs. Park" "🔑" "Soon." "">>
+<div class="prose-block">
+<p>She turns and walks away. Her slippers make no sound on the carpet. Like a small, disappointed ghost.</p>
+</div>
+<<set $sawMrsParkRentReminder to true>>
+<</if>>
+
+<div class="map-here">📍 Home</div>
+<h1>Your <span class="accent">Apartment</span></h1>
+
+<div class="room-grid">
+	<<link '<div class="room-card"><div class="room-title">🛏️ My Room</div><div class="room-sub">Mattress, phone, the grey hoodie</div></div>' "Home_Bedroom">><</link>>
+	<<link '<div class="room-card"><div class="room-title">🚿 Bathroom</div><div class="room-sub">Cold water only</div></div>' "Home_Bathroom">><</link>>
+	<<link '<div class="room-card"><div class="room-title">🍳 Kitchen</div><div class="room-sub">Eleven ramen packets, one wobbly chair</div></div>' "Home_Kitchen">><</link>>
+	<<link '<div class="room-card"><div class="room-title">🚪 Outside</div><div class="room-sub">Lock the door behind you</div></div>' "Outside">><</link>>
+</div>
+
+<div class="action-list" style="margin-top:1.4rem;">
+	<<link '<span class="action-icon">📺</span><span class="action-text">Watch TV<span class="action-sub">Mindless. Effective.</span></span>' "Home">>
+		<<set $player.stress to Math.clamp($player.stress - 3, 0, 100)>>
+	<</link>>
+</div>

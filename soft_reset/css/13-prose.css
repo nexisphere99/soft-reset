@@ -1,0 +1,48 @@
+/* ==========================================================================
+   SOFT_RESET   13 PROSE BLOCKS + SCENE DIVIDERS
+   ========================================================================== */
+
+.prose-block {
+  /* max-width: var(--max-prose); */
+  margin: 0 auto var(--sp-4);
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text);
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+.prose-block p { margin: 0 0 1.15em; }
+
+.scene-divider {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  max-width: var(--max-prose);
+  margin: var(--sp-5) auto;
+  color: var(--rose);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.scene-divider::before, .scene-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-glow), transparent);
+}
+
+.dropcap:first-letter {
+  font-family: var(--font-head);
+  font-style: italic;
+  font-size: 3.4rem;
+  font-weight: 700;
+  float: left;
+  line-height: .8;
+  padding: .1rem .35rem 0 0;
+  background: var(--grad-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

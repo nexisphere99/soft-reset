@@ -1,0 +1,40 @@
+/* ==========================================================================
+   SOFT_RESET   23 STAT NOTIFICATIONS / TOASTS
+   ========================================================================== */
+
+.stat-toast {
+  position: fixed;
+  top: 1.4rem;
+  right: 1.4rem;
+  z-index: var(--z-toast);
+  background: var(--glass-hi);
+  backdrop-filter: blur(var(--blur));
+  border: 1px solid var(--border-hi);
+  border-radius: var(--r-pill);
+  padding: .55rem 1.1rem;
+  font-size: .82rem;
+  font-weight: 800;
+  box-shadow: var(--shadow-md), 0 0 24px var(--accent-glow);
+  opacity: 0;
+  transform: translateX(24px);
+  transition: opacity var(--t-med) var(--ease), transform var(--t-med) var(--ease);
+  pointer-events: none;
+}
+.stat-toast.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+.stat-toast ~ .stat-toast { margin-top: .5rem; }
+
+/* Stack multiple toasts */
+.stat-toast:nth-of-type(n) { top: calc(1.4rem + (var(--toast-index, 0) * 3.1rem)); }
+
+@media (max-width: 600px) {
+  .stat-toast {
+    top: auto;
+    bottom: 1.2rem;
+    right: 50%;
+    transform: translateX(50%) translateY(12px);
+  }
+  .stat-toast.show { transform: translateX(50%) translateY(0); }
+}

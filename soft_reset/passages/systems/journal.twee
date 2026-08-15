@@ -1,0 +1,49 @@
+:: Journal [nobr]
+<<HUD>>
+
+<div class="eyebrow">RECORD</div>
+<h1>Your <span class="accent">Journal</span></h1>
+
+<div class="content-col">
+
+<h3>Quests</h3>
+<div class="journal-widget">
+	<<if $journal.quests.main.length is 0 and $journal.quests.side.length is 0>>
+		<div class="journal-quest-row text3">No active quests yet.</div>
+	<<else>>
+		<<for _q range $journal.quests.main>>
+			<div class="journal-quest-row"><strong>$player.name</strong>: _q.title</div>
+		<</for>>
+		<<for _q2 range $journal.quests.side>>
+			<div class="journal-quest-row">_q2.title</div>
+		<</for>>
+	<</if>>
+</div>
+
+<h3 style="margin-top:1.6rem;">Milestones</h3>
+<<if $journal.milestones.length is 0>>
+	<p class="text3 small">Nothing notable has happened yet.</p>
+<<else>>
+	<<for _m range $journal.milestones>>
+		<div class="journal-milestone">Day _m.day   _m.name</div>
+	<</for>>
+<</if>>
+
+<h3 style="margin-top:1.6rem;">Entries</h3>
+<<if $journal.entries.length is 0>>
+	<p class="text3 small">Your story hasn't been written down yet   but it's happening.</p>
+<<else>>
+	<<for _e range $journal.entries>>
+		<div class="journal-entry">
+			<div class="journal-entry-day">Day _e.day</div>
+			<div class="journal-entry-title">_e.title</div>
+			<div class="journal-entry-text">_e.text</div>
+		</div>
+	<</for>>
+<</if>>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<back '<span>← Back</span>'>>
+</div>
+
+</div>

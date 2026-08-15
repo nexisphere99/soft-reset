@@ -1,0 +1,42 @@
+:: Laundromat [nobr]
+<<HUD>>
+<<set $laundromatVisits += 1>>
+
+<<if $laundromatVisits is 1>>
+<div class="prose-block">
+<p>Suds Laundromat. Rows of front-loaders on one side, dryers on the other, fluorescent lights with one that flickers on a private schedule. A folding table runs down the center. A TV mounted high on the wall plays an infomercial nobody&apos;s watching. One person sits in a plastic chair, reading, waiting out a cycle.</p>
+<p>The specific loneliness of doing laundry at 10 PM, available at all hours.</p>
+</div>
+<<else>>
+<div class="prose-block">
+<p>Same machines, same flickering light, same infomercial energy. The laundromat doesn&apos;t change. That&apos;s sort of the point of it.</p>
+</div>
+<</if>>
+
+<div class="action-list">
+
+<<if $player.money gte 4>>
+	<<link '<span class="action-icon">🧺</span><span class="action-text">Do a load of laundry<span class="action-sub">Thirty minutes, clean clothes after</span></span><span class="action-cost">$3.50</span>' "Laundromat">>
+		<<run window.rbSpend(3.5, "laundry")>>
+		<<set $player.stress to Math.clamp($player.stress - 3, 0, 100)>>
+		<<run window.rbAddMilestone("Did laundry like a functional adult.")>>
+	<</link>>
+<<else>>
+	<div class="action-btn action-locked"><span class="action-icon">🧺</span><span class="action-text">Do a load of laundry<span class="action-sub">You&apos;re short on quarters and dignity</span></span></div>
+<</if>>
+
+<<link '<span class="action-icon">🪑</span><span class="action-text">Sit and watch the machines spin<span class="action-sub">Cheaper than therapy</span></span>' "Laundromat">>
+	<<set $player.stress to Math.clamp($player.stress - 2, 0, 100)>>
+<</link>>
+
+<<if $player.money gte 2>>
+	<<link '<span class="action-icon">🧴</span><span class="action-text">Buy detergent pods from the vending machine<span class="action-sub">Necessary evil</span></span><span class="action-cost">$2</span>' "Laundromat">>
+		<<run window.rbSpend(2, "detergent")>>
+	<</link>>
+<</if>>
+
+</div>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<link '<span>← Back outside</span>' "Outside">><</link>>
+</div>

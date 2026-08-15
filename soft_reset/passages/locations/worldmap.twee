@@ -1,0 +1,74 @@
+:: WorldMap [nobr]
+<<HUD>>
+
+<div class="map-here">🗺️ The City</div>
+<h1>Where To <span class="accent">Next</span></h1>
+
+<div class="prose-block">
+<p class="text2 small">Seven districts. Most of them don&apos;t know you exist yet.</p>
+</div>
+
+<div class="world-map-wrap">
+	<svg class="world-map-svg" viewBox="0 0 800 640" xmlns="http://www.w3.org/2000/svg">
+		<line class="wm-road" x1="400" y1="358" x2="400" y2="90" stroke="#e04fef55" stroke-width="2"></line>
+		<line class="wm-road" x1="400" y1="358" x2="160" y2="262" stroke="#e04fef55" stroke-width="2"></line>
+		<line class="wm-road" x1="400" y1="358" x2="640" y2="262" stroke="#e04fef55" stroke-width="2"></line>
+		<line class="wm-road" x1="400" y1="358" x2="160" y2="461" stroke="#e04fef55" stroke-width="2"></line>
+		<line class="wm-road" x1="400" y1="358" x2="640" y2="461" stroke="#e04fef55" stroke-width="2"></line>
+		<line class="wm-road" x1="400" y1="358" x2="400" y2="563" stroke="#e04fef55" stroke-width="2"></line>
+
+		<rect class="wm-zone" x="295" y="20" width="210" height="140" rx="26" fill="#818cf822" stroke="#818cf866" stroke-width="2"></rect>
+		<text class="wm-zone-label" x="400" y="45">Northgate</text>
+
+		<rect class="wm-zone is-locked" x="55" y="192" width="210" height="140" rx="26" fill="#f9731622" stroke="#f9731666" stroke-width="2"></rect>
+		<text class="wm-zone-label" x="160" y="217">Westside Arts</text>
+
+		<rect class="wm-zone" x="535" y="192" width="210" height="140" rx="26" fill="#e04fef22" stroke="#e04fef66" stroke-width="2"></rect>
+		<text class="wm-zone-label" x="640" y="217">Central City</text>
+
+		<circle class="wm-zone is-locked" cx="400" cy="358" r="46" fill="#22d3ee22" stroke="#22d3ee66" stroke-width="2"></circle>
+
+		<rect class="wm-zone" x="55" y="391" width="210" height="140" rx="26" fill="#fbbf2422" stroke="#fbbf2466" stroke-width="2"></rect>
+		<text class="wm-zone-label" x="160" y="416">Southbank</text>
+
+		<rect class="wm-zone is-locked" x="535" y="391" width="210" height="140" rx="26" fill="#e11d4822" stroke="#e11d4866" stroke-width="2"></rect>
+		<text class="wm-zone-label" x="640" y="416">Velvet Row</text>
+
+		<rect class="wm-zone is-locked" x="295" y="493" width="210" height="140" rx="26" fill="#ff5fa822" stroke="#ff5fa866" stroke-width="2"></rect>
+		<text class="wm-zone-label" x="400" y="518">Lakewood Mall</text>
+	</svg>
+
+	<<link '<div class="district-card" style="left:50%; top:14%;"><span class="district-icon">🎓</span><span class="district-name">Northgate<br>University Quarter</span><span class="district-desc">Campus, classes, the life MC left behind</span></div>' "District_Northgate">><</link>>
+
+	<div class="district-card locked" style="left:20%; top:41%;">
+		<span class="district-icon">🎨</span>
+		<span class="district-name">Westside Arts District</span>
+		<span class="district-lock-req">Unlocks later</span>
+	</div>
+
+	<<link '<div class="district-card" style="left:80%; top:41%;"><span class="district-icon">🏙️</span><span class="district-name">Central City</span><span class="district-desc">Glass towers. Money. NovaCure.</span></div>' "District_Central">><</link>>
+
+	<div class="district-card locked" style="left:50%; top:56%;">
+		<span class="district-icon">🏥</span>
+		<span class="district-name">Medical Corridor</span>
+		<span class="district-lock-req">Unlocks later</span>
+	</div>
+
+	<<link '<div class="district-card" style="left:20%; top:72%;"><span class="district-icon">🏠</span><span class="district-name">Southbank Residential</span><span class="district-desc">Home.</span></div>' "Outside">><</link>>
+
+	<div class="district-card locked" style="left:80%; top:72%;">
+		<span class="district-icon">🔴</span>
+		<span class="district-name">Velvet Row</span>
+		<span class="district-lock-req">Unlocks later</span>
+	</div>
+
+	<div class="district-card locked" style="left:50%; top:88%;">
+		<span class="district-icon">🛍️</span>
+		<span class="district-name">Lakewood Mall</span>
+		<span class="district-lock-req">Unlocks later</span>
+	</div>
+</div>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<link '<span>🏠 Just go home</span>' "Home">><</link>>
+</div>

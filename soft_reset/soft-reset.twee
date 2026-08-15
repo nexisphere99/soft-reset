@@ -1,0 +1,185 @@
+:: StoryTitle
+SOFT RESET
+
+:: StoryData
+{
+	"ifid": "C9E8903B-8C69-4BE0-A3D5-800274FFB5DF",
+	"format": "SugarCube",
+	"format-version": "2.37.3",
+	"start": "Start",
+	"tag-colors": {},
+	"zoom": 1
+}
+
+:: StoryInit
+<<set $archetype to "">>
+<<set $statGrowthMultiplier to 1.0>>
+<<set $thresholdsFired to {}>>
+<<set $objective to "Wake up.">>
+
+/* ---------- Player stats ---------- */
+<<set $player to {
+	name: "",
+	maleName: "Aiden",
+	money: 47,
+	fem: 0,
+	cor: 0,
+	con: 5,
+	att: 20,
+	fit: 30,
+	int: 40,
+	energy: 100,
+	stress: 30,
+	arousal: 0,
+	sub: 0,
+	dom: 0,
+	exhib: 0,
+	maternal: 0,
+	addiction: 0,
+	portraitImg: "assets/characters/mc-male/side_bar.png"
+}>>
+
+/* ---------- Body state (male at Day 0; Sleep passage flips this to
+   Phase 1 female measurements when advancing to Day 1) ---------- */
+<<set $body to {
+	phase: 0,
+	bust: 36,
+	waist: 29,
+	hips: 33,
+	braCup: "N/A",
+	braSize: "N/A",
+	weight: 148,
+	height: 69,
+	hairLength: "short",
+	sensitivity: 1,
+	lactating: false,
+	menstrualDay: -1,
+	pregnant: false,
+	pregnancyWeek: 0,
+	pubicStyle: "natural",
+	piercings: {},
+	tattoos: [],
+	phase2Active: false,
+	phase2Day: 0
+}>>
+
+/* ---------- Time ---------- */
+<<set $day to 0>>
+<<set $timeslot to "Morning">>
+<<set $timeslots to ["Morning", "Afternoon", "Evening", "Night"]>>
+<<set $timeIcons to { Morning: "🌅", Afternoon: "☀️", Evening: "🌆", Night: "🌙" }>>
+<<set $weekDay to "Thursday">>
+<<set $weekDays to ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]>>
+<<set $acted to false>>
+
+/* ---------- Main partner objects ---------- */
+<<set $jake to { met: true, affinity: 10, romance: false, kissed: false, kissedDay: 0, sexCount: 0, firstSexDay: 0, girlfriend: false, seenFemale: false, seenFemaleDay: 0, flags: {} }>>
+<<set $marcus to { met: false, affinity: 0, romance: false, kissed: false, kissedDay: 0, sexCount: 0, firstSexDay: 0, girlfriend: false, seenFemale: false, seenFemaleDay: 0, flags: {} }>>
+<<set $sophie to { met: false, affinity: 0, romance: false, kissed: false, kissedDay: 0, sexCount: 0, firstSexDay: 0, girlfriend: false, seenFemale: false, seenFemaleDay: 0, flags: {} }>>
+<<set $river to { met: false, affinity: 0, romance: false, kissed: false, kissedDay: 0, sexCount: 0, firstSexDay: 0, girlfriend: false, seenFemale: false, seenFemaleDay: 0, flags: {} }>>
+<<set $vanessa to { met: false, affinity: 0, romance: false, kissed: false, kissedDay: 0, sexCount: 0, firstSexDay: 0, girlfriend: false, seenFemale: false, seenFemaleDay: 0, flags: {} }>>
+
+/* ---------- Wardrobe ---------- */
+<<set $equipped to { top: null, bottom: null, bra: null, underwear: null, shoes: null, accessory: null, outerwear: null }>>
+<<set $wardrobe to []>>
+<<set $outfitBonus to { att: 0, fem: 0, cor: 0 }>>
+<<set $makeupApplied to false>>
+<<set $makeupLevel to 0>>
+<<set $perfumeApplied to false>>
+
+/* ---------- Phone / social ---------- */
+<<set $phone to {
+	contacts: [
+		{ id: "jake", name: "Jake Reeves" }
+	],
+	smsThreads: {
+		jake: []
+	},
+	datingMatches: [],
+	datingActive: false,
+	socialMedia: { followers: 0, posts: [] },
+	notifications: []
+}>>
+
+/* ---------- NPC met-flags (Day 0 cast + future roster) ---------- */
+<<set $metDolores to false>>
+<<set $metLuna to false>>
+<<set $metDerek to true>>
+<<set $metDrAmelia to false>>
+<<set $metNursePatel to false>>
+<<set $metTyler to false>>
+<<set $tylerNumber to false>>
+<<set $metJade to false>>
+<<set $metCalloway to true>>
+<<set $metLuis to false>>
+<<set $metOldMan to false>>
+
+/* ---------- Southbank district   repeatable-location counters &
+   small unlock flags (Lucky Mart, Suds Laundromat, Walking Trail). ---------- */
+<<set $luckyMartVisits to 0>>
+<<set $knowsBeanSoupRecipe to false>>
+<<set $laundromatVisits to 0>>
+<<set $trailVisits to 0>>
+<<set $sawMrsParkRentReminder to false>>
+
+/* ---------- Day 0 open-world progress flags (drive the objective
+   banner + which map locations are unlocked) ---------- */
+<<set $dashdropDone to false>>
+<<set $flyerFound to false>>
+<<set $calledNovaCure to false>>
+<<set $washedUp to false>>
+<<set $ateBreakfast to false>>
+<<set $gotDressed to false>>
+<<set $leftApartmentOnce to false>>
+<<set $visitedCornerStore to false>>
+
+/* ---------- Day 1 open-world progress flags (drive the objective
+   banner + which map locations are unlocked) ---------- */
+<<set $seenMirrorDay1 to false>>
+<<set $mustReturnToNovaCure to false>>
+<<set $dressedDay1 to false>>
+<<set $novaCureDay1Done to false>>
+<<set $novaCureVisitCount to 1>>
+<<set $seenWalkHomeD1 to false>>
+<<set $showeredDay1 to false>>
+<<set $firstOrgasmSolo to false>>
+<<set $firstShower to false>>
+<<set $ateDinnerDay1 to false>>
+
+/* ---------- First-time event flags ---------- */
+<<set $firstCatcall to false>>
+<<set $firstPeriod to false>>
+<<set $firstKissMale to false>>
+<<set $firstKissFemale to false>>
+<<set $firstSexMale to false>>
+<<set $firstSexFemale to false>>
+<<set $firstOrgasmPartner to false>>
+<<set $gloryHoleDiscovered to false>>
+
+/* ---------- Generic item-ownership / misc-flag bags (future content
+   pushes owned item ids / one-off flags in here without needing new
+   StoryInit variables for every drop). ---------- */
+<<set $itemsOwned to {}>>
+<<set $flags to {}>>
+
+/* ---------- Sexual experience tracker ---------- */
+<<set $sexLog to {
+	totalEncounters: 0,
+	partnerCount: 0,
+	partners: {},
+	firsts: {},
+	kinks: {},
+	orientation: { heteroExp: 0, sapphicExp: 0, otherExp: 0 },
+	positions: [],
+	toys: []
+}>>
+
+/* ---------- Economy ---------- */
+<<set $loans to { total: 23400, monthlyMin: 487, daysOverdue: 120, paidOff: false }>>
+<<set $income to { dashdrop: 0, nocturne: 0, novacure: 800, phase2: 0, modeling: 0, camwork: 0, other: 0 }>>
+<<set $rent to 650>>
+<<set $rentPaid to false>>
+<<set $rentMonthsAhead to 0>>
+
+/* ---------- Quest / journal ---------- */
+<<set $journal to { entries: [], quests: { main: [], side: [], completed: [] }, milestones: [] }>>

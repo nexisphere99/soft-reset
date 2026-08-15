@@ -1,0 +1,75 @@
+:: WalkingTrail [nobr]
+<<HUD>>
+<<set $trailVisits += 1>>
+
+<<if $trailVisits is 1>>
+<div class="prose-block">
+<p>A tree-lined path winding between mature oaks, a small pond off to one side, benches spaced out along the loop. Joggers and dog walkers in the distance. The kind of ordinary, well-worn beauty you stop noticing after the third time you almost got evicted.</p>
+</div>
+<<else>>
+<div class="prose-block">
+<p>Same loop, same trees, same pond throwing back whatever light the sky&apos;s handing out today.</p>
+</div>
+<</if>>
+
+<<if $trailVisits is 3>>
+
+<<SceneDivider "The Old Man on the Bench">>
+
+<div class="prose-block">
+<p>There&apos;s an old man on the bench by the pond. He&apos;s here every time you come. Different book each time. He&apos;s never acknowledged you directly, but this time, without looking up:</p>
+</div>
+
+<<Dialogue "Old Man" "📖" "You walk like someone learning to live in a new country." "">>
+<<Dialogue "You" "😳" "...What?" "you">>
+<<Dialogue "Old Man" "📖" "I lived in four countries before I was thirty. Every time, the first thing you learn is how to walk. Where to put your feet. How to hold your shoulders. You're learning. I can tell." "">>
+<<Dialogue "You" "🙂" "What book are you reading?" "you">>
+<<Dialogue "Old Man" "📖" "Ovid. Metamorphoses. Stories about people who transform into something new." "">>
+
+<div class="prose-block">
+<p>He glances at you over his reading glasses. The faintest smile.</p>
+</div>
+
+<<Dialogue "Old Man" "📖" "You might like it." "">>
+
+<div class="prose-block">
+<p>He never gives his name. You never tell him yours, or your story. He never asks. But every time you pass now, he nods. And that nod means: <em>I see you. You&apos;re doing fine.</em></p>
+</div>
+
+<<set $metOldMan to true>>
+<<run window.rbAddMilestone("The Old Man on the Bench noticed you.")>>
+
+<<elseif $metOldMan>>
+
+<div class="prose-block">
+<p>The old man is on his bench, a different book today. He glances up as you pass. Nods. Goes back to reading.</p>
+</div>
+
+<</if>>
+
+<div class="action-list">
+
+<<link '<span class="action-icon">🏃</span><span class="action-text">Jog the loop<span class="action-sub">Lungs burning, legs unfamiliar, keep going</span></span>' "WalkingTrail">>
+	<<set $player.fit to Math.clamp($player.fit + 2, 0, 100)>>
+	<<set $player.stress to Math.clamp($player.stress - 3, 0, 100)>>
+	<<set $player.energy to Math.clamp($player.energy - 10, 0, 100)>>
+<</link>>
+
+<<link '<span class="action-icon">🚶</span><span class="action-text">Walk the loop<span class="action-sub">No agenda, just moving</span></span>' "WalkingTrail">>
+	<<set $player.stress to Math.clamp($player.stress - 3, 0, 100)>>
+	<<set $player.energy to Math.clamp($player.energy - 4, 0, 100)>>
+<</link>>
+
+<<link '<span class="action-icon">🪑</span><span class="action-text">Sit on a bench and think<span class="action-sub">Watch the pond do nothing in particular</span></span>' "WalkingTrail">>
+	<<set $player.stress to Math.clamp($player.stress - 5, 0, 100)>>
+<</link>>
+
+<<link '<span class="action-icon">🤸</span><span class="action-text">Stretch<span class="action-sub">Everything about this body moves differently now</span></span>' "WalkingTrail">>
+	<<set $player.fit to Math.clamp($player.fit + 1, 0, 100)>>
+<</link>>
+
+</div>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<link '<span>← Back outside</span>' "Outside">><</link>>
+</div>

@@ -1,0 +1,71 @@
+/* ==========================================================================
+   SOFT_RESET   28 NAV TOGGLES
+   Custom open/retract handles for the left (#ui-bar) and right
+   (#rb-rightbar) panels, plus the mobile overlay/backdrop behavior.
+   Built and driven by js/17-nav-toggles.js.
+   ========================================================================== */
+
+.rb-edge-toggle {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background: var(--grad-primary);
+  border: 3px solid var(--bg);
+  box-shadow: var(--shadow-glow-accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 500;
+  padding: 0;
+  font-size: 1.15rem;
+  line-height: 1;
+  transition: left var(--t-med) var(--ease), right var(--t-med) var(--ease), transform var(--t-fast) var(--ease);
+}
+.rb-edge-toggle:hover { transform: translateY(-50%) scale(1.08); }
+.rb-edge-toggle:active { transform: translateY(-50%) scale(.96); }
+
+.rb-edge-arrow {
+  display: inline-block;
+  transform: rotate(180deg);
+  transition: transform var(--t-med) var(--ease);
+}
+.rb-edge-toggle.is-open .rb-edge-arrow { transform: rotate(0deg); }
+
+.rb-edge-toggle--left { left: 0; }
+.rb-edge-toggle--left.is-open { left: var(--w-uibar); }
+
+.rb-edge-toggle--right { right: 0; }
+.rb-edge-toggle--right.is-open { right: var(--w-rightbar); }
+/* Not eligible on this passage (right sidebar only)   no handle to show. */
+.rb-edge-toggle--right.is-ineligible { display: none; }
+
+/* Dimmed backdrop, shown only on mobile while a panel is open on top
+   of the story content instead of pushing it. */
+#rb-nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 2, 10, .6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 350;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--t-med) var(--ease);
+}
+#rb-nav-backdrop.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 899px) {
+  /* Panels never push content on small screens   they float on top. */
+  #story { margin-left: 0 !important; margin-right: 0 !important; }
+
+  #ui-bar, #rb-rightbar { z-index: 400 !important; }
+  .rb-edge-toggle { z-index: 450; width: 2.3rem; height: 2.3rem; font-size: 1rem; }
+}

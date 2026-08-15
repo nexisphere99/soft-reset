@@ -1,0 +1,45 @@
+/* ==========================================================================
+   SOFT_RESET   21 BUTTONS
+   ========================================================================== */
+
+.btn-primary, .btn-secondary, .btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  font-family: var(--font-body);
+  font-size: .88rem;
+  font-weight: 700;
+  padding: .8rem 1.7rem;
+  border-radius: var(--r-pill);
+  cursor: pointer;
+  transition: transform var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease), border-color var(--t-fast) var(--ease), background var(--t-fast) var(--ease);
+  border: 1px solid transparent;
+  user-select: none;
+}
+
+.btn-primary {
+  background: var(--grad-primary);
+  color: #fff;
+  box-shadow: 0 6px 24px var(--accent-glow);
+}
+.btn-primary:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 10px 36px var(--accent-glow); }
+.btn-primary:active { transform: translateY(0) scale(1); }
+
+.btn-secondary {
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur-sm));
+  color: var(--text2);
+  border-color: var(--border-hi);
+}
+.btn-secondary:hover { background: var(--card-hover); color: var(--text); border-color: var(--accent); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--rose);
+  border-color: var(--rose);
+}
+.btn-outline:hover { background: var(--rose-glow); }
+
+.btn-block { display: flex; width: 100%; }
+.btn-sm { padding: .5rem 1.1rem; font-size: .78rem; }

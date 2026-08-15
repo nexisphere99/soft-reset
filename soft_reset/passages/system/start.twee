@@ -1,0 +1,11 @@
+:: Start [nobr]
+<div class="screen-center sleep-screen">
+	<div class="big-icon">🦋</div>
+	<h1>SOFT<span class="accent">RESET</span></h1>
+	<p class="eyebrow">A TRANSFORMATION STORY</p>
+	<p class="text2" style="max-width:40ch;">An adult interactive fiction game about identity, desire, and becoming.</p>
+	<div style="margin-top:1.5rem">
+		<<link '<span class="btn-primary">Enter</span>' "AgeGate">><</link>>
+	</div>
+	<p style="font-size:.7rem; color:var(--text3); margin-top:2rem;">v1.0   SugarCube 2.37   Content updates monthly</p>
+</div>

@@ -1,0 +1,49 @@
+:: District_Northgate [nobr]
+<<HUD>>
+
+<div class="map-here">📍 Northgate University Quarter</div>
+<h1>Someone Else&apos;s <span class="accent">Normal</span></h1>
+
+<div class="prose-block">
+<p class="text2 small">The college neighborhood around State University. Where your &quot;normal&quot; life was supposed to happen.</p>
+</div>
+
+<div class="location-grid">
+
+<<link '<div class="loc-card"><span class="loc-icon">🏛️</span><span class="loc-name">State University</span><span class="loc-hint">Quad, library, bulletin board</span></div>' "Campus">><</link>>
+
+<div class="loc-card locked">
+	<span class="loc-icon">🏋️</span>
+	<span class="loc-name">Campus Gym</span>
+	<span class="loc-lock-req">Not today</span>
+</div>
+
+<div class="loc-card locked">
+	<span class="loc-icon">☕</span>
+	<span class="loc-name">Grounded Coffee House</span>
+	<span class="loc-lock-req">Not today</span>
+</div>
+
+<div class="loc-card locked">
+	<span class="loc-icon">🍕</span>
+	<span class="loc-name">Campus Strip</span>
+	<span class="loc-lock-req">Not today</span>
+</div>
+
+<div class="loc-card locked">
+	<span class="loc-icon">📚</span>
+	<span class="loc-name">Campus Bookstore</span>
+	<span class="loc-lock-req">Not today</span>
+</div>
+
+<div class="loc-card locked">
+	<span class="loc-icon">🧘</span>
+	<span class="loc-name">Sunrise Yoga Studio</span>
+	<span class="loc-lock-req">Not today</span>
+</div>
+
+</div>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<link '<span>🗺️ Back to the city map</span>' "WorldMap">><</link>>
+</div>

@@ -1,0 +1,66 @@
+:: D00_LastNight [nobr]
+<<HUD>>
+
+<<SceneDivider "Home   10:15 PM">>
+
+<div class="prose-block">
+
+<p>The bus home is emptier. Late-night passengers: a woman in scrubs asleep against the window, a teenager with headphones nodding to something inaudible, and me, sitting in the back, refreshing my bank app every forty-five seconds to confirm the $2,000 is still real.</p>
+
+<p>Home. Lock the door. Stand in my apartment. Same apartment. Same water stain. Same ramen packets. But the number in my bank account has changed, and that changes the specific gravity of everything else.</p>
+
+<p>I sit on the couch. Open the banking app. Transfer $1,300 to Mrs. Park&apos;s account   the overdue rent. Both months. Paid. I watch the confirmation screen appear: &quot;Transfer complete.&quot; The number drops from $2,099 to $799. Still more than I&apos;ve had in months.</p>
+
+<<run window.rbPayRent(1300)>>
+
+<p>I exhale. The weight of eviction lifts off my chest. It doesn&apos;t float away   shifts sideways, replaced by the other weights (loans, scooter, utilities, future)   but the most immediate, most crushing one is gone. I have a home. For now. I&apos;m safe. For now.</p>
+
+<p>I eat three of Mrs. Calloway&apos;s cookies. Oatmeal raisin. Perfect every time. I watch TV   some sitcom I&apos;m not following, laugh track erupting at intervals that have nothing to do with humor. Watch without watching. My body feels normal. No nausea. No dizziness. No side effects. The pill did nothing. Probably a placebo. A $2,000 placebo. Best deal I&apos;ve ever made.</p>
+
+<p>I get sleepy earlier than usual. 10:30. Normally I&apos;m up until 1 AM   not doing anything, just existing in the way insomnia mandates: staring at the phone, scrolling feeds of people living lives, drifting in and out of consciousness on the couch until my body gives up and collapses into something approximating rest.</p>
+
+<p>But tonight: heavy. My eyelids are lead curtains. My limbs sink into the cushions. A warm drowsiness that feels pharmaceutical   which it probably is. Nurse Patel said I might feel drowsy.</p>
+
+<p>I force myself off the couch. Bathroom. Brush my teeth. And then   without knowing why, without any premonition or narrative foreshadowing that my life is about to split in half   I look at myself in the mirror.</p>
+
+<p>Really look. Not the morning glance, the quick inventory of damage. A real, sustained look.</p>
+
+</div>
+
+<<ImagePlaceholder "Final mirror   Aiden at night, looking at his reflection like a goodbye" "portrait" "assets/characters/mc-male/final-mirror.png">>
+
+<div class="prose-block">
+
+<p>Angular jaw. The stubble I can&apos;t grow. Hazel-green eyes   downturned, tired, but strangely beautiful in a way I&apos;ve never let myself acknowledge. They&apos;re my grandmother&apos;s eyes. She had the same color, the same shape. I see her in myself and it hurts in a specific way that has no name.</p>
+
+<p>Cheekbones. Prominent. The bone structure under the thin face. High cheekbones are supposed to be attractive. On me they just look hungry.</p>
+
+<p>Freckles. Scattered like someone flicked a paintbrush at me. Angel kisses. I touch them. Touch my own face. The stubble. The jaw. The nose. The lips that are chapped because I don&apos;t drink enough water.</p>
+
+<p>I don&apos;t know this is the last time I&apos;ll see this face.</p>
+
+<p>If I knew, would I look longer? Would I memorize the angle of the jaw, the way my Adam&apos;s apple bobs when I swallow? Would I say goodbye?</p>
+
+<p>I don&apos;t know. I brush my teeth. Spit. Turn off the bathroom light.</p>
+
+<p>I lie in bed. The mattress on the floor. The pillow that smells stale. The sheets that used to be white. I lie on my back and stare at the water stain on the ceiling. The fist. Or the chrysalis. Depends on how you look.</p>
+
+<p>My eyes close. Breathing slows. The pill   that small white capsule that weighed nothing and cost $2,000   dissolves in my stomach acid and releases its compound into my bloodstream. It passes through my liver, my kidneys, my endocrine system. It reaches my hypothalamus, my pituitary, my gonads. It begins.</p>
+
+</div>
+
+<<ImagePlaceholder "Overhead shot   Aiden asleep on the floor mattress, moonlight through the blinds" "banner" "assets/characters/mc-male/last-sleep.png">>
+
+<div class="prose-block">
+
+<p>I don&apos;t feel it. I&apos;m already asleep. Deep, warm, dreamless sleep. The last sleep of the man named Aiden Cole.</p>
+
+<p>Outside, the city doesn&apos;t notice. The buses run. The streetlights cycle. A cat crosses the road. A bartender closes up. A student types an essay. The world keeps turning.</p>
+
+<p>Inside, on a mattress on the floor, a body begins to change.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🌙 Close my eyes</span>' "Sleep">><</link>>
+</div>

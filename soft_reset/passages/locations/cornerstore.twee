@@ -1,0 +1,111 @@
+:: CornerStore [nobr]
+<<HUD>>
+<<set $luckyMartVisits += 1>>
+
+<<if not $metLuis>>
+<div class="prose-block">
+<p>The corner store on the ground floor of a building that&apos;s seen better decades. Fluorescent lights, a bell over the door that&apos;s lost half its ring, lottery ticket ads curling in the window.</p>
+<p>Behind the register: a man in his forties, neat mustache, warm brown eyes, a plain polo with a name tag that reads <strong>LUIS</strong>. A newspaper is open in front of him. He looks up.</p>
+</div>
+<<Dialogue "Luis" "🧔" "Hey there, what can I get you?" "">>
+<<set $metLuis to true>>
+<<else>>
+<div class="prose-block">
+<p>Same bell, same fluorescent hum. Luis looks up from his newspaper.</p>
+</div>
+<<set _rbGreet to window.rbRandom(1, $luckyMartVisits >= 5 ? 4 : 3)>>
+<<switch _rbGreet>>
+<<case 1>><<Dialogue "Luis" "🧔" "Morning, sweetheart." "">>
+<<case 2>><<Dialogue "Luis" "🧔" "Hey there, what can I get you?" "">>
+<<case 3>><<if $player.att gte 30>><<Dialogue "Luis" "🧔" "You look nice today." "">><<else>><<Dialogue "Luis" "🧔" "Cold enough for you?" "">><</if>>
+<<case 4>><<Dialogue "Luis" "🧔" "The usual?" "">>
+<</switch>>
+<</if>>
+
+<div class="action-list">
+
+<<if $player.money gte 2>>
+	<<link '<span class="action-icon">🍫</span><span class="action-text">Buy a candy bar<span class="action-sub">A little sugar, a little stupid</span></span><span class="action-cost">$2</span>' "CornerStore">>
+		<<run window.rbSpend(2, "snack")>>
+		<<set $player.energy to Math.clamp($player.energy + 6, 0, 100)>>
+		<<set $player.stress to Math.clamp($player.stress - 2, 0, 100)>>
+	<</link>>
+<<else>>
+	<div class="action-btn action-locked"><span class="action-icon">🍫</span><span class="action-text">Buy a candy bar<span class="action-sub">You&apos;re $2 short</span></span></div>
+<</if>>
+
+<<link '<span class="action-icon">💬</span><span class="action-text">Make small talk with Luis<span class="action-sub">He&apos;s always got something to say</span></span>' "CornerStore_SmallTalk">><</link>>
+
+<<link '<span class="action-icon">👀</span><span class="action-text">Just look around<span class="action-sub">Window shopping, apparently, applies to gas station snacks too</span></span>' "CornerStore">><</link>>
+
+</div>
+
+<<if $luckyMartVisits gte 2>>
+<<set _rbEnc to window.rbRandom(1, 10)>>
+<<if _rbEnc lte 4>>
+
+<<SceneDivider "In the Aisles">>
+
+<<switch _rbEnc>>
+
+<<case 1 2>>
+<div class="prose-block">
+<p>A woman with a toddler on her hip is stretching for something on the top shelf, the kid wailing at a pitch that could strip paint.</p>
+</div>
+<div class="choice-block">
+	<<link '<span>🙋 Reach it for her</span>' "CornerStore">>
+		<<set $player.con to Math.clamp($player.con + 1, 0, 100)>>
+		<<run window.rbAddJournalEntry("Small Kindness", "Helped a mom reach a shelf at Lucky Mart. She thanked me like I'd done something bigger than that.")>>
+	<</link>>
+	<<link '<span>🚶 Keep to your own aisle</span>' "CornerStore">><</link>>
+</div>
+
+<<case 3>>
+<div class="prose-block">
+<p>A teenage stockboy is restocking shelves nearby. He glances over, sees you, drops a can. It rolls under the shelf. He doesn&apos;t chase it.</p>
+<p><em>He&apos;s a child. I feel old and I&apos;m twenty.</em></p>
+</div>
+<div class="choice-block">
+	<<link '<span>🙂 Smile and move on</span>' "CornerStore">><</link>>
+</div>
+
+<<case 4>>
+<div class="prose-block">
+<p>A guy in a hoodie is lingering by the beer cooler, glancing over every few seconds like he&apos;s working up the nerve to say something. He never does. You check out and leave. He&apos;s still standing there.</p>
+</div>
+
+<</switch>>
+
+<</if>>
+<</if>>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<link '<span>← Back outside</span>' "Outside">><</link>>
+</div>
+
+:: CornerStore_SmallTalk [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<<if not $knowsBeanSoupRecipe>>
+<<Dialogue "Luis" "🧔" "You eating enough? You always buy ramen. Let me tell you something   my wife makes a bean soup that costs less than ramen and tastes like God's kitchen. You want the recipe?" "">>
+<<Dialogue "You" "🙂" "I... yeah. Actually, yes." "you">>
+<p>He writes it on the back of a receipt, unprompted pride in his handwriting.</p>
+<<else>>
+<<Dialogue "Luis" "🧔" "They say rain tomorrow. You got an umbrella?" "">>
+<<Dialogue "You" "🙂" "No." "you">>
+<<Dialogue "Luis" "🧔" "Aisle 3, bottom shelf. Eight bucks. Worth it." "">>
+<</if>>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>← Back to the counter</span>' "CornerStore">>
+		<<if not $knowsBeanSoupRecipe>>
+			<<set $knowsBeanSoupRecipe to true>>
+			<<run window.rbAddMilestone("Learned Luis's bean soup recipe.")>>
+		<</if>>
+		<<set $player.stress to Math.clamp($player.stress - 2, 0, 100)>>
+	<</link>>
+</div>

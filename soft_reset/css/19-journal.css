@@ -1,0 +1,29 @@
+/* ==========================================================================
+   SOFT_RESET   19 JOURNAL
+   ========================================================================== */
+
+.journal-widget {
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur-sm));
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: var(--sp-2);
+}
+.journal-widget-title { font-size: .68rem; text-transform: uppercase; letter-spacing: .06em; color: var(--text3); margin-bottom: .3rem; }
+.journal-quest-row { font-size: .78rem; color: var(--text2); padding: .2rem 0; }
+
+.journal-entry {
+  border-left: 2px solid var(--border-hi);
+  padding: .2rem 0 .8rem var(--sp-2);
+  margin-left: .2rem;
+}
+.journal-entry-day { font-size: .66rem; color: var(--rose); font-weight: 800; text-transform: uppercase; }
+.journal-entry-title { font-family: var(--font-head); font-weight: 700; font-size: 1rem; margin: .1rem 0 .2rem; }
+.journal-entry-text { font-size: .82rem; color: var(--text2); }
+
+.journal-milestone {
+  display: flex; align-items: center; gap: .5rem;
+  font-size: .8rem; color: var(--text2);
+  padding: .3rem 0;
+}
+.journal-milestone::before { content: '✦'; color: var(--gold); }
