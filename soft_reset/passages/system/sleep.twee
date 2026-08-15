@@ -17,7 +17,7 @@
 		<div style="margin-top:2.4rem; padding-top:2rem; border-top:1px solid var(--border);">
 			<div class="day-badge" style="margin-bottom:1rem;">🦋 End of Version <strong>0.1</strong></div>
 			<p style="color:var(--text2); max-width:38ch; margin:0 auto 1.6rem;">That&apos;s everything built so far. Day 2 and beyond   Aida&apos;s life as it actually unfolds   is still being written.</p>
-			<a href="/soft-reset_page" target="_blank" rel="noopener" class="btn-primary">💜 Support SOFT RESET on Patreon</a>
+			<a href="https://www.patreon.com/c/toxicvipergames" target="_blank" rel="noopener" class="btn-primary">💜 Support SOFT RESET on Patreon</a>
 
 			<p style="color:var(--text3); font-size:.78rem; max-width:34ch; margin:1.8rem auto .8rem;">No more story past this point yet   but the apartment, the neighborhood, and the people in it still work, if you&apos;d rather just wander.</p>
 			<<link '<span class="btn-outline btn-sm">🔓 Keep playing anyway</span>'>>
