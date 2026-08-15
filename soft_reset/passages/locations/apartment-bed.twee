@@ -37,11 +37,21 @@
 		<p class="text3 small">Hood up, head down. Nothing fits, but you&apos;re dressed enough to leave.</p>
 	<</if>>
 
+<<elseif $day is 2>>
+
+	<<if $timeslot is "Night" and $d02Ate>>
+		<<link '<span class="action-icon">🛏️</span><span class="action-text">Go to bed<span class="action-sub">It&apos;s been enough for one day.</span></span>' "D02_Bedtime">><</link>>
+	<<elseif $timeslot is "Night">>
+		<p class="text3 small">You should eat something before you crash.</p>
+	<<else>>
+		<p class="text3 small">The new clothes still feel new. You keep noticing them.</p>
+	<</if>>
+
 <</if>>
 
 <<link '<span class="action-icon">🪞</span><span class="action-text">Check the mirror<span class="action-sub">See what&apos;s looking back today</span></span>' "Home_Bedroom_Mirror">><</link>>
 
-<<if $day is 1 and ($timeslot is "Night" or $player.arousal gt 30)>>
+<<if $day gte 1 and ($timeslot is "Night" or $player.arousal gt 30)>>
 	<<link '<span class="action-icon">🛏️</span><span class="action-text">Take a minute to yourself<span class="action-sub">Nobody&apos;s watching. The door&apos;s locked.</span></span>' "Home_Bedroom_Alone">><</link>>
 <</if>>
 
@@ -60,6 +70,8 @@
 <p>I look in the mirror. Angular jaw. Stubble patches. Dark circles. The usual. The word that comes to mind is &quot;tired.&quot; Not a person   a condition.</p>
 <<elseif $day is 1 and $player.fem lt 20>>
 <p>She&apos;s still there. The woman who stole my reflection. B-cups under the t-shirt. Hips I&apos;m still bumping into doorframes with. Freckles that survived the apocalypse of my face. I don&apos;t know who I&apos;m looking at, but she doesn&apos;t look away first.</p>
+<<elseif $day is 2 and $d02TriedOnClothes>>
+<p>A girl in jeans and a t-shirt looks back. Unremarkable. Ordinary. Two days ago that word would&apos;ve sounded like an insult. Today it sounds like something to work toward.</p>
 <<else>>
 <p>I check the mirror. Same face as this morning, mostly. Still learning the shape of it.</p>
 <</if>>
@@ -99,6 +111,137 @@
 	<</link>>
 </div>
 
+:: Home_Bedroom_TryOnD2 [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>Home. Door locked. Bag on the bed. I empty it   the two t-shirts, the jeans, the panties pack, the sports bra. They lie on the grey sheets like artifacts from another person&apos;s life. Someone else&apos;s basics. Mine now.</p>
+
+<<if not $closetSplit>>
+<p>I open the closet to hang the new clothes and Aiden is still there. His hoodies   grey, black, navy. His t-shirts in various states of decay. His joggers. The DashDrop jacket, orange as a traffic cone.</p>
+
+<p>The closet is split now. Left side: Aiden&apos;s clothes, hanging limp, waiting for a body that isn&apos;t coming back. Right side: two t-shirts, one pair of jeans, and a sports bra, still slightly damp from the sink wash.</p>
+
+<p>It&apos;s a small closet. There isn&apos;t room for two people&apos;s wardrobes. Not for long. I push Aiden&apos;s clothes to the far left. Make room. The hangers scrape against the rod with a sound like teeth.</p>
+
+<p>I don&apos;t get rid of them. Not yet. I can&apos;t. But I push them aside. I make room for what&apos;s here now, what&apos;s real now, what I&apos;m wearing now. The grey hoodie stays in the center. Neutral territory. It stays.</p>
+<</if>>
+
+<p>I pull off the hoodie. The joggers. The boxers that have been bunching and sliding and failing at their one job for two days. I stand in the bedroom in nothing   bare chest, bare legs, this body in the late afternoon light.</p>
+
+<p><strong>The sports bra.</strong></p>
+
+<p>I step into it and pull it up. I don&apos;t know the lean-and-scoop technique   that&apos;s a tutorial I haven&apos;t watched yet. I just tug it over my breasts and adjust until they&apos;re inside the cups.</p>
+
+<p>The compression is immediate.</p>
+
+<p>&quot;Oh thank god.&quot;</p>
+
+<p>My breasts   held. In place. Minimized, supported, compressed against my chest. The constant bounce, the sway, the awareness of them shifting with every step and every breath that I&apos;ve been dealing with for thirty-six hours   reduced to a gentle pressure. The sports bra doesn&apos;t make them disappear. It makes them manageable. The relief is physical and it runs so deep that I close my eyes and just stand there for a moment, breathing, feeling what it&apos;s like to have my chest held instead of hanging.</p>
+
+<p><strong>The panties.</strong></p>
+
+<p>I step out of the boxers for the last time. Step into the bikini-cut panties   black cotton, simple, the kind you buy in a three-pack and don&apos;t think about. I pull them up.</p>
+
+<p>They sit on my hips differently than boxers. Higher. Snugger. Following the curve from waist to hip instead of fighting it. The fabric lies flat against my vulva   no bunching, no sagging, no excess material where there&apos;s nothing to fill it. They fit. They&apos;re made for this body. Simple black cotton, and putting them on feels like a revelation I wasn&apos;t prepared for.</p>
+
+<p>The fabric is soft against parts of me I&apos;m still learning to have.</p>
+
+<p><strong>The jeans.</strong></p>
+
+<p>I pull the skinny jeans on. They&apos;re tight past my hips   I have to shimmy, hook my thumbs in the waistband, and pull in stages, the denim stretching over hip bones that are wider than any jeans I&apos;ve ever worn. But once they&apos;re up: they fit. Actually fit. Not hanging, not sliding, not cinched with a drawstring. The waistband sits at my natural waist. The denim molds to my hips, my thighs, my ass. I button them. Look down.</p>
+
+<p>My legs look different. Long, shaped, the denim following curves I didn&apos;t have three days ago. I turn sideways. There&apos;s an actual ass here now   round enough to fill the jeans, visible in profile. Aiden&apos;s ass was flat enough to serve as a bookshelf. This one has opinions about denim.</p>
+
+<p><strong>The t-shirt.</strong></p>
+
+<p>Black fitted tee over the sports bra. It fits close   showing the line of the bra, the indent of my waist, the gentle swell of compressed breasts. Not flashy. Not revealing. Not a statement. Just... clothes. Women&apos;s clothes on a woman&apos;s body.</p>
+
+<p>I look in the mirror.</p>
+
+<p>A girl looks back. A regular girl in jeans and a t-shirt. Not stunning. Not glamorous. Not &quot;passing&quot;   that word implies there&apos;s something to catch, and nobody looking at this reflection would catch anything except a twenty-year-old woman with messy hair and no makeup and freckles.</p>
+
+<p>She looks like she could be in line at the grocery store. She looks like she could be at a coffee shop. She looks like she could be sitting in a lecture hall or riding a bus or existing in any of the million places where women exist without it being remarkable.</p>
+
+<p>She looks unremarkable. And that&apos;s the most remarkable thing I&apos;ve ever seen.</p>
+
+<p>I stare for a long time. The clothes shouldn&apos;t matter. Fabric and stitching and cotton shouldn&apos;t change anything fundamental. But they do. They take the body that&apos;s been terrifying me for two days and make it look... normal. Not someone else&apos;s body. Not a mistake. Not a medical anomaly. Just a body. In clothes. Going about its day.</p>
+
+<p>I don&apos;t know how to feel about this. I don&apos;t know if what I&apos;m feeling is acceptance or resignation or something between. I just know that the girl in the mirror is me and she&apos;s wearing clothes that fit and for the first time since I woke up yesterday, I don&apos;t feel like I&apos;m drowning.</p>
+
+<p>I&apos;m still underwater. But I can see the surface.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🔍 Take the clothes off. Look closer. (Explore)</span>' "Home_Bedroom_MirrorExploreD2">>
+		<<set $closetSplit to true>>
+	<</link>>
+	<<link '<span>📱 Leave them on. Check phone, order food. (Move on)</span>' "Home">>
+		<<set $closetSplit to true>>
+		<<set $d02TriedOnClothes to true>>
+		<<set $player.fem to Math.clamp($player.fem + 1, 0, 100)>>
+		<<set $timeslot to "Evening">>
+		<<set $equipped.top to {id:"tshirt_black",name:"Plain Black T-shirt"}>>
+		<<set $equipped.bottom to {id:"jeans_blue_skinny",name:"Dark Blue Skinny Jeans"}>>
+		<<set $equipped.bra to {id:"sports_bra_black",name:"Basic Black Sports Bra"}>>
+		<<set $equipped.underwear to {id:"panties_cotton_3pk",name:"Cotton Bikini Panties (3-pack)"}>>
+		<<run window.rbAddMilestone("Wore women's clothes for the first time.")>>
+	<</link>>
+</div>
+
+:: Home_Bedroom_MirrorExploreD2 [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I pull the t-shirt off. Stand in the sports bra and panties. Turn to the side.</p>
+
+<p>The profile: the swell of breasts under black compression fabric, the dip of waist, the curve of hip and ass under black cotton. An hourglass. A body shaped like the letter S if the letter S had freckles and hazel-green eyes and a persistent sense of unreality.</p>
+
+<p>I remove the sports bra. My breasts fall free   not dramatically, they&apos;re not big enough for drama, but they settle. Round, soft, the pink-rose nipples pointing slightly outward. I cup them. Lift them slightly. Let them fall. A gentle bounce. Weight in my palms. Skin against skin.</p>
+
+<p>These are my breasts. Mine. The thought hasn&apos;t landed yet. It keeps hovering above my head like a cartoon anvil   I know it&apos;s there, I know it&apos;s going to hit, but for now it&apos;s just hanging.</p>
+
+<p>I turn around. Look over my shoulder. My ass. It fills the black panties   a round shape that Aiden never had. His was flat enough to make chairs uncomfortable. This one is... present. Not huge. But curved, visible, shaped.</p>
+
+<p>I face forward. Look at the panties. The flat front. No bulge. No outline. Just smooth cotton over smooth skin over the absence of everything I used to have and the presence of everything I&apos;m still learning.</p>
+
+<p>I touch. Through the fabric. Feel the softness underneath. The slight give of flesh. The warmth.</p>
+
+<p>Arousal stirs   faint, distant, like someone turned a dial from zero to one. It&apos;s there if I follow it. My fingertips press slightly harder. The clit responds through the cotton   a pulse of warmth, a clench somewhere deep.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>✋ Enough. Get dressed. Move on.</span>' "Home">>
+		<<set $player.fem to Math.clamp($player.fem + 3, 0, 100)>>
+		<<set $player.cor to Math.clamp($player.cor + 1, 0, 100)>>
+		<<set $player.arousal to Math.clamp($player.arousal + 5, 0, 100)>>
+		<<set $d02TriedOnClothes to true>>
+		<<set $timeslot to "Evening">>
+		<<set $equipped.top to {id:"tshirt_black",name:"Plain Black T-shirt"}>>
+		<<set $equipped.bottom to {id:"jeans_blue_skinny",name:"Dark Blue Skinny Jeans"}>>
+		<<set $equipped.bra to {id:"sports_bra_black",name:"Basic Black Sports Bra"}>>
+		<<set $equipped.underwear to {id:"panties_cotton_3pk",name:"Cotton Bikini Panties (3-pack)"}>>
+		<<run window.rbAddMilestone("Wore women's clothes for the first time.")>>
+	<</link>>
+	<<link '<span>🔥 Keep going... (bedtime exploration later)</span>' "Home">>
+		<<set $player.fem to Math.clamp($player.fem + 3, 0, 100)>>
+		<<set $player.cor to Math.clamp($player.cor + 1, 0, 100)>>
+		<<set $player.arousal to Math.clamp($player.arousal + 15, 0, 100)>>
+		<<set $d02ExploreDeep to true>>
+		<<set $d02TriedOnClothes to true>>
+		<<set $timeslot to "Evening">>
+		<<set $equipped.top to {id:"tshirt_black",name:"Plain Black T-shirt"}>>
+		<<set $equipped.bottom to {id:"jeans_blue_skinny",name:"Dark Blue Skinny Jeans"}>>
+		<<set $equipped.bra to {id:"sports_bra_black",name:"Basic Black Sports Bra"}>>
+		<<set $equipped.underwear to {id:"panties_cotton_3pk",name:"Cotton Bikini Panties (3-pack)"}>>
+		<<run window.rbAddMilestone("Wore women's clothes for the first time.")>>
+	<</link>>
+</div>
+
 :: Home_Bedroom_DressDay1 [nobr]
 <<HUD>>
 
@@ -125,5 +268,79 @@
 		<<set $dressedDay1 to true>>
 		<<set $player.stress to Math.clamp($player.stress - 5, 0, 100)>>
 		<<set $player.energy to Math.clamp($player.energy - 10, 0, 100)>>
+	<</link>>
+</div>
+
+:: D02_Bedtime [nobr]
+<<HUD>>
+
+<<SceneDivider "Night">>
+
+<div class="prose-block">
+
+<p>I get ready for bed. The getting-ready-for-bed of a woman, which I&apos;m learning is different from the getting-ready-for-bed of a man. I take off the jeans (the shimmy works in reverse   peeling them down over hips). Keep the panties and t-shirt. The panties feel right   the cotton sits against my skin like it was designed for exactly this body, which it was, because women&apos;s underwear is designed for women&apos;s bodies and I have one of those now.</p>
+
+<p>I lie in bed. The new panties. The fitted t-shirt. Lights off.</p>
+
+<p>The ceiling stain. The fist. The chrysalis. Still there.</p>
+
+<p>My body is warm under the sheets. The t-shirt has ridden up slightly, exposing my stomach. The panties sit on my hip bones   I can feel the elastic, light and present. My thighs are pressed together. My breasts rest against my chest, slightly to each side, a constant warm weight.</p>
+
+<p>I am a woman lying in bed in women&apos;s underwear and a t-shirt and my body is telling me things I haven&apos;t fully decided to listen to yet.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🌙 Just sleep. It&apos;s been enough for one day.</span>' "Sleep">>
+		<<set $player.energy to 85>>
+	<</link>>
+	<<link '<span>🔥 My hand is drifting... (explore)</span>' "D02_SelfExplore">>
+		<<set $player.fem to Math.clamp($player.fem + 2, 0, 100)>>
+		<<set $player.cor to Math.clamp($player.cor + 1, 0, 100)>>
+	<</link>>
+</div>
+
+:: D02_SelfExplore [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>My hand drifts. Not urgent. Not desperate. Slow. Exploratory. The curiosity that fear kept at bay all day, creeping out now that the lights are off and nobody&apos;s watching and it&apos;s just me and this body and the dark.</p>
+
+<p>Over the panties first. Pressing. Feeling the shape of myself through cotton   the soft mound, the slight warmth, the faintest contour of lips beneath fabric. I press harder and a pulse of warmth responds. My body says: I&apos;m here. I&apos;m here. Pay attention.</p>
+
+<p>Under the waistband. My fingers trace the outer lips. Soft. Warm. Finer hair than before   darker, but silky. The inner lips, delicate and warm, slightly slick already. My body responds to the lightest thought of touch now. I&apos;m barely doing anything and I&apos;m already wet   not drenched, but the faint slickness of a body that has been waiting all day for someone to pay attention.</p>
+
+<p>My clit. I find it faster this time. Know where it is. Know the feel of the hood, the small firm nub underneath. I circle. Slowly.</p>
+
+<p>Tonight I take my time. No shower urgency, no panic, no accidental-on-purpose. Just the dark and the quiet and the slow build and the deliberate decision to touch myself in a body I&apos;ve had for two days. This is a choice. I am choosing this.</p>
+
+<p>I try different pressures. Fast circles   too intense, makes me gasp, my hips jump off the mattress. Slow pressure   the build is exquisite but maddening, a tightening that winds without releasing. Side-to-side   a different texture entirely, sharper, more focused. Tapping   small rapid taps directly on the clit that send electric jolts through my pelvis and make my thighs clench.</p>
+
+<p>I insert one finger. Familiar now. The warm, wet, textured interior. I curl it toward my belly. The ridged spot   the G-spot   swells against my fingertip. My back arches off the mattress.</p>
+
+<p>Combination: finger inside, curled against the G-spot, thumb on the clit. I rock my hips against my own hand. Building. Building. The dual sensation is a circuit   the internal pressure and the external stimulation feeding each other in a loop that tightens with every heartbeat.</p>
+
+<p>I fantasize   and this is the first time I&apos;ve fantasized as female. What images come? They flicker, half-formed: the delivery guy&apos;s smile. A faceless person&apos;s mouth between my legs   the warmth of breath, the softness of lips on my most sensitive point. The sensation of being kissed on the neck   the spot below my ear that I don&apos;t remember being sensitive before but now sends a shiver down my spine when I imagine teeth there. Hands on my breasts   large hands, someone else&apos;s, cupping and squeezing while I arch into the touch.</p>
+
+<p>The images are incoherent. They don&apos;t form a narrative. They&apos;re fragments of desire without a specific target   just sensation, just the idea of being touched, of being wanted, of someone else&apos;s body against this one.</p>
+
+<p>I come. Quieter than the shower   a deep, rolling contraction that starts at the clit and spreads like a stone dropped in water. My toes curl. My mouth opens in a silent &quot;O.&quot; The pulsing lasts longer this time. I count   trying to quantify it, the scientist in me, the part that needs to measure even this: one, two, three, four, five, six, seven, eight contractions. Each one sends a wave of warmth through my pelvis, my stomach, my chest.</p>
+
+<p>Afterward. I lie in the dark. Hand still cupped between my legs. The dampness. The warmth. The afterglow   a humming calm, a post-orgasm peace that my male body never quite achieved. That body had release. This body has afterglow. There&apos;s a difference. Release is a door slamming. Afterglow is a door opening.</p>
+
+<p>I don&apos;t hate this. I don&apos;t love it either. But my body is telling me something, and for the first time, I&apos;m starting to listen instead of covering my ears.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🌙 Sleep now. Enough discoveries for one day.</span>' "Sleep">>
+		<<set $player.arousal to 0>>
+		<<set $player.stress to Math.clamp($player.stress - 5, 0, 100)>>
+		<<set $player.energy to 90>>
+		<<if not $firstOrgasmSolo>>
+			<<set $firstOrgasmSolo to true>>
+			<<run window.rbAddMilestone("First orgasm, in this body.")>>
+		<</if>>
 	<</link>>
 </div>

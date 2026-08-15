@@ -146,6 +146,19 @@ SOFT RESET
 <<set $firstShower to false>>
 <<set $ateDinnerDay1 to false>>
 
+/* ---------- Day 2 open-world progress flags ---------- */
+<<set $d02BoughtClothes to false>>
+<<set $d02TriedOnClothes to false>>
+<<set $d02ExploreDeep to false>>
+<<set $d02JakeTexted to false>>
+<<set $d02UniEmail to false>>
+<<set $d02Ate to false>>
+<<set $metMike to false>>
+<<set $metCarmenStore to false>>
+<<set $metDorothy to false>>
+<<set $closetSplit to false>>
+<<set $cookingSkill to 0>>
+
 /* ---------- First-time event flags ---------- */
 <<set $firstCatcall to false>>
 <<set $firstPeriod to false>>

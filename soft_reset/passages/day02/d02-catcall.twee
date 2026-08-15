@@ -1,0 +1,36 @@
+:: D02_Catcall [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Walking past a construction site, hood up, bag in hand" "banner" "assets/scene/day02/catcall-street.png">>
+
+<div class="prose-block">
+
+<p>I&apos;m walking home with a plastic bag full of women&apos;s clothes. My first women&apos;s clothes. Purchased with my money, from a store three blocks from the apartment I&apos;ve lived in for eight months, and until two days ago, I would have walked right past the women&apos;s section without a second thought. Now I&apos;m carrying it home like it&apos;s contraband.</p>
+
+<p>Hood still up. Head down. The bag rustles against my leg with every step.</p>
+
+<p>I pass a construction site. Chain-link fence. Two workers on a break   one sitting on a cooler, one leaning against a truck.</p>
+
+<p>&quot;Hey gorgeous, smile for me!&quot;</p>
+
+<p>Loud. Directed at me. The voice comes from the guy on the cooler. He&apos;s grinning. Like he just said something charming. Like &quot;hey gorgeous, smile for me&quot; is a gift he&apos;s bestowing.</p>
+
+<p>I freeze mid-step. My whole body locks. I don&apos;t turn. I don&apos;t respond. I don&apos;t make eye contact. I walk faster. My keys are already in my pocket. I close my hand around them, a sharp metal fang between my fingers.</p>
+
+<p>The second worker: &quot;Leave her alone, man.&quot; Then, to me: &quot;Sorry about him.&quot;</p>
+
+<p>I don&apos;t stop. I keep walking. Heart pounding, face hot, a cocktail of emotions I can&apos;t separate   violation, anger, and something I don&apos;t want to name. Something that recognizes: he saw a woman. Without me performing it. Without me trying. Without me doing a single thing other than existing on a sidewalk with a bag of clothes.</p>
+
+<p>The world is gendering me correctly and I have feelings about that and I don&apos;t know what any of them are.</p>
+
+<p>Past the catcall. Heart still hammering. Keys in my fist. I pass a hair salon   a woman in the chair getting her hair blow-dried, scrolling her phone, bored, comfortable. I&apos;ve never been in a hair salon. As Aiden, I went to a barber. Not today. Today I walked to a thrift store and bought panties and survived a catcall and that&apos;s more than enough for one Saturday.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🏠 Get home. Close the door. Breathe.</span>' "Home_Bedroom_TryOnD2">>
+		<<set $player.stress to Math.clamp($player.stress + 5, 0, 100)>>
+		<<set $player.fem to Math.clamp($player.fem + 1, 0, 100)>>
+		<<set $firstCatcall to true>>
+	<</link>>
+</div>

@@ -27,11 +27,17 @@
 
 <div class="location-grid">
 
-<<if $dashdropDone>>
+<<if $dashdropDone and $day is 0>>
 	<div class="loc-card locked">
 		<span class="loc-icon">🛵</span>
 		<span class="loc-name">DashDrop Zone</span>
 		<span class="loc-lock-req">Shift&apos;s done for today</span>
+	</div>
+<<elseif $dashdropDone>>
+	<div class="loc-card locked">
+		<span class="loc-icon">🛵</span>
+		<span class="loc-name">DashDrop Zone</span>
+		<span class="loc-lock-req">Called in sick. Not today.</span>
 	</div>
 <<else>>
 	<<link '<div class="loc-card"><span class="loc-icon">🛵</span><span class="loc-name">DashDrop Zone</span><span class="loc-hint">Start your shift</span></div>' "D00_Delivery1">><</link>>

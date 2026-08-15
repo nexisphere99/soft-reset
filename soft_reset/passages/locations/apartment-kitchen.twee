@@ -27,13 +27,17 @@
 	<<else>>
 		<p class="text3 small">You&apos;re not hungry anymore. You&apos;re not much of anything anymore.</p>
 	<</if>>
+<<elseif $day is 2 and $d02Ate>>
+	<p class="text3 small">Pizza&apos;s gone. You&apos;re full, for once.</p>
 <</if>>
 
 <<link '<span class="action-icon">🥤</span><span class="action-text">Drink some water<span class="action-sub">Free, at least.</span></span>' "Home_Kitchen">>
 	<<set $player.stress to Math.clamp($player.stress - 1, 0, 100)>>
 <</link>>
 
-<<if $knowsBeanSoupRecipe>>
+<<if $day is 2 and $cookingSkill is 0>>
+	<<link '<span class="action-icon">🍝</span><span class="action-text">Cook something<span class="action-sub">Try actual pasta, not just ramen</span></span>' "Home_Kitchen_CookD2">><</link>>
+<<elseif $knowsBeanSoupRecipe>>
 	<<link '<span class="action-icon">🍲</span><span class="action-text">Make Luis&apos;s bean soup<span class="action-sub">Cheaper than ramen, tastes like God&apos;s kitchen</span></span>' "Home_Kitchen">>
 		<<set $player.energy to Math.clamp($player.energy + 35, 0, 100)>>
 		<<set $player.stress to Math.clamp($player.stress - 3, 0, 100)>>
@@ -44,7 +48,7 @@
 	<</link>>
 <</if>>
 
-<<if $timeslot is "Evening" or $timeslot is "Night">>
+<<if ($timeslot is "Evening" or $timeslot is "Night") and not ($day is 2 and $d02Ate)>>
 	<<if $player.money gte 15>>
 		<<link '<span class="action-icon">🛵</span><span class="action-text">Order delivery<span class="action-sub">Somebody else cooks tonight</span></span><span class="action-cost">$15-30</span>' "Home_Kitchen_OrderDelivery">><</link>>
 	<<else>>
@@ -60,6 +64,84 @@
 
 :: Home_Kitchen_OrderDelivery [nobr]
 <<HUD>>
+
+<<if $day is 2 and not $metMike>>
+
+<<ImagePlaceholder "Delivery guy Mike at the door with a pizza box" "float" "assets/scene/day02/mike-delivery.png">>
+
+<div class="prose-block">
+
+<p>The irony isn&apos;t lost on me: a delivery person ordering delivery. I open the DashDrop app   the same app I use on the other side of the transaction   and order a pizza. Large pepperoni. $18. I tip $8 because I know what it&apos;s like to carry food up three flights for someone who stiffs you.</p>
+
+<p>Thirty minutes later: a knock.</p>
+
+<p>I open the door. The delivery guy is early twenties, dark hair, easy smile, a cap from a pizza place that&apos;s seen better days. He sees me and his expression does a thing   a subtle shift from &quot;delivery mode&quot; to &quot;oh, she&apos;s pretty&quot; that I&apos;ve never been on the receiving end of.</p>
+
+<<Dialogue "Mike" "🍕" "Having a night in?" "">>
+
+<p>&quot;Yeah. Thanks.&quot; I take the pizza. My fingers brush his on the box. His eyes flick down to my hand, back to my face. He&apos;s looking at me the way guys look at girls. I know this look. I&apos;ve DONE this look   or tried to, awkwardly, from the other side. But being inside it is different. Being seen is different from seeing.</p>
+
+<p>I close the door. Lean against it. The pizza box is warm against my chest.</p>
+
+<p>A delivery guy just smiled at me. A cute delivery guy. And some part of my brain   some traitorous little corner   noted that he was cute. Filed it. Kept it.</p>
+
+<p>I don&apos;t know what to do with that information. I eat the pizza instead.</p>
+
+</div>
+
+<<SceneDivider "Phone">>
+
+<div class="prose-block">
+
+<p>I eat pizza on the couch. Watch something on TV that doesn&apos;t register. Try to feel normal. The jeans and t-shirt help   I kept them on after the thrift store. It&apos;s almost ordinary. Almost.</p>
+
+<p>My phone buzzes. Jake, for the third time: &quot;seriously u good?? Can I do anything?&quot;</p>
+
+<p>I stare at it. Three question marks. Jake, who doesn&apos;t use punctuation, using three question marks. He&apos;s worried.</p>
+
+</div>
+
+<<Dialogue "Jake" "💪" "seriously u good?? Can I do anything?" "">>
+<<Dialogue $player.name "👤" "yeah just a bug. Give me a couple days." "you">>
+<<Dialogue "Jake" "💪" "aight feel better dude 💪" "">>
+
+<div class="prose-block">
+
+<p>Dude. He called me dude. I put the phone face-down on the couch.</p>
+
+<p>DashDrop app: shift scheduled for tomorrow. I stare at the notification. I have to work. I have to go out into the world on a scooter and deliver food to strangers and have them look at me and see a woman they don&apos;t recognize and I have to act like that&apos;s normal because if I don&apos;t work, I don&apos;t eat, and the fact that my body changed overnight does not change the fundamental economics of being broke.</p>
+
+<p>Money doesn&apos;t stop being necessary because your chromosomes rearranged.</p>
+
+<p>One more notification: email from the university. &quot;Records update received from [legal office]. Please confirm your preferred name for academic correspondence.&quot;</p>
+
+<p>I open it. There&apos;s a text field. Preferred name.</p>
+
+<p>I type &quot;<<print $player.name>>.&quot; Stare at it. Delete it. Type &quot;Aiden.&quot; Stare at that. Delete it. Type &quot;<<print $player.name>>&quot; again.</p>
+
+<p>My finger hovers over Send. <<print $player.name>>. That&apos;s the name on my new ID. The name NovaCure printed on the documents. The name that exists in a database somewhere, attached to my Social Security number, replacing the one my parents gave me twenty years ago.</p>
+
+<p>I press Send.</p>
+
+<p>The confirmation email arrives eight seconds later. &quot;Thank you, <<print $player.name>>. Your records have been updated.&quot;</p>
+
+<p>I close the email. Put the phone face-down on the couch. Eat another slice of pizza. Don&apos;t think about it. Don&apos;t think about it. Don&apos;t think about it.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🛏️ It&apos;s getting late. Go to bed.</span>' "Home_Kitchen">>
+		<<set $player.money -= 26>>
+		<<set $metMike to true>>
+		<<set $d02JakeTexted to true>>
+		<<set $d02UniEmail to true>>
+		<<set $d02Ate to true>>
+		<<set $player.energy to Math.clamp($player.energy + 25, 0, 100)>>
+		<<set $timeslot to "Night">>
+	<</link>>
+</div>
+
+<<else>>
 
 <<set _rbCost to window.rbRandom(15, 30)>>
 <<set _rbNpc to window.rbRandom(1, 3)>>
@@ -86,6 +168,41 @@
 		<<run window.rbSpend(_rbCost, "food")>>
 		<<set $player.energy to Math.clamp($player.energy + 30, 0, 100)>>
 		<<set $player.stress to Math.clamp($player.stress - 3, 0, 100)>>
+		<<if $day is 2>><<set $d02Ate to true>><</if>>
+	<</link>>
+</div>
+
+<</if>>
+
+:: Home_Kitchen_CookD2 [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I&apos;m going to cook something that isn&apos;t instant ramen. This is either growth or desperation. Possibly both.</p>
+
+<p>Pasta. I can do pasta. Boil water, add noodles, heat sauce from a jar. Three steps. Even this body   with its different height and different reach and different everything   can manage three steps.</p>
+
+<p>I fill the pot. The faucet is the same but my hands are smaller and the pot feels heavier. I put it on the burner. Turn the gas on. The click-click-click of the igniter. Blue flame.</p>
+
+<p>While the water heats, I open the sauce jar. Twist. Twist harder. My grip strength has decreased with the rest of my upper body mass   the jar won&apos;t budge. I try running it under hot water. I try the rubber grip thing with a dishcloth. I try swearing at it.</p>
+
+<p>The jar defeats me for four minutes. Then the lid pops and marinara sauce sprays across my t-shirt.</p>
+
+<p>&quot;GREAT.&quot;</p>
+
+<p>I change shirts. Add this to the list: jar lids are a gendered experience. Men open jars without thinking. Women develop strategies. I now need strategies.</p>
+
+<p>The pasta turns out... edible. Slightly overcooked. The sauce is from a jar and I didn&apos;t add anything to it because I don&apos;t know what &quot;anything&quot; would be. But it&apos;s warm and it&apos;s real food and I sit at the wobbly kitchen table and eat it with a fork and it&apos;s the first meal I&apos;ve cooked and sat down to eat in weeks.</p>
+
+<p>It tastes like survival. And survival tastes like Prego and overcooked penne. Not Michelin-star material. But mine.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>← Back to the kitchen</span>' "Home_Kitchen">>
+		<<set $player.energy to Math.clamp($player.energy + 30, 0, 100)>>
+		<<set $cookingSkill to 1>>
 	<</link>>
 </div>
 

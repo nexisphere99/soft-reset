@@ -1,6 +1,80 @@
 :: ThriftStore [nobr]
 <<HUD>>
 
+<<if $day is 2 and not $d02BoughtClothes>>
+
+<div class="prose-block">
+
+<p>Three blocks from my apartment. I&apos;ve walked past this place a thousand times as Aiden and never once gone inside. &quot;Second Chances&quot;   hand-painted sign, cluttered window display, a bell above the door that chimes when I push it open. The smell hits me: fabric softener, old leather, and the ghosts of whatever lives these clothes used to be part of. Christmas music is playing from a speaker somewhere. It&apos;s June.</p>
+
+<p>The racks are packed. Organized by something approximating a system   women&apos;s on the right, men&apos;s on the left, kids in the back, miscellaneous everything on shelves along the walls. I stand just inside the door and try not to look like I&apos;m about to commit a crime.</p>
+
+<p>A woman appears from behind a rack of winter coats. Fifty-something, Latina, reading glasses on a beaded chain, floral blouse that looks like it was designed by someone who&apos;d never seen a sad day. Her smile is the kind that arrives before the rest of her face catches up.</p>
+
+<p>&quot;Welcome, honey. Looking for anything specific?&quot;</p>
+
+<p>My voice comes out smaller than I intend. &quot;I... need some basics. Women&apos;s basics.&quot;</p>
+
+<p>It cracks on &quot;basics.&quot; Not from the voice being wrong   the voice is fine, a smooth alto that passes without question   but from the words. Women&apos;s basics. Me. Asking for women&apos;s basics. In a thrift store. On a Saturday. In a body I&apos;ve owned for thirty-six hours.</p>
+
+<p>Dolores   I&apos;ll learn her name later, from the receipt, printed in purple ink   looks at me. Really looks. Hood up, drowning in men&apos;s clothes, clearly uncomfortable, voice cracking. She reads the entire situation in about three seconds. And she does the kindest possible thing: she doesn&apos;t ask.</p>
+
+<p>&quot;Come with me.&quot;</p>
+
+<p>She guides me through the women&apos;s section with the efficiency of someone who&apos;s helped a thousand lost people find what they need. She doesn&apos;t know my specific flavor of lost, but she knows lost when she sees it.</p>
+
+<p>&quot;T-shirts.&quot; She pulls two plain ones from a rack   black, white. Holds them against me at arm&apos;s length, squinting. &quot;These run small, so go a size up for comfort.&quot; She folds them over her arm.</p>
+
+<p>&quot;Jeans.&quot; She holds up a pair of women&apos;s skinny jeans, dark blue wash, some stretch in the fabric. &quot;These got some stretch. Try them on.&quot; I don&apos;t know my size. She eyeballs it   a practiced scan from shoulders to hips. &quot;You look like a 4 to me. Maybe 6 in the hips.&quot;</p>
+
+<p>She leads me to a rack near the register. &quot;Underwear.&quot; Sealed three-pack of cotton bikini-cut panties   black, white, grey. &quot;These are new, store policy. Underwear&apos;s always new.&quot; She puts them on the counter. Then reaches to a shelf behind her. &quot;And you&apos;ll want these.&quot;</p>
+
+<p>A basic black sports bra. No padding, no underwire. Just support.</p>
+
+<p>&quot;What cup are you, sweetheart?&quot;</p>
+
+<p>&quot;I... don&apos;t know.&quot;</p>
+
+<p>She steps closer. Professional, quick   like a tailor sizing a jacket. She doesn&apos;t touch me. She looks. &quot;You&apos;re about a B. This should work.&quot;</p>
+
+<p>She rings it all up. The register is old   the kind with mechanical keys that clunk when she presses them.</p>
+
+<p>&quot;$32 even.&quot;</p>
+
+<p>I pay. Cash. My hands are shaking slightly, which I hope she doesn&apos;t notice, which she definitely does.</p>
+
+<p>&quot;Thanks.&quot; It comes out almost inaudible. A whisper wearing a word&apos;s clothing.</p>
+
+<p>Dolores puts a hand on my arm. Brief. Light. Warm, the way a candle is warm   not enough to burn, just enough to feel.</p>
+
+<p>&quot;First time shopping for yourself, honey?&quot; She doesn&apos;t wait for an answer she already knows. &quot;We all start somewhere.&quot; She slides the bag across the counter. &quot;Come back anytime.&quot;</p>
+
+<p>I take the bag. Walk out. The bell chimes behind me. I make it four steps down the sidewalk before my eyes blur and I have to blink hard to keep walking.</p>
+
+<p>She didn&apos;t ask why. She didn&apos;t need to. She just helped.</p>
+
+<p>There are people like that in the world. People who just help. I forgot.</p>
+
+</div>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<link '<span>🏠 Walk home with the bag</span>' "D02_Catcall">>
+		<<set $player.money -= 32>>
+		<<set $metDolores to true>>
+		<<set $d02BoughtClothes to true>>
+		<<set $player.fem to Math.clamp($player.fem + 7, 0, 100)>>
+		<<set $wardrobe.push({id:"tshirt_black",name:"Plain Black T-shirt",type:"top",fem:1,att:0,cor:0,owned:true})>>
+		<<set $wardrobe.push({id:"tshirt_white",name:"Plain White T-shirt",type:"top",fem:1,att:0,cor:0,owned:true})>>
+		<<set $wardrobe.push({id:"jeans_blue_skinny",name:"Dark Blue Skinny Jeans",type:"bottom",fem:2,att:1,cor:0,owned:true})>>
+		<<set $wardrobe.push({id:"panties_cotton_3pk",name:"Cotton Bikini Panties (3-pack)",type:"underwear",fem:1,att:0,cor:0,owned:true})>>
+		<<set $wardrobe.push({id:"sports_bra_black",name:"Basic Black Sports Bra",type:"bra",fem:2,att:0,cor:0,owned:true})>>
+		<<set $player.energy to Math.clamp($player.energy - 5, 0, 100)>>
+		<<run window.rbAddMilestone("Bought her first women's clothes.")>>
+	<</link>>
+</div>
+
+<<else>>
+
 <<if not $metDolores>>
 <div class="prose-block">
 <p>Racks of secondhand everything, color-coded, a faint smell of other people&apos;s closets. A woman behind the counter   sixties, reading glasses on a beaded chain, a cardigan that&apos;s survived more decades than you&apos;ve been alive   looks up and nods instead of smiling, which somehow feels more genuine.</p>
@@ -22,3 +96,5 @@
 <div class="choice-block" style="margin-top:2rem;">
 	<<link '<span>← Back outside</span>' "Outside">><</link>>
 </div>
+
+<</if>>

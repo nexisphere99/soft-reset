@@ -1,0 +1,69 @@
+:: D02_Morning [nobr]
+<<HUD>>
+
+<<SceneDivider "Saturday Morning">>
+
+<div class="prose-block">
+
+<p>I wake up hoping it was a dream.</p>
+
+<p>Eyes closed. I take stock before looking. The pillow. The mattress. The sheets. Maybe if I just don&apos;t open my eyes, the body will have reset overnight. Maybe I&apos;ll sit up and my chest will be flat and my hips will be narrow and my dick will be right where I left it.</p>
+
+<p>I open my eyes.</p>
+
+<p>Hair. Everywhere. Dark brown waves across the pillow, across my face, in my mouth. I spit out a strand.</p>
+
+<p>I sit up. My breasts shift with the motion   that weight, that sway, the subtle sensation of tissue settling into a new position under gravity. I&apos;m becoming aware of them as a constant. Not a shock anymore   a presence. Like tinnitus, but in my chest. Always there. Always reminding.</p>
+
+<p>Bathroom mirror. Same female face as yesterday. Same as the one I fell asleep in. Same as the one I&apos;ll have tomorrow and the day after and however long &quot;not currently available&quot; turns out to mean.</p>
+
+<p>Hair is tangled. Eyes are puffy   red-rimmed from crying and the kind of sleep that&apos;s more like losing consciousness than resting. My skin still glows, which feels like a personal insult. My body has no right to look luminous while I&apos;m falling apart.</p>
+
+<p>I try the male underwear situation again. The boxers. I pull them on. They sag at the crotch   nothing to fill the front. They ride up over the hip bones and immediately slide down the other side. My hips are six inches wider than my waist. The boxers are designed for a body shaped like a rectangle. I am shaped like a parenthesis. It&apos;s geometry. And geometry wins.</p>
+
+<p>I try the tightest male t-shirt I own. The black crew neck that used to fit snug on Aiden. On me, it does one of two things depending on how I pull it: either it stretches across the bust and rides up to show my stomach like a crop top, or it hangs from the breasts like a tent and makes me look twice my size. There is no middle ground. Men&apos;s shirts are not built for B-cups.</p>
+
+<p>I settle on the compromise that&apos;s gotten me through 48 hours: oversized black hoodie pulled down past my hips, joggers cinched with the drawstring until my waist looks like a gathered curtain, sneakers stuffed with socks. The uniform of not-dealing-with-it.</p>
+
+<p>Breakfast. I open the cabinet. Last of the cereal. No milk   finished the questionable carton two days ago. I eat dry cereal from the bag, standing at the counter, crunching through stale bran flakes and wondering at what point in my life I&apos;ll look back at this moment as funny.</p>
+
+<p>Not today. Today it&apos;s not funny.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🚪 I have to go outside. I need... things.</span>' "D02_Decision">>
+		<<set $player.energy to Math.clamp($player.energy - 10, 0, 100)>>
+	<</link>>
+</div>
+
+:: D02_Decision [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I can&apos;t stay inside forever.</p>
+
+<p>The list of things I need writes itself in my head whether I want it to or not: food (real food, not dry cereal dust), something to hold my breasts in place so I can move without every step being a physics experiment, underwear that fits a body shaped like THIS instead of a body shaped like THAT. Women&apos;s basics. The phrase sits in my brain like a foreign object.</p>
+
+<p>I need women&apos;s basics. Because I am, apparently, a woman.</p>
+
+<p>I stand at the front door. Keys in one hand. Phone in the other. <<= window.rbMoney($player.money)>> in my checking account after rent and food. Not a lot. Enough.</p>
+
+<p>Deep breath. Hood up. Head down.</p>
+
+<p>I open the door. Step into the hallway. The hallway smells the same   Mrs. Park&apos;s cooking from two floors up, the faint mildew from the leaky pipe in 3B. The stairs creak the same. The front door sticks the same way it always does.</p>
+
+<p>The world hasn&apos;t changed. The world is exactly the same as it was on Wednesday when I walked out of this building as a 5&apos;9&quot; man. The stairs don&apos;t know my hips are wider. The mailboxes don&apos;t know my chest is different. The sidewalk doesn&apos;t know my feet are three sizes smaller.</p>
+
+<p>I know. I know all of it. And I know that everyone I pass is going to look at me and see a woman they&apos;ve never seen before, and not a single one of them will know that two days ago, I was somebody else entirely.</p>
+
+<p>The sunlight hits my face. I squint. Here goes nothing.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🗺️ Head out into the neighborhood</span>' "Outside">>
+		<<set $timeslot to "Afternoon">>
+	<</link>>
+</div>
