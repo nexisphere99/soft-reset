@@ -28,7 +28,6 @@
 </div>
 
 <div class="rb-side-section rb-side-links">
-	<<if Story.has("Journal")>><<link '<span class="rb-side-link">📓 Journal</span>' "Journal">><</link>><<else>><span class="rb-side-link disabled">📓 Journal</span><</if>>
 	<<link '<span class="rb-side-link">📱 Phone</span>'>><<run window.rbPhoneOpen()>><</link>>
 	<<if Story.has("Wardrobe")>><<link '<span class="rb-side-link">👗 Wardrobe</span>' "Wardrobe">><</link>><<else>><span class="rb-side-link disabled">👗 Wardrobe</span><</if>>
 	<<if Story.has("StatsPage")>><<link '<span class="rb-side-link">📊 Full Stats</span>' "StatsPage">><</link>><<else>><span class="rb-side-link disabled">📊 Full Stats</span><</if>>
