@@ -47,6 +47,22 @@
 
 <</if>>
 
+<<if $day is 2 and window.rbRandom(1, 10) lte 3>>
+
+<div class="prose-block">
+<p>A woman pushing a stroller passes me on the path. The baby inside is asleep   mouth open, fists clenched, wearing a onesie with a dinosaur on it. The woman looks exhausted in the specific way that new parents look exhausted: beyond tired into a new dimension of consciousness that runs on caffeine and love.</p>
+<p>She sees me looking at the baby and smiles. &quot;Eight weeks. I haven&apos;t slept since March.&quot;</p>
+<p>&quot;She&apos;s beautiful.&quot;</p>
+<p>&quot;He, actually. The dinosaur is misleading.&quot; She laughs. &quot;I&apos;m running out of clean onesies. Everything is a crisis at this point.&quot;</p>
+<p>She walks on. The baby doesn&apos;t stir.</p>
+<p>I stand on the path and put my hand on my lower belly. Not because of anything specific. Not because I&apos;m pregnant or thinking about pregnancy. Just because my body has a uterus now, and ovaries, and fallopian tubes, and the theoretical capacity to grow a person inside it, and that fact hits me at random moments like this   watching a stranger push a stroller down a path I&apos;ve walked a hundred times as a man who never once thought about wombs.</p>
+<p>I take my hand away. Keep walking. But the feeling stays   the awareness of possibility. Of a body that can do things I never imagined it doing.</p>
+</div>
+
+<<set $player.fem to Math.clamp($player.fem + 1, 0, 100)>>
+
+<</if>>
+
 <div class="action-list">
 
 <<link '<span class="action-icon">🏃</span><span class="action-text">Jog the loop<span class="action-sub">Lungs burning, legs unfamiliar, keep going</span></span>' "WalkingTrail">>

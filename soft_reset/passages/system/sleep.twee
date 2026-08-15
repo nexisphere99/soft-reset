@@ -13,10 +13,19 @@
 		<<else>>
 			<p style="color:var(--text2); max-width:36ch; margin:0 auto;">The body is real. The tears were real. The avoidance was temporary. Everything is real. Nothing makes sense.</p>
 		<</if>>
+	<<elseif $day is 2>>
+		<h1>Bare Minimum</h1>
+		<<if $firstOrgasmSolo and $d02ExploreDeep>>
+			<p style="color:var(--text2); max-width:36ch; margin:0 auto;">Sports bra. Panties. Jeans. A name on a form. A body she&apos;s beginning to know. Small steps. Necessary ones.</p>
+		<<elseif $firstOrgasmSolo>>
+			<p style="color:var(--text2); max-width:36ch; margin:0 auto;">Clothes that fit. A name sent. A body she&apos;s learning to live in. Small steps. Necessary ones.</p>
+		<<else>>
+			<p style="color:var(--text2); max-width:36ch; margin:0 auto;">Clothes that fit. A name sent. A body she&apos;s not ready to know. Small steps. Even the smallest ones count.</p>
+		<</if>>
 
 		<div style="margin-top:2.4rem; padding-top:2rem; border-top:1px solid var(--border);">
-			<div class="day-badge" style="margin-bottom:1rem;">🦋 End of Version <strong>0.1</strong></div>
-			<p style="color:var(--text2); max-width:38ch; margin:0 auto 1.6rem;">That&apos;s everything built so far. Day 2 and beyond   Aida&apos;s life as it actually unfolds   is still being written.</p>
+			<div class="day-badge" style="margin-bottom:1rem;">🦋 End of Version <strong>0.2</strong></div>
+			<p style="color:var(--text2); max-width:38ch; margin:0 auto 1.6rem;">That&apos;s everything built so far. Day 3 and beyond   Aida&apos;s life as it actually unfolds   is still being written.</p>
 			<a href="/soft-reset_page" target="_blank" rel="noopener" class="btn-primary">💜 Support SOFT RESET on Patreon</a>
 
 			<p style="color:var(--text3); font-size:.78rem; max-width:34ch; margin:1.8rem auto .8rem;">No more story past this point yet   but the apartment, the neighborhood, and the people in it still work, if you&apos;d rather just wander.</p>
@@ -34,7 +43,7 @@
 		<p style="color:var(--text2); max-width:36ch; margin:0 auto;">You made it through. That still counts for something.</p>
 	<</if>>
 
-	<<if $day isnot 1>>
+	<<if $day isnot 2>>
 	<<set _wakeLabel to '<span class="btn-primary">Wake Up → Day ' + ($day + 1) + '</span>'>>
 	<div style="margin-top:2rem;">
 		<<link _wakeLabel>>
@@ -61,6 +70,11 @@
 				<<run window.rbAddMilestone("Woke up transformed.")>>
 				<<run window.rbAddJournalEntry("Reborn", "I fell asleep as Aiden Cole. I don't know who I'll wake up as.")>>
 				<<goto "D01_Wakeup">>
+			<<elseif _fromDay is 1>>
+				<<set $weekDay to "Saturday">>
+				<<set $player.energy to 90>>
+				<<set $player.stress to Math.clamp($player.stress - 5, 0, 100)>>
+				<<goto "D02_Morning">>
 			<<else>>
 				<<set $player.energy to 100>>
 				<<goto "Home">>
