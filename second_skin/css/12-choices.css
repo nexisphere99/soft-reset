@@ -1,0 +1,60 @@
+/* ==========================================================================
+   SECOND_SKIN   12 CHOICE BLOCKS
+   Choice links are pill-shaped buttons, never underlined text.
+   ========================================================================== */
+
+.choice-block {
+  display: flex;
+  flex-direction: column;
+  gap: .65rem;
+  max-width: 100%;
+  margin: var(--sp-5) 0;
+}
+
+.choice-block > a,
+.choice-block .choice-link {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  padding: .9rem 1.4rem;
+  font-size: .94rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color var(--t-fast) var(--ease), background var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
+}
+.choice-block > a:hover,
+.choice-block .choice-link:hover {
+  border-color: var(--accent);
+  background: var(--card-hover);
+  box-shadow: var(--shadow-glow-accent);
+}
+.choice-block > a::after,
+.choice-block .choice-link::after {
+  content: '→';
+  margin-left: auto;
+  color: var(--accent);
+  font-weight: 800;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
+}
+.choice-block > a:hover::after,
+.choice-block .choice-link:hover::after { opacity: 1; transform: translateX(0); }
+
+.choice-req {
+  font-size: .68rem;
+  font-weight: 800;
+  padding: .18rem .55rem;
+  border-radius: var(--r-pill);
+  background: var(--bg2);
+  color: var(--text3);
+  margin-left: auto;
+}
+.choice-req.met { background: var(--green-glow); color: var(--green); }
+.choice-req.unmet { background: var(--red-glow); color: var(--red); }
+
+.choice-block.centered { align-items: center; margin-left: auto; margin-right: auto; }

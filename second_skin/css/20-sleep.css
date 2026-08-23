@@ -1,0 +1,60 @@
+/* ==========================================================================
+   SECOND_SKIN   20 SLEEP / DAY-TRANSITION SCREENS
+   ========================================================================== */
+
+.sleep-screen {
+  min-height: calc(100vh - 6.4rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--sp-5);
+  animation: sleep-fade .3s ease;
+}
+@keyframes sleep-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.big-icon {
+  font-size: 4.2rem;
+  margin-bottom: var(--sp-3);
+}
+
+.day-badge {
+  display: inline-block;
+  font-size: .74rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--text2);
+  background: var(--surface);
+  border: 1px solid var(--border-hi);
+  padding: .35rem 1rem;
+  border-radius: var(--r-pill);
+  margin-bottom: var(--sp-3);
+}
+.day-badge strong {
+  color: var(--accent);
+}
+
+.sleep-screen h1 { max-width: 20ch; }
+
+.age-gate {
+  min-height: calc(100vh - 6.4rem);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: var(--sp-5);
+  max-width: 480px; margin: 0 auto;
+}
+.age-gate-icon { font-size: 3.4rem; margin-bottom: var(--sp-2); }
+.age-gate-sub { color: var(--text2); font-size: .9rem; }
+.age-gate-warning {
+  margin-top: var(--sp-3);
+  background: var(--red-glow);
+  border: 1px solid var(--accent);
+  border-radius: var(--r-md);
+  padding: var(--sp-2) var(--sp-3);
+  font-size: .8rem;
+  color: var(--text);
+}

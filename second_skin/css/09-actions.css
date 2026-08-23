@@ -1,0 +1,63 @@
+/* ==========================================================================
+   SECOND_SKIN   09 ACTION BUTTONS
+   ========================================================================== */
+
+.action-list {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  max-width: 100%;
+  margin: var(--sp-4) 0;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: .8rem 1.1rem;
+  cursor: pointer;
+  transition: border-color var(--t-fast) var(--ease), background var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
+}
+.action-btn:hover {
+  border-color: var(--accent);
+  background: var(--card-hover);
+  box-shadow: var(--shadow-glow-accent);
+}
+
+.action-icon {
+  font-size: 1.1rem; flex: none;
+  width: 2.4rem; height: 2.4rem;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: var(--r-pill);
+  background: var(--grad-soft);
+  border: 1px solid var(--border);
+}
+.action-text { flex: 1; font-size: .92rem; font-weight: 600; color: var(--text); }
+.action-sub { display: block; font-size: .76rem; color: var(--text3); font-weight: 400; margin-top: .1rem; }
+
+.action-cost {
+  flex: none;
+  font-size: .7rem;
+  font-weight: 800;
+  padding: .2rem .6rem;
+  border-radius: var(--r-pill);
+  background: var(--gold-glow);
+  color: var(--accent);
+}
+
+.action-fem { border-color: var(--accent-glow); }
+.action-fem:hover { border-color: var(--accent); box-shadow: var(--shadow-glow-accent); }
+.action-fem .action-icon { background: var(--grad-soft); }
+
+.action-quest { border-color: var(--accent); }
+.action-quest:hover { border-color: var(--accent); }
+.action-quest .action-icon { background: var(--grad-primary); }
+
+.action-locked {
+  opacity: .45;
+  cursor: default;
+  pointer-events: none;
+}
