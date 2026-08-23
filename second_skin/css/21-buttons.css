@@ -1,0 +1,49 @@
+/* ==========================================================================
+   SECOND_SKIN   21 BUTTONS
+   Rounded 8px buttons with a subtle hover glow. (Choice-block links are
+   the pill-shaped exception   see 12-choices.css.)
+   ========================================================================== */
+
+.btn-primary, .btn-secondary, .btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  font-family: var(--font-body);
+  font-size: .92rem;
+  font-weight: 700;
+  padding: .8rem 1.7rem;
+  border-radius: var(--r-md);
+  cursor: pointer;
+  transition: transform var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease), border-color var(--t-fast) var(--ease), background var(--t-fast) var(--ease);
+  border: 1px solid transparent;
+  user-select: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(233, 69, 96, .25);
+}
+.btn-primary:hover {
+  background: var(--accent-hover);
+  box-shadow: 0 0 0 4px var(--accent-glow);
+}
+.btn-primary:active { transform: scale(.98); }
+
+.btn-secondary {
+  background: var(--surface);
+  color: var(--text2);
+  border-color: var(--border);
+}
+.btn-secondary:hover { background: var(--card-hover); color: var(--text); border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-glow); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.btn-outline:hover { background: var(--accent-glow); box-shadow: 0 0 0 4px var(--accent-glow); }
+
+.btn-block { display: flex; width: 100%; }
+.btn-sm { padding: .5rem 1.1rem; font-size: .8rem; }
