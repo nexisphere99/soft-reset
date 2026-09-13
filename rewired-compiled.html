@@ -7202,8 +7202,10 @@ Call: (555) 0147-CURE
 	&lt;&lt;set $objective to &quot;The laptop&#39;s on the bed. Go deep.&quot;&gt;&gt;
 &lt;&lt;elseif not $d03Ate&gt;&gt;
 	&lt;&lt;set $objective to &quot;Eat something. The cereal&#39;s gone.&quot;&gt;&gt;
-&lt;&lt;elseif $timeslot isnot &quot;Night&quot;&gt;&gt;
+&lt;&lt;elseif not $d03UniEmailRead&gt;&gt;
 	&lt;&lt;set $objective to &quot;Check your phone before it gets any later.&quot;&gt;&gt;
+&lt;&lt;elseif $timeslot isnot &quot;Night&quot;&gt;&gt;
+	&lt;&lt;set $objective to &quot;Sit with the TV for a while. Let the evening pass.&quot;&gt;&gt;
 &lt;&lt;else&gt;&gt;
 	&lt;&lt;set $objective to &quot;It&#39;s been a long day of finding things out. Time to sleep.&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;

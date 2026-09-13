@@ -169,8 +169,10 @@
 	<<set $objective to "The laptop's on the bed. Go deep.">>
 <<elseif not $d03Ate>>
 	<<set $objective to "Eat something. The cereal's gone.">>
-<<elseif $timeslot isnot "Night">>
+<<elseif not $d03UniEmailRead>>
 	<<set $objective to "Check your phone before it gets any later.">>
+<<elseif $timeslot isnot "Night">>
+	<<set $objective to "Sit with the TV for a while. Let the evening pass.">>
 <<else>>
 	<<set $objective to "It's been a long day of finding things out. Time to sleep.">>
 <</if>>
