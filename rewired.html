@@ -5646,6 +5646,10 @@ $(document).on(":passageend", function () {
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;elseif $day is 2 and $d02Ate&gt;&gt;
 	&lt;p class=&quot;text3 small&quot;&gt;Pizza&amp;apos;s gone. You&amp;apos;re full, for once.&lt;/p&gt;
+&lt;&lt;elseif $day is 3 and not $d03Ate&gt;&gt;
+	&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🍝&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Cook something&lt;span class=&quot;action-sub&quot;&gt;Pasta, jar sauce, sitting down for once&lt;/span&gt;&lt;/span&gt;&#39; &quot;D03_Evening_Cook&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;elseif $day is 3&gt;&gt;
+	&lt;p class=&quot;text3 small&quot;&gt;You already ate. Small victory, but it counts.&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🥤&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Drink some water&lt;span class=&quot;action-sub&quot;&gt;Free, at least.&lt;/span&gt;&lt;/span&gt;&#39; &quot;Home_Kitchen&quot;&gt;&gt;
@@ -5804,6 +5808,7 @@ $(document).on(":passageend", function () {
 &lt;/div&gt;
 
 &lt;&lt;set $metCodyD3 to true&gt;&gt;
+&lt;&lt;set $d03Ate to true&gt;&gt;
 &lt;&lt;run window.rbSpend(26, &quot;food&quot;)&gt;&gt;
 &lt;&lt;run window.statChange(&quot;fem&quot;, 1)&gt;&gt;
 &lt;&lt;run window.statChange(&quot;att&quot;, 1)&gt;&gt;

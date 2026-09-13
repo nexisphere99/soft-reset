@@ -29,6 +29,10 @@
 	<</if>>
 <<elseif $day is 2 and $d02Ate>>
 	<p class="text3 small">Pizza&apos;s gone. You&apos;re full, for once.</p>
+<<elseif $day is 3 and not $d03Ate>>
+	<<link '<span class="action-icon">🍝</span><span class="action-text">Cook something<span class="action-sub">Pasta, jar sauce, sitting down for once</span></span>' "D03_Evening_Cook">><</link>>
+<<elseif $day is 3>>
+	<p class="text3 small">You already ate. Small victory, but it counts.</p>
 <</if>>
 
 <<link '<span class="action-icon">🥤</span><span class="action-text">Drink some water<span class="action-sub">Free, at least.</span></span>' "Home_Kitchen">>
@@ -190,6 +194,7 @@
 </div>
 
 <<set $metCodyD3 to true>>
+<<set $d03Ate to true>>
 <<run window.rbSpend(26, "food")>>
 <<run window.statChange("fem", 1)>>
 <<run window.statChange("att", 1)>>
