@@ -39,7 +39,9 @@
 	<<set $player.stress to Math.clamp($player.stress - 1, 0, 100)>>
 <</link>>
 
-<<if $day is 2 and $cookingSkill is 0>>
+<<if $day is 3>>
+	/* Day 3's own "Cook something" action above already covers this. */
+<<elseif $day is 2 and $cookingSkill is 0>>
 	<<link '<span class="action-icon">🍝</span><span class="action-text">Cook something<span class="action-sub">Try actual pasta, not just ramen</span></span>' "Home_Kitchen_CookD2">><</link>>
 <<elseif $knowsBeanSoupRecipe>>
 	<<link '<span class="action-icon">🍲</span><span class="action-text">Make Hector&apos;s bean soup<span class="action-sub">Cheaper than ramen, tastes like God&apos;s kitchen</span></span>' "Home_Kitchen">>

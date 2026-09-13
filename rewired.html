@@ -5656,7 +5656,9 @@ $(document).on(":passageend", function () {
 	&lt;&lt;set $player.stress to Math.clamp($player.stress - 1, 0, 100)&gt;&gt;
 &lt;&lt;/link&gt;&gt;
 
-&lt;&lt;if $day is 2 and $cookingSkill is 0&gt;&gt;
+&lt;&lt;if $day is 3&gt;&gt;
+	/* Day 3&#39;s own &quot;Cook something&quot; action above already covers this. */
+&lt;&lt;elseif $day is 2 and $cookingSkill is 0&gt;&gt;
 	&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🍝&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Cook something&lt;span class=&quot;action-sub&quot;&gt;Try actual pasta, not just ramen&lt;/span&gt;&lt;/span&gt;&#39; &quot;Home_Kitchen_CookD2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;&lt;elseif $knowsBeanSoupRecipe&gt;&gt;
 	&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🍲&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Make Hector&amp;apos;s bean soup&lt;span class=&quot;action-sub&quot;&gt;Cheaper than ramen, tastes like God&amp;apos;s kitchen&lt;/span&gt;&lt;/span&gt;&#39; &quot;Home_Kitchen&quot;&gt;&gt;
