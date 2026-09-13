@@ -132,6 +132,8 @@
 
 </div>
 
+<<set $timeslot to "Night">>
+
 <div class="choice-block">
 	<<link '<span>🛏️ Head to bed</span>' "Home_Bedroom">><</link>>
 </div>

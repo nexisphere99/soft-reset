@@ -4750,6 +4750,8 @@ $(document).on(":passageend", function () {
 
 &lt;/div&gt;
 
+&lt;&lt;set $timeslot to &quot;Night&quot;&gt;&gt;
+
 &lt;div class=&quot;choice-block&quot;&gt;
 	&lt;&lt;link &#39;&lt;span&gt;🛏️ Head to bed&lt;/span&gt;&#39; &quot;Home_Bedroom&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="D03_Bedtime" tags="nobr" position="725,350" size="100,100">&lt;&lt;HUD&gt;&gt;
@@ -5313,12 +5315,14 @@ $(document).on(":passageend", function () {
 		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🪞&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Examine yourself with the hand mirror&lt;span class=&quot;action-sub&quot;&gt;Privacy. Courage.&lt;/span&gt;&lt;/span&gt;&#39; &quot;D03_PhysicalExplore&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 	&lt;&lt;elseif not $d03MasturbationExplore&gt;&gt;
 		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🔥&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Test your body&amp;apos;s responses... (research)&lt;span class=&quot;action-sub&quot;&gt;You already know it isn&amp;apos;t really research&lt;/span&gt;&lt;/span&gt;&#39; &quot;D03_MasturbationExplore&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-	&lt;&lt;elseif $timeslot is &quot;Night&quot; and $d03Ate and $d03UniEmailRead&gt;&gt;
-		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🛏️&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Go to bed&lt;span class=&quot;action-sub&quot;&gt;It&amp;apos;s been enough for one day.&lt;/span&gt;&lt;/span&gt;&#39; &quot;D03_Bedtime&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 	&lt;&lt;elseif not $d03Ate&gt;&gt;
-		&lt;p class=&quot;text3 small&quot;&gt;You should eat something before it gets late.&lt;/p&gt;
+		&lt;p class=&quot;text3 small&quot;&gt;You should eat something before it gets late. Try the kitchen.&lt;/p&gt;
+	&lt;&lt;elseif not $d03UniEmailRead&gt;&gt;
+		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;📱&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Check your phone&lt;span class=&quot;action-sub&quot;&gt;Texts and an email you&amp;apos;ve been avoiding&lt;/span&gt;&lt;/span&gt;&#39; &quot;D03_Evening_Phone&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+	&lt;&lt;elseif $timeslot isnot &quot;Night&quot;&gt;&gt;
+		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;📺&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Sit with the TV for a while&lt;span class=&quot;action-sub&quot;&gt;Let the evening pass&lt;/span&gt;&lt;/span&gt;&#39; &quot;D03_Evening_Alone&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 	&lt;&lt;else&gt;&gt;
-		&lt;p class=&quot;text3 small&quot;&gt;Check your phone before it gets any later.&lt;/p&gt;
+		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🛏️&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Go to bed&lt;span class=&quot;action-sub&quot;&gt;It&amp;apos;s been enough for one day.&lt;/span&gt;&lt;/span&gt;&#39; &quot;D03_Bedtime&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 	&lt;&lt;/if&gt;&gt;
 
 	&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🛒&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Browse online shopping&lt;span class=&quot;action-sub&quot;&gt;The laptop&amp;apos;s already open&lt;/span&gt;&lt;/span&gt;&#39; &quot;D03_OnlineShopping&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;

@@ -59,12 +59,14 @@
 		<<link '<span class="action-icon">🪞</span><span class="action-text">Examine yourself with the hand mirror<span class="action-sub">Privacy. Courage.</span></span>' "D03_PhysicalExplore">><</link>>
 	<<elseif not $d03MasturbationExplore>>
 		<<link '<span class="action-icon">🔥</span><span class="action-text">Test your body&apos;s responses... (research)<span class="action-sub">You already know it isn&apos;t really research</span></span>' "D03_MasturbationExplore">><</link>>
-	<<elseif $timeslot is "Night" and $d03Ate and $d03UniEmailRead>>
-		<<link '<span class="action-icon">🛏️</span><span class="action-text">Go to bed<span class="action-sub">It&apos;s been enough for one day.</span></span>' "D03_Bedtime">><</link>>
 	<<elseif not $d03Ate>>
-		<p class="text3 small">You should eat something before it gets late.</p>
+		<p class="text3 small">You should eat something before it gets late. Try the kitchen.</p>
+	<<elseif not $d03UniEmailRead>>
+		<<link '<span class="action-icon">📱</span><span class="action-text">Check your phone<span class="action-sub">Texts and an email you&apos;ve been avoiding</span></span>' "D03_Evening_Phone">><</link>>
+	<<elseif $timeslot isnot "Night">>
+		<<link '<span class="action-icon">📺</span><span class="action-text">Sit with the TV for a while<span class="action-sub">Let the evening pass</span></span>' "D03_Evening_Alone">><</link>>
 	<<else>>
-		<p class="text3 small">Check your phone before it gets any later.</p>
+		<<link '<span class="action-icon">🛏️</span><span class="action-text">Go to bed<span class="action-sub">It&apos;s been enough for one day.</span></span>' "D03_Bedtime">><</link>>
 	<</if>>
 
 	<<link '<span class="action-icon">🛒</span><span class="action-text">Browse online shopping<span class="action-sub">The laptop&apos;s already open</span></span>' "D03_OnlineShopping">><</link>>
