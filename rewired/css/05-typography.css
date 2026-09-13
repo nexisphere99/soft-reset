@@ -1,0 +1,63 @@
+/* ==========================================================================
+   REWIRED   05 TYPOGRAPHY
+   ========================================================================== */
+
+h1, h2, h3, h4 {
+  font-family: var(--font-head);
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.25;
+  margin: 0 0 var(--sp-2);
+}
+h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -.01em;
+}
+h2 { font-size: 1.35rem; font-weight: 600; color: var(--text2); }
+h3 { font-size: 1.1rem; font-weight: 600; }
+
+.accent {
+  color: var(--accent);
+}
+.rose { color: var(--accent); }
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--sp-2);
+}
+.eyebrow::before {
+  content: '';
+  width: 18px; height: 2px;
+  background: var(--accent);
+  border-radius: var(--r-pill);
+}
+
+p { margin: 0 0 1.1em; color: var(--text); }
+p:last-child { margin-bottom: 0; }
+
+.text2 { color: var(--text2); }
+.text3 { color: var(--text3); }
+.small { font-size: .85rem; }
+.italic { font-style: italic; }
+
+strong { font-weight: 700; color: var(--text); }
+em { font-style: italic; color: var(--accent); }
+
+blockquote {
+  margin: var(--sp-3) 0;
+  padding: var(--sp-2) var(--sp-3);
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  color: var(--text2);
+  font-size: .95rem;
+  white-space: pre-line;
+}

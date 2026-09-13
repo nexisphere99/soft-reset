@@ -1,0 +1,224 @@
+:: Home_Bathroom [nobr]
+<<HUD>>
+
+<div class="map-here">📍 Home → Bathroom</div>
+<h1>The <span class="accent">Bathroom</span></h1>
+
+<div class="prose-block">
+<p>Three steps from the mattress, barely big enough to turn around in. The hot water got cut eight days ago for nonpayment, so everything coming out of the tap now comes out cold.</p>
+</div>
+
+<div class="action-list">
+
+<<if $day is 0>>
+	<<if not $washedUp>>
+		<<link '<span class="action-icon">🚿</span><span class="action-text">Wash up<span class="action-sub">Cold shower. Look in the mirror.</span></span>' "Home_Bathroom_Wash">><</link>>
+	<<else>>
+		<p class="text3 small">You already washed up this morning. The mirror hasn&apos;t changed its opinion of you since.</p>
+	<</if>>
+<<elseif $day is 1>>
+	<<if not $showeredDay1>>
+		<<link '<span class="action-icon">🚿</span><span class="action-text">Take a shower<span class="action-sub">You need to wash the last twenty-four hours off.</span></span>' "Home_Bathroom_ShowerD1">><</link>>
+	<<else>>
+		<p class="text3 small">You already showered. You&apos;re not ready to think about it again yet.</p>
+	<</if>>
+<</if>>
+
+<<link '<span class="action-icon">🚽</span><span class="action-text">Use the toilet<span class="action-sub">Nothing to report.</span></span>' "Home_Bathroom">>
+	<<set $player.stress to Math.clamp($player.stress - 1, 0, 100)>>
+<</link>>
+
+<<link '<span class="action-icon">🫧</span><span class="action-text">Take a minute alone<span class="action-sub">Nobody&apos;s watching. Might as well.</span></span>' "Home_Bathroom_Alone">><</link>>
+
+</div>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<link '<span>← Back to the apartment</span>' "Home">><</link>>
+</div>
+
+:: Home_Bathroom_Wash [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Male Marcus, bathroom mirror, tired, stubble, freckles" "portrait" "assets/characters/mc-male/mirror-morning.png">>
+
+<div class="prose-block">
+
+<p>I turn on the shower. Cold, obviously. I called the utility company earlier with a voice full of that specific brand of dignity people scraping the bottom learn to perform. &quot;I&apos;ll have it by the fifteenth.&quot; I won&apos;t have it by the fifteenth.</p>
+
+<p>I splash cold water on my face and look in the mirror.</p>
+
+<p>Angular jaw with patches of stubble I can&apos;t quite grow into a full beard. Hazel-green eyes set in slightly downturned corners that make me look perpetually tired, which is fair, since I actually am perpetually tired. Dark circles like bruises under both eyes. Cheekbones too prominent because my face is too thin because I don&apos;t eat enough because food costs money I don&apos;t have.</p>
+
+<p>Dark brown hair, wavy and overgrown past my ears, brushing my collar, because a haircut costs twenty dollars and twenty dollars is four meals.</p>
+
+<p>Freckles scattered across my nose and upper cheeks, the one feature I&apos;ve never minded. My grandmother used to say freckles were angel kisses. She died when I was sixteen.</p>
+
+<p>&quot;You look like shit,&quot; I tell the mirror.</p>
+
+<p>The mirror doesn&apos;t argue with me.</p>
+
+<p>I brush my teeth with a toothbrush that should&apos;ve been replaced two months ago, bristles splaying outward like they&apos;re trying to escape my mouth. I spit and don&apos;t look at the mirror again on my way out.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>← Back to the bathroom</span>' "Home_Bathroom">>
+		<<set $washedUp to true>>
+		<<set $player.stress to Math.clamp($player.stress - 2, 0, 100)>>
+	<</link>>
+</div>
+
+:: Home_Bathroom_Alone [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I lock a door that doesn&apos;t really need locking, in an apartment where I live completely alone. Habit more than necessity.</p>
+
+<p>It doesn&apos;t take long, it never does when it&apos;s just about function, five minutes of not thinking about rent or loans or the DashDrop app or anything at all, which is honestly the entire appeal. Efficient and unglamorous, a pressure valve rather than an event.</p>
+
+<p>Afterward I feel marginally more human, which is a low bar but one I clear anyway.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>← Back to the bathroom</span>' "Home_Bathroom">>
+		<<set $player.stress to Math.clamp($player.stress - 8, 0, 100)>>
+		<<set $player.energy to Math.clamp($player.energy - 3, 0, 100)>>
+	<</link>>
+</div>
+
+:: Home_Bathroom_ShowerD1 [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "First shower, water cascading over new skin" "portrait" "assets/characters/mc-female-phase1/shower-first.gif">>
+
+<div class="prose-block">
+
+<p>I need to shower. I haven&apos;t since yesterday morning, yesterday morning when I was a man, with stubble and cold water and a body I actually understood. That feels like a lifetime ago. It was twenty-four hours ago. Same thing, apparently.</p>
+
+<p>I turn on the shower and it&apos;s still cold, the hot water bill is still unpaid, and the universe doesn&apos;t pause its billing cycle for biological impossibilities.</p>
+
+<p>I undress, the hoodie, the t-shirt, the boxers, and stand naked in the bathroom for a moment. I&apos;ve been avoiding looking directly at any of it. In the mirror I saw the face, the chest, the hips in pieces. I haven&apos;t stood fully naked and taken in all of it at once.</p>
+
+<p>So I look.</p>
+
+<p>The woman in the mirror is small, five-six, slender, pale skin with freckles across her shoulders that match the ones on her nose. B-cup breasts, round and teardrop-shaped, nipples small and pink and already reacting to the cold air. A waist that curves inward like a parenthesis, hips flaring out below it. A dark triangle of pubic hair. Smooth legs. Small feet.</p>
+
+<p>She is, objectively, a woman. Not &quot;sort of&quot; or &quot;in the process of.&quot; Entirely, unambiguously, biologically female. She could walk into any gynecologist&apos;s office in the country and they&apos;d find nothing unusual at all.</p>
+
+<p>Except that she was a man yesterday. That part&apos;s unusual.</p>
+
+<p>I step into the shower.</p>
+
+<p>The cold water hits and everything amplifies at once. This skin, my skin, is more sensitive than it used to be. Every droplet registers on its own. The pressure on my shoulders feels sharper. Water running down my spine sends a cascade of tiny signals my old skin would&apos;ve just ignored. My breasts feel the cold water too, and my nipples harden instantly, a sharp, pleasant sensation radiating from the tips inward.</p>
+
+<p>I start washing, soap and hands finding new geography everywhere.</p>
+
+<p>The weight of my breasts in my hands as I lather them, soft on the surface, firm underneath. My soapy fingers slip over a nipple and a jolt runs from my chest to somewhere behind my navel, electric enough that I actually gasp out loud. The sound echoes off the shower tile, feminine, involuntary, unmistakably mine.</p>
+
+<p>My stomach is flat and smooth, the soft indent of my navel, no trail of hair below it anymore.</p>
+
+<p>My hips carry a curve of bone now, a real ridge. My hands follow the contour like I&apos;m tracing a map of territory I&apos;ve never once visited.</p>
+
+<p>Between my legs I move carefully, soap and warm water, my fingers finding the outer lips first, soft and smooth, then the inner lips, delicate and warm. Then I find something else entirely.</p>
+
+<p>The clit. A light touch, half accidental, half deliberate, somewhere in between the two.</p>
+
+<p>My whole body reacts at once. A clench deep inside, inside a vagina I&apos;ve had for exactly one day, and a warmth blooming outward from that single point of contact like a match struck in a dark room.</p>
+
+<p>&quot;Oh...&quot;</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🔍 Keep exploring... (curiosity wins)</span>' "Home_Bathroom_ShowerExplore">><</link>>
+	<<link '<span>🚿 Finish quickly and get out (not ready)</span>' "Home_Bathroom_ShowerAvoid">><</link>>
+</div>
+
+:: Home_Bathroom_ShowerExplore [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>My hand stays put. My brain is saying stop, my body is saying the exact opposite. Curiosity wins out over fear, or maybe it isn&apos;t curiosity at all, maybe it&apos;s just the biological imperative of a nervous system wired to chase sensation, and this particular nervous system is freshly wired and firing on every cylinder it has.</p>
+
+<p>I circle the clit with a soapy fingertip, slow and gentle, testing the water.</p>
+
+<p>The sensation keeps building, different from anything I ever felt as a man. There&apos;s no single focal point, no linear climb from soft to hard to release. This is a spreading warmth, a tightening coil, nerve endings lighting up across my whole body at once, my nipples aching, my thighs tensing, the small of my back arching without my permission, and between my legs, a slickness that isn&apos;t just the shower water anymore.</p>
+
+<p>My nipples ache, hard now. My breathing speeds up. Water runs over my closed eyes.</p>
+
+<p>I try slipping a finger inside, slowly, feeling myself open around it, warm, wet, tight, ridged walls that grip back. Alive, somehow. I add a second finger and feel the stretch, a fullness I have absolutely no frame of reference for.</p>
+
+<p>I find a spot on the front wall, ridged and swollen, different from the tissue surrounding it. I press it and my knees actually buckle.</p>
+
+<p>&quot;What the... fuck...&quot;</p>
+
+<p>The G-spot, apparently. I press it again and my hips rock forward on their own, my body moving without waiting for my input, chasing the sensation itself.</p>
+
+<p>I go back to the clit, circling faster now. The coil tightens further. I&apos;m panting hard. The shower water mixes with a slickness coming from somewhere inside me, and the clinical part of my brain notes that my body is producing its own lubrication while the rest of my brain has gone to white noise.</p>
+
+<p>The orgasm doesn&apos;t so much arrive as detonate.</p>
+
+<p>It starts at the clit and radiates outward, through my pelvis, up my stomach, into my chest. My vaginal muscles clench rhythmically, and I can actually feel them pulsing, squeezing around my own fingers, each clench sending another wave through my whole body. My legs give out completely and I slide down the shower wall onto the tile.</p>
+
+<p>I&apos;m moaning, high and breathy and feminine, completely involuntary sounds coming out of me without asking permission first. The sound of my own pleasure shocks me almost as much as the pleasure itself does. That&apos;s my voice making those sounds, because of what my hand is doing, because of what my body has become.</p>
+
+<p>The aftershocks keep going for fifteen or twenty seconds, small clenches and twitches fading out like echoes. My hand is still between my legs, fingers still inside, and I can feel the last ripples die down.</p>
+
+<p>I sit under the running water, still panting, heart racing in a chest that has breasts on it now. My hands are shaking.</p>
+
+<p>&quot;That was... that wasn&apos;t like...&quot;</p>
+
+<p>Male orgasm was always build, peak, release, done. One direction, one moment, then the refractory period, the flatline, the don&apos;t-touch-me, roll over and stare at the ceiling.</p>
+
+<p>This was build, build, build, explode, ripple, ripple, ripple, echo, echo, afterglow, and somehow my body is already humming again, already asking. Again already?</p>
+
+<p>&quot;No. Absolutely not.&quot;</p>
+
+<p>I stand up on shaking legs and finish showering on autopilot, get out, wrap myself in a towel. My whole body is still vibrating at a frequency I can feel in my teeth.</p>
+
+<p>I look at my flushed face in the foggy mirror. Wet hair. Bright eyes. Pink cheeks. A woman who just came for the first time, in a body she&apos;s had for less than a day.</p>
+
+<p>&quot;What is happening to me.&quot;</p>
+
+<p>It isn&apos;t a question. There&apos;s no question mark in it anywhere. It&apos;s just a statement aimed straight at the universe, and the universe doesn&apos;t bother answering.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>← Back to the bathroom</span>' "Home_Bathroom">>
+		<<set $showeredDay1 to true>>
+		<<set $firstShower to true>>
+		<<set $firstOrgasmSolo to true>>
+		<<set $player.arousal to 15>>
+		<<set $player.fem to Math.clamp($player.fem + 3, 0, 100)>>
+		<<set $player.cor to Math.clamp($player.cor + 2, 0, 100)>>
+		<<run window.rbAddMilestone("First orgasm, in this body.")>>
+	<</link>>
+</div>
+
+:: Home_Bathroom_ShowerAvoid [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I pull my hand away and wash quickly instead, clinical and mechanical, careful not to linger anywhere. No exploring. No feeling any of it.</p>
+
+<p>The arousal is still there, I can feel it, a warmth between my legs, a swelling around the spot I accidentally found earlier. My body is responding to stimulation and I&apos;m choosing to ignore it the way you ignore a fire alarm you&apos;re fairly sure is just a drill.</p>
+
+<p>I get out, towel off without looking down, wrap the towel around my chest, around my chest, because there are breasts there now that need covering, and stand in the bathroom just breathing until the warmth finally fades.</p>
+
+<p>It doesn&apos;t fully fade, honestly. It just goes underground, waiting. It always comes back eventually.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>← Back to the bathroom</span>' "Home_Bathroom">>
+		<<set $showeredDay1 to true>>
+		<<set $firstShower to true>>
+		<<set $player.fem to Math.clamp($player.fem + 1, 0, 100)>>
+		<<set $player.stress to Math.clamp($player.stress + 5, 0, 100)>>
+	<</link>>
+</div>

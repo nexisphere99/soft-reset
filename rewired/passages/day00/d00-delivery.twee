@@ -1,0 +1,133 @@
+:: D00_Delivery1 [nobr]
+<<HUD>>
+
+<<if $day is 0 and not ($washedUp and $ateBreakfast and $gotDressed)>>
+
+<div class="prose-block">
+<p>The DashDrop app just sits there, shift button greyed out. It won&apos;t let me clock in looking like this. I need to wash up, eat something, get dressed. The zone isn&apos;t going anywhere.</p>
+</div>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<link '<span>← Back outside</span>' "Outside">><</link>>
+</div>
+
+<<else>>
+
+<<set $timeslot to "Afternoon">>
+<<set $player.energy to Math.clamp($player.energy - 10, 0, 100)>>
+
+<<SceneDivider "DashDrop Shift, 11:00 AM">>
+
+<<ImagePlaceholder "Marcus on the delivery scooter, orange DashDrop jacket, urban street" "banner" "assets/characters/mc-male/delivery-scooter.png">>
+
+<div class="prose-block">
+
+<p>The scooter coughs to life on the third try. I count that as a win. At this point I&apos;d count almost anything as a win.</p>
+
+<p>Four hours on the road, five deliveries. The math of gig work is simple and depressing: each delivery pays $4.50 base plus tip plus a time bonus if I&apos;m fast enough, minus gas, minus the slow death of the scooter&apos;s battery, minus whatever small piece of my soul dies every time someone answers the door in their underwear and doesn&apos;t tip.</p>
+
+<p><strong>First delivery.</strong> College apartments west of campus. Burger Palace, two cheeseburgers, large fry, extra sauce. A frat boy in boxers opens the door, grabs the bag, and mutters &quot;took you long enough&quot; before closing it without ever looking at my face. No tip. I stand on the doorstep a second, staring at the receipt with $0.00 in the tip field, thinking about the many careers I&apos;m apparently not pursuing.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🛵 Next stop</span>' "D00_Delivery2">><</link>>
+</div>
+
+<</if>>
+
+:: D00_Delivery2 [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Mrs. Calloway at her door with a Tupperware of cookies, warm afternoon light" "float" "assets/characters/supporting/calloway-door.png">>
+
+<div class="prose-block">
+
+<p>My favorite stop on the route is next: Mrs. Calloway. Seventy-something, retired schoolteacher, orders the same Pad Thai from Thai Garden every single Thursday like clockwork. She opens the door of her tidy brownstone and her whole face lights up the way it always does when she sees me, like I&apos;m someone who actually matters.</p>
+
+<<Dialogue "Mrs. Calloway" "👵" "Marcus, dear. You always come so fast." "">>
+
+<p>She takes the bag and presses a folded twenty into my palm. &quot;You eat enough? You look thin.&quot;</p>
+
+<<Dialogue "You" "🙂" "I'm fine, Mrs. Calloway." "you">>
+
+<p>She doesn&apos;t believe me for a second, but she&apos;s too kind to push it. She disappears inside and comes back out with a Tupperware. &quot;Oatmeal raisin. I made too many.&quot; She did not make too many. She made them for me. She does this every couple of weeks.</p>
+
+<p>&quot;Thank you.&quot; My voice comes out thicker than I mean it to. I clear my throat and turn away before she can see whatever my face is doing.</p>
+
+<p>I eat a cookie on the scooter, parked at the curb, watching traffic go by. The raisin-to-oat ratio is basically perfect. Nobody else in my life gives me things without me asking. Mrs. Calloway gives me cookies, twenty-dollar tips, and for about five minutes, the strange feeling of being visible.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🛵 Next stop</span>' "D00_Delivery3">>
+		<<set $player.stress -= 3>>
+	<</link>>
+</div>
+
+:: D00_Delivery3 [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p><strong>Third delivery.</strong> A high-rise downtown. Pizza Junction, one large pepperoni. The door opens on a guy in a wrinkled t-shirt, hair a mess, clearly having a good afternoon, and behind him a girl in an oversized shirt and nothing else, laughing at something on the couch.</p>
+
+<p>&quot;Oh, hell yes, pizza,&quot; she calls out. He grabs the box grinning. &quot;Thanks, man.&quot; He tips ten bucks without even thinking about it.</p>
+
+<p>Must be nice, having a body someone actually wants to touch. Having an apartment where the hot water works. Having a random Wednesday afternoon that looks like that.</p>
+
+<p>I take the elevator back down. The mirror inside shows a skinny kid in an orange jacket holding an empty delivery bag. I don&apos;t look at myself too long. Already did enough of that this morning.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🛵 Next stop</span>' "D00_Delivery4">><</link>>
+</div>
+
+:: D00_Delivery4 [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p><strong>Fourth delivery.</strong> Campus library, one mango-passion fruit smoothie from Smoothie King for someone named Maya. I find her on the library steps, ponytail, reading a textbook in the afternoon sun, looking like she has her whole life figured out in a way that makes me feel like a completely different species.</p>
+
+<<Dialogue "Maya" "📚" "Thanks! You go to State too?" "">>
+
+<<Dialogue "You" "🙂" "Yeah. Second year." "you">>
+
+<<Dialogue "Maya" "📚" "Cool! I'm Maya. Maybe I'll see you around." "">>
+
+<p>She waves and goes back to her book.</p>
+
+<p>I walk back to my scooter. Didn&apos;t ask for her number, wouldn&apos;t have known what to do with it anyway. Maya will probably forget me before she finishes that smoothie. This is basically how I move through the world: seen for a second, forgotten immediately, a background extra in everybody else&apos;s movie.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🛵 Last stop</span>' "D00_Delivery5">><</link>>
+</div>
+
+:: D00_Delivery5 [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p><strong>Fifth delivery.</strong> A rougher part of town. Chinese Express, third floor of a building where the buzzer doesn&apos;t work and the stairwell smells like mold and something faintly chemical. The customer cracks the door on a chain, slides cash through the gap, grabs the food, and slams it shut. I hear three locks turn. I don&apos;t linger.</p>
+
+<p>On the way down the scooter makes a grinding noise that sounds like an expensive problem. Something in the motor, a bearing maybe, or the belt. Repair estimate: two hundred bucks minimum, money I don&apos;t have and nobody&apos;s about to hand me.</p>
+
+<p>Shift total: sixty-seven dollars in tips plus base pay. After the platform takes its cut, that&apos;s about fifty-two dollars. Enough for three days of eating. Not enough for the scooter repair, the overdue rent, the student loans, the utility bill, or the slow crushing feeling in my chest that&apos;s probably just stress but could, for all I know, be my heart deciding to clock out early.</p>
+
+<p>I ride home through the late afternoon, wind cold on my face, scooter rattling under me, orange jacket flapping. Another day spent delivering other people&apos;s lives right to their doors.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🛵 Head back out to the street</span>' "Outside">>
+		<<set $player.money += 52>>
+		<<set $income.dashdrop += 52>>
+		<<set $timeslot to "Evening">>
+		<<set $dashdropDone to true>>
+		<<run window.rbAddMilestone("Finished the DashDrop shift.")>>
+	<</link>>
+</div>

@@ -1,0 +1,70 @@
+/* ==========================================================================
+   REWIRED   14 IMAGES + PLACEHOLDERS
+   ========================================================================== */
+
+.scene-image {
+  max-width: var(--max-prose);
+  margin: var(--sp-4) auto;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+.scene-image img { width: 100%; display: block; }
+
+.img-placeholder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  max-width: var(--max-prose);
+  margin: var(--sp-4) auto;
+  min-height: 190px;
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text3);
+  text-align: center;
+  padding: var(--sp-3);
+  overflow: hidden;
+}
+.ph-icon { position: relative; z-index: 1; font-size: 1.9rem; opacity: .75; }
+.ph-label { position: relative; z-index: 1; font-size: .84rem; font-weight: 600; color: var(--text2); }
+.ph-hint { position: relative; z-index: 1; font-size: .66rem; text-transform: uppercase; letter-spacing: .1em; color: var(--text3); }
+
+/* A real image was supplied and actually loaded   show it at its full
+   height, never cropped. Width scales down to fit the frame/screen. */
+.img-placeholder .scene-img {
+  position: static;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: none;
+}
+.img-placeholder.img-ok {
+  min-height: 0;
+  overflow: visible;
+}
+.img-placeholder.img-ok .scene-img { display: block; }
+.img-placeholder.img-ok .ph-icon,
+.img-placeholder.img-ok .ph-label,
+.img-placeholder.img-ok .ph-hint { display: none; }
+
+.img-placeholder.portrait { min-height: 350px; max-width: 270px; }
+.img-placeholder.banner { min-height: 230px; max-width: 100%; }
+.img-placeholder.float {
+  float: right;
+  width: 40%;
+  min-height: 170px;
+  margin: 0 0 var(--sp-3) var(--sp-3);
+}
+.img-placeholder.float.img-ok { width: auto; max-width: 40%; }
+
+@media (max-width: 600px) {
+  .img-placeholder.float { float: none; width: 100%; margin: var(--sp-3) 0; }
+  .img-placeholder.float.img-ok { max-width: 100%; }
+}

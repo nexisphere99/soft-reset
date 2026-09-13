@@ -1,0 +1,32 @@
+/* ==========================================================================
+   REWIRED   10 ROOM / APARTMENT INTERIOR GRID
+   ========================================================================== */
+
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-3);
+  margin: var(--sp-4) 0;
+}
+
+.room-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: var(--sp-3);
+  min-height: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: border-color var(--t-fast) var(--ease), transform var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
+}
+.room-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: var(--shadow-glow-accent); }
+.room-title { font-family: var(--font-head); font-weight: 600; font-size: .98rem; }
+.room-sub { font-size: .72rem; color: var(--text3); margin-top: .15rem; }
+
+@media (max-width: 600px) {
+  .room-grid { grid-template-columns: 1fr; }
+}

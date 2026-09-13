@@ -1,0 +1,114 @@
+:: ThriftStore [nobr]
+<<HUD>>
+
+<<if $day is 2 and not $d02BoughtClothes>>
+
+<<ImagePlaceholder "Second Chances thrift store, cluttered window display, hand-painted sign" "banner" "assets/locations/thriftstore/exterior.png">>
+
+<div class="prose-block">
+
+<p>Three blocks from my apartment. I&apos;ve walked past this place a thousand times as Marcus and never once gone inside. &quot;Second Chances,&quot; a hand-painted sign, a cluttered window display, a bell above the door that chimes when I push it open. The smell hits me first, fabric softener, old leather, and the faint ghosts of whatever lives these clothes used to belong to. Christmas music plays from a speaker somewhere. It&apos;s June.</p>
+
+<p>The racks are packed, organized by something approximating a system, women&apos;s on the right, men&apos;s on the left, kids in the back, miscellaneous everything on shelves along the walls. I stand just inside the door trying not to look like I&apos;m about to commit a crime.</p>
+
+<p>A woman appears from behind a rack of winter coats. Fifty-something, Latina, reading glasses on a beaded chain, a floral blouse that looks like it was designed by someone who&apos;d never seen a sad day in her life. Her smile arrives before the rest of her face even catches up to it.</p>
+
+<p>&quot;Welcome, honey. Looking for anything specific?&quot;</p>
+
+<p>My voice comes out smaller than I intend. &quot;I... need some basics. Women&apos;s basics.&quot;</p>
+
+<p>It cracks right on &quot;basics.&quot; Not because the voice is wrong, the voice is fine, a smooth alto that passes without question, but because of the words themselves. Women&apos;s basics. Me, asking for women&apos;s basics, in a thrift store, on a Saturday, in a body I&apos;ve owned for exactly thirty-six hours.</p>
+
+<p>Marlene, I&apos;ll learn her name later from the receipt, printed in purple ink, looks at me. Really looks. Hood up, drowning in men&apos;s clothes, clearly uncomfortable, voice cracking. She reads the entire situation in about three seconds, then does the kindest possible thing available to her. She doesn&apos;t ask.</p>
+
+<p>&quot;Come with me.&quot;</p>
+
+</div>
+
+<<ImagePlaceholder "Marlene guiding her through the racks" "portrait" "assets/characters/supporting/marlene.png">>
+
+<div class="prose-block">
+
+<p>She guides me through the women&apos;s section with the efficiency of someone who&apos;s helped a thousand lost people find what they needed before me. She doesn&apos;t know my specific flavor of lost, but she clearly knows lost when she sees it.</p>
+
+<p>&quot;T-shirts.&quot; She pulls two plain ones off a rack, black and white, and holds them against me at arm&apos;s length, squinting. &quot;These run small, so go a size up for comfort.&quot; She folds them over her arm.</p>
+
+</div>
+
+<<ImagePlaceholder "Browsing the racks, jeans and a t-shirt held up against her" "float" "assets/characters/mc-female-phase1/thriftstore-browsing.png">>
+
+<div class="prose-block">
+
+<p>&quot;Jeans.&quot; She holds up a pair of women&apos;s skinny jeans, dark blue wash, a bit of stretch in the fabric. &quot;These got some stretch. Try them on.&quot; I don&apos;t know my size, so she eyeballs it, a practiced scan from shoulders to hips. &quot;You look like a 4 to me. Maybe 6 in the hips.&quot;</p>
+
+<p>She leads me to a rack near the register. &quot;Underwear.&quot; A sealed three-pack of cotton bikini-cut panties, black, white, grey. &quot;These are new, store policy. Underwear&apos;s always new.&quot; She sets them on the counter, then reaches for a shelf behind her. &quot;And you&apos;ll want these.&quot;</p>
+
+<p>A basic black sports bra, no padding, no underwire, just support.</p>
+
+<p>&quot;What cup are you, sweetheart?&quot;</p>
+
+<p>&quot;I... don&apos;t know.&quot;</p>
+
+<p>She steps closer, quick and professional, like a tailor sizing a jacket. She doesn&apos;t touch me, just looks. &quot;You&apos;re about a B. This should work.&quot;</p>
+
+<p>She rings it all up on a register old enough that the mechanical keys clunk every time she presses one.</p>
+
+<p>&quot;$32 even.&quot;</p>
+
+<p>I pay in cash, hands shaking slightly, which I hope she doesn&apos;t notice and which she definitely does.</p>
+
+<p>&quot;Thanks.&quot; It comes out almost inaudible, a whisper wearing a word&apos;s clothing.</p>
+
+<p>Marlene puts a hand on my arm, brief and light, warm the way a candle is warm, not enough to burn, just enough to feel.</p>
+
+<p>&quot;First time shopping for yourself, honey?&quot; She doesn&apos;t wait for an answer she already knows. &quot;We all start somewhere.&quot; She slides the bag across the counter. &quot;Come back anytime.&quot;</p>
+
+<p>I take the bag and walk out, the bell chiming behind me. I make it four steps down the sidewalk before my eyes blur and I have to blink hard just to keep walking straight.</p>
+
+<p>She didn&apos;t ask why. She didn&apos;t need to. She just helped.</p>
+
+<p>There are still people like that in the world, people who just help. I&apos;d honestly forgotten.</p>
+
+</div>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<link '<span>🚪 Take the bag and head back outside</span>' "Outside">>
+		<<set $player.money -= 32>>
+		<<set $metMarlene to true>>
+		<<set $d02BoughtClothes to true>>
+		<<set $player.fem to Math.clamp($player.fem + 7, 0, 100)>>
+		<<set $wardrobe.push({id:"tshirt_black",name:"Plain Black T-shirt",type:"top",fem:1,att:0,cor:0,owned:true})>>
+		<<set $wardrobe.push({id:"tshirt_white",name:"Plain White T-shirt",type:"top",fem:1,att:0,cor:0,owned:true})>>
+		<<set $wardrobe.push({id:"jeans_blue_skinny",name:"Dark Blue Skinny Jeans",type:"bottom",fem:2,att:1,cor:0,owned:true})>>
+		<<set $wardrobe.push({id:"panties_cotton_3pk",name:"Cotton Bikini Panties (3-pack)",type:"underwear",fem:1,att:0,cor:0,owned:true})>>
+		<<set $wardrobe.push({id:"sports_bra_black",name:"Basic Black Sports Bra",type:"bra",fem:2,att:0,cor:0,owned:true})>>
+		<<set $player.energy to Math.clamp($player.energy - 5, 0, 100)>>
+		<<run window.rbAddMilestone("Bought her first women's clothes.")>>
+	<</link>>
+</div>
+
+<<else>>
+
+<<if not $metMarlene>>
+<div class="prose-block">
+<p>Racks of secondhand everything, color-coded, a faint smell of other people&apos;s closets. A woman behind the counter, sixties, reading glasses on a beaded chain, a cardigan that&apos;s survived more decades than you&apos;ve been alive, looks up and nods instead of smiling, which somehow feels more genuine.</p>
+</div>
+
+<<Dialogue "Marlene" "🧵" "Let me know if you need a size. Everything's a dollar off on Thursdays." "">>
+
+<<set $metMarlene to true>>
+<<else>>
+<div class="prose-block">
+<p>Marlene gives you the same nod as last time. Same racks, mostly, a shop like this turns over slow.</p>
+</div>
+<</if>>
+
+<div class="action-list">
+	<<link '<span class="action-icon">🧥</span><span class="action-text">Flip through the racks<span class="action-sub">Not much in your size, or your budget, right now</span></span>' "ThriftStore">><</link>>
+</div>
+
+<div class="choice-block" style="margin-top:2rem;">
+	<<link '<span>← Back outside</span>' "Outside">><</link>>
+</div>
+
+<</if>>

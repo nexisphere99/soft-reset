@@ -1,0 +1,57 @@
+:: D01_EveningHome [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Alone on the couch, TV glow, emotional exhaustion" "banner" "assets/characters/mc-female-phase1/evening-alone-couch.png">>
+
+<div class="prose-block">
+
+<p>I put on the stretched-out t-shirt. It hangs off one shoulder, exposing a bare collarbone and the outline of a breast through the thin fabric. The boxers bunch at the waist, held up by nothing but friction and denial. Nothing fits. Nothing feels right. My own clothes feel like a costume, and the body underneath them is the real costume, and somewhere under that there&apos;s supposed to be me, except I&apos;m not sure where I went.</p>
+
+<p>I eat leftover ramen cold, straight from the cup, standing in the kitchen first, then sitting on the couch, then just staring at the TV without registering a single thing on the screen. Some sitcom, laugh track going off, people being happy in a way that suggests the writers never have been.</p>
+
+<p>My phone rings. It&apos;s Nolan.</p>
+
+<p>I stare at the screen, at his contact photo, Nolan at the gym flexing in the mirror, grinning like a golden retriever that learned to bench press. That photo was taken six months ago. I was standing right next to him. We looked like the same species back then, same height range, same build, same locker room, same side of the world.</p>
+
+<p>I don&apos;t answer.</p>
+
+<p>I text back instead: &quot;hey can&apos;t talk rn. Sick. Talk soon.&quot;</p>
+
+<<Dialogue "Nolan" "💪" "damn get better bro 🙏 I'll bring soup tmrw" "">>
+
+<p>No. No no no, absolutely not. &quot;nah I&apos;m contagious prob. I&apos;ll let u know.&quot;</p>
+
+<<Dialogue "Nolan" "💪" "aight. Feel better dude 💪" "">>
+
+<p>Dude, bro, he called me both in one sentence, and I want to laugh and I want to scream and I end up doing neither. I put the phone face-down on the couch and stare at the ceiling instead.</p>
+
+<p>The water stain shaped like a fist hasn&apos;t changed. The ceiling hasn&apos;t changed. The apartment hasn&apos;t changed. The ramen cups haven&apos;t changed. The eviction notice is gone because I paid rent last night with pill money, which means the only thing in this entire room that&apos;s different from twenty-four hours ago is me.</p>
+
+<p>I lie in bed. The boxers slide off my hips for the hundredth time. The t-shirt rides up, exposing my stomach, flat, soft, the curve of my waist visible even lying flat on my back. This body presses against the sheets in new ways I keep noticing. My breasts shift when I roll over. My hip bones meet the mattress at a different angle now. My hair is everywhere, under my shoulders, across the pillow, in my mouth.</p>
+
+<p>I can&apos;t sleep for hours. I lie there in the dark feeling every inch of a body I didn&apos;t choose, didn&apos;t want, and can&apos;t give back.</p>
+
+<p>At some point, 2 AM maybe, later than that even, I finally fall asleep. I dream, but I can&apos;t remember any of it by morning.</p>
+
+<p>I wake up once, around 3:30 AM. My hand is between my legs. My fingers are wet.</p>
+
+<<if $firstOrgasmSolo>>
+<p>I know what that wetness is now. I know exactly what my body is asking for.</p>
+<p>I pull my hand away and close my eyes. Not tonight.</p>
+<<else>>
+<p>I don&apos;t know what that means, and honestly I don&apos;t want to know yet.</p>
+<p>I pull my hand away and go back to sleep.</p>
+<</if>>
+
+<p>I&apos;ll deal with this tomorrow, whatever &quot;this&quot; even is, whatever I am now. Just not tonight.</p>
+
+<p>Tonight I only have to survive it.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🌙 Close my eyes</span>' "Sleep">>
+		<<set $player.energy to Math.clamp($player.energy - 5, 0, 100)>>
+		<<set $ateDinnerDay1 to true>>
+	<</link>>
+</div>

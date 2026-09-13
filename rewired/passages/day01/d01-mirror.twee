@@ -1,0 +1,63 @@
+:: D01_Mirror [nobr]
+<div class="prose-block">
+
+<p>I stumble to the bathroom. My legs feel different, shorter, the stride is wrong, my center of gravity has moved somewhere around my navel instead of my chest. My thighs brush together with every step. The boxers keep sliding down my hips and I have to grab them with one hand to stop them falling.</p>
+
+<p>I hit the light switch. The fluorescent flickers on with that same sickly buzz it always makes, and I look in the mirror.</p>
+
+<p>The face looking back at me is not mine.</p>
+
+<p>Except it is. The eyes are the same hazel-green, same almond shape, same downturned outer corners that used to make me look tired and now make me look like something else entirely. Doe-eyed. Soft. They&apos;re my grandmother&apos;s eyes sitting in a stranger&apos;s face.</p>
+
+</div>
+
+<<ImagePlaceholder "Mirror reveal, face, shock, hazel-green eyes, freckles" "portrait" "assets/characters/mc-female-phase1/mirror-face-shock.png">>
+
+<div class="prose-block">
+
+<p>Yesterday my jaw was angular, defined, dotted with patches of stubble I could never grow into a real beard. Today it&apos;s soft, rounded, smooth, not a hint of hair anywhere, not even a shadow. The bone itself has restructured, hard edges dissolved into curves overnight.</p>
+
+<p>My cheekbones are still high, still prominent, but where they used to say &quot;thin dude who doesn&apos;t eat enough,&quot; they now say something completely different. They read as striking, as beautiful, as feminine. The same bones, entirely recontextualized by the face built around them.</p>
+
+<p>My lips are fuller too, especially the upper lip, which now has a defined cupid&apos;s bow I absolutely did not have yesterday. Pink-rose, slightly parted, and the person they belong to is staring back at me from the other side of the glass with an expression of pure, shattering disbelief.</p>
+
+<p>Even my nose is slightly smaller, the same straight bridge but refined, like someone sanded down all the rough edges. The tip tilts up just barely, a fraction of a degree at most.</p>
+
+<p>My skin looks luminous, smooth, the whole texture changed, no visible pores, no roughness, no acne along the jaw. Just clean, glowing, pale skin with freckles still scattered across the nose and cheeks. The freckles survived. Almost nothing else did.</p>
+
+<p>My eyebrows are thinner now, naturally arched, like someone threaded them while I slept.</p>
+
+<p>My hair is still dark brown, still thick and wavy, the same color but so much more of it. It falls past my shoulders in heavy waves, six inches longer than it was last night. When I turn my head it actually swings, and the weight of it is a physical sensation I&apos;ve never once felt before.</p>
+
+<p>No stubble anywhere, no shadow, no Adam&apos;s apple. My neck looks slender, longer, and the collarbones underneath are sharp and defined in a way that reads as delicate instead of malnourished.</p>
+
+</div>
+
+<<ImagePlaceholder "Mirror reveal, full body, oversized clothes, vulnerability" "portrait" "assets/characters/mc-female-phase1/mirror-fullbody-shock.png">>
+
+<div class="prose-block">
+
+<p>I pull the t-shirt collar aside. My shoulders are narrower, they&apos;ve lost inches off each side, and the shirt hangs off me like a tent. Below the neckline there are breasts now, a B-cup, teardrop-shaped, sitting naturally, small pink-rose nipples pointing slightly outward. They rise and fall with my panicked breathing, and I watch them move in the mirror, these things on my own chest, moving with me. They&apos;re attached. They&apos;re mine. They&apos;re real.</p>
+
+<p>I pull the shirt tight against my body and watch my waist change shape in the reflection. Where there used to be a straight line running from ribs to hips, there&apos;s now a dramatic inward curve, maybe twenty-four or twenty-five inches around. The flare below it, my hips, is even more dramatic, thirty-five inches at least. The boxers hang off one hip, about to surrender to gravity completely.</p>
+
+<p>My stomach is flat with a slight feminine softness just below the navel. My arms are slender and smooth, no forearm veins, no muscle definition left at all. My hands, gripping the edge of the sink, are small and soft with elegant fingers and longer nails than I&apos;ve ever had.</p>
+
+<p>I pull the waistband of the boxers down.</p>
+
+<p>My pubic hair is still there, still dark, but softer and finer now. Below it, where my cock and balls have been for every single second of my twenty years, there&apos;s something else entirely.</p>
+
+<p>A vulva, neat and compact, outer labia closed. I can see it clearly because I&apos;m looking directly at it, because I&apos;m standing here with the boxers pulled down staring at the place where my dick used to be and finding instead a small, smooth, undeniable absence of everything I&apos;ve ever known about my own body.</p>
+
+<p>I touch it. My fingers meet soft folds, warm, real. The contact sends a small electric shock through a nerve cluster that didn&apos;t even exist sixteen hours ago.</p>
+
+<p>I yank my hand away and grip the sink instead, knuckles white. The face in the mirror, that female face with my grandmother&apos;s eyes and a stranger&apos;s jaw, is hyperventilating right along with me.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>😰 I can&apos;t breathe </span>' "D01_Panic">>
+		<<set $player.stress to Math.clamp($player.stress + 15, 0, 100)>>
+		<<set $seenMirrorDay1 to true>>
+	<</link>>
+</div>

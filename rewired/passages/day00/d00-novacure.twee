@@ -1,0 +1,128 @@
+:: D00_NovaCure_Arrival [nobr]
+<<HUD>>
+
+<<SceneDivider "NovaCure Laboratories, 8:30 PM">>
+
+<<ImagePlaceholder "Meridian Tower at night, glass and steel, a lone figure approaching" "banner" "assets/locations/novacure/meridian-exterior.png">>
+
+<div class="prose-block">
+
+<p>I shower in cold water, shave half-heartedly and miss a few patches anyway, then put on my cleanest clothes. Black hoodie, not the grey one, the grey one&apos;s for comfort, not for places where people might actually judge me. Least-wrinkled joggers. The sneakers held together at this point by habit and denial.</p>
+
+<p>The 7:45 bus downtown. I sit in the back and watch the city lights through glass smeared with fingerprints and someone&apos;s forehead grease. The bus smells like wet metal and general resignation. I&apos;m the only person under thirty on it, everyone else looks like they&apos;re heading to a night shift or coming from bad news.</p>
+
+<p>Meridian Tower is glass and steel, twelve stories of corporate ambition rising up out of a block of restaurants and boutiques. It doesn&apos;t look like a place where desperate twenty-year-olds go to swallow pills for rent money. It looks like a place where people with retirement accounts drink coffee out of ceramic mugs.</p>
+
+<p>Sixth floor, Suite 604. The hallway is hushed and carpeted, the kind of quiet that costs money. I push open the door marked NOVACURE LABORATORIES and step into a waiting room that&apos;s aggressively inoffensive, white walls, grey chairs, a water cooler humming, a potted plant that might be real or might be the most convincing fake I&apos;ve ever seen. Elevator music drifts from somewhere invisible. The room smells like nothing at all, and I&apos;m guessing that&apos;s on purpose.</p>
+
+<p>I&apos;m the only person here.</p>
+
+</div>
+
+<<ImagePlaceholder "NovaCure waiting room, sterile, white, empty" "float" "assets/locations/novacure/waiting-room.png">>
+
+<div class="prose-block">
+
+<p>A nurse comes through a side door. Late thirties, South Asian, kind eyes, efficient movements, the kind of energy that belongs to someone genuinely good at her job who doesn&apos;t need anyone to notice.</p>
+
+<<Dialogue "Nurse Patel" "👩‍⚕️" "Mr. Cole? I'm Nurse Patel. Let's get you started." "">>
+
+<p>She takes my vitals in a small exam room. Blood pressure cuff, heart rate, temperature. She draws blood with a smooth, practiced stick that barely registers, weighs me at 148 pounds, measures me at five-nine, and asks all the questions medical professionals ask when they need a baseline.</p>
+
+<<Dialogue "Nurse Patel" "👩‍⚕️" "Any medications?" "">>
+<<Dialogue "You" "🙂" "No." "you">>
+<<Dialogue "Nurse Patel" "👩‍⚕️" "Known allergies?" "">>
+<<Dialogue "You" "🙂" "No." "you">>
+<<Dialogue "Nurse Patel" "👩‍⚕️" "Family history of anything we should know about?" "">>
+<<Dialogue "You" "🙂" "My dad's an alcoholic. If that counts." "you">>
+
+<p>She doesn&apos;t laugh, doesn&apos;t judge, just writes it down. &quot;It counts.&quot;</p>
+
+<p>She hands me a clipboard, fourteen pages, single-spaced. The consent form.</p>
+
+<p>I flip through it. Legal language, liability waiver, participant rights, data collection agreement. I read the first three pages with the kind of attention you give a long text from someone you don&apos;t really care about, scanning for key words, registering pretty much none of them.</p>
+
+<p>Page seven: &quot;Potential side effects may include: nausea, headache, fatigue, skin sensitivity, hormonal fluctuation, temporary cognitive changes...&quot;</p>
+
+<p>Hormonal fluctuation sounds like nothing much. Like a bad night&apos;s sleep, or one too many coffees.</p>
+
+<p>Page nine, clause 12(b). My eyes slide over it the same way they slide over any terms of service right before clicking accept.</p>
+
+<blockquote>&quot;Participant acknowledges that unforeseen physiological outcomes may occur as a result of the administered compound. NovaCure Laboratories LLC is not liable for permanent alterations to participant biology resulting from study participation.&quot;</blockquote>
+
+<p>Permanent alterations. The words sit right there on the page. I see them and somehow don&apos;t see them at the same time, too busy thinking about the $2,000 and Mrs. Park&apos;s email and the fact that I have $47 and eleven ramen packets and seven days before I&apos;m homeless.</p>
+
+<p>I sign at the bottom, date it, initial every page, and hand the clipboard back to Nurse Patel, who flips to the signature page, checks it, and nods.</p>
+
+<p>&quot;Dr. Amelia will be with you shortly.&quot;</p>
+
+<p>I sit on the examination table. The paper crinkles under me. My feet dangle a little. I feel like a kid at a checkup.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🚪 The door opens</span>' "D00_NovaCure_Pill">><</link>>
+</div>
+
+:: D00_NovaCure_Pill [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Dr. Maren Amelia, ash blonde, glasses, clinical" "portrait" "assets/characters/supporting/dr-amelia.png">>
+
+<div class="prose-block">
+
+<p>Dr. Maren Amelia walks in the way a surgeon walks into an operating theater, with total certainty that everything in the room already belongs to her. Tall for a woman at five-seven, but she carries herself like she&apos;s six feet. Ash blonde hair pulled back in a French twist so tight it could double as a weapon. Frameless rectangular glasses over pale blue-grey eyes that look at me the way a microscope looks at a slide, with interest, but no warmth at all.</p>
+
+<p>She extends her hand. The grip is dry and cold. &quot;Thank you for participating, Mr. Cole.&quot;</p>
+
+<<Dialogue "You" "🙂" "What exactly am I participating in?" "you">>
+
+<<Dialogue "Dr. Amelia" "🥼" "A Phase-II tolerability trial for a novel compound. You'll ingest a single oral capsule. We'll monitor your vitals for thirty minutes post-ingestion, and you'll be free to go. The compound has been through extensive preclinical and Phase-I trials with no significant adverse events." "">>
+
+<<Dialogue "You" "🙂" "What does it do?" "you">>
+
+<<Dialogue "Dr. Amelia" "🥼" "The compound modulates endocrine function. We're testing for bioavailability and subject response variability." "">>
+
+<p>I catch maybe three words of that. &quot;So it&apos;s a hormone thing.&quot;</p>
+
+<<Dialogue "Dr. Amelia" "🥼" "In layman's terms, yes." "">>
+
+<p>She opens a small steel case on the counter. Inside, sitting in a foam slot, is a single white capsule. No markings, no label, just a smooth white pill smaller than my thumbnail, looking like absolutely nothing at all.</p>
+
+</div>
+
+<<ImagePlaceholder "The pill, unmarked white capsule in a steel case" "float" "assets/items/misc/the-pill.png">>
+
+<div class="prose-block">
+
+<p>She sets the case on the tray next to a paper cup of water. &quot;Whenever you&apos;re ready.&quot;</p>
+
+<p>I pick up the pill. It&apos;s warm, probably just from the case, but the warmth feels intentional somehow, like it&apos;s already alive. I look at it sitting there between my fingers. It weighs nothing. It means everything.</p>
+
+<p>I place it on my tongue, pick up the water, drink, swallow. It slides down without any resistance. I feel it pass my esophagus, then nothing. Just water and the aftertaste of nothing.</p>
+
+<p>Dr. Amelia watches and makes a note on her tablet. Was that a micro-expression, a flicker of satisfaction, maybe anticipation? Or am I just imagining it? I&apos;m tired. Probably imagining it.</p>
+
+<p>&quot;Your compensation will process within the hour. We&apos;ll contact you for a follow-up in two weeks.&quot; She snaps the tablet case closed. &quot;Any immediate symptoms, dizziness, nausea, vision changes, call the 24-hour line.&quot;</p>
+
+<p>Nurse Patel walks me out. At the elevator she pauses. &quot;Take care of yourself, Marcus.&quot;</p>
+
+<p>Not &quot;Mr. Cole.&quot; Marcus. Hearing my first name catches me off guard for a second, and I almost ask her to say it again. Instead I just say thanks and step into the elevator, watching the floors count down in the mirrored walls. A skinny kid in a black hoodie, heading home, two thousand dollars richer and none the wiser.</p>
+
+<p>My phone buzzes as the elevator opens on the ground floor.</p>
+
+<p class="italic" style="text-align:center; color:var(--gold); font-weight:700;">Bank notification: $2,000.00 deposited, NovaCure Laboratories LLC.</p>
+
+<p>I stare at the number. Four digits, a comma. For the first time in months my checking account actually has a comma in it. I let out a breath I&apos;ve apparently been holding for two months straight, and it comes out shaking.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🏙️ Head back outside</span>' "District_Central">>
+		<<set $player.money += 2000>>
+		<<set $income.novacure += 2000>>
+		<<set $metDrAmelia to true>>
+		<<set $metNursePatel to true>>
+		<<run window.rbAddJournalEntry("The Trial", "I swallowed a pill for $2,000 at NovaCure Laboratories. Rent is saved. I don't know what it does yet.")>>
+	<</link>>
+</div>

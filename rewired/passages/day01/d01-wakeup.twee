@@ -1,0 +1,57 @@
+:: D01_Wakeup [nobr]
+<<set $day to 1>>
+<<set $timeslot to "Morning">>
+<<set $weekDay to "Friday">>
+
+<<SceneDivider "Friday Morning">>
+
+<div class="prose-block">
+
+<p>Something is wrong before I even open my eyes.</p>
+
+<p>The pillow feels different against my face. Not the texture, it&apos;s the same stale pillowcase I&apos;ve been meaning to wash, but the way my skin registers it now. Smoother, more sensitive, like the thread count doubled overnight.</p>
+
+<p>There&apos;s weight on my chest, not heavy, just present. Something warm, shifting slightly with every breath. Two somethings, actually, rising and falling in a way that makes no sense because my chest is supposed to be flat.</p>
+
+<p>My hips press into the mattress differently, wider than before. The bones sit at a new angle, like someone rearranged my skeleton overnight. My thighs are touching. They&apos;ve never touched before in my life. They&apos;re touching now, soft, warm, flesh against flesh.</p>
+
+<p>Hair is in my face, way too much of it. I push it away and more keeps coming, long and thick, reaching down past where it should end. Last night my hair barely brushed my ears. This hair reaches my shoulders, easily.</p>
+
+<p>I try to sit up and overbalance completely. My center of gravity feels wrong, lower, shifted forward. I catch myself with one hand on the mattress, and that&apos;s when I notice it.</p>
+
+<p>My hand is smaller. The fingers are slender, the knuckles less prominent, the nails longer and smoother. My wrist is narrow. My forearm is smooth, no veins, no sparse hair, just pale skin and the faint blue line of a vein underneath.</p>
+
+<p>I look down.</p>
+
+</div>
+
+<<ImagePlaceholder "POV waking up wrong, breasts under the t-shirt, loose boxers" "banner" "assets/characters/mc-female-phase1/d01-wakeup-pov.png">>
+
+<div class="prose-block">
+
+<p>Breasts. Two of them, round and soft, pressing against the stretched-out t-shirt I slept in, which now hangs off one shoulder entirely. Nipples visible right through the fabric, hard points from the cool morning air, ringed by the darker outline of areolae that weren&apos;t there twelve hours ago.</p>
+
+<p>My breath catches. I sit up the rest of the way and the breasts bounce with the motion. The sensation is alien, weight that moves on its own, skin that stretches, nerves firing in patterns my brain doesn&apos;t have a filing system for yet.</p>
+
+<p>I throw the blanket off. My legs are smooth, the hair that used to dust my shins is simply gone. My thighs are softer, wider, curving in ways that look like someone else&apos;s legs got attached to my body overnight. The boxers hang loose, sagging at the waist over hips dramatically wider than when I fell asleep.</p>
+
+<p>Between my legs, flat. The boxers sag in front where something used to fill them out. I reach down and press through the fabric.</p>
+
+<p>Nothing is there.</p>
+
+<p>Nothing where something is supposed to be, nothing where something has been every single day of my twenty years alive.</p>
+
+<p>&quot;No,&quot; I say out loud, to no one.</p>
+
+<p>I press harder. My fingers meet soft, flat, smooth skin.</p>
+
+<p>&quot;No no no no...&quot;</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🪞 Get to the bathroom mirror</span>' "D01_Mirror">>
+		<<set $player.stress to Math.clamp($player.stress + 20, 0, 100)>>
+		<<set $player.energy to Math.clamp($player.energy - 15, 0, 100)>>
+	<</link>>
+</div>
