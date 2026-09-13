@@ -5320,7 +5320,7 @@ $(document).on(":passageend", function () {
 	&lt;&lt;elseif not $d03UniEmailRead&gt;&gt;
 		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;📱&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Check your phone&lt;span class=&quot;action-sub&quot;&gt;Texts and an email you&amp;apos;ve been avoiding&lt;/span&gt;&lt;/span&gt;&#39; &quot;D03_Evening_Phone&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 	&lt;&lt;elseif $timeslot isnot &quot;Night&quot;&gt;&gt;
-		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;📺&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Sit with the TV for a while&lt;span class=&quot;action-sub&quot;&gt;Let the evening pass&lt;/span&gt;&lt;/span&gt;&#39; &quot;D03_Evening_Alone&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+		&lt;p class=&quot;text3 small&quot;&gt;The TV in the living room is calling. Head back out to the apartment.&lt;/p&gt;
 	&lt;&lt;else&gt;&gt;
 		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🛏️&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Go to bed&lt;span class=&quot;action-sub&quot;&gt;It&amp;apos;s been enough for one day.&lt;/span&gt;&lt;/span&gt;&#39; &quot;D03_Bedtime&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 	&lt;&lt;/if&gt;&gt;
@@ -5940,9 +5940,13 @@ $(document).on(":passageend", function () {
 &lt;/div&gt;
 
 &lt;div class=&quot;action-list&quot; style=&quot;margin-top:1.4rem;&quot;&gt;
-	&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;📺&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Watch TV&lt;span class=&quot;action-sub&quot;&gt;Mindless. Effective.&lt;/span&gt;&lt;/span&gt;&#39; &quot;Home&quot;&gt;&gt;
-		&lt;&lt;set $player.stress to Math.clamp($player.stress - 3, 0, 100)&gt;&gt;
-	&lt;&lt;/link&gt;&gt;
+	&lt;&lt;if $day is 3 and $d03Ate and $d03UniEmailRead and $timeslot isnot &quot;Night&quot;&gt;&gt;
+		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;📺&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Watch TV&lt;span class=&quot;action-sub&quot;&gt;Sit with it for a while, let the evening pass&lt;/span&gt;&lt;/span&gt;&#39; &quot;D03_Evening_Alone&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+	&lt;&lt;else&gt;&gt;
+		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;📺&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Watch TV&lt;span class=&quot;action-sub&quot;&gt;Mindless. Effective.&lt;/span&gt;&lt;/span&gt;&#39; &quot;Home&quot;&gt;&gt;
+			&lt;&lt;set $player.stress to Math.clamp($player.stress - 3, 0, 100)&gt;&gt;
+		&lt;&lt;/link&gt;&gt;
+	&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="55" name="Campus" tags="nobr" position="600,725" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;&lt;if $dashdropDone and not $flyerFound&gt;&gt;

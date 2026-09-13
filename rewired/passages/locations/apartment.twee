@@ -30,7 +30,11 @@
 </div>
 
 <div class="action-list" style="margin-top:1.4rem;">
-	<<link '<span class="action-icon">📺</span><span class="action-text">Watch TV<span class="action-sub">Mindless. Effective.</span></span>' "Home">>
-		<<set $player.stress to Math.clamp($player.stress - 3, 0, 100)>>
-	<</link>>
+	<<if $day is 3 and $d03Ate and $d03UniEmailRead and $timeslot isnot "Night">>
+		<<link '<span class="action-icon">📺</span><span class="action-text">Watch TV<span class="action-sub">Sit with it for a while, let the evening pass</span></span>' "D03_Evening_Alone">><</link>>
+	<<else>>
+		<<link '<span class="action-icon">📺</span><span class="action-text">Watch TV<span class="action-sub">Mindless. Effective.</span></span>' "Home">>
+			<<set $player.stress to Math.clamp($player.stress - 3, 0, 100)>>
+		<</link>>
+	<</if>>
 </div>

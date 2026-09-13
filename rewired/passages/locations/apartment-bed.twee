@@ -64,7 +64,7 @@
 	<<elseif not $d03UniEmailRead>>
 		<<link '<span class="action-icon">📱</span><span class="action-text">Check your phone<span class="action-sub">Texts and an email you&apos;ve been avoiding</span></span>' "D03_Evening_Phone">><</link>>
 	<<elseif $timeslot isnot "Night">>
-		<<link '<span class="action-icon">📺</span><span class="action-text">Sit with the TV for a while<span class="action-sub">Let the evening pass</span></span>' "D03_Evening_Alone">><</link>>
+		<p class="text3 small">The TV in the living room is calling. Head back out to the apartment.</p>
 	<<else>>
 		<<link '<span class="action-icon">🛏️</span><span class="action-text">Go to bed<span class="action-sub">It&apos;s been enough for one day.</span></span>' "D03_Bedtime">><</link>>
 	<</if>>
