@@ -51,7 +51,7 @@
 
 <div class="prose-block">
 
-<p>Bro. The word lands like a pebble in my shoe, small but impossible to ignore. I look down at my chest, at the two B-cups pressing against the sports bra under my t-shirt. Bro.</p>
+<p>The word bro lands like a pebble in my shoe, small but impossible to ignore. I look down at my chest, at the two B-cups pressing against the sports bra under my t-shirt. Bro, still.</p>
 
 <p>I type "nice dude congrats" and hit send before I can think about it too hard.</p>
 
@@ -71,7 +71,7 @@
 
 <div class="prose-block">
 
-<p>Dude. He called me dude. He's going to keep calling me dude until he sees me in person, and then he's going to call me something else entirely.</p>
+<p>He called me dude, and he's going to keep calling me dude until he sees me in person, and then he's going to call me something else entirely.</p>
 
 <p>I put the phone face-down on the couch cushion beside me.</p>
 
@@ -85,11 +85,11 @@
 
 <div class="prose-block">
 
-<p>An email is sitting at the top of my inbox, bold and unread, from the university registrar's office. Subject line: "Name Confirmation Processed."</p>
+<p>An email is sitting at the top of my inbox, bold and unread, from the university registrar's office. The subject line reads "Name Confirmation Processed."</p>
 
 <p>I open it. "Dear Mia Cole, thank you for confirming your preferred name for academic correspondence. Your records have been updated in our system effective immediately. Course enrollment and transcripts will display your preferred name. Official legal documents will continue to use your legal name on file until a legal name change is processed."</p>
 
-<p>I read it three times. Course enrollment. Transcripts. The professor calling roll in Advanced Statistics will look at the roster, read "Mia Cole," look up expecting a girl, and see a girl, because that's what I am now.</p>
+<p>I read it three times. Course enrollment, transcripts, all of it. The professor calling roll in Advanced Statistics will look at the roster, read "Mia Cole," look up expecting a girl, and see a girl, because that's what I am now.</p>
 
 <p>A legal name change is a whole other thing. Court documents and filing fees and standing in front of a judge explaining why Marcus Aiden Cole needs to legally become Mia Something Cole. I don't even have a middle name picked. Do I need a middle name? Did Marcus's carry over, or did the transformation eat that too?</p>
 
@@ -122,7 +122,7 @@
 
 <p>The apartment is small enough that I can see every room from this spot. Mattress on the floor with its damp patch from this afternoon. Bathroom door open, mirror reflecting a slice of wall. Kitchen counter with the jar of tomato sauce still open. Living area, which is really just a couch and a TV on a milk crate.</p>
 
-<p>This is where I live now. Not Marcus's apartment anymore. Mine. Mia's. A girl's apartment that still has a boy's stuff in it, because the girl hasn't had time to redecorate.</p>
+<p>This is where I live now. Not Marcus's apartment anymore, mine, Mia's. A girl's apartment that still has a boy's stuff in it, because the girl hasn't had time to redecorate.</p>
 
 <p>I turn on the TV, some reality show about people renovating houses. The noise fills the apartment and pushes the silence back, and I sit on the couch and pull my knees up to my chest and feel the way my thighs press against my breasts, the way everything on this body sits closer together now, more compact, folding inward instead of sprawling outward.</p>
 
@@ -152,7 +152,7 @@
 </div>
 
 <div class="choice-block">
-	<<link '<span>🌙 Just sleep. It&apos;s been enough for one day.</span>' "D03_Sleep">><</link>>
+	<<link '<span>🌙 Just sleep. It&apos;s been enough for one day.</span>' "D03_FallAsleep">><</link>>
 	<<link '<span>🔥 My fingers drift...</span>' "D03_SelfExplore_Night">>
 		<<run window.statChange("fem", 1)>>
 	<</link>>
@@ -175,7 +175,7 @@
 
 <p>I close my eyes and something new happens. A fantasy, images behind my eyelids. The delivery guy's smile, Cody, his eyes dropping to my chest for a half-second before snapping back to my face. Then a faceless mouth between my legs, warm breath, a tongue in place of my thumb. Then someone behind me, hands on my hips, pulling me back, wanting something inside me thicker and longer than my own fingers. Then hands on my breasts, squeezing, a mouth on my neck, and the sensation is so vivid I arch into it even though there's nobody there.</p>
 
-<p>I come quieter than the shower orgasms, quieter than this afternoon's marathon, a deep rolling contraction that starts low and spreads upward through my center. My toes curl. My mouth opens in a silent "O" that becomes an almost silent "ahh" as the waves pass through me. I count the contractions because counting has become a reflex. Eight. Each one gentler than the last, fading like ripples in a pond.</p>
+<p>I come quieter than the shower orgasms, quieter than this afternoon's marathon, a deep rolling contraction that starts low and spreads upward through my center. My toes curl. My mouth opens in a silent "O" that becomes an almost silent "ahh" as the waves pass through me. I count the contractions because counting has become a reflex, eight of them. Each one gentler than the last, fading like ripples in a pond.</p>
 
 <p>I lie in the dark afterward, hand still cupped between my legs, the dampness, the warmth, the afterglow humming in every nerve ending.</p>
 
@@ -192,8 +192,24 @@
 <<set $sexLog.orientation.heteroExp += 1>>
 
 <div class="choice-block">
-	<<link '<span>🌙 Sleep</span>' "D03_Sleep">><</link>>
+	<<link '<span>🌙 Sleep</span>' "D03_FallAsleep">><</link>>
 </div>
 
-:: D03_Sleep [nobr]
-<<goto "Sleep">>
+:: D03_FallAsleep [nobr]
+<div class="prose-block">
+
+<p>Sleep comes faster tonight. The body is tired from three orgasms this afternoon and the kind of emotional exhaustion that leaves you hollowed out but clean, like a house after a storm blew through and took everything that wasn't nailed down.</p>
+
+<p>I dream in fragments. A hallway of mirrors, long and narrow, lit from above by fluorescent tubes that flicker and buzz. Every reflection is female but wearing something different, different clothes, different hair, a different expression each time. One wears a cocktail dress and heels. One wears scrubs and sneakers. One wears nothing at all and stands with a confidence I don't recognize in myself. One wears Marcus's grey hoodie over women's jeans, looking scared, looking small, looking exactly like I do right now.</p>
+
+<p>I reach for that one. She reaches back. Our fingertips touch the glass at the same time.</p>
+
+<p>She smiles.</p>
+
+<p>I wake up hours later and don't remember any of it right away. My face is wet, though. I think I was crying in my sleep.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>☀️ Morning</span>' "Sleep">><</link>>
+</div>
