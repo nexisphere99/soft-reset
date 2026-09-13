@@ -1,0 +1,103 @@
+:: D03_OnlineShopping [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I open the laptop again, this time for shopping instead of research. Might as well handle the rest of the list while I'm at it.</p>
+
+<p>A hairbrush, a basic paddle brush, $8.99. I need this desperately. My hair has been tangled since Day 1, and my fingers are not adequate tools for detangling.</p>
+
+<p>A women's razor, the kind with the moisture strip and the pivoting head, $6.99 for a starter pack. I haven't shaved my legs yet, but the hair is lighter and finer than Marcus's ever was. Still visible, though. I'll deal with it eventually.</p>
+
+<p>I click into a solo video by accident while comparing brush reviews, a woman on a bed using a small vibrator, circling her clit the same way I do with two fingers, except the vibrator adds a frequency of stimulation I can't replicate by hand. Something in my brain files it away as a thing I want.</p>
+
+<p>I open a shopping app and search "bullet vibrator." The first result is $15.99, matte purple, rechargeable, whisper quiet, ten vibration patterns. The reviews are five stars across the board, from women with names like SatisfiedSarah87 saying things like "changed my life."</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🛒 Order the vibrator ($15.99)</span>' "D03_OnlineShopping_Confirm">>
+		<<if window.rbSpend(15.99, "shopping")>>
+			<<set $itemsOwned.vibratorOrdered to true>>
+			<<run window.statChange("cor", 1)>>
+		<</if>>
+	<</link>>
+	<<link '<span>🛒 Order the brush + razor ($15.98)</span>' "D03_OnlineShopping_Confirm">>
+		<<if window.rbSpend(15.98, "shopping")>>
+			<<set $itemsOwned.brushOrdered to true>>
+			<<set $itemsOwned.razorOrdered to true>>
+		<</if>>
+	<</link>>
+	<<link '<span>🛒 Order everything ($31.97)</span>' "D03_OnlineShopping_Confirm">>
+		<<if window.rbSpend(31.97, "shopping")>>
+			<<set $itemsOwned.vibratorOrdered to true>>
+			<<set $itemsOwned.brushOrdered to true>>
+			<<set $itemsOwned.razorOrdered to true>>
+			<<run window.statChange("cor", 1)>>
+		<</if>>
+	<</link>>
+	<<link '<span>🏠 Close the laptop</span>' "Home_Bedroom">><</link>>
+</div>
+
+:: D03_OnlineShopping_Confirm [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "A laptop screen showing an order confirmation page" "float" "assets/ui/phone/amazon-order.png">>
+
+<div class="prose-block">
+
+<p>Order confirmed. Estimated delivery, two days.</p>
+
+<<if $itemsOwned.vibratorOrdered>>
+<p>The vibrator is in my order history now. A matte purple bullet with ten vibration patterns. This is who I am now, a woman who owns a vibrator. Or will, in two days.</p>
+<</if>>
+
+<<if $itemsOwned.brushOrdered and $itemsOwned.razorOrdered>>
+<p>The hairbrush and razor will arrive Friday, the same day I have to face Owen and DashDrop. At least my hair won't be tangled when I show up to explain why Marcus isn't coming back.</p>
+<</if>>
+
+<p>The math is a wolf and it's getting closer. Rent is due in eleven days. I check the balance out of habit and close the laptop before I can spiral about it.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🏠 Back</span>' "Home_Bedroom">><</link>>
+</div>
+
+:: D03_PornExplore [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>The laptop is open on the bed. The apartment is dark except for the screen glow. I've locked the front door and checked it twice. The curtains are drawn.</p>
+
+<p>I open an incognito tab and go to a site I've been to a thousand times as Marcus. The interface is the same. The categories are the same. The thumbnails of bodies doing things to other bodies are the same. But I'm different, and that changes everything.</p>
+
+<p>I click on what Marcus used to watch, straight, male POV, the camera behind the man's shoulder so you see the woman from his angle. My response is immediate and confusing. I'm aroused, but the arousal has shifted. I'm not watching the woman the way Marcus watched women, as an object of desire external to himself. I'm watching her the way you watch someone demonstrate a skill you're trying to learn, the angle of her legs, the sounds she makes. When she moans, I feel a sympathetic vibration in my own throat.</p>
+
+<p>The man on screen is a different kind of problem. I look at his arms and something tightens below my navel. Is this attraction? I don't know. It might be fascination, or envy, or something else that doesn't have a word yet.</p>
+
+<p>I click away and open a different category. Two women.</p>
+
+<p>The effect is instant. Heat blooms between my legs before the video is ten seconds in. Two women kissing, slow and deliberate, hands exploring curves that mirror my own. This feels different, more resonant, more personal. I'm watching two bodies that look like mine doing things I can imagine being done to me, and the line between watching and imagining starts dissolving. When one woman's mouth finds the other's nipple, I feel my own nipples stiffen under my t-shirt.</p>
+
+<p>I watch for ten minutes. I don't touch myself, because this isn't supposed to be about getting off. This is supposed to be about understanding what turns me on and why. Research. Clinical. Methodical.</p>
+
+<p>My panties are soaked by minute seven. So much for clinical.</p>
+
+<p>My body responds to women, strongly, viscerally, with the kind of immediate arousal that doesn't leave room for ambiguity. My body also responds to men, but differently. More tentatively. A question mark instead of an exclamation point.</p>
+
+<p>I don't know what that makes me. The old labels feel like clothes that don't fit. Marcus was straight the way a wall is straight, and he never questioned it because there was nothing to question. But Mia's body has its own opinions and its own desires, and they don't align neatly with anything Marcus knew.</p>
+
+<p>I'll figure it out. Not tonight. But I'll figure it out.</p>
+
+</div>
+
+<<set $d03PornExplored to true>>
+<<set $sexLog.orientation.heteroExp += 1>>
+<<set $sexLog.orientation.sapphicExp += 2>>
+<<run window.statChange("cor", 1)>>
+
+<div class="choice-block">
+	<<link '<span>🏠 Close the laptop</span>' "Home_Bedroom">><</link>>
+</div>

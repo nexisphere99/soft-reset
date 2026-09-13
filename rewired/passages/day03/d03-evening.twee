@@ -1,0 +1,199 @@
+:: D03_Evening_Cook [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Stirring a pot of spaghetti at the kitchen counter" "banner" "assets/characters/mc-female-phase1/d03-cooking.png">>
+
+<div class="prose-block">
+
+<p>The afternoon disappears into a fog of research tabs and body inventory and the kind of bone-deep satisfaction that makes you forget to eat until your stomach cramps hard enough to get your attention.</p>
+
+<p>I peel myself off the bed. The sheets need washing. I need washing. But first I need food.</p>
+
+<p>The kitchen offers the same depressing inventory as this morning, minus the cereal I finished. Two ramen packets, a can of black beans, a box of pasta I forgot I had, shoved behind the ramen. A jar of tomato sauce with maybe half a serving left.</p>
+
+<p>I boil water, cook the pasta, heat the sauce in the one small pot I own. The process is simple enough that even Marcus could do it, and did, occasionally, when the delivery apps were surging and he couldn't justify spending twelve dollars on Pad Thai.</p>
+
+</div>
+
+<<ImagePlaceholder "Eating spaghetti alone at the tiny kitchen table" "float" "assets/characters/mc-female-phase1/d03-eating-table.png">>
+
+<div class="prose-block">
+
+<p>The spaghetti is basic, slightly overcooked. The sauce is from a jar and tastes like it. But it's warm and real, and I eat it sitting at the tiny kitchen table with the wobbly leg, using a fork because the only two clean spoons are in the sink. I chew slowly. The act of cooking something, sitting down to eat it at a table instead of standing at the counter, feels significant in a way I can't quite articulate.</p>
+
+<p>My phone sits next to my plate, face up, screen dark. I don't want to check it, but I know I need to.</p>
+
+</div>
+
+<<set $d03Ate to true>>
+
+<div class="choice-block">
+	<<link '<span>📱 Check the phone</span>' "D03_Evening_Phone">><</link>>
+</div>
+
+:: D03_Evening_Phone [nobr]
+<<HUD>>
+
+<<SceneDivider "Phone">>
+
+<<ImagePlaceholder "A text thread with Nolan, purple message bubbles" "float" "assets/ui/phone/nolan-thread.png">>
+
+<div class="prose-block">
+
+<p>Nolan again. "U alive?" with a skull emoji. I type back without thinking. "barely. How's the gym?" Keeping him in the box marked "before." He can't know about this. Not yet. Not until I figure out what to tell him, how to explain that his gym buddy grew breasts and lost three inches of height and sounds like a different person, because he is a different person.</p>
+
+</div>
+
+<<Dialogue "Nolan" "💪" "U alive? 💀" "">>
+<<Dialogue $player.name "🙂" "barely. How's the gym?" "you">>
+<<Dialogue "Nolan" "💪" "chest and tris today. Hit 225 on bench finally 🎉" "">>
+<<Dialogue "Nolan" "💪" "u missed it bro" "">>
+
+<div class="prose-block">
+
+<p>Bro. The word lands like a pebble in my shoe, small but impossible to ignore. I look down at my chest, at the two B-cups pressing against the sports bra under my t-shirt. Bro.</p>
+
+<p>I type "nice dude congrats" and hit send before I can think about it too hard.</p>
+
+</div>
+
+<<Dialogue "Nolan" "💪" "when u coming back? It's boring without u spotting me" "">>
+
+<div class="prose-block">
+
+<p>The gym. Where I'd have to walk into the men's locker room with these hips and these breasts and this voice. Where Nolan would see me and his jaw would drop and every carefully constructed lie I've been building would crumble like wet cardboard.</p>
+
+<p>"give me a couple more days. this bug is brutal"</p>
+
+</div>
+
+<<Dialogue "Nolan" "💪" "aight feel better dude 💪" "">>
+
+<div class="prose-block">
+
+<p>Dude. He called me dude. He's going to keep calling me dude until he sees me in person, and then he's going to call me something else entirely.</p>
+
+<p>I put the phone face-down on the couch cushion beside me.</p>
+
+</div>
+
+<<set $d03NolanTexted to true>>
+
+<<SceneDivider "Email">>
+
+<<ImagePlaceholder "A phone screen showing an email notification from the university registrar" "float" "assets/ui/phone/uni-email.png">>
+
+<div class="prose-block">
+
+<p>An email is sitting at the top of my inbox, bold and unread, from the university registrar's office. Subject line: "Name Confirmation Processed."</p>
+
+<p>I open it. "Dear Mia Cole, thank you for confirming your preferred name for academic correspondence. Your records have been updated in our system effective immediately. Course enrollment and transcripts will display your preferred name. Official legal documents will continue to use your legal name on file until a legal name change is processed."</p>
+
+<p>I read it three times. Course enrollment. Transcripts. The professor calling roll in Advanced Statistics will look at the roster, read "Mia Cole," look up expecting a girl, and see a girl, because that's what I am now.</p>
+
+<p>A legal name change is a whole other thing. Court documents and filing fees and standing in front of a judge explaining why Marcus Aiden Cole needs to legally become Mia Something Cole. I don't even have a middle name picked. Do I need a middle name? Did Marcus's carry over, or did the transformation eat that too?</p>
+
+<p>The email treats this like routine paperwork, a preferred name update processed, the same as changing an email signature. As if the distance between Marcus and Mia is administrative rather than existential.</p>
+
+<p>I close the email. I'll think about the legal name change later. I'll think about everything later. Later is a room in my head where I shove the things I can't look at directly, and the door is getting harder to close.</p>
+
+</div>
+
+<<set $d03UniEmailRead to true>>
+<<run window.statChange("fem", 1)>>
+<<run window.rbAddJournalEntry("Mia Cole", "The university updated my records. Mia Cole is in a database now. I didn't change it back.")>>
+
+<div class="choice-block">
+	<<link '<span>📺 Turn on the TV, tune out for a while</span>' "D03_Evening_Alone">><</link>>
+</div>
+
+:: D03_Evening_Alone [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Curled up on the couch watching TV, blue light on her face" "banner" "assets/characters/mc-female-phase1/d03-couch-evening.png">>
+
+<div class="prose-block">
+
+<p>The evening settles around me like silt at the bottom of a pond. Quiet, heavy, slow.</p>
+
+<p>I wash the pasta dish and wipe down the counter. These small domestic acts feel louder than they should, the clink of ceramic against steel, the hiss of the faucet, the squeak of the sponge on the plate. I'm filling silence with noise because silence leaves too much room for thinking.</p>
+
+<p>I change into clean panties, white cotton this time, from the three-pack Marlene sold me. They fit the same as the black ones, snug against curves that shouldn't be there but are. I pull the old t-shirt back on and stand in the kitchen doorway.</p>
+
+<p>The apartment is small enough that I can see every room from this spot. Mattress on the floor with its damp patch from this afternoon. Bathroom door open, mirror reflecting a slice of wall. Kitchen counter with the jar of tomato sauce still open. Living area, which is really just a couch and a TV on a milk crate.</p>
+
+<p>This is where I live now. Not Marcus's apartment anymore. Mine. Mia's. A girl's apartment that still has a boy's stuff in it, because the girl hasn't had time to redecorate.</p>
+
+<p>I turn on the TV, some reality show about people renovating houses. The noise fills the apartment and pushes the silence back, and I sit on the couch and pull my knees up to my chest and feel the way my thighs press against my breasts, the way everything on this body sits closer together now, more compact, folding inward instead of sprawling outward.</p>
+
+<p>The woman on TV is knocking out a wall with a sledgehammer while her husband says "babe, babe, that's load-bearing," and she's swinging anyway.</p>
+
+<p>I watch for two hours and don't absorb a single thing.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🛏️ Head to bed</span>' "Home_Bedroom">><</link>>
+</div>
+
+:: D03_Bedtime [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Lying in bed on her side, amber streetlamp light through the curtains" "banner" "assets/characters/mc-female-phase1/d03-bedtime.png">>
+
+<div class="prose-block">
+
+<p>New panties, old t-shirt. The lamp is off. The only light is the glow of the streetlamp outside, filtering through the thin curtains and painting everything in amber stripes.</p>
+
+<p>I lie on my back, one hand resting on my stomach, fingertips just above the waistband. The fabric is warm from my own body heat, soft cotton against softer skin.</p>
+
+<p>I'm not trying to start anything. I'm just lying here.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🌙 Just sleep. It&apos;s been enough for one day.</span>' "D03_Sleep">><</link>>
+	<<link '<span>🔥 My fingers drift...</span>' "D03_SelfExplore_Night">>
+		<<run window.statChange("fem", 1)>>
+	<</link>>
+</div>
+
+:: D03_SelfExplore_Night [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>My fingers drift over the panties first, pressing against the mound beneath the fabric. I can feel the shape of myself through the cotton, the cleft, the gentle give of flesh. The pressure sends a slow pulse of warmth upward through my belly.</p>
+
+<p>Under the waistband, slowly, fingertips brushing through hair, finding the outer lips, warm and soft, the faintest trace of moisture already there, my body responding to touch with the same eager immediacy it's shown since Day 1.</p>
+
+<p>I find my clit without searching and circle it slowly. The pleasure is quieter tonight, gentler, not the frantic research-driven intensity of this afternoon but something closer to comfort, like scratching an itch that's been humming just below the surface all evening.</p>
+
+<p>I take my time. No rush. The dark and the quiet and the slow build. I slip one finger inside, then two, curling forward, and the G-spot is right there, swollen and eager, and when I press into it while circling my clit with my thumb the combination is immediately overwhelming in the best way.</p>
+
+<p>My hips rock against my hand, the rhythm finding itself, independent of conscious thought, my body moving the way it wants to move, taking what it needs.</p>
+
+<p>I close my eyes and something new happens. A fantasy, images behind my eyelids. The delivery guy's smile, Cody, his eyes dropping to my chest for a half-second before snapping back to my face. Then a faceless mouth between my legs, warm breath, a tongue in place of my thumb. Then someone behind me, hands on my hips, pulling me back, wanting something inside me thicker and longer than my own fingers. Then hands on my breasts, squeezing, a mouth on my neck, and the sensation is so vivid I arch into it even though there's nobody there.</p>
+
+<p>I come quieter than the shower orgasms, quieter than this afternoon's marathon, a deep rolling contraction that starts low and spreads upward through my center. My toes curl. My mouth opens in a silent "O" that becomes an almost silent "ahh" as the waves pass through me. I count the contractions because counting has become a reflex. Eight. Each one gentler than the last, fading like ripples in a pond.</p>
+
+<p>I lie in the dark afterward, hand still cupped between my legs, the dampness, the warmth, the afterglow humming in every nerve ending.</p>
+
+<p>My fantasies were about being touched by someone else. Being wanted by someone else. Being a woman with someone else. Not just a body in a mirror or a hand in the dark. A woman in someone else's eyes, someone else's hands, someone else's bed.</p>
+
+<p>I don't know what that means yet. I don't know if I'm straight or gay or something else entirely. The old categories were built for a body I don't have anymore, and new ones haven't formed yet. But my body told me something tonight, quietly, in the dark, between the eighth contraction and the silence that followed. It told me it wants to be touched. Not just by me.</p>
+
+<p>I pull the blanket up and roll onto my side, since sleeping on my stomach still doesn't work with breasts. The fetal position feels natural and protective, knees drawn up, arms folded, a compact curve of woman in a bed that used to hold a sprawling man.</p>
+
+</div>
+
+<<run window.statChange("cor", 1)>>
+<<run window.statChange("fem", 1)>>
+<<set $sexLog.orientation.heteroExp += 1>>
+
+<div class="choice-block">
+	<<link '<span>🌙 Sleep</span>' "D03_Sleep">><</link>>
+</div>
+
+:: D03_Sleep [nobr]
+<<goto "Sleep">>

@@ -47,6 +47,51 @@
 
 <</if>>
 
+<<if $day gte 3 and not $seenParkNeedAir>>
+
+<<ImagePlaceholder "An empty bench beside the pond, afternoon light" "banner" "assets/locations/park/bench.png">>
+
+<div class="prose-block">
+<p>I needed air. The apartment walls were closing in, shrinking by the hour, the ceiling stain getting bigger as the rooms got smaller. Two days inside and my skin felt like it had been wrapped in cling film.</p>
+<p>A woman jogs past, ponytail swinging, wireless earbuds, tank top over a sports bra, leggings that cost more than my rent. She looks effortless, like she's been running in this body her whole life, like her legs have always been that shape and her breasts have always been contained in that particular sports bra that fits perfectly because she was fitted at a store by someone who taught her the lean-and-scoop technique when she was fourteen.</p>
+<p>I watch her disappear around the curve of the path and feel something that isn&apos;t envy exactly. Closer to yearning. She knows how to be a woman the way Marcus knew how to be a man, instinctively, unconsciously, without thinking about every gesture and every article of clothing.</p>
+<p>I&apos;ll get there. Maybe. Someday. Right now I&apos;m a woman the way someone who just got their driver&apos;s license is a driver. Technically qualified. Functionally terrified.</p>
+<p>A squirrel runs across the path in front of me and stops to stare, head tilted, like I&apos;m the strangest thing it&apos;s seen all day.</p>
+<p>&quot;Same, buddy,&quot; I tell it. &quot;Same.&quot;</p>
+</div>
+
+<<set $seenParkNeedAir to true>>
+
+<</if>>
+
+<<if $day gte 3 and not $metDuckLady and window.rbRandom(1, 10) lte 4>>
+
+<<SceneDivider "The Duck Lady">>
+
+<<ImagePlaceholder "An elderly woman on a park bench feeding bread crusts to ducks" "float" "assets/characters/supporting/duck-lady.png">>
+
+<div class="prose-block">
+<p>An older woman sits down on the other end of my bench with a paper bag of bread crusts, tearing them into pieces and throwing them to the ducks in the pond.</p>
+<p>She glances at me. &quot;You look like you&apos;re carrying the weight of the world, sweetheart.&quot;</p>
+<p>I almost laugh. If she only knew.</p>
+<p>&quot;Just thinking.&quot;</p>
+<p>&quot;Well, don&apos;t do too much of that. It&apos;s bad for you.&quot; She tosses a crust. A duck waddles over and grabs it before a pigeon can. &quot;My husband used to say thinking is just worrying with a college degree.&quot;</p>
+<p>&quot;Smart man.&quot;</p>
+<p>&quot;Dead man,&quot; she says cheerfully, the way people say it when the grief has aged into something softer, rounded at the edges. &quot;But he was right about most things. You eat lunch today?&quot;</p>
+<p>&quot;Yeah.&quot;</p>
+<p>&quot;Good. Girls your age forget to eat. My granddaughter, she lives on coffee and anxiety. I tell her, &apos;Marina, your body is not a suggestion.&apos; She doesn&apos;t listen.&quot; She throws another crust. &quot;Nobody listens.&quot;</p>
+<p>A duck quacks. The old woman smiles at it with genuine affection.</p>
+<p>&quot;You have a good day, sweetheart. Whatever you&apos;re carrying, put it down for five minutes and watch the ducks. They don&apos;t care about your problems, and that&apos;s the most relaxing thing in the world.&quot;</p>
+<p>She gets up, folds the empty bread bag neatly, and walks away.</p>
+<p>I watch the ducks for five minutes. She was right. They don&apos;t care about my problems. They&apos;re concerned exclusively with bread crusts, pond algae, and the complex social dynamics of duck life.</p>
+<p>I feel slightly better. Not fixed. But better.</p>
+</div>
+
+<<set $metDuckLady to true>>
+<<run window.statChange("stress", -5)>>
+
+<</if>>
+
 <<if $day is 2 and window.rbRandom(1, 10) lte 3>>
 
 <div class="prose-block">

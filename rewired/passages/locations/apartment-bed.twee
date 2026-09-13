@@ -49,6 +49,30 @@
 		<p class="text3 small">The new clothes still feel new. You keep noticing them.</p>
 	<</if>>
 
+<<elseif $day is 3>>
+
+	<<if not $d03BodyInventory>>
+		<<link '<span class="action-icon">📏</span><span class="action-text">Measure and study this body<span class="action-sub">Twine, a ruler, and a research day</span></span>' "D03_BodyInventory">><</link>>
+	<<elseif not $d03Research>>
+		<<link '<span class="action-icon">💻</span><span class="action-text">Research on the laptop<span class="action-sub">Anatomy, bra sizing, everything</span></span>' "D03_Research">><</link>>
+	<<elseif not $d03PhysicalExam>>
+		<<link '<span class="action-icon">🪞</span><span class="action-text">Examine yourself with the hand mirror<span class="action-sub">Privacy. Courage.</span></span>' "D03_PhysicalExplore">><</link>>
+	<<elseif not $d03MasturbationExplore>>
+		<<link '<span class="action-icon">🔥</span><span class="action-text">Test your body&apos;s responses... (research)<span class="action-sub">You already know it isn&apos;t really research</span></span>' "D03_MasturbationExplore">><</link>>
+	<<elseif $timeslot is "Night" and $d03Ate and $d03UniEmailRead>>
+		<<link '<span class="action-icon">🛏️</span><span class="action-text">Go to bed<span class="action-sub">It&apos;s been enough for one day.</span></span>' "D03_Bedtime">><</link>>
+	<<elseif not $d03Ate>>
+		<p class="text3 small">You should eat something before it gets late.</p>
+	<<else>>
+		<p class="text3 small">Check your phone before it gets any later.</p>
+	<</if>>
+
+	<<link '<span class="action-icon">🛒</span><span class="action-text">Browse online shopping<span class="action-sub">The laptop&apos;s already open</span></span>' "D03_OnlineShopping">><</link>>
+
+	<<if $timeslot is "Night" and not $d03PornExplored>>
+		<<link '<span class="action-icon">💻</span><span class="action-text">Browse... other things on the laptop</span>' "D03_PornExplore">><</link>>
+	<</if>>
+
 <</if>>
 
 <<link '<span class="action-icon">🪞</span><span class="action-text">Check the mirror<span class="action-sub">See what&apos;s looking back today</span></span>' "Home_Bedroom_Mirror">><</link>>

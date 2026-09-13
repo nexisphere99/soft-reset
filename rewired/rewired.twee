@@ -159,6 +159,25 @@ REWIRED
 <<set $closetSplit to false>>
 <<set $cookingSkill to 0>>
 
+/* ---------- Day 3 open-world progress flags ---------- */
+<<set $d03CalledOwen to false>>
+<<set $d03BodyInventory to false>>
+<<set $d03Research to false>>
+<<set $d03PhysicalExam to false>>
+<<set $d03MasturbationExplore to false>>
+<<set $d03Ate to false>>
+<<set $d03NolanTexted to false>>
+<<set $d03NolanExtended to false>>
+<<set $d03UniEmailRead to false>>
+<<set $d03PornExplored to false>>
+<<set $d03DidLaundry to false>>
+<<set $metMrsParkAsMia to false>>
+<<set $metMangoCraving to false>>
+<<set $metCodyD3 to false>>
+<<set $metDuckLady to false>>
+<<set $seenParkNeedAir to false>>
+<<set $hasGroceries to false>>
+
 /* ---------- First-time event flags ---------- */
 <<set $firstCatcall to false>>
 <<set $firstPeriod to false>>

@@ -1,0 +1,129 @@
+:: D03_Morning [nobr]
+<<set $day to 3>>
+<<set $timeslot to "Morning">>
+<<set $weekDay to "Sunday">>
+<<HUD>>
+
+<<SceneDivider "Sunday Morning, 9:14 AM">>
+
+<<ImagePlaceholder "Waking up, breasts pressing into the mattress, dark hair everywhere" "banner" "assets/characters/mc-female-phase1/d03-wakeup-bed.png">>
+
+<div class="prose-block">
+
+<p>I open my eyes and the first thing I feel is the weight. Not a metaphor, actual weight, on my chest, shifting when I breathe, pressed against the mattress because I rolled onto my stomach sometime in the night. My breasts are flattened between my ribcage and the bed, and the pressure is a dull ache that finishes waking me up.</p>
+
+<p>I roll onto my back and they settle, two soft mounds moving with their own momentum, a half-second behind the rest of me, like passengers on a bus that stopped short. The sports bra kept them contained overnight, but even through the fabric I can feel the way they sit differently lying down, flatter, wider, pooling toward my armpits instead of projecting forward. Physics I never had to think about before Thursday.</p>
+
+<p>The ceiling stain still looks like a fist. Same cracked plaster, same thin curtains letting in grey morning light that makes this whole apartment look like a photograph someone left in a drawer too long.</p>
+
+<p>I sit up and hair falls across my face immediately, dark strands sticking to my lips, caught in my eyelashes, draped over one shoulder. I rake it back with both hands and it holds for about three seconds before sliding forward again. Marcus kept his hair short enough that it never touched his ears. This hair is past my collarbone now, and it has opinions about where it wants to be.</p>
+
+<p>My phone says 9:14 AM. Sunday. Day three of being someone else.</p>
+
+<p>The new panties are still on, black cotton, bikini cut, sitting exactly where they're supposed to on hips that shouldn't exist. I slept in these and the old oversized t-shirt from Marcus's closet, which has ridden up past my navel because my body is shaped wrong for it now, too much curve at the waist, too much swell at the hips. The shirt wants to be straight and my body refuses.</p>
+
+<p>I swing my legs off the mattress and put my feet on the cold floor. My thighs touch in the middle now, brushing against each other when I walk, when I sit, when I do anything at all. Three days in and I'm still not used to the way this body takes up space differently, narrower at the shoulders, wider at the hips, shorter by three inches. The world got slightly bigger around me and I got slightly smaller inside it.</p>
+
+<p>The apartment is quiet except for the fridge humming its death rattle in the kitchen.</p>
+
+<p>I need to pee.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🚽 Go to the bathroom</span>' "D03_Morning_Bathroom">><</link>>
+</div>
+
+:: D03_Morning_Bathroom [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Looking in the bathroom mirror, tangled hair, tired freckled face" "portrait" "assets/characters/mc-female-phase1/d03-mirror-morning.png">>
+
+<div class="prose-block">
+
+<p>The bathroom is four steps from the mattress in this shoebox apartment. I pull the panties down and sit on the toilet, and the muscle memory of standing is still there for half a second, a ghost reflex that fires and dies in the same instant. Sitting is automatic now, or close to it. The stream sounds different, thinner and softer, coming from a different angle and hitting the water with less force. Even peeing is a reminder.</p>
+
+<p>I wipe front to back. I read that somewhere during last night's phone spiral, or maybe instinct told me. Either way it feels correct, the direction my hand wants to go, like my body came with instructions I'm only finding page by page.</p>
+
+<p>I flush, wash my hands, and look up at the mirror.</p>
+
+<p>She's still there.</p>
+
+<p>Same face as yesterday, and the day before. Heart-shaped, freckled, a little puffy around the eyes from another night of garbage sleep. Lips fuller than mine ever were. Jaw softer, no trace of stubble, no shadow. Hazel-green eyes that used to sit in a different skull. My mother's nose, apparently. I never noticed it on Marcus's face, but here it is, fine-bridged and slightly upturned, on a face that reads as unambiguously female from every angle.</p>
+
+<p>My hair is a disaster, tangled from sleep, one side flattened against my head while the other side is doing something ambitious and vertical. I don't own a brush. I run my fingers through it and they catch on knots immediately. I yank. It hurts. The follicles sting in a way Marcus's scalp never did, because Marcus's hair was never long enough to knot.</p>
+
+<p>I splash cold water on my face, pat it dry with a towel that smells like it needs washing, and stare at myself for ten more seconds. She stares back with an expression I'm starting to recognize as mine.</p>
+
+<p>"Okay," I say to the mirror. My voice is alto, clear, undeniably feminine. It hasn't changed back. Nothing has changed back.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🍳 Find something to eat</span>' "D03_Morning_Kitchen">><</link>>
+</div>
+
+:: D03_Morning_Kitchen [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>Breakfast is a problem I solve by opening the cabinet and staring at what's left. Two packets of instant ramen. A box of off-brand Cheerios with maybe a quarter cup rattling around the bottom. A can of black beans from a care package Nolan gave me months ago that I never opened.</p>
+
+<p>I pour the last of the cereal into a bowl. No milk. Dry cereal, eaten standing at the counter like a raccoon that got into a kitchen, crunching in silence.</p>
+
+<p>My stomach wants something else. Something specific. I can feel the craving sitting in the back of my mouth like a word I can't remember. Sweet but not sugar-sweet. Bright. Acidic. I want fruit. Mango, maybe. The thought is so specific and so unlike anything Marcus ever wanted that it stops me mid-chew. Marcus ate burgers and energy drinks and gas station burritos. Marcus would have laughed at craving a mango.</p>
+
+<p>But my mouth is watering at the thought of cold mango chunks, and I don't know whose craving this is. The body's, or mine. If there's even a difference anymore.</p>
+
+<p>I eat the dry cereal. It tastes like cardboard and obligation.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>📞 Call Owen before he calls you</span>' "D03_CallingIn">><</link>>
+</div>
+
+:: D03_CallingIn [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "A phone screen showing a DashDrop shift reminder notification" "float" "assets/ui/phone/dashdrop-notification.png">>
+
+<div class="prose-block">
+
+<p>My phone buzzes on the counter. DashDrop notification, shift reminder for tomorrow. Then I remember I haven't dealt with today yet.</p>
+
+<p>I pick up the phone and call DashDrop's dispatch line. Owen answers on the third ring. His voice is the same flat monotone whether he's telling you good morning or that your grandmother died.</p>
+
+<p>"DashDrop West Side, this is Owen."</p>
+
+<p>"Hey Owen, it's Ai..." The name catches in my throat like a fishhook. "It's me. I'm still sick."</p>
+
+<<Dialogue "Owen" "☎️" "You sound different. Sore throat?" "">>
+
+<p>My voice, of course. My voice is an alto that sounds nothing like the baritone Owen has heard for eight months. I clear my throat and try to pitch it lower, and it comes out sounding like a bad impression of a teenage boy.</p>
+
+<p>"Yeah. Throat thing. Really bad."</p>
+
+<<Dialogue "Owen" "☎️" "Alright. Take another day. But I need you back by Friday or I gotta fill your shifts. Can't hold 'em forever." "">>
+
+<p>"Friday. Yeah. I'll be there."</p>
+
+<<Dialogue "Owen" "☎️" "Feel better." "">>
+
+<p>He hangs up. I put the phone face-down on the counter.</p>
+
+<p>Friday is Day 5. Two days from now. I'll have to walk into the DashDrop depot and face Owen and whoever else is working. I'll have to do it in this body, with this voice, with these breasts pressing against whatever shirt I'm wearing. I'll have to explain why Marcus isn't coming back.</p>
+
+<p>My stomach clenches, not hunger this time. Fear, coiling at the base of my ribs like a living thing.</p>
+
+<p>I push the thought away. Friday is Friday. Today is today. Today I'm staying inside, and I'm going to figure out this body if it kills me.</p>
+
+</div>
+
+<<set $d03CalledOwen to true>>
+<<run window.rbAddJournalEntry("Calling In", "Bought myself until Friday. Owen noticed my voice. I'll have to face him eventually.")>>
+
+<div class="choice-block">
+	<<link '<span>🏠 Start the day</span>' "Home">><</link>>
+</div>

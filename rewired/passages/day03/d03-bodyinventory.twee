@@ -1,0 +1,235 @@
+:: D03_BodyInventory [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Standing at the bathroom doorframe measuring her waist with twine" "portrait" "assets/characters/mc-female-phase1/d03-measuring.png">>
+
+<div class="prose-block">
+
+<p>I make a decision somewhere between the last bite of dry cereal and washing the bowl in the sink. Today is a research day. Clinical, methodical. I'm going to study this body the way I'd study for an exam, because that's the only framework I have that makes any sense right now.</p>
+
+<p>Step one is measuring. I dig through the junk drawer in the kitchen and find a piece of twine left over from when I tried to hang a poster with no nails, and the ruler I used to mark margins on a homework assignment three months ago. These are the only measuring tools in the apartment. I work with what I have.</p>
+
+<p>I strip down in front of the bathroom mirror, sports bra off, panties off, completely naked, goosebumps prickling across skin that's softer than it was three days ago. Softer than it has any right to be.</p>
+
+<p>Height first. I stand against the doorframe where Marcus's pencil mark still sits at 5'9". I reach up and mark my own height with a fingernail scratch, step away, and hold the ruler against the frame.</p>
+
+<p>Five foot six. Three inches shorter. Three inches of bone and cartilage and vertical space just gone overnight. I press my finger against Marcus's mark, then against mine. The gap between them is the distance between who I was and who I am.</p>
+
+<p>Bust next. I wrap the twine around my chest at the fullest point, mark it with my thumb, lay it against the ruler. About thirty-four inches. I do it twice to be sure. Thirty-four.</p>
+
+<p>Underbust, same process but under the breasts, around the ribcage. Twenty-seven inches. The difference between these two numbers is supposed to mean something about cup size, but I don't know what yet.</p>
+
+<p>Waist, I feel for the narrowest point, which turns out to be above my navel, a dramatic inward curve Marcus's body never had. The string sits in a groove that feels carved. Twenty-four and a half inches.</p>
+
+<p>Hips, the widest point, lower than I expected, mid-pelvis, where the bone flares out and then there's the added padding of flesh over it. I wrap the twine carefully, pulling it snug but not tight. Thirty-five and a half inches.</p>
+
+</div>
+
+<<ImagePlaceholder "A hand writing measurements on the back of a DashDrop receipt" "float" "assets/characters/mc-female-phase1/d03-measurements-note.png">>
+
+<div class="prose-block">
+
+<p>I write the numbers on the back of a DashDrop receipt with a pen that's running out of ink.</p>
+
+<blockquote>Height: 5'6"<br>Bust: 34"<br>Underbust: 27"<br>Waist: 24.5"<br>Hips: 35.5"</blockquote>
+
+<p>These are just numbers. They don't mean anything to me yet. But I'm going to find out.</p>
+
+</div>
+
+<<set $d03BodyInventory to true>>
+<<run window.rbAddMilestone("Measured this body for the first time.")>>
+
+<div class="choice-block">
+	<<link '<span>💻 Get the laptop</span>' "D03_Research">><</link>>
+	<<link '<span>🏠 Enough for now</span>' "Home_Bedroom">><</link>>
+</div>
+
+:: D03_Research [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Sitting cross-legged on the mattress, laptop glow on her face" "banner" "assets/characters/mc-female-phase1/d03-laptop-research.png">>
+
+<div class="prose-block">
+
+<p>The laptop is on the bed where I left it last night. It's six years old and the fan sounds like a helicopter trying to take off from a swamp. I open it, wait ninety seconds for it to wake up, and start searching.</p>
+
+<p>"Female body measurements average." The first result tells me the average American woman is 5'4", bust 38", waist 34", hips 40". So I'm taller than average, slimmer everywhere else. The ratio of my waist to my hips comes out around .69, which apparently gets described as "hourglass" in fashion articles. Great. I'm an hourglass. Marcus was a rectangle and now I'm an hourglass. What a promotion.</p>
+
+<p>"How to measure bra size." This is where things get insane. I click through three different guides and get three different answers. My 27-inch underbust and 34-inch bust could make me a 28DD, a 30D, or a 32C depending on which brand's chart I trust. The sports bra Marlene gave me was a B and it felt fine, so I'm going to trust the woman who spent ten seconds assessing me over three conflicting websites. Probably a 32B for now. Bra sizing isn't a science. Bra sizing is astrology for clothing.</p>
+
+<p>"Female anatomy diagram." I click a medical site with clinical cross-section illustrations, labels everywhere. Mons pubis. Labia majora. Labia minora. Clitoris. Clitoral hood. Urethral opening. Vaginal opening. Cervix. Uterus. Ovaries. Fallopian tubes.</p>
+
+<p>I have all of this inside me. Not theoretically. Right now, sitting cross-legged on this mattress with the laptop warming my thighs, there are ovaries inside my pelvis producing estrogen that's making my skin soft and giving me mango cravings. There's a uterus in there that will, at some point, decide to shed its lining, and I will bleed from between my legs for several days while my abdomen cramps.</p>
+
+<p>I read about the menstrual cycle for twenty minutes. Follicular phase, ovulation, luteal phase, menstruation. A 28-day cycle, give or take. Cramps, bloating, mood swings, breast tenderness, cravings, fatigue, headaches. The list of symptoms reads like a chronic illness fact sheet.</p>
+
+<p>"This will happen to me," I say to the laptop screen. "Monthly. For decades."</p>
+
+<p>I close the tab. Open it again. Read the section on managing cramps. Close it again.</p>
+
+<p>"How to put on a bra." A YouTube tutorial by a woman in a bright pink bra standing in front of a ring light. She demonstrates the lean-forward-and-scoop technique, hook the bra behind your back, lean forward so your breasts fall into the cups, then scoop the tissue from under your armpits into the cups with your hands. I pick up the sports bra off the floor and try it. Hook, lean, scoop. The fit is immediately better, my breasts sitting higher, more centered, actually cupped instead of just compressed.</p>
+
+<p>"Oh." I stand up and look in the mirror. The sports bra looks like it belongs on my body now instead of just being strapped to it. One video changed the fit completely. How do women learn all of this? Is there a class? Is it osmosis? Do their mothers teach them at thirteen while they're crying in a department store fitting room?</p>
+
+<p>Nobody taught me. Nobody's going to teach me. I'm learning everything from scratch, from search results and tutorials and the kind of trial and error Marcus never had to think about because Marcus's body didn't come with an instruction manual that got lost in transit.</p>
+
+<p>I keep going. "Skincare routine for women." Cleansers, toners, moisturizers, serums, SPF, exfoliants, retinol. Marcus's skincare routine was water. Sometimes soap. Apparently that was a war crime against my pores.</p>
+
+<p>"How to brush tangled hair." Start from the bottom, work in sections, don't just yank from the roots like a caveman. I don't own a brush, but I need to buy one soon.</p>
+
+<p>The research spiral goes on for two hours, tab after tab. I fall into a hole of women's health forums and come out the other side knowing more about vaginal pH than I ever wanted to know. I learn about discharge, apparently normal and constant, and yes, I've noticed it, a slight dampness in my panties I thought was sweat but turns out to be my body just doing its thing all day every day.</p>
+
+<p>I learn about UTIs and why women get them more often than men. I learn about yeast infections and bacterial vaginosis and the importance of cotton underwear and not sitting around in wet bathing suits. I learn that I should never, ever douche. I learn the vagina is self-cleaning. This fact is simultaneously reassuring and deeply strange.</p>
+
+<p>My brain is full. I close the laptop and sit on the bed in my sports bra and panties, staring at the wall.</p>
+
+<p>I'm female and I know almost nothing about what that means, and the gap between what I need to know and what I actually know is so vast it makes me dizzy. But I'm filling it in. One search at a time, one fact at a time. This body is mine whether I chose it or not. I need to understand it.</p>
+
+</div>
+
+<<set $d03Research to true>>
+<<run window.statChange("int", 2)>>
+
+<div class="choice-block">
+	<<link '<span>🪞 Get the hand mirror</span>' "D03_PhysicalExplore">>
+		<<run window.statChange("fem", 1)>>
+	<</link>>
+	<<link '<span>🏠 Enough for now</span>' "Home_Bedroom">><</link>>
+</div>
+
+:: D03_PhysicalExplore [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Sitting on the edge of the mattress with a hand mirror, viewed from over the shoulder" "portrait" "assets/characters/mc-female-phase1/d03-hand-mirror.png">>
+
+<div class="prose-block">
+
+<p>The hand mirror lives in the bathroom cabinet, one of those cheap ones with a plastic handle and a slightly warped surface that makes everything look fractionally wider than reality. I bring it to the bed.</p>
+
+<p>I pull my panties off, sit on the edge of the mattress, feet on the floor, knees apart, and hold the mirror between my thighs, angling it until I can see myself.</p>
+
+<p>The mons pubis is a soft mound of flesh covered in dark pubic hair, same color as the hair on my head but coarser, curlier, untrimmed. It looks the same as it did when it was Marcus's, but the texture is finer now, slightly softer against my fingers when I touch it.</p>
+
+<p>I spread my outer lips with two fingers, gently. The skin here is sensitive enough that I hold my breath. The labia majora are full, smooth when closed, slightly darker than the skin of my inner thighs, a warm pink that deepens closer to the center.</p>
+
+<p>Inside, the labia minora are smaller, symmetrical, a rose pink that glistens with the faintest trace of moisture, delicate and thin-edged, peeking just past the outer lips when I'm not holding anything apart.</p>
+
+<p>At the top I find the clitoral hood, a neat fold of skin over a small nub. I touch it with the pad of my index finger and feel the nub stiffen slightly beneath the hood. That's the clit. The epicenter of what happened in the shower on Day 1, and in bed last night. The reason my legs shook and my vision went white.</p>
+
+<p>Below the clit, a tiny opening. The urethra. "I pee from there," I whisper to no one, confirming what the anatomy diagram told me. It's incredibly small, barely visible.</p>
+
+<p>Lower still, the vaginal opening, larger than the urethra but not by as much as I expected. I can see the entrance, a slightly wider gap in the pink folds. I insert one finger slowly, and my body resists for a fraction of a second at the opening before yielding, the muscle relaxing as my finger slides in. Warm. Wet. The walls are ridged and textured, gripping with a gentle muscular squeeze that pulses when I move.</p>
+
+<p>Deeper, the texture changes, smoother further in, and then my fingertip bumps against something firm and round. The cervix. Like pressing the tip of your nose, that same cartilaginous firmness with give behind it. I push gently and a deep ache radiates outward, not pain exactly, more a warning. Don't poke that.</p>
+
+<p>I withdraw my finger. It glistens, coated in a thin, clear fluid that catches the light. I bring it close, and the smell is faint, musky, not unpleasant, slightly sweet in a way I can't compare to anything else. I touch my finger to my tongue because I'm a scientist now, apparently, and scientists taste things. The flavor is almost nothing, a mild tang, barely registering. Not what I expected, though I don't know what I expected.</p>
+
+<p>I set the mirror down on the bed and sit with my knees together. My heart is beating harder than the clinical nature of this examination should warrant. I just mapped my own vulva like a cartographer charting a new continent, and my hands are shaking slightly.</p>
+
+<p>This is my body. Every fold, every opening, every nerve ending. Mine.</p>
+
+<p>I pick the mirror back up.</p>
+
+</div>
+
+<<set $d03PhysicalExam to true>>
+<<run window.statChange("fem", 1)>>
+
+<div class="choice-block">
+	<<link '<span>🔥 Keep going... test how this body responds</span>' "D03_MasturbationExplore">>
+		<<run window.statChange("cor", 1)>>
+	<</link>>
+	<<link '<span>🏠 That&apos;s enough for now</span>' "Home_Bedroom">><</link>>
+</div>
+
+:: D03_MasturbationExplore [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I tell myself this is research.</p>
+
+<p>It's a lie, or at least it's only half true, but the lie gives me permission to reach for my phone and search "female masturbation techniques for beginners" without the guilt that would otherwise make me slam the phone face-down on the bed.</p>
+
+<p>An article comes up, written in the second person by someone named Dr. Sarah Something, listing methods with clinical descriptions and encouraging asides about how self-exploration is healthy and normal and nothing to be ashamed of. Thank you, Dr. Sarah. I needed that.</p>
+
+<p>I start with what I already know. Circular motion on the clit, my index and middle fingers finding the spot now without searching. Two days of practice and my hand knows where to go. I circle slowly, and the pleasure builds within seconds, a warm pulse radiating from the point of contact outward through my pelvis, down my inner thighs, up into my lower belly. It's good. Really good. I could finish like this in two minutes, maybe less, but I stop before the peak because I want to try everything on the list.</p>
+
+<p>I try light, rapid tapping on the clit with two fingertips next, and it's a completely different sensation, sharp electric jolts instead of the rolling warmth of circles. Each tap sends a spike of pleasure straight up my spine, and my hips jerk involuntarily with each one. This gets intense fast, almost too fast, the pleasure climbing in staccato bursts rather than a smooth arc, so I slow down before it turns overwhelming.</p>
+
+<p>Then I try holding pressure instead, two fingers pressed firmly against my clit and held still, no motion, just sustained weight. For a few seconds nothing happens. Then a deep, throbbing sensation starts to build, slow and heavy, like a bass note vibrating through my whole pelvis. The pleasure is subtle but powerful in a way circles aren't. My hips start moving on their own, rocking against my hand, seeking friction my fingers aren't providing. This is how women grind on things, apparently. Not with their hands. With their hips. The movement comes from somewhere deeper than conscious thought.</p>
+
+<p>I slide one finger inside myself, curling it toward my belly the way I learned last night, while my thumb finds my clit and presses. Double stimulation. The effect is immediate and synergistic, each sensation amplifying the other in a feedback loop that catches my breath.</p>
+
+<p>"Oh god." I say it out loud and my voice sounds breathy and foreign and feminine, and I don't care.</p>
+
+<p>I add a second finger. The stretch is good, fuller and more satisfying, like flexing a muscle you didn't know was tense. The ridged front wall is right there under my fingertips, swelling, engorging, the tissue getting firmer and puffier as blood rushes to it. The G-spot. I press into it and my back arches off the mattress without asking permission first.</p>
+
+<p>I pull my fingers out, breathing hard. I'm not ready to finish yet.</p>
+
+<p>I grab the pillow from behind my head and straddle it, pressing my clit against the bunched fabric through my panties, except my panties are off, so I put them back on because the article said fabric creates friction. I settle onto the pillow and rock my hips.</p>
+
+<p>This feels primal, instinctive, something my body knows how to do without instruction. I'm grinding the way I've seen women grind in every sexual image I've ever processed, hips rolling forward and back, thighs clenching around the pillow, the cotton of the panties dragging against my clit and building and building. My breathing goes ragged. I'm making sounds I've never made before, feminine sounds, breathy and high-pitched and involuntary.</p>
+
+<p>I stop, pull myself off the pillow, and lie on my back. The insides of my thighs are trembling.</p>
+
+<p>I combine methods next. Two fingers inside, curled forward against the G-spot, thumb on my clit, circling. My hips rock into my own hand, matching the rhythm, chasing the pressure. The build is different this time, deeper, starting in my lower belly and expanding outward like a wave gathering height before it breaks.</p>
+
+<p>I speed up. My breath is ragged, coming in gasps that fog the air because the apartment is cold and I'm generating heat like a furnace. The ridged spot under my fingertips is swollen now, unmistakable, and every time I press into it my vision narrows.</p>
+
+<p>Close. Getting close. The orgasm is right there, hovering at the edge, teasing, pulling back every time I think I've reached it.</p>
+
+<p>I curl my fingers harder. Press my thumb firmer. My hips lift off the mattress entirely.</p>
+
+<p>It hits.</p>
+
+<p>The orgasm rolls through me like a wave breaking over a seawall. Not the sharp, explosive burst from the shower, but something deeper and longer, originating from behind my pubic bone and radiating outward in concentric circles of heat and pressure. My vaginal walls clamp down on my fingers in rhythmic contractions, squeezing, releasing, squeezing again. I count them. One. Two. Three. Four. Five. Six. Seven. Eight. Each one sends a full-body pulse of warmth from my toes to the crown of my head.</p>
+
+<p>My mouth is open, making a sound halfway between a moan and a sigh, a sustained "ahhh" that drops in pitch as the contractions fade. It sounds like a woman's orgasm because it is a woman's orgasm, coming from a woman's body. My body.</p>
+
+</div>
+
+<<ImagePlaceholder "Lying on her back afterward, arms spread, staring at the ceiling stain" "banner" "assets/characters/mc-female-phase1/d03-afterglow.png">>
+
+<div class="prose-block">
+
+<p>I lie there, ceiling fan turning, fingers still inside me. The afterglow is a physical sensation, a warm golden heaviness in my limbs, like I've been filled with honey.</p>
+
+<p>I wait sixty seconds. Maybe ninety.</p>
+
+<p>Then I go again.</p>
+
+<p>The second orgasm comes faster than I expected, my body already primed and sensitized, the clit still swollen and the G-spot still engorged. Forty seconds of the same combination and I'm coming again. This one is deeper and slower, fewer contractions but each one longer and more intense. My toes curl so hard they cramp. I moan into the mattress, having rolled onto my side at some point, fetal position, hand trapped between my thighs, riding it out.</p>
+
+<p>I try for a third. This one takes longer, five minutes of patient, deliberate work, adjusting pressure and speed, listening to what my body responds to. When it finally arrives, something unexpected happens.</p>
+
+<p>A gush of fluid. Not urine, I can tell the difference, it's warm and slippery and clear and there's more of it than any previous wetness. It soaks my hand, soaks the sheets under my hips. I freeze mid-contraction, still pulsing around my own fingers, staring down at the wet spot spreading across the grey fabric.</p>
+
+<p>"Did I just..."</p>
+
+<p>Squirting. I've watched enough porn to know what this is. I just didn't know I could do it. I pull my hand free and look at my glistening fingers, the dampness coating my inner thighs, the dark patch on the sheet.</p>
+
+<p>I should be mortified. Part of me is. But a larger part is fascinated, clinical, cataloguing this new data point with the same detachment I brought to the measuring tape and the anatomy diagram.</p>
+
+<p>I lie on my back, arms spread, staring at the ceiling stain that looks like a fist. My body is humming, vibrating at some low frequency I can feel in my teeth. Three orgasms in thirty minutes. The refractory period Marcus dealt with, those ten or fifteen minutes of obligatory waiting, doesn't exist here. This body can just keep going. The pleasure doesn't have a hard stop. It has a volume knob, and the volume knob goes past what I thought was maximum.</p>
+
+<p>For the first time since waking up on Day 1, my body feels good. Not despite being female. Not in spite of itself. Just good. Muscles loose, skin warm, breath easy. The body feels good, and I'm the one inside it, and I don't hate being inside it right now.</p>
+
+<p>That thought sits in my chest like a stone dropped into still water. I watch the ripples spread and don't try to name them.</p>
+
+</div>
+
+<<set $d03MasturbationExplore to true>>
+<<run window.statChange("fem", 3)>>
+<<run window.statChange("cor", 3)>>
+<<set $sexLog.firsts.squirting to $day>>
+<<set $sexLog.firsts.multipleOrgasms to $day>>
+<<run window.rbAddMilestone("Squirted for the first time.")>>
+<<if $timeslot is "Morning" or $timeslot is "Afternoon">>
+	<<set $timeslot to "Evening">>
+<</if>>
+
+<div class="choice-block">
+	<<link '<span>🏠 Lie here for a while, then get up</span>' "Home_Bedroom">><</link>>
+</div>

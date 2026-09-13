@@ -158,6 +158,25 @@
 <</widget>>
 
 /* ==========================================================================
+   Day3Objective   recomputes $objective from Day 3's progress flags.
+   ========================================================================== */
+<<widget "Day3Objective">>
+<<if not $d03CalledOwen>>
+	<<set $objective to "Call Owen and buy yourself another day before Friday.">>
+<<elseif not $d03BodyInventory>>
+	<<set $objective to "Stay home. Figure out this body, measurements first.">>
+<<elseif not $d03Research>>
+	<<set $objective to "The laptop's on the bed. Go deep.">>
+<<elseif not $d03Ate>>
+	<<set $objective to "Eat something. The cereal's gone.">>
+<<elseif $timeslot isnot "Night">>
+	<<set $objective to "Check your phone before it gets any later.">>
+<<else>>
+	<<set $objective to "It's been a long day of finding things out. Time to sleep.">>
+<</if>>
+<</widget>>
+
+/* ==========================================================================
    CurrentObjective   dispatches to the correct day's objective widget.
    Hubs should always call THIS, never a specific day's widget directly,
    so adding a new day never means touching Home/Outside again.
@@ -167,6 +186,7 @@
 <<case 0>><<Day0Objective>>
 <<case 1>><<Day1Objective>>
 <<case 2>><<Day2Objective>>
+<<case 3>><<Day3Objective>>
 <<default>><<set $objective to "Another day. Figure out what's next.">>
 <</switch>>
 <</widget>>

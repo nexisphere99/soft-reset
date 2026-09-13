@@ -38,6 +38,26 @@
 
 <<link '<span class="action-icon">👀</span><span class="action-text">Just look around<span class="action-sub">Window shopping, apparently, applies to gas station snacks too</span></span>' "CornerStore">><</link>>
 
+<<if $day gte 3 and not $metMangoCraving>>
+	<<link '<span class="action-icon">🥭</span><span class="action-text">Get groceries (and those mangoes)<span class="action-sub">Pasta, sauce, eggs, bananas, and two bruised mangoes calling your name</span></span><span class="action-cost">$18.40</span>' "CornerStore_Mango">><</link>>
+<</if>>
+
+<<if $day gte 3 and not $itemsOwned.hairCare>>
+	<<link '<span class="action-icon">🧴</span><span class="action-text">Buy hair &amp; body care<span class="action-sub">Shampoo, conditioner, lotion</span></span><span class="action-cost">$14.20</span>' "CornerStore">>
+		<<if window.rbSpend(14.20, "toiletries")>>
+			<<set $itemsOwned.hairCare to true>>
+		<</if>>
+	<</link>>
+<</if>>
+
+<<if $day gte 3 and not $itemsOwned.pantyLiners>>
+	<<link '<span class="action-icon">🩹</span><span class="action-text">Buy panty liners<span class="action-sub">Just in case</span></span><span class="action-cost">$4</span>' "CornerStore">>
+		<<if window.rbSpend(4, "toiletries")>>
+			<<set $itemsOwned.pantyLiners to true>>
+		<</if>>
+	<</link>>
+<</if>>
+
 </div>
 
 <<if $day is 2 and not $metAnanyaStore and window.rbRandom(1, 10) lte 4>>
@@ -114,6 +134,33 @@
 
 <div class="choice-block" style="margin-top:2rem;">
 	<<link '<span>← Back outside</span>' "Outside">><</link>>
+</div>
+
+:: CornerStore_Mango [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Interior of Lucky Mart, a cardboard box of mangoes by the register" "banner" "assets/locations/cornerstore/interior.png">>
+
+<div class="prose-block">
+
+<p>They're sitting in a small cardboard box next to the register, slightly bruised, reduced to $1.50 each. The craving from this morning hits me again, immediate and physical, saliva flooding my mouth.</p>
+
+<p>I grab two and add them to my pile. Hector rings me up without really looking at my face, eyes on the soccer game. "$18.40," he says, and I hand him a twenty. Our fingers brush during the handoff.</p>
+
+<p>I take the bag and walk back to the apartment and eat a mango standing over the kitchen sink, because the juice runs down my chin and my wrists and I don't own enough paper towels to do this at the table. The mango is sweet and bright and slightly acidic, and it's exactly what my body wanted, and the satisfaction is so pure and simple that I almost cry over it.</p>
+
+<p>A mango. I'm almost crying over a mango. This is what my life is now.</p>
+
+</div>
+
+<<set $metMangoCraving to true>>
+<<run window.rbSpend(18.40, "food")>>
+<<set $hasGroceries to true>>
+<<set $d03Ate to true>>
+<<run window.statChange("stress", -5)>>
+
+<div class="choice-block">
+	<<link '<span>← Back to the counter</span>' "CornerStore">><</link>>
 </div>
 
 :: CornerStore_SmallTalk [nobr]

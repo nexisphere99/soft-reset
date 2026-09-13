@@ -141,6 +141,63 @@
 	<</link>>
 </div>
 
+<<elseif $day is 3 and $metCody and not $metCodyD3>>
+
+<<ImagePlaceholder "Cody at the door again, leaning in the frame, pizza box in hand" "float" "assets/characters/supporting/cody-door-d3.png">>
+
+<div class="prose-block">
+
+<p>I order pizza again. Same app, same place, same large pepperoni that costs $18 plus tip. I can't keep doing this, the math on delivery fees alone is going to eat through my savings faster than rent, but I don't have the energy to cook again and I just want to sit on the couch and eat pizza and pretend the world isn't real for a while.</p>
+
+<p>Twenty-two minutes later the buzzer goes off. "Come up. 4B."</p>
+
+<p>Footsteps on the stairs. A knock. I open the door.</p>
+
+<p>It's Cody. Same guy from last night, mid-twenties, brown hair, delivery bag over one shoulder, DashDrop jacket unzipped over a plain white tee. He recognizes me, I can tell by the way his eyes do the quick up-down-up men do when they're cataloguing a woman's body in the half second before politeness catches up with impulse.</p>
+
+<<Dialogue "Cody" "🍕" "Hey, night-in girl. Two nights in a row. I'm gonna start thinking you're ordering just to see me." "">>
+
+<p>My face gets warm, heat climbing from my neck to my cheeks, and I know I'm blushing because this body does that now, broadcasts every emotion straight to the surface of my skin with zero delay.</p>
+
+<p>"Maybe I just like the pizza," I say.</p>
+
+<<Dialogue "Cody" "🍕" "The pizza from Sal's? That's loyalty, not love." "">>
+
+<p>He hands me the box. His fingers brush mine during the transfer. Warm. Calloused. Working hands.</p>
+
+<<Dialogue "Cody" "🍕" "You sure you're not just lonely on a Saturday night?" "">>
+
+<p>"Aren't we all?"</p>
+
+<p>He laughs, an actual laugh, not a polite exhale. "Fair point. Well, if you get tired of Sal's mediocre pepperoni, there's a Thai place on Seventh that does a green curry that'll change your life. Just saying."</p>
+
+<p>He lingers in the doorway, not pushing, just staying, the way someone stays when they're hoping the conversation continues.</p>
+
+<<Dialogue "Cody" "🍕" "I'm Cody, by the way. In case you wanna request me next time." "">>
+
+<p>"Mia." The name comes out easier than it did yesterday. Smoother, like a coin that's been handled enough times to lose its sharp edges.</p>
+
+<<Dialogue "Cody" "🍕" "Mia. Well, enjoy your mediocre pepperoni. I'll be out here in the cold if you need me." "">>
+
+<p>He turns and walks down the stairs. I close the door and lean against it, the pizza box warming my forearms, my cheeks still burning, my heart doing something complicated in my chest that I refuse to analyze.</p>
+
+<p>He was flirting with me. Obviously, unmistakably flirting. The kind Marcus never received and never initiated, because Marcus was invisible in the specific way average-looking men are invisible. Not ugly, not handsome, just background noise. Furniture with a delivery bag.</p>
+
+<p>Mia is not invisible. Mia gets looked at. Mia gets a delivery boy lingering in her doorway trying to stretch a conversation that should've ended at "here's your pizza."</p>
+
+<p>I eat a slice standing in the kitchen. The pizza is mediocre, Cody was right about that. But the warm spot in my chest stays for an hour.</p>
+
+</div>
+
+<<set $metCodyD3 to true>>
+<<run window.rbSpend(26, "food")>>
+<<run window.statChange("fem", 1)>>
+<<run window.statChange("att", 1)>>
+
+<div class="choice-block">
+	<<link '<span>← Back to the kitchen</span>' "Home_Kitchen">><</link>>
+</div>
+
 <<else>>
 
 <<set _rbCost to window.rbRandom(15, 30)>>

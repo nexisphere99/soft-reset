@@ -39,6 +39,44 @@
 <<set $player.fem to Math.clamp($player.fem + 1, 0, 100)>>
 <</if>>
 
+<<if $day gte 3 and not $metMrsParkAsMia>>
+<<SceneDivider "On the Stairs">>
+<<ImagePlaceholder "The building hallway, flickering fluorescent light, numbered doors" "banner" "assets/locations/apartment/hallway.png">>
+<<ImagePlaceholder "Mrs. Park in the apartment hallway, suspicious, holding rent envelopes" "portrait" "assets/characters/supporting/mrs-park.png">>
+<div class="prose-block">
+<p>I crack the apartment door and peer into the hallway. Empty. The fluorescent light above the stairwell is buzzing and flickering the way it's been doing for six months, because Mrs. Park refuses to replace it.</p>
+<p>I step out, pull the door closed, lock it. Footsteps on the stairs, coming up, heavy and deliberate, with the jingle of a keyring that sounds like wind chimes in a hurricane. Every tenant in this building knows that jingle.</p>
+<p>Mrs. Park rounds the corner. Five foot nothing in orthopedic shoes, hair dyed an aggressive auburn that doesn't exist anywhere in nature, a quilted vest over a floral blouse, carrying a stack of envelopes I recognize immediately as rent notices, I've received enough of them to know that exact shade of yellow on sight.</p>
+<p>She looks at me, eyes narrowing behind thick glasses.</p>
+</div>
+<<Dialogue "Mrs. Park" "🔑" "You new tenant? Who you? 4B? 4C?" "">>
+<<Dialogue "You" "😳" "4B." "you">>
+<div class="prose-block">
+<p>My voice is higher than Marcus's, softer, completely unfamiliar to the woman who's been cashing Marcus Cole's late rent checks for eight months.</p>
+</div>
+<<Dialogue "Mrs. Park" "🔑" "Marcus Cole, 4B. Where is he? He owes. Two months behind." "">>
+<div class="prose-block">
+<p>My heart is pounding so hard I can feel it in my ears. "He's, uh. He moved out. I'm his... I'm the new tenant."</p>
+<p>She stops flipping through the envelopes and studies my face with the forensic intensity of a woman who's been renting apartments for forty years and has heard every lie a tenant can tell.</p>
+</div>
+<<Dialogue "Mrs. Park" "🔑" "New tenant? He didn't tell me. He didn't do the paperwork. Who are you?" "">>
+<<Dialogue "You" "😳" "I'm... Mia. Mia Cole. His sister." "you">>
+<div class="prose-block">
+<p>The lie comes out smoother than I expect, maybe because it's close enough to the truth that my brain doesn't register it as deception. Same last name. Same apartment. Different body.</p>
+</div>
+<<Dialogue "Mrs. Park" "🔑" "Sister. Okay. He still owes $1,300. You paying?" "">>
+<<Dialogue "You" "😳" "I'm... I'll handle it. I'll get it sorted." "you">>
+<<Dialogue "Mrs. Park" "🔑" "You tell Marcus, he wants to leave, he does the paperwork. Lease transfer. Otherwise he owes and I go to court." "">>
+<div class="prose-block">
+<p>She finds the yellow envelope and holds it out. "Give this to him."</p>
+<p>She gives me one more look, the kind that says she doesn't believe a word I've said but is willing to let me dig my own grave at my own pace, then turns and clomps back down the stairs, keyring jingling, muttering in Korean about tenants who think they can just disappear.</p>
+<p>I lean against the wall and exhale until my lungs are empty. Marcus Cole doesn't exist anymore, but his debts do. Debts don't care about transformation. Debts are the only thing in the universe more persistent than whatever NovaCure put in that pill.</p>
+</div>
+<<set $metMrsParkAsMia to true>>
+<<run window.statChange("stress", 5)>>
+<<run window.rbAddJournalEntry("Marcus's Sister", "Told Mrs. Park I'm Marcus's sister. She didn't believe me. She still wants her $1,300.")>>
+<</if>>
+
 <<ObjectiveBanner>>
 
 <div class="map-here">📍 Southbank Residential</div>

@@ -22,10 +22,14 @@
 		<<else>>
 			<p style="color:var(--text2); max-width:36ch; margin:0 auto;">Clothes that fit. A name sent. A body she&apos;s not ready to know. Small steps. Even the smallest ones count.</p>
 		<</if>>
+	<<elseif $day is 3>>
+		<h1>Body Inventory</h1>
+		<p style="color:var(--text2); max-width:36ch; margin:0 auto;">You know the measurements now. You know the anatomy. You know what makes you gasp and what makes you arch your back. This body is getting less foreign by the hour.</p>
+		<p style="color:var(--text2); max-width:36ch; margin:.8rem auto 0;">The name on the university records says Mia Cole. You&apos;re not sure what that means yet. But you didn&apos;t change it back.</p>
 
 		<div style="margin-top:2.4rem; padding-top:2rem; border-top:1px solid var(--border);">
-			<div class="day-badge" style="margin-bottom:1rem;">🦋 End of Version <strong>0.2</strong></div>
-			<p style="color:var(--text2); max-width:38ch; margin:0 auto 1.6rem;">That&apos;s everything built so far. Day 3 and beyond, Mia&apos;s life as it actually unfolds, is still being written.</p>
+			<div class="day-badge" style="margin-bottom:1rem;">🦋 End of Version <strong>0.3</strong></div>
+			<p style="color:var(--text2); max-width:38ch; margin:0 auto 1.6rem;">That&apos;s everything built so far. Day 4 and beyond, Mia&apos;s life as it actually unfolds, is still being written.</p>
 			<a href="https://www.patreon.com/c/toxicvipergames" target="_blank" rel="noopener" class="btn-primary">💜 Support REWIRED on Patreon</a>
 
 			<p style="color:var(--text3); font-size:.78rem; max-width:34ch; margin:1.8rem auto .8rem;">No more story past this point yet, but the apartment, the neighborhood, and the people in it still work, if you&apos;d rather just wander.</p>
@@ -43,7 +47,7 @@
 		<p style="color:var(--text2); max-width:36ch; margin:0 auto;">You made it through. That still counts for something.</p>
 	<</if>>
 
-	<<if $day isnot 2>>
+	<<if $day isnot 3>>
 	<<set _wakeLabel to '<span class="btn-primary">Wake Up → Day ' + ($day + 1) + '</span>'>>
 	<div style="margin-top:2rem;">
 		<<link _wakeLabel>>
@@ -75,6 +79,10 @@
 				<<set $player.energy to 90>>
 				<<set $player.stress to Math.clamp($player.stress - 5, 0, 100)>>
 				<<goto "D02_Morning">>
+			<<elseif _fromDay is 2>>
+				<<set $weekDay to "Sunday">>
+				<<set $player.energy to 100>>
+				<<goto "D03_Morning">>
 			<<else>>
 				<<set $player.energy to 100>>
 				<<goto "Home">>

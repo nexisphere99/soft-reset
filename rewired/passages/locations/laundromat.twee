@@ -37,6 +37,29 @@
 
 </div>
 
+<<if $day is 3 and not $d03DidLaundry>>
+
+<<ImagePlaceholder "Interior of Suds Laundromat, mostly empty, blue fluorescent light" "banner" "assets/locations/laundromat/interior.png">>
+
+<div class="prose-block">
+<p>The sheets need washing. I shoved them into a garbage bag along with the towels and Marcus's old clothes I've been wearing as pajamas. It's mostly empty at this hour, two machines running, one dryer tumbling, a woman folding clothes at the table in the back with earbuds in, not looking up.</p>
+<p>I load a washer, $3.50 in quarters, and sit in one of the plastic chairs bolted to the floor to wait. The laundromat has a specific smell, detergent and warm lint and the metallic tang of old pipes. The fluorescent lights give everything a bluish tint that makes healthy people look slightly ill.</p>
+<p>I pull my phone out and scroll through nothing. Instagram, which I haven't posted on since Marcus's last gym selfie three months ago. The selfie stares back at me from the grid, Marcus in a tank top, flexing, a filter making his jaw look sharper and his arms look bigger. Twelve likes. One comment from Nolan. &quot;Beast 💪&quot;</p>
+<p>I click on the profile picture. His face fills the screen. Square jaw. Short hair. Slight stubble. Tired eyes, but a man's tired eyes, sitting in a man's skull on top of a man's neck.</p>
+<p>I look at this face and I don't recognize it anymore. Not the way you don't recognize a stranger. The way you don't recognize a photograph from so long ago that the person in it has become abstract. That was me. That face was my face. Now it isn't, and the distance between then and now is three days, but it might as well be three decades.</p>
+<p>The washer beeps. I switch the load to a dryer, another $2 in quarters. Twenty minutes of warm tumbling, and my sheets will smell like lavender detergent tonight instead of whatever they smelled like this morning.</p>
+<p>Small victories. The kind that don't make it onto anyone's highlight reel but keep the machinery of daily life grinding forward.</p>
+</div>
+
+<<set $d03DidLaundry to true>>
+<<run window.rbSpend(5.5, "laundry")>>
+
+<div class="choice-block">
+	<<link '<span>🧺 Head back</span>' "Laundromat">><</link>>
+</div>
+
+<</if>>
+
 <<if $day is 2 and not $metEstelle and window.rbRandom(1, 10) lte 3>>
 
 <<SceneDivider "The Towel Philosopher">>
