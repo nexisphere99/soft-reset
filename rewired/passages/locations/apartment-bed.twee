@@ -69,12 +69,42 @@
 		<<link '<span class="action-icon">🛏️</span><span class="action-text">Go to bed<span class="action-sub">It&apos;s been enough for one day.</span></span>' "D03_Bedtime">><</link>>
 	<</if>>
 
-	<<link '<span class="action-icon">🛒</span><span class="action-text">Browse online shopping<span class="action-sub">The laptop&apos;s already open</span></span>' "D03_OnlineShopping">><</link>>
-
 	<<if $timeslot is "Night" and not $d03PornExplored>>
 		<<link '<span class="action-icon">💻</span><span class="action-text">Browse... other things on the laptop</span>' "D03_PornExplore">><</link>>
 	<</if>>
 
+<<elseif $day is 4>>
+
+	<<if not $d04VisitedCornerStore>>
+		<p class="text3 small">The kitchen's empty. The corner store&apos;s a few blocks out.</p>
+	<<elseif not $d04CookedMeal>>
+		<p class="text3 small">You&apos;ve got groceries now. The kitchen&apos;s where the pasta is.</p>
+	<<elseif not $d04NolanTexted>>
+		<<link '<span class="action-icon">📱</span><span class="action-text">Check your phone<span class="action-sub">Nolan&apos;s not going to stop</span></span>' "D04_Evening_Phone">><</link>>
+	<<elseif $timeslot isnot "Night">>
+		<p class="text3 small">The rest of the day is yours. Wander, or just stay in.</p>
+	<<else>>
+		<<link '<span class="action-icon">🛏️</span><span class="action-text">Go to bed<span class="action-sub">It&apos;s been enough for one day.</span></span>' "D04_Bedtime">><</link>>
+	<</if>>
+
+	<<if not $d04PracticedWalking>>
+		<<link '<span class="action-icon">👠</span><span class="action-text">Practice walking<span class="action-sub">Shorter stride. Let the hips move.</span></span>' "D04_WalkPractice">><</link>>
+	<</if>>
+
+	<<if $timeslot is "Night" and not $d04OrientationExplored>>
+		<<link '<span class="action-icon">💻</span><span class="action-text">Browse... other things on the laptop</span>' "D04_OrientationExplore">><</link>>
+	<</if>>
+
+	<<if $timeslot is "Night" and $d04SentSelfie and not $d04JordanSelfPleasure>>
+		<<link '<span class="action-icon">🔥</span><span class="action-text">Lie here with his texts<span class="action-sub">You know what you&apos;re about to do</span></span>' "D04_SelfPleasure_Jordan">>
+			<<set $d04JordanSelfPleasure to true>>
+		<</link>>
+	<</if>>
+
+<</if>>
+
+<<if $day gte 3>>
+	<<link '<span class="action-icon">🛒</span><span class="action-text">Browse online shopping<span class="action-sub">The laptop&apos;s already open</span></span>' "D03_OnlineShopping">><</link>>
 <</if>>
 
 <<link '<span class="action-icon">🪞</span><span class="action-text">Check the mirror<span class="action-sub">See what&apos;s looking back today</span></span>' "Home_Bedroom_Mirror">><</link>>

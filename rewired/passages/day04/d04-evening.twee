@@ -1,0 +1,239 @@
+:: D04_Evening_Cook [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Stirring pasta sauce at the small kitchen stove" "banner" "assets/characters/mc-female-phase1/d04-cooking.png">>
+
+<div class="prose-block">
+
+<p>The bananas are perfect, ripe, sweet, exactly what I wanted. I eat two standing at the counter, and the craving quiets like a satisfied animal. Marcus would have grabbed a gas station hot dog. This body wants fruit and warmth and things that taste clean.</p>
+
+<p>I decide to actually cook, not microwave ramen, not eat cereal from the box. The kitchen has pasta and a can of tomato sauce, both sealed, both older than this week. I find a pot, fill it with water, put it on the burner.</p>
+
+<p>While the water heats I chop a banana into coins and eat them one by one. The kitchen window lets in afternoon light going golden. The apartment is quiet except for the burner clicking and traffic outside and the faint sound of music from the upstairs neighbor.</p>
+
+<p>The water boils. I dump in the pasta, stir it with a fork since I don't own a wooden spoon, and set a timer on my phone. Eight minutes.</p>
+
+<p>While it cooks I heat the sauce in a smaller pot and stir it. It pops and spatters and I jump back, which makes me laugh at myself. I'm a grown adult scared of tomato sauce.</p>
+
+<p>When it's done I drain the pasta in the sink using the pot lid as a strainer, since there's no colander in this apartment and never has been. I dump the sauce on top and stir.</p>
+
+</div>
+
+<<ImagePlaceholder "Eating spaghetti alone at the small kitchen table, golden evening light" "float" "assets/characters/mc-female-phase1/d04-eating-table.png">>
+
+<div class="prose-block">
+
+<p>I sit at the kitchen table, small, meant for one person, pushed against the wall under the window. Marcus ate on the couch, always, every meal, phone in one hand, fork in the other, something streaming on the laptop. But tonight I sit at the table.</p>
+
+<p>The pasta is basic, overcooked by a minute, sauce from a can, no seasoning because the spice rack is nonexistent. But it's warm and I made it and I'm eating it sitting at a table like a human being who lives here, who belongs here, who is choosing to be present in this moment instead of hiding from it.</p>
+
+<p>Something about the act feels like a small reclamation. Not feminine, not masculine. Just alive.</p>
+
+<p>I eat slowly, watch the light change through the window. When I'm done I wash the dishes, both pots, the fork, the plate, dry them, put them away.</p>
+
+<p>The kitchen is clean. It might be the first time the kitchen has been clean since Marcus moved in.</p>
+
+</div>
+
+<<set $d04CookedMeal to true>>
+<<run window.statChange("fem", 1)>>
+<<run window.rbAddMilestone("Cooked a real meal and sat down to eat it.")>>
+
+<div class="choice-block">
+	<<link '<span>📱 Check the phone</span>' "D04_Evening_Phone">><</link>>
+</div>
+
+:: D04_Evening_Phone [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I check my phone on the couch, legs curled under me, which is how I sit now. Marcus sprawled. Mia curls.</p>
+
+</div>
+
+<<Dialogue "Nolan" "💪" "U alive?" "">>
+
+<div class="prose-block">
+<p>Sent two hours ago. I type back. "barely. How's the gym?"</p>
+</div>
+
+<<Dialogue "Nolan" "💪" "Leg day bro 🦵 almost died on squats. Seriously tho u ok? U sound weird over text" "">>
+
+<div class="prose-block">
+
+<p>I sound weird over text, because my texting cadence has changed, maybe, or because I'm being too brief. Nolan knows Marcus's patterns, and I'm breaking them in ways I can't even identify.</p>
+
+<p>"I'm fine. Just tired. Bug's almost gone."</p>
+
+</div>
+
+<<Dialogue "Nolan" "💪" "aight bet. But I'm pulling up soon whether u like it or not 😤 bros don't let bros die alone" "">>
+
+<div class="prose-block">
+
+<p>I put the phone face down. Nolan coming over is inevitable. I've been dodging him for four days and he's not the kind of friend who takes a hint. He's the kind who kicks down the door with soup and good intentions.</p>
+
+<p>When he shows up, he'll see Mia. Not Marcus. A woman he's never met in Marcus's apartment. I have no idea how to handle that conversation. No plan, no script, no cover story that doesn't sound insane.</p>
+
+<p>I pick up the phone again. Put it back down.</p>
+
+<p>DashDrop notification. Shift confirmed for Day 5. Tomorrow. Owen needs me back or he's filling my slots. I'll have to go to the depot, pick up the delivery bag, get on the scooter, interact with customers, get tipped or not tipped, all while being five foot six and a hundred and twenty pounds in a body that's never driven a scooter.</p>
+
+<p>That's a tomorrow problem. Everything is a tomorrow problem.</p>
+
+</div>
+
+<<set $d04NolanTexted to true>>
+
+<<if $jordan.met and not $d04JordanTexted and ($timeslot is "Evening" or $timeslot is "Night")>>
+<div class="choice-block">
+	<<link '<span>💬 A text from Jordan</span>' "D04_Phone_Jordan">><</link>>
+</div>
+<<else>>
+<div class="choice-block">
+	<<link '<span>🏠 Put the phone down</span>' "Home_Bedroom">><</link>>
+</div>
+<</if>>
+
+:: D04_OrientationExplore [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>The apartment is dark except for the laptop screen. I'm in bed, covers pulled up, the blue light making everything look like a submarine interior.</p>
+
+<p>Incognito mode, force of habit, though I live alone and nobody checks my browser history. The little hat and glasses icon in the tab feels like a co-conspirator.</p>
+
+<p>I navigate to the same site from last night. Yesterday the discovery was the whole point, watching with new eyes for the first time. Tonight it's quieter, less overwhelming, more like checking in on something I already know about myself.</p>
+
+<p>I click on straight content first, male POV, and feel the same resonance from yesterday, watching the woman the way you'd watch someone demonstrate a skill you're learning rather than an object external to yourself. Familiar now. Less of a shock, more of a fact.</p>
+
+<p>Lesbian content next. The arousal is immediate again, a flush spreading from my chest outward, settling between my thighs in a warm, heavy pulse. I press my legs together without thinking. It's not new information anymore. It's just true, confirmed a second time, which somehow makes it feel more solid than it did yesterday.</p>
+
+<p>I close the laptop. Open it again. Close it.</p>
+
+<p>Leave it closed. Lie in the dark with my heartbeat loud in my ears. The arousal sits in my body like a low hum. I know how to act on it now, yesterday's marathon taught me every method and which buttons to press and in what order.</p>
+
+<p>But tonight I just lie with it. Let it exist without acting on it. Let the wanting be its own thing, separate from release.</p>
+
+</div>
+
+<<set $d04OrientationExplored to true>>
+<<set $sexLog.orientation.heteroExp += 1>>
+<<set $sexLog.orientation.sapphicExp += 2>>
+<<run window.statChange("cor", 1)>>
+
+<div class="choice-block">
+	<<link '<span>🛏️ Lie with it</span>' "Home_Bedroom">><</link>>
+</div>
+
+:: D04_SelfPleasure_Jordan [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>In bed. Lights off. Phone on my stomach, screen dark.</p>
+
+<p>I open the text chain. Scroll back to the beginning. "Hey it's Jordan from outside the store 😊." Read forward through the banter, the escalation, the photo exchange. His shirtless mirror selfie, grinning, confident, a body comfortable in its own skin in a way I'm still learning.</p>
+
+<p>You're gorgeous. I read that line three times.</p>
+
+<p>My hand moves down, over the t-shirt, over my stomach, under the waistband of my panties. The heat is already there, gathered between my legs, a low pulse that's been building since the texts stopped.</p>
+
+<p>I think about Jordan. His hands, big hands. What they'd feel like on my waist, pulling me close. What his mouth would feel like against my neck. The stubble. The warmth. What his body would feel like on top of mine, heavy and present and real.</p>
+
+<p>The image shifts. A woman instead, soft hands, no calluses, hair falling across my skin, a mouth that knows what a clit needs because she has one too. Gentle and patient about it.</p>
+
+<p>The image shifts again, both of them this time, someone in front of me, someone behind me. Hands everywhere. Mouths everywhere. Being the center of attention in a way that's terrifying and exhilarating and so far from anything Marcus ever imagined that it might as well be another planet.</p>
+
+<p>I settle on the feeling rather than the image. Circular motion on my clit, the technique I've mastered, steady pressure, building. My breathing goes shorter, shallower. I push two fingers inside, curled forward, thumb still working my clit, the double stimulation that yesterday taught me is synergistic, each sensation amplifying the other.</p>
+
+<p>The orgasm builds from deep, not the sharp cliff edge of the shower head or the quick crests of yesterday's marathon. This one builds slow, like a tide, pulling me further out with each wave until I'm past the point of return and the whole thing crests.</p>
+
+<p>I come with my face pressed into the pillow. The sound I make is breathy and feminine, coming from somewhere in my chest I didn't know existed. "Ahhh. Ah, fuck." My vaginal muscles clench around my fingers in rhythmic contractions. My hips rock against my hand. The pleasure plateaus at a high point and stays there, rolling, sustained, each breath pulling another aftershock.</p>
+
+<p>I lie still. Ceiling fan turns. My fingers are slick. My heartbeat is loud in the quiet room.</p>
+
+<p>I clean up with tissues from the nightstand and check my phone. Jordan sent one more message while I was otherwise occupied.</p>
+
+</div>
+
+<<Dialogue "Jordan" "😎" "Sweet dreams Mia ✨" "">>
+
+<div class="prose-block">
+<p>I smile at the screen, put the phone down, pull the blanket up. The body hums, satisfied, warm, flooded with whatever cocktail of hormones a female orgasm produces. Tomorrow is going to be hard. Friday, DashDrop, the real world at full speed.</p>
+<p>But right now the bed is warm and the body is good, and the dreams, when they come, are not nightmares.</p>
+</div>
+
+<<run window.statChange("cor", 3)>>
+<<run window.statChange("fem", 1)>>
+
+<div class="choice-block">
+	<<link '<span>🌙 Sleep</span>' "D04_FallAsleep">><</link>>
+</div>
+
+:: D04_WalkPractice [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I pull up a video on my phone, how to walk in women's shoes, and stand in the middle of the apartment reading the advice back to myself. Shorter stride. Hips sway naturally if you let them. Weight on the balls of the feet.</p>
+
+<p>I try it, walking from the bedroom to the kitchen. Shorter steps. Let the hips move. Don't force it, don't fight it.</p>
+
+<p>It feels right, like unlocking a setting on a controller I didn't know existed. My body wants to move this way. My hips want to sway. I just have to stop bracing against it.</p>
+
+<p>I walk back and forth a dozen times. By the end, the walk is smoother. Not a performance. Just motion. Just a girl walking through her apartment.</p>
+
+</div>
+
+<<set $d04PracticedWalking to true>>
+<<run window.statChange("fem", 2)>>
+<<run window.statChange("int", 1)>>
+
+<div class="choice-block">
+	<<link '<span>🏠 Back</span>' "Home_Bedroom">><</link>>
+</div>
+
+:: D04_Bedtime [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Lying in bed in the fetal position, ceiling fan turning above" "banner" "assets/characters/mc-female-phase1/d04-bedtime.png">>
+
+<div class="prose-block">
+
+<p>I brush my teeth, Marcus's toothbrush, Marcus's toothpaste, same as always. Some things haven't changed. The bristles are getting frayed. I need a new one.</p>
+
+<p>I change into panties and an old t-shirt for sleeping, his, an XL that hangs to mid thigh on me like a sleep dress. It's soft from a hundred washes, and it smells like detergent and nothing else, since every trace of his body chemistry is long gone, replaced by mine.</p>
+
+<p>I lie in bed on my side, fetal position, knees drawn up, pillow between my thighs because it's comfortable. Side sleeping is the default now. Sleeping on my stomach stopped working the day the breasts showed up.</p>
+
+<p>The day runs back through my head. Hector calling me miss. The man holding the door. Jordan jogging after me on the sidewalk. The grocery bag bumping against my leg. The razor nicks on my ankle and knee. The pasta I cooked and ate at the table. Denise thinking I'm Marcus's girlfriend.</p>
+
+<p>Tomorrow I go to DashDrop. Tomorrow I face Owen and the scooter and customers and the world at full speed instead of cautious grocery-store increments. Tomorrow the bubble pops.</p>
+
+<p>I pull the blanket to my chin. The ceiling fan turns. The apartment settles, creaking in the ways old apartments do, joints and pipes and the building breathing around me.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🌙 Sleep</span>' "D04_FallAsleep">><</link>>
+</div>
+
+:: D04_FallAsleep [nobr]
+<div class="prose-block">
+
+<p>I fall asleep faster tonight. The body is learning to sleep, learning to eat, to walk, to sit, to be. Four days in, and the crisis is mellowing into something that might, if I squint, look like the beginning of a life.</p>
+
+<p>The dream comes back. The same hallway of mirrors from two nights ago, long and narrow, lit from above by fluorescent tubes that flicker and buzz. Every reflection is still me, wearing something different each time. This time the one in the red dress is closer than she was before, close enough that I can see she's smiling before I even reach for her.</p>
+
+<p>I reach anyway. She reaches back.</p>
+
+<p>I wake up and don't remember the dream for three hours. But my face is wet, and I think I was smiling in my sleep this time, not crying.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>☀️ Morning</span>' "Sleep">><</link>>
+</div>

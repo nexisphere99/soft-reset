@@ -1,0 +1,442 @@
+:: D04_Transit_Jordan [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>The walk home takes me through the campus-adjacent streets, tree-lined, old brownstones, a coffee shop on every corner. Saturday morning energy even though it's Monday, joggers, dog walkers, a couple pushing a stroller. Normal life humming along while I carry groceries and try to remember how to be a person.</p>
+
+<p>A man holds the door at the corner bodega as I pass, thirties, suit, briefcase tucked under one arm even on a weekday morning off. He stops, waits, gestures with his free hand. "After you."</p>
+
+<p>I'm not going into the bodega. I'm just walking past. But he's holding the door because I'm walking near it and he sees a woman and his reflex fires.</p>
+
+<p>"Oh, I'm not... thanks though."</p>
+
+<p>He nods, a little embarrassed, goes inside. The interaction lasted four seconds. Nothing happened. But something happened. Guys didn't hold doors for Marcus. The automatic chivalry, the pause and wait, the little half-bow, that's new.</p>
+
+<p>The back of my neck prickles. His eyes followed me for a beat after I passed. Not threatening. Not aggressive. Just present, aware. He saw me.</p>
+
+<p>I walk faster. The grocery bag bumps against my leg.</p>
+
+</div>
+
+<<ImagePlaceholder "A guy on the sidewalk with his hands raised, grinning, chasing her down" "float" "assets/characters/supporting/jordan-approach.png">>
+
+<div class="prose-block">
+
+<p>I'm two blocks from home when it happens.</p>
+
+<p>Footsteps behind me, moving faster than walking pace, someone jogging to catch up. My shoulders tense. Every woman-safety article I accidentally read during yesterday's research marathon is screaming in the back of my skull. Don't have headphones in. Be aware of your surroundings. Walk with purpose.</p>
+
+<p>"Hey! Excuse me?"</p>
+
+<p>I turn. A guy, college age, tall, backward cap, easy grin. He's jogging the last few steps to close the gap, a little out of breath, hands up in a non-threatening gesture like he knows he just startled me.</p>
+
+<p>"Sorry, I didn't mean to... I just had to come tell you. You're really pretty. That's all. Just wanted to say it."</p>
+
+<p>My brain stalls.</p>
+
+<p>A guy just ran down the sidewalk to tell me I'm pretty. This is a thing that happens to women. I knew this in theory. Marcus knew this in theory. But standing here with a bag of groceries and two razor nicks on my legs, being told by a stranger that I'm pretty, the theory evaporates and I'm left with nothing but a blank internal screen and a face that's probably doing something embarrassing.</p>
+
+<p>"Oh. Um. Thanks?"</p>
+
+<p>He laughs, a nice laugh, the kind that comes easy. "Sorry, was that weird? That was definitely weird."</p>
+
+<p>"A little."</p>
+
+<p>"My bad. I'm Jordan, by the way. In case you wanted to know the name of the weirdo who chased you down the street."</p>
+
+<p>Despite everything, despite the absurdity, despite the fact that I was a man four days ago and this guy has no idea and would probably have some kind of existential crisis if he did, I almost laugh.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>😊 "Thanks. That&apos;s sweet."</span>' "D04_Jordan_Polite">>
+		<<run window.statChange("con", 1)>>
+	<</link>>
+	<<link '<span>😤 "Don&apos;t chase people on the street."</span>' "D04_Jordan_Boundary">>
+		<<run window.statChange("con", 2)>>
+	<</link>>
+	<<link '<span>😏 "I&apos;m Mia."</span>' "D04_Jordan_Number">>
+		<<run window.statChange("cor", 3)>>
+	<</link>>
+</div>
+
+:: D04_Jordan_Polite [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>"That's... thanks. That's sweet of you."</p>
+
+<p>"I'm Jordan." He sticks out his hand like we're at a networking event, then realizes how formal that is and pulls it back, laughing at himself. "Sorry. I don't actually do this ever. You can probably tell."</p>
+
+<p>"I can tell."</p>
+
+<p>"Okay, I'm going to go die of embarrassment now. Have a great day." He finger-guns, actually finger-guns, then catches himself doing it and winces. "I'm making it worse, aren't I."</p>
+
+<p>"A little."</p>
+
+<p>He backs away, grinning, both hands in the air like he's surrendering. "I'm leaving. You're pretty. That's all. Bye."</p>
+
+<p>He jogs back the way he came. I watch him go. At the corner he looks back, gives a little wave, and disappears.</p>
+
+<p>I stand there holding my groceries. The paper bag crinkles in my grip. My cheeks are hot, which is a physiological betrayal I didn't consent to. Marcus would have laughed this off, maybe felt secondhand embarrassment for the guy. But I'm not Marcus standing on this sidewalk. A cute guy just told me I'm pretty, and my face is red, and this is apparently my life now.</p>
+
+</div>
+
+<<run window.statChange("fem", 1)>>
+<<set $d04MetJordan to true>>
+
+<div class="choice-block">
+	<<link '<span>🚪 Keep walking</span>' "Outside">><</link>>
+</div>
+
+:: D04_Jordan_Boundary [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>"I don't know you. Don't run up on people on the street."</p>
+
+<p>The grin drops. Not anger, not defensiveness, genuine recalibration. His hands come up higher, more deliberate.</p>
+
+<p>"You're absolutely right. I'm sorry. That was thoughtless."</p>
+
+<p>"It's not a good feeling, having someone chase you."</p>
+
+<p>He flinches. The word "chase" lands and I can see him replaying the last thirty seconds from my side of it. "Yeah. Shit, yeah, I can see how that... I'm really sorry. That won't happen again."</p>
+
+<p>He takes a step back, then another, his body language shifting from confident casual to small and sorry. "I'll go. I'm sorry."</p>
+
+<p>He turns and walks away, not jogging, walking slowly, shoulders hunched slightly, the confidence knocked out of him. At the corner he glances back once, not smiling, then rounds it and is gone.</p>
+
+<p>I breathe. My hands are shaking around the grocery bag. The shake isn't fear. It's the adrenaline dump of confrontation, the chemical aftermath of standing your ground. Marcus would have said "no worries, man" and moved on. Mia said "don't do that" and meant it.</p>
+
+<p>My hands shake for two blocks. I let them.</p>
+
+</div>
+
+<<run window.statChange("fem", 1)>>
+<<set $d04MetJordan to true>>
+
+<div class="choice-block">
+	<<link '<span>🏠 Get home. Lock the door.</span>' "Outside">><</link>>
+</div>
+
+:: D04_Jordan_Number [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>The word thanks is already forming on my lips but something else comes out instead. Something reckless and terrifying and alive.</p>
+
+<p>"I'm Mia."</p>
+
+<p>His face does a thing. The grin broadens, the eyes widen, the whole expression reorganizes around a new piece of information. He's genuinely surprised I engaged. Maybe he expected the brush-off. Maybe he does this all the time and usually gets rejected. Maybe this is the first time he's ever chased a girl down the street and can't believe it worked.</p>
+
+<p>"Mia. I love that name." He says it like he means it, not like a line. "I'm Jordan. Can I... would it be weird if I texted you sometime?"</p>
+
+<p>I pull my phone from my criminally shallow pocket. My fingers are buzzing. "What's your number?"</p>
+
+<p>He recites it. I punch it in, my thumbs clumsy, having to delete and retype because the adrenaline is making my fine motor skills drunk. I send him a text, just a period, a dot, the smallest possible footprint of contact.</p>
+
+<p>His pocket buzzes. He pulls out his phone, sees the dot, grins.</p>
+
+<p>"Mia with the period. I'll remember that."</p>
+
+<p>"Don't be weird about it."</p>
+
+<p>"I literally chased you down the street. That ship has sailed." He laughs. I laugh. The laughter breaks something open, and for three seconds I'm not a person in crisis, not a body in transition, not a question mark in jeans. I'm just a girl laughing on a sidewalk with a guy who has a nice smile and no idea what he's gotten himself into.</p>
+
+<p>"I'll text you," he says. "Promise."</p>
+
+<p>"You better."</p>
+
+<p>Where did that come from? Who said that? That was not Marcus. Marcus didn't "you better" anyone. That was Mia, and Mia apparently has a flirtatious streak that showed up uninvited.</p>
+
+<p>He jogs off. I watch him go, this tall ridiculous person who ran after me on the street because he thought I was pretty. When he rounds the corner I look down at my phone. His name is in my contacts now, Jordan, the first male contact I've saved as Mia.</p>
+
+<p>I walk home. The grocery bag bumps my leg. My phone feels heavier in my pocket, like it's gained mass from the new number.</p>
+
+</div>
+
+<<run window.statChange("fem", 2)>>
+<<set $jordan.met to true>>
+<<set $d04MetJordan to true>>
+
+<div class="choice-block">
+	<<link '<span>🏠 Walk home with a phone number</span>' "Outside">><</link>>
+</div>
+
+:: D04_Phone_Jordan [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "A phone screen lit up with a new text message, held against a couch cushion" "float" "assets/ui/phone/jordan-texting.png">>
+
+<div class="prose-block">
+
+<p>6:47 PM. My phone buzzes on the couch cushion. Unknown number.</p>
+
+<p>"Hey it's Jordan from outside the store 😊 still think you're pretty btw"</p>
+
+<p>I stare at the screen. Read it twice. Three times. A boy is texting me. A boy who met me for ninety seconds on a sidewalk and went home and waited hours and then typed out a message with an emoji and hit send.</p>
+
+<p>The emoji gets me. The smiley face, like he's trying to project warmth through pixels, trying to make sure the text doesn't read as creepy. He's trying. It's kind of endearing.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>😊 Reply politely</span>' "D04_Jordan_Text_Polite">><</link>>
+	<<link '<span>😏 Flirt back</span>' "D04_Jordan_Text_Flirty">>
+		<<run window.statChange("cor", 2)>>
+	<</link>>
+	<<if $player.cor gte 5>>
+		<<link '<span>🔥 Let it go further...</span>' "D04_Jordan_Text_Sext">>
+			<<run window.statChange("cor", 4)>>
+		<</link>>
+	<</if>>
+</div>
+
+:: D04_Jordan_Text_Polite [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I type, delete, type, delete, type. "Thanks Jordan. That's sweet of you."</p>
+
+<p>I send it, then put the phone down, pick it up, and put it down again.</p>
+
+<<Dialogue "Jordan" "😎" "So what are you up to tonight? Anything fun?" "">>
+
+<p>"Just chilling at home. Cooking." I don't know why I add the cooking detail. To seem normal, maybe. To seem like a person with a life that involves activities beyond lying in bed questioning her entire existence.</p>
+
+<<Dialogue "Jordan" "😎" "Nice. I'm watching the game with my roommate. He's yelling at the TV. It's a whole thing." "">>
+
+<p>I smile at that, just a small one. "Sounds intense."</p>
+
+<<Dialogue "Jordan" "😎" "It's always intense. We take our losses personally. Anyway just wanted to say hey. Hope your night is good, Mia." "">>
+
+<p>"Yours too."</p>
+
+<p>The conversation ends there. Natural, easy, no pressure. He didn't push, didn't ask for a photo or a date or anything beyond a few minutes of texting. I read the exchange back. It reads normal. It reads like two people who just met, being casual, being cautious.</p>
+
+<p>This is what people do, I think. They meet. They text. They feel each other out.</p>
+
+<p>My phone sits dark on the cushion. I sit in the quiet.</p>
+
+</div>
+
+<<set $d04JordanTexted to true>>
+<<set $jordan.flags.relation to "casual">>
+
+<div class="choice-block">
+	<<link '<span>🏠 Back</span>' "Home_Bedroom">><</link>>
+</div>
+
+:: D04_Jordan_Text_Flirty [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I type back without overthinking it, which is either brave or stupid. "You always chase girls on the street? 😏"</p>
+
+</div>
+
+<<Dialogue "Jordan" "😎" "Only the ones I can't stop thinking about." "">>
+
+<div class="prose-block">
+
+<p>The line is corny, objectively corny. Marcus would have cringed. But I don't cringe, because it's directed at me, and corny hits different when you're the target. My stomach does a small, warm flip.</p>
+
+<p>"That's a line."</p>
+
+</div>
+
+<<Dialogue "Jordan" "😎" "Was it good though?" "">>
+
+<div class="prose-block">
+
+<p>"3 out of 10."</p>
+
+</div>
+
+<<Dialogue "Jordan" "😎" "Ouch. I'll workshop it." "">>
+
+<div class="prose-block">
+
+<p>"You do that."</p>
+
+<p>The texting picks up a rhythm. He asks where I go to school. I tell him the university. He's there too, communications major, senior year. He lives off campus with two roommates in a house he describes as one health code violation away from being condemned. He likes basketball, bad movies, and cooking, which he claims to be good at. I tell him I just made spaghetti for the first time in weeks and he sends back a chef's kiss emoji.</p>
+
+</div>
+
+<<Dialogue "Jordan" "😎" "We should cook together sometime. I make a mean stir-fry." "">>
+
+<div class="prose-block">
+
+<p>The invitation sits on my screen glowing. Together, at his place or mine, in a kitchen, near each other, him tall and me short, and the space between us full of something I can feel through the phone.</p>
+
+<p>"Maybe," I type. The most noncommittal commitment in the English language.</p>
+
+</div>
+
+<<Dialogue "Jordan" "😎" "I'll take a maybe 🙌" "">>
+
+<div class="prose-block">
+
+<p>I put the phone down. My face is warm. My stomach is doing the flip thing again. I'm flirting. I, Mia Cole, formerly Marcus Cole, am lying on a couch in panties and an oversized t-shirt flirting with a boy I met on the street hours ago.</p>
+
+<p>The absurdity is total. The feeling is real.</p>
+
+</div>
+
+<<set $d04JordanTexted to true>>
+<<set $jordan.flags.relation to "flirty">>
+<<run window.statChange("fem", 1)>>
+
+<div class="choice-block">
+	<<link '<span>🏠 Back</span>' "Home_Bedroom">><</link>>
+</div>
+
+:: D04_Jordan_Text_Sext [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>The texting starts casual but the undertow pulls it somewhere else. It happens gradually, one message at a time, each one a centimeter past the last.</p>
+
+</div>
+
+<<Dialogue "Jordan" "😎" "What are you wearing rn?" "">>
+
+<div class="prose-block">
+
+<p>He texts it at 9:14 PM, after an hour of back and forth that started at banter and has been slowly heating up. The question is a door. I can close it or walk through it.</p>
+
+<p>I look down at myself. Oversized t-shirt, cotton panties, bare legs. My hair is down and messy. My face is bare. I look like a girl who was not expecting to receive a "what are you wearing" text and is now confronted with the reality of her own appearance.</p>
+
+<p>"T-shirt and underwear. Very glamorous."</p>
+
+</div>
+
+<<Dialogue "Jordan" "😎" "That's actually pretty hot." "">>
+
+<div class="prose-block">
+
+<p>"It's a free XL shirt from a campus event."</p>
+
+</div>
+
+<<Dialogue "Jordan" "😎" "Still hot." "">>
+
+<div class="prose-block">
+
+<p>I feel the warmth spread across my chest, up my neck, into my cheeks. This body blushes easily. Marcus never blushed. Mia is a blusher. The blood rises and the skin flushes and there's nothing I can do about it even though nobody is watching.</p>
+
+</div>
+
+<<Dialogue "Jordan" "😎" "Prove it." "">>
+
+<div class="prose-block">
+
+<p>The request sits on my screen like a dare. Send a selfie. My first selfie as a woman. The phone's front camera has seen Marcus's face a thousand times for video calls and the occasional mirror check. It has never seen Mia.</p>
+
+</div>
+
+<<set $d04JordanTexted to true>>
+<<set $jordan.flags.relation to "sexual">>
+
+<div class="choice-block">
+	<<link '<span>📸 Send a mirror selfie</span>' "D04_Jordan_Selfie">>
+		<<run window.statChange("cor", 3)>>
+	<</link>>
+	<<link '<span>✋ Pull back. "Goodnight Jordan."</span>' "D04_Jordan_Text_End">>
+		<<set $jordan.flags.relation to "flirty">>
+	<</link>>
+</div>
+
+:: D04_Jordan_Selfie [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Taking a mirror selfie in a dim bedroom, oversized t-shirt slipping off one shoulder" "portrait" "assets/characters/mc-female-phase1/d04-mirror-selfie.png">>
+
+<div class="prose-block">
+
+<p>I open the camera, hold the phone above my face, the angle women do, chin down, eyes up. The girl on the screen looks back at me. Dark hair fanned on the pillow. Hazel-green eyes, wide, a little surprised. Lips slightly parted. The t-shirt's neckline has slipped off one shoulder.</p>
+
+<p>I stare at her for a long time, studying her face the way I've been studying everything about this body. The freckles. The curve of the jaw. The way the pillow light softens everything into something almost pretty.</p>
+
+<p>Almost, no. Not almost.</p>
+
+<p>I take the photo, check it, delete it, take another, and another. Seven photos in two minutes, each with a slightly different angle or expression, each scrutinized and discarded until I find one that looks like a person and not a hostage photo.</p>
+
+<p>I send it, and the three seconds between sending and his response are the longest three seconds of my life.</p>
+
+</div>
+
+<<Dialogue "Jordan" "😎" "holy shit. You're gorgeous." "">>
+
+<div class="prose-block">
+
+<p>The validation hits like a drug, instant and chemical, a flood of warmth that starts in my chest and radiates outward to the tips of my fingers. A stranger thinks I'm gorgeous. A guy who met me for ninety seconds thinks the face he's looking at on his phone right now is gorgeous.</p>
+
+<p>I hate that I like it. I like it anyway. I like it so much that when he sends a shirtless photo back, flexed and grinning in his bathroom mirror, I save it without thinking.</p>
+
+</div>
+
+<<Dialogue "Jordan" "😎" "Your turn. Fair's fair 😏" "">>
+
+<div class="prose-block">
+
+<p>My turn. For more. For a body shot, presumably. Me in the t-shirt and panties. The thought makes my pulse hammer in a way that's partly fear and partly something else, something that lives lower than fear, hotter, wetter.</p>
+
+<p>I sit up, pull the shirt down to cover more, then realize that's the wrong direction if I'm actually doing this.</p>
+
+<p>I get up, stand in front of the bedroom mirror, hold the phone at waist height, angled up. The mirror shows me from the thighs up. T-shirt hanging off one shoulder, long enough to cover the panties, legs bare and smooth from today's shave. I look like a girl who just got out of bed, tousled and soft and real.</p>
+
+<p>I take the photo, look at it. It's good. Not posed, not performative, just me standing in my bedroom looking at my phone, the mirror catching it.</p>
+
+<p>I send it before the voice of reason can stop me.</p>
+
+</div>
+
+<<Dialogue "Jordan" "😎" "wow. I cannot believe you talked to me on the street today. I am the luckiest guy." "">>
+
+<div class="prose-block">
+
+<p>The warmth again. The drug again. I lie back on the bed with my phone on my chest and my heart rate elevated and something happening between my thighs that I've been trying not to notice for the last twenty minutes.</p>
+
+</div>
+
+<<Dialogue "Jordan" "😎" "Goodnight gorgeous 😘" "">>
+
+<div class="prose-block">
+
+<p>I type "goodnight" and add a 😊 and agonize over the emoji for thirty full seconds before sending it. Is the smiley too eager? Too casual? Too much? Not enough? Would a 😘 back be an escalation or a reciprocation? Does it matter? Why do I care?</p>
+
+<p>I send it anyway and put the phone on the nightstand, screen down. The room is dark. My body hums with something that isn't quite arousal and isn't quite happiness and isn't quite fear. It's all three, braided together, vibrating at a frequency I've never felt before.</p>
+
+</div>
+
+<<set $d04SentSelfie to true>>
+<<run window.statChange("cor", 2)>>
+
+<div class="choice-block">
+	<<link '<span>🏠 Put the phone down</span>' "Home_Bedroom">><</link>>
+</div>
+
+:: D04_Jordan_Text_End [nobr]
+<<HUD>>
+
+<<Dialogue "You" "🙂" "Goodnight Jordan." "you">>
+<<Dialogue "Jordan" "😎" "Sweet dreams Mia ✨" "">>
+
+<div class="prose-block">
+<p>I set the phone down and lie there in the dark for a while, not quite ready to call it arousal, not quite ready to call it anything.</p>
+</div>
+
+<<set $d04JordanTexted to true>>
+
+<div class="choice-block">
+	<<link '<span>🏠 Back</span>' "Home_Bedroom">><</link>>
+</div>

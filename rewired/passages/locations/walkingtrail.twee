@@ -108,6 +108,46 @@
 
 <</if>>
 
+<<if $day is 4 and not $d04MetDogWalker>>
+
+<<SceneDivider "A Dog Named Maple">>
+
+<<ImagePlaceholder "A tan and white dog with its paws up on a bench, licking her hand" "float" "assets/characters/supporting/maple-dog-walker.png">>
+
+<div class="prose-block">
+<p>I find a bench away from the crowds, under a tree dropping leaves in slow spirals, and just sit. Just watch people.</p>
+<p>A woman jogs past in leggings and a sports tank, ponytail swinging. I study her stride, the way her hips rotate, the ease of it. She's not thinking about how to move. She just moves. Her body and her brain are on the same page. Mine are still negotiating terms.</p>
+<p>A dog appears. No leash, just a medium-sized mutt, tan and white, tongue out, galumphing toward me with the single minded purpose of dogs who have identified a sitting human. It reaches my bench and shoves its nose into my hand.</p>
+<p>"Oh. Hey." I scratch behind its ears. The dog's tail goes nuclear. It puts its front paws on the bench next to me and licks my wrist.</p>
+</div>
+
+<<Dialogue "Dog Walker" "🐕" "Maple! Maple, get down!" "">>
+
+<div class="prose-block">
+<p>A guy, thirties, out of breath, leash dangling from his hand, jogs over looking mortified. "I'm so sorry. She slipped her collar. She does that."</p>
+<p>"She's fine." I'm still petting Maple, who has decided I'm her new best friend and is attempting to climb into my lap. "She's sweet."</p>
+</div>
+
+<<Dialogue "Dog Walker" "🐕" "She's a menace disguised as a sweetheart." "">>
+
+<div class="prose-block">
+<p>He clips the leash back on. Maple whines. "Sorry again. She just goes for the nearest person and demands love."</p>
+<p>"I don't mind. I like dogs."</p>
+<p>Marcus liked dogs too. Some things carry over.</p>
+</div>
+
+<<Dialogue "Dog Walker" "🐕" "Well, Maple clearly likes you. Have a good one." "">>
+
+<div class="prose-block">
+<p>He walks off. Maple looks back at me with tragic eyes, like I'm abandoning her. I wave. I'm waving at a dog. The dog pulls her owner forward and they disappear around the path.</p>
+<p>I sit on the bench another twenty minutes. The leaves fall. The world spins, and nobody in it knows that the girl on the bench used to be a guy on a scooter and the only thing that changed was everything.</p>
+</div>
+
+<<set $d04MetDogWalker to true>>
+<<run window.statChange("stress", -5)>>
+
+<</if>>
+
 <div class="action-list">
 
 <<link '<span class="action-icon">🏃</span><span class="action-text">Jog the loop<span class="action-sub">Lungs burning, legs unfamiliar, keep going</span></span>' "WalkingTrail">>

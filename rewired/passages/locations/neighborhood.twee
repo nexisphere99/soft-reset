@@ -77,6 +77,42 @@
 <<run window.rbAddJournalEntry("Marcus's Sister", "Told Mrs. Park I'm Marcus's sister. She didn't believe me. She still wants her $1,300.")>>
 <</if>>
 
+<<if $day is 4 and $d04VisitedCornerStore and not $d04MetJordan>>
+	<<goto "D04_Transit_Jordan">>
+<</if>>
+
+<<if $day is 4 and $d04VisitedCornerStore and $d04MetJordan and not $d04MetDenise and window.rbRandom(1, 10) lte 4>>
+<<SceneDivider "The Laundry Room">>
+<<ImagePlaceholder "A woman reading on a folding table in the building's laundry room" "portrait" "assets/characters/supporting/denise-laundry.png">>
+<div class="prose-block">
+<p>I pass the building's laundry room on the way back up. The door is propped open with a sneaker, a dryer tumbling inside, and a woman sits on the folding table reading a thick paperback.</p>
+<p>Forties, glasses, braids pulled up in a wrap, sweatpants and a university hoodie. She looks like she's been here a while and intends to stay a while longer.</p>
+<p>She glances up when I pass and nods. "Hey."</p>
+</div>
+<<Dialogue "Denise" "📖" "You in 4B?" "">>
+<<Dialogue "You" "😶" "Yeah." "you">>
+<<Dialogue "Denise" "📖" "Thought so. I'm in 4D. Denise." "">>
+<div class="prose-block">
+<p>She doesn't extend a hand, just offers the name casually, like dropping a coin in a jar.</p>
+</div>
+<<Dialogue "Denise" "📖" "Haven't seen you before. You Marcus's girlfriend?" "">>
+<div class="prose-block">
+<p>The question lands in my sternum. She knows Marcus, of course she knows Marcus, she lives on the same floor, she's seen him carrying groceries and checking the mail for two years.</p>
+<p>"He's, um. He moved. I'm... subletting."</p>
+<p>The lie lands rough, unpolished. But Denise nods like she doesn't care enough to interrogate it.</p>
+</div>
+<<Dialogue "Denise" "📖" "Good riddance. That boy played music too loud. What's your name?" "">>
+<<Dialogue "You" "🙂" "Mia." "you">>
+<<Dialogue "Denise" "📖" "Nice to meet you, Mia. Need quarters for the machines, I keep a roll in my kitchen." "">>
+<<Dialogue "You" "🙂" "Thanks." "you">>
+<<Dialogue "Denise" "📖" "And don't use dryer three. It eats socks." "">>
+<div class="prose-block">
+<p>I walk the rest of the way up, lock the door, lean against it. Marcus's girlfriend. That's the story the building will build around this, a simple one, a boring one. Marcus moved, a girl moved in. Nobody needs to know the truth, because the truth is insane and the lie is boring and people prefer boring.</p>
+<p>I can work with boring.</p>
+</div>
+<<set $d04MetDenise to true>>
+<</if>>
+
 <<ObjectiveBanner>>
 
 <div class="map-here">📍 Southbank Residential</div>

@@ -1,0 +1,155 @@
+:: D04_Morning [nobr]
+<<set $day to 4>>
+<<set $timeslot to "Morning">>
+<<set $weekDay to "Monday">>
+<<HUD>>
+
+<<SceneDivider "Monday Morning">>
+
+<<ImagePlaceholder "Waking up to daylight, studying her reflection in the mirror" "banner" "assets/characters/mc-female-phase1/d04-wakeup-mirror.png">>
+
+<div class="prose-block">
+
+<p>I open my eyes to daylight instead of panic, for the first time since it happened.</p>
+
+<p>The ceiling fan turns. The sheets smell like me, which still means something floral I can't quite name, nothing like what Marcus smelled like. Four days of sweat and lotion and whatever shampoo came in Marlene's thrift bag. My scent. Still foreign. Still mine.</p>
+
+<p>I sit up. The sports bra rode up in my sleep and my breasts settle when I straighten, a soft weight shifting against my ribs. I pull the bra down, adjusting without thinking. Four days and muscle memory is already forming around things I never had before.</p>
+
+<p>The apartment looks the same. Dirty dishes in the sink. The laptop open on the couch from last night. The measuring string still draped over the bathroom doorknob. But I feel different. Yesterday I mapped every inch of this body, clinically, methodically, like a mechanic learning a new engine. Today I need to take that engine outside.</p>
+
+<p>I swing my legs off the bed. My feet hit the cold floor, smaller feet, size seven and a half I think. Marcus wore an eleven.</p>
+
+<p>The mirror catches me before I'm ready. I've been avoiding full length encounters, but this morning I walk right up to it and stand there in the sports bra and cotton panties from the thrift store haul.</p>
+
+<p>The girl in the mirror looks tired but real. Dark hair past her shoulders, messy from sleep. Hazel-green eyes with circles under them that say she hasn't been sleeping great, which is fair. Freckles across her nose and cheeks, scattered like someone flicked a paintbrush. She's thin, not unhealthy thin, just the kind that comes from four days of ramen and cereal. Her collarbones show. The sports bra compresses her breasts into a modest shelf, but when she reaches up to fix her hair they shift, and the shape is unmistakable.</p>
+
+<p>I drop my arms. She drops hers.</p>
+
+<p>Today I go outside. Not a panicked thrift store run. Not a dark apartment cave day. Real outside, where the sun hits and people look at you and the world doesn't pause while you figure yourself out.</p>
+
+<p>The thought makes my stomach knot up.</p>
+
+<p>I pull the bra off over my head because it's uncomfortable to sleep in and I need to shower anyway. My breasts hang free, firm but with enough weight to move when I bend forward. A 32B, I decided yesterday, though bra math still feels like advanced calculus. I cup one in my hand, absent, not sexual, just checking. Still there. Still real.</p>
+
+<p>I need a shower.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🚿 Shower and get ready</span>' "D04_Morning_Shower">><</link>>
+</div>
+
+:: D04_Morning_Shower [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Shaving her legs in the shower, a small nick on the ankle" "portrait" "assets/characters/mc-female-phase1/d04-shower-shave.png">>
+
+<div class="prose-block">
+
+<p>The bathroom is small and the mirror fogs fast, which is a mercy. I turn the water to hot and step in.</p>
+
+<p>Four days in and I have a shower routine now. I work the shampoo through to the ends, and the weight of wet hair against my back is a sensation I don't think I'll ever fully get used to. Conditioner next. I didn't used to bother, but two days of tangled knots taught me the lesson fast.</p>
+
+<p>The razor sits on the shower ledge. I watched a tutorial last night, long strokes upward, rinse the blade, repeat. The woman in the video made it look easy, legs like polished marble and a voice like she was narrating a spa commercial.</p>
+
+<p>I prop my left foot on the shower wall's tiny ledge, lather up with body wash, and start at the ankle. The first stroke catches and I jerk. A thin line of red appears on my ankle bone. "Shit." The cut stings under the water. I press my thumb against it and watch pink swirl down the drain.</p>
+
+<p>Second attempt, lighter pressure. The razor glides. A strip of smooth skin appears where stubble was. I go again, strip by strip, ankle to knee, rinsing the blade every few strokes. The inner shin is easy. The knee is a nightmare of angles and bone, and I nick it too. Two cuts now, both minor, both annoying in a way that feels like a rite of passage nobody warns you about.</p>
+
+<p>The right leg goes smoother. I'm learning the pressure, the angle, the way you have to pull the skin taut on the kneecap. By the time I'm done, both legs are smooth from ankle to mid-thigh. I run my palm up my calf. The difference is absurd. Silk where sandpaper was.</p>
+
+<p>I stand under the water a minute longer, just feeling it. Smooth legs, wet hair plastered down my back, water streaming over breasts and hips and a body that's learning to be mine. Yesterday I explored it with a mirror and a ruler. Today I explore it with a razor and soap. Each day adds another layer of knowing.</p>
+
+<p>I shut the water off and towel dry. The towel wraps differently now, tucked above the breasts instead of at the waist. It holds better up here, a small engineering marvel I never would have considered before.</p>
+
+<p>No moisturizer yet. That's on the research list. The skincare rabbit hole from yesterday's internet session is still fresh and overwhelming. Cleanser, toner, serum, moisturizer, SPF. Marcus's skincare was water and sometimes bar soap. This feels like enrolling in a university program.</p>
+
+<p>For now I just look at my face. Clean, bare, damp. The freckles pop when my skin is wet. My lips are fuller than Marcus's ever were. My jaw is softer. My eyebrows are thicker than most women's, but shaped in a natural arch that doesn't look wrong, just ungroomed. My eyelashes are long enough that I can feel them when I blink hard.</p>
+
+<p>I look like a girl who doesn't own makeup. Which is exactly what I am.</p>
+
+</div>
+
+<<set $d04ShavedLegs to true>>
+
+<div class="choice-block">
+	<<link '<span>👖 Get dressed</span>' "D04_Morning_Dressing">><</link>>
+</div>
+
+:: D04_Morning_Dressing [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>The clothes from Marlene's thrift bag are folded on the dresser, clean, since I washed them in the sink yesterday and hung them over the shower rod. The apartment doesn't have a dryer and the building's laundry room costs four quarters a load.</p>
+
+<p>I lay the outfit on the bed. New black cotton panties. Sports bra. The black fitted tee. The dark blue skinny jeans. I line them up like I'm dressing a mannequin, which I sort of am.</p>
+
+<p>Panties first, step in, pull up. The elastic sits on my hips, snug, correct. These fit like they belong here. Four days ago my first pair of women's underwear felt like a costume. Now it just feels like getting dressed.</p>
+
+<p>Sports bra next. I've mastered the over the head method, arms through the straps, pull down, adjust, then the scoop thing from the tutorial, repositioning each breast into the cup properly. The difference is subtle but real. Everything sits better.</p>
+
+<p>The black tee goes on easy, cotton, fitted, crew neck. It hugs my torso in a way Marcus's shirts never did, since his were loose and boxy by design. This one shows the curve from ribcage to waist, the slight flare at the hips. I tug the hem down. It hits just below my waistband.</p>
+
+<p>The jeans are the hardest part. I've learned the shimmy now, step in, pull up to the knees, then wiggle pull in alternating hip motions to work the denim over my thighs. The fabric stretches but it's tight, snug through the thigh, form fitting through the calf. I button them, zip them. The waistband sits at my natural waist, higher than where Marcus ever wore his.</p>
+
+<p>I look down at myself. The jeans shape my legs into something that looks like a woman's legs. Because they are.</p>
+
+<p>Shoes are still the problem. Marcus's beaten up sneakers are a men's eleven, and my feet are smaller now, swimming in them. I double up on socks, stuffing the toes, and lace them tight. They look clunky and wrong, like clown shoes on a mannequin. Better shoes are on the mental list, but not in today's budget.</p>
+
+<p>I brush my hair out, which takes five minutes of working through tangles. No products, no dryer, no styling tools. I just brush until it's smooth and let it hang past my shoulders, a natural part down the middle. It frames my face in a way that looks intentional even though I have zero idea what I'm doing.</p>
+
+<p>No makeup. No jewelry. No perfume.</p>
+
+<p>I stand in front of the full length mirror. The girl looking back looks like a college student running weekend errands. Basic outfit, bare face, messy clean hair, bad shoes. Nothing remarkable about her. She could be anyone on any sidewalk on any Monday morning.</p>
+
+<p>That's the goal. Blend in. Be invisible. Be normal.</p>
+
+<p>My heart is hammering like I'm about to skydive.</p>
+
+<p>I grab my keys, my phone, a twenty dollar bill from the kitchen drawer plus some change. I don't own a purse. Marcus didn't own a purse. I shove everything into my jeans pockets, which are shallow, because women's jeans have decorative pockets designed by someone who apparently hates women. The phone barely fits. The keys jab my thigh.</p>
+
+<p>I need a purse. Adding it to the list.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>📞 Call Owen before you go</span>' "D04_CallingOwen">><</link>>
+</div>
+
+:: D04_CallingOwen [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I make the call standing in the kitchen, pacing, the way I pace when I'm nervous, which is a smaller orbit now since my stride is shorter.</p>
+
+<p>Owen picks up on the third ring. "DashDrop Downtown, this is Owen."</p>
+
+<p>"Hey Owen, it's... it's me." I catch myself before saying Marcus. What do I even say? My voice sounds nothing like his. "It's the rider for Route 7. I'm still sick."</p>
+
+<<Dialogue "Owen" "☎️" "You sound different. Sore throat?" "">>
+
+<p>"Yeah. Throat thing. Bad one."</p>
+
+<<Dialogue "Owen" "☎️" "Alright. Listen, I need you back by Friday or I gotta fill your shifts. I've got two riders out already and the weekend rush is gonna be ugly." "">>
+
+<p>"Friday. Yeah. I'll be there."</p>
+
+<<Dialogue "Owen" "☎️" "Feel better." "">>
+
+<p>He hangs up. I put the phone down on the counter and grip the edge with both hands.</p>
+
+<p>Friday is still Friday. I'll have to go to the depot, pick up the delivery bag, get on the scooter, drive through traffic, ring doorbells, smile, say "here's your order" in a voice that isn't his to customers who might recognize his route. Owen will see me. The other riders will see me.</p>
+
+<p>My license photo is still Marcus's face. The height says 5'9". The sex marker says M. That's a tomorrow problem. Today I survive the sidewalk.</p>
+
+</div>
+
+<<set $d04CalledOwen to true>>
+<<run window.rbAddJournalEntry("Still Calling In", "Bought myself until Friday again. Owen still doesn't know. The license photo isn't even close anymore.")>>
+
+<div class="choice-block">
+	<<link '<span>🚪 Step outside</span>' "Outside">><</link>>
+</div>

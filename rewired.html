@@ -104,7 +104,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://C9E8903B-8C69-4BE0-A3D5-800274FFB5DF// --><tw-storydata name="REWIRED" startnode="69" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="C9E8903B-8C69-4BE0-A3D5-800274FFB5DF" zoom="1" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "01-tokens.css" */
+	<!-- UUID://C9E8903B-8C69-4BE0-A3D5-800274FFB5DF// --><tw-storydata name="REWIRED" startnode="91" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="C9E8903B-8C69-4BE0-A3D5-800274FFB5DF" zoom="1" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "01-tokens.css" */
 /* ==========================================================================
    REWIRED   01 TOKENS
    Design tokens: flat navy + warm-rose theme.
@@ -3501,6 +3501,22 @@ $(document).on(":passageend", function () {
 &lt;&lt;set $seenParkNeedAir to false&gt;&gt;
 &lt;&lt;set $hasGroceries to false&gt;&gt;
 
+/* ---------- Day 4 open-world progress flags ---------- */
+&lt;&lt;set $d04VisitedCornerStore to false&gt;&gt;
+&lt;&lt;set $d04CookedMeal to false&gt;&gt;
+&lt;&lt;set $d04NolanTexted to false&gt;&gt;
+&lt;&lt;set $d04CalledOwen to false&gt;&gt;
+&lt;&lt;set $d04ShavedLegs to false&gt;&gt;
+&lt;&lt;set $d04PracticedWalking to false&gt;&gt;
+&lt;&lt;set $d04MetJordan to false&gt;&gt;
+&lt;&lt;set $d04JordanTexted to false&gt;&gt;
+&lt;&lt;set $d04MetDenise to false&gt;&gt;
+&lt;&lt;set $d04MetDogWalker to false&gt;&gt;
+&lt;&lt;set $d04OrientationExplored to false&gt;&gt;
+&lt;&lt;set $d04DressTuckDone to false&gt;&gt;
+&lt;&lt;set $d04SentSelfie to false&gt;&gt;
+&lt;&lt;set $d04JordanSelfPleasure to false&gt;&gt;
+
 /* ---------- First-time event flags ---------- */
 &lt;&lt;set $firstCatcall to false&gt;&gt;
 &lt;&lt;set $firstPeriod to false&gt;&gt;
@@ -5048,7 +5064,783 @@ $(document).on(":passageend", function () {
 
 &lt;div class=&quot;choice-block&quot;&gt;
 	&lt;&lt;link &#39;&lt;span&gt;🏠 Start the day&lt;/span&gt;&#39; &quot;Home&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Home_Bathroom" tags="nobr" position="725,475" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="D04_Evening_Cook" tags="nobr" position="725,475" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;&lt;ImagePlaceholder &quot;Stirring pasta sauce at the small kitchen stove&quot; &quot;banner&quot; &quot;assets/characters/mc-female-phase1/d04-cooking.png&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;The bananas are perfect, ripe, sweet, exactly what I wanted. I eat two standing at the counter, and the craving quiets like a satisfied animal. Marcus would have grabbed a gas station hot dog. This body wants fruit and warmth and things that taste clean.&lt;/p&gt;
+
+&lt;p&gt;I decide to actually cook, not microwave ramen, not eat cereal from the box. The kitchen has pasta and a can of tomato sauce, both sealed, both older than this week. I find a pot, fill it with water, put it on the burner.&lt;/p&gt;
+
+&lt;p&gt;While the water heats I chop a banana into coins and eat them one by one. The kitchen window lets in afternoon light going golden. The apartment is quiet except for the burner clicking and traffic outside and the faint sound of music from the upstairs neighbor.&lt;/p&gt;
+
+&lt;p&gt;The water boils. I dump in the pasta, stir it with a fork since I don&#39;t own a wooden spoon, and set a timer on my phone. Eight minutes.&lt;/p&gt;
+
+&lt;p&gt;While it cooks I heat the sauce in a smaller pot and stir it. It pops and spatters and I jump back, which makes me laugh at myself. I&#39;m a grown adult scared of tomato sauce.&lt;/p&gt;
+
+&lt;p&gt;When it&#39;s done I drain the pasta in the sink using the pot lid as a strainer, since there&#39;s no colander in this apartment and never has been. I dump the sauce on top and stir.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;ImagePlaceholder &quot;Eating spaghetti alone at the small kitchen table, golden evening light&quot; &quot;float&quot; &quot;assets/characters/mc-female-phase1/d04-eating-table.png&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;I sit at the kitchen table, small, meant for one person, pushed against the wall under the window. Marcus ate on the couch, always, every meal, phone in one hand, fork in the other, something streaming on the laptop. But tonight I sit at the table.&lt;/p&gt;
+
+&lt;p&gt;The pasta is basic, overcooked by a minute, sauce from a can, no seasoning because the spice rack is nonexistent. But it&#39;s warm and I made it and I&#39;m eating it sitting at a table like a human being who lives here, who belongs here, who is choosing to be present in this moment instead of hiding from it.&lt;/p&gt;
+
+&lt;p&gt;Something about the act feels like a small reclamation. Not feminine, not masculine. Just alive.&lt;/p&gt;
+
+&lt;p&gt;I eat slowly, watch the light change through the window. When I&#39;m done I wash the dishes, both pots, the fork, the plate, dry them, put them away.&lt;/p&gt;
+
+&lt;p&gt;The kitchen is clean. It might be the first time the kitchen has been clean since Marcus moved in.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;set $d04CookedMeal to true&gt;&gt;
+&lt;&lt;run window.statChange(&quot;fem&quot;, 1)&gt;&gt;
+&lt;&lt;run window.rbAddMilestone(&quot;Cooked a real meal and sat down to eat it.&quot;)&gt;&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;📱 Check the phone&lt;/span&gt;&#39; &quot;D04_Evening_Phone&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="D04_Evening_Phone" tags="nobr" position="850,475" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;I check my phone on the couch, legs curled under me, which is how I sit now. Marcus sprawled. Mia curls.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Nolan&quot; &quot;💪&quot; &quot;U alive?&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+&lt;p&gt;Sent two hours ago. I type back. &quot;barely. How&#39;s the gym?&quot;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Nolan&quot; &quot;💪&quot; &quot;Leg day bro 🦵 almost died on squats. Seriously tho u ok? U sound weird over text&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;I sound weird over text, because my texting cadence has changed, maybe, or because I&#39;m being too brief. Nolan knows Marcus&#39;s patterns, and I&#39;m breaking them in ways I can&#39;t even identify.&lt;/p&gt;
+
+&lt;p&gt;&quot;I&#39;m fine. Just tired. Bug&#39;s almost gone.&quot;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Nolan&quot; &quot;💪&quot; &quot;aight bet. But I&#39;m pulling up soon whether u like it or not 😤 bros don&#39;t let bros die alone&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;I put the phone face down. Nolan coming over is inevitable. I&#39;ve been dodging him for four days and he&#39;s not the kind of friend who takes a hint. He&#39;s the kind who kicks down the door with soup and good intentions.&lt;/p&gt;
+
+&lt;p&gt;When he shows up, he&#39;ll see Mia. Not Marcus. A woman he&#39;s never met in Marcus&#39;s apartment. I have no idea how to handle that conversation. No plan, no script, no cover story that doesn&#39;t sound insane.&lt;/p&gt;
+
+&lt;p&gt;I pick up the phone again. Put it back down.&lt;/p&gt;
+
+&lt;p&gt;DashDrop notification. Shift confirmed for Day 5. Tomorrow. Owen needs me back or he&#39;s filling my slots. I&#39;ll have to go to the depot, pick up the delivery bag, get on the scooter, interact with customers, get tipped or not tipped, all while being five foot six and a hundred and twenty pounds in a body that&#39;s never driven a scooter.&lt;/p&gt;
+
+&lt;p&gt;That&#39;s a tomorrow problem. Everything is a tomorrow problem.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;set $d04NolanTexted to true&gt;&gt;
+
+&lt;&lt;if $jordan.met and not $d04JordanTexted and ($timeslot is &quot;Evening&quot; or $timeslot is &quot;Night&quot;)&gt;&gt;
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;💬 A text from Jordan&lt;/span&gt;&#39; &quot;D04_Phone_Jordan&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;
+&lt;&lt;else&gt;&gt;
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;🏠 Put the phone down&lt;/span&gt;&#39; &quot;Home_Bedroom&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="D04_OrientationExplore" tags="nobr" position="975,475" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;The apartment is dark except for the laptop screen. I&#39;m in bed, covers pulled up, the blue light making everything look like a submarine interior.&lt;/p&gt;
+
+&lt;p&gt;Incognito mode, force of habit, though I live alone and nobody checks my browser history. The little hat and glasses icon in the tab feels like a co-conspirator.&lt;/p&gt;
+
+&lt;p&gt;I navigate to the same site from last night. Yesterday the discovery was the whole point, watching with new eyes for the first time. Tonight it&#39;s quieter, less overwhelming, more like checking in on something I already know about myself.&lt;/p&gt;
+
+&lt;p&gt;I click on straight content first, male POV, and feel the same resonance from yesterday, watching the woman the way you&#39;d watch someone demonstrate a skill you&#39;re learning rather than an object external to yourself. Familiar now. Less of a shock, more of a fact.&lt;/p&gt;
+
+&lt;p&gt;Lesbian content next. The arousal is immediate again, a flush spreading from my chest outward, settling between my thighs in a warm, heavy pulse. I press my legs together without thinking. It&#39;s not new information anymore. It&#39;s just true, confirmed a second time, which somehow makes it feel more solid than it did yesterday.&lt;/p&gt;
+
+&lt;p&gt;I close the laptop. Open it again. Close it.&lt;/p&gt;
+
+&lt;p&gt;Leave it closed. Lie in the dark with my heartbeat loud in my ears. The arousal sits in my body like a low hum. I know how to act on it now, yesterday&#39;s marathon taught me every method and which buttons to press and in what order.&lt;/p&gt;
+
+&lt;p&gt;But tonight I just lie with it. Let it exist without acting on it. Let the wanting be its own thing, separate from release.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;set $d04OrientationExplored to true&gt;&gt;
+&lt;&lt;set $sexLog.orientation.heteroExp += 1&gt;&gt;
+&lt;&lt;set $sexLog.orientation.sapphicExp += 2&gt;&gt;
+&lt;&lt;run window.statChange(&quot;cor&quot;, 1)&gt;&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;🛏️ Lie with it&lt;/span&gt;&#39; &quot;Home_Bedroom&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="D04_SelfPleasure_Jordan" tags="nobr" position="1100,475" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;In bed. Lights off. Phone on my stomach, screen dark.&lt;/p&gt;
+
+&lt;p&gt;I open the text chain. Scroll back to the beginning. &quot;Hey it&#39;s Jordan from outside the store 😊.&quot; Read forward through the banter, the escalation, the photo exchange. His shirtless mirror selfie, grinning, confident, a body comfortable in its own skin in a way I&#39;m still learning.&lt;/p&gt;
+
+&lt;p&gt;You&#39;re gorgeous. I read that line three times.&lt;/p&gt;
+
+&lt;p&gt;My hand moves down, over the t-shirt, over my stomach, under the waistband of my panties. The heat is already there, gathered between my legs, a low pulse that&#39;s been building since the texts stopped.&lt;/p&gt;
+
+&lt;p&gt;I think about Jordan. His hands, big hands. What they&#39;d feel like on my waist, pulling me close. What his mouth would feel like against my neck. The stubble. The warmth. What his body would feel like on top of mine, heavy and present and real.&lt;/p&gt;
+
+&lt;p&gt;The image shifts. A woman instead, soft hands, no calluses, hair falling across my skin, a mouth that knows what a clit needs because she has one too. Gentle and patient about it.&lt;/p&gt;
+
+&lt;p&gt;The image shifts again, both of them this time, someone in front of me, someone behind me. Hands everywhere. Mouths everywhere. Being the center of attention in a way that&#39;s terrifying and exhilarating and so far from anything Marcus ever imagined that it might as well be another planet.&lt;/p&gt;
+
+&lt;p&gt;I settle on the feeling rather than the image. Circular motion on my clit, the technique I&#39;ve mastered, steady pressure, building. My breathing goes shorter, shallower. I push two fingers inside, curled forward, thumb still working my clit, the double stimulation that yesterday taught me is synergistic, each sensation amplifying the other.&lt;/p&gt;
+
+&lt;p&gt;The orgasm builds from deep, not the sharp cliff edge of the shower head or the quick crests of yesterday&#39;s marathon. This one builds slow, like a tide, pulling me further out with each wave until I&#39;m past the point of return and the whole thing crests.&lt;/p&gt;
+
+&lt;p&gt;I come with my face pressed into the pillow. The sound I make is breathy and feminine, coming from somewhere in my chest I didn&#39;t know existed. &quot;Ahhh. Ah, fuck.&quot; My vaginal muscles clench around my fingers in rhythmic contractions. My hips rock against my hand. The pleasure plateaus at a high point and stays there, rolling, sustained, each breath pulling another aftershock.&lt;/p&gt;
+
+&lt;p&gt;I lie still. Ceiling fan turns. My fingers are slick. My heartbeat is loud in the quiet room.&lt;/p&gt;
+
+&lt;p&gt;I clean up with tissues from the nightstand and check my phone. Jordan sent one more message while I was otherwise occupied.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;Sweet dreams Mia ✨&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+&lt;p&gt;I smile at the screen, put the phone down, pull the blanket up. The body hums, satisfied, warm, flooded with whatever cocktail of hormones a female orgasm produces. Tomorrow is going to be hard. Friday, DashDrop, the real world at full speed.&lt;/p&gt;
+&lt;p&gt;But right now the bed is warm and the body is good, and the dreams, when they come, are not nightmares.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;&lt;run window.statChange(&quot;cor&quot;, 3)&gt;&gt;
+&lt;&lt;run window.statChange(&quot;fem&quot;, 1)&gt;&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;🌙 Sleep&lt;/span&gt;&#39; &quot;D04_FallAsleep&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="40" name="D04_WalkPractice" tags="nobr" position="1225,475" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;I pull up a video on my phone, how to walk in women&#39;s shoes, and stand in the middle of the apartment reading the advice back to myself. Shorter stride. Hips sway naturally if you let them. Weight on the balls of the feet.&lt;/p&gt;
+
+&lt;p&gt;I try it, walking from the bedroom to the kitchen. Shorter steps. Let the hips move. Don&#39;t force it, don&#39;t fight it.&lt;/p&gt;
+
+&lt;p&gt;It feels right, like unlocking a setting on a controller I didn&#39;t know existed. My body wants to move this way. My hips want to sway. I just have to stop bracing against it.&lt;/p&gt;
+
+&lt;p&gt;I walk back and forth a dozen times. By the end, the walk is smoother. Not a performance. Just motion. Just a girl walking through her apartment.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;set $d04PracticedWalking to true&gt;&gt;
+&lt;&lt;run window.statChange(&quot;fem&quot;, 2)&gt;&gt;
+&lt;&lt;run window.statChange(&quot;int&quot;, 1)&gt;&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;🏠 Back&lt;/span&gt;&#39; &quot;Home_Bedroom&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="D04_Bedtime" tags="nobr" position="100,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;&lt;ImagePlaceholder &quot;Lying in bed in the fetal position, ceiling fan turning above&quot; &quot;banner&quot; &quot;assets/characters/mc-female-phase1/d04-bedtime.png&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;I brush my teeth, Marcus&#39;s toothbrush, Marcus&#39;s toothpaste, same as always. Some things haven&#39;t changed. The bristles are getting frayed. I need a new one.&lt;/p&gt;
+
+&lt;p&gt;I change into panties and an old t-shirt for sleeping, his, an XL that hangs to mid thigh on me like a sleep dress. It&#39;s soft from a hundred washes, and it smells like detergent and nothing else, since every trace of his body chemistry is long gone, replaced by mine.&lt;/p&gt;
+
+&lt;p&gt;I lie in bed on my side, fetal position, knees drawn up, pillow between my thighs because it&#39;s comfortable. Side sleeping is the default now. Sleeping on my stomach stopped working the day the breasts showed up.&lt;/p&gt;
+
+&lt;p&gt;The day runs back through my head. Hector calling me miss. The man holding the door. Jordan jogging after me on the sidewalk. The grocery bag bumping against my leg. The razor nicks on my ankle and knee. The pasta I cooked and ate at the table. Denise thinking I&#39;m Marcus&#39;s girlfriend.&lt;/p&gt;
+
+&lt;p&gt;Tomorrow I go to DashDrop. Tomorrow I face Owen and the scooter and customers and the world at full speed instead of cautious grocery-store increments. Tomorrow the bubble pops.&lt;/p&gt;
+
+&lt;p&gt;I pull the blanket to my chin. The ceiling fan turns. The apartment settles, creaking in the ways old apartments do, joints and pipes and the building breathing around me.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;🌙 Sleep&lt;/span&gt;&#39; &quot;D04_FallAsleep&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="D04_FallAsleep" tags="nobr" position="225,600" size="100,100">&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;I fall asleep faster tonight. The body is learning to sleep, learning to eat, to walk, to sit, to be. Four days in, and the crisis is mellowing into something that might, if I squint, look like the beginning of a life.&lt;/p&gt;
+
+&lt;p&gt;The dream comes back. The same hallway of mirrors from two nights ago, long and narrow, lit from above by fluorescent tubes that flicker and buzz. Every reflection is still me, wearing something different each time. This time the one in the red dress is closer than she was before, close enough that I can see she&#39;s smiling before I even reach for her.&lt;/p&gt;
+
+&lt;p&gt;I reach anyway. She reaches back.&lt;/p&gt;
+
+&lt;p&gt;I wake up and don&#39;t remember the dream for three hours. But my face is wet, and I think I was smiling in my sleep this time, not crying.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;☀️ Morning&lt;/span&gt;&#39; &quot;Sleep&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="D04_Transit_Jordan" tags="nobr" position="350,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;The walk home takes me through the campus-adjacent streets, tree-lined, old brownstones, a coffee shop on every corner. Saturday morning energy even though it&#39;s Monday, joggers, dog walkers, a couple pushing a stroller. Normal life humming along while I carry groceries and try to remember how to be a person.&lt;/p&gt;
+
+&lt;p&gt;A man holds the door at the corner bodega as I pass, thirties, suit, briefcase tucked under one arm even on a weekday morning off. He stops, waits, gestures with his free hand. &quot;After you.&quot;&lt;/p&gt;
+
+&lt;p&gt;I&#39;m not going into the bodega. I&#39;m just walking past. But he&#39;s holding the door because I&#39;m walking near it and he sees a woman and his reflex fires.&lt;/p&gt;
+
+&lt;p&gt;&quot;Oh, I&#39;m not... thanks though.&quot;&lt;/p&gt;
+
+&lt;p&gt;He nods, a little embarrassed, goes inside. The interaction lasted four seconds. Nothing happened. But something happened. Guys didn&#39;t hold doors for Marcus. The automatic chivalry, the pause and wait, the little half-bow, that&#39;s new.&lt;/p&gt;
+
+&lt;p&gt;The back of my neck prickles. His eyes followed me for a beat after I passed. Not threatening. Not aggressive. Just present, aware. He saw me.&lt;/p&gt;
+
+&lt;p&gt;I walk faster. The grocery bag bumps against my leg.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;ImagePlaceholder &quot;A guy on the sidewalk with his hands raised, grinning, chasing her down&quot; &quot;float&quot; &quot;assets/characters/supporting/jordan-approach.png&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;I&#39;m two blocks from home when it happens.&lt;/p&gt;
+
+&lt;p&gt;Footsteps behind me, moving faster than walking pace, someone jogging to catch up. My shoulders tense. Every woman-safety article I accidentally read during yesterday&#39;s research marathon is screaming in the back of my skull. Don&#39;t have headphones in. Be aware of your surroundings. Walk with purpose.&lt;/p&gt;
+
+&lt;p&gt;&quot;Hey! Excuse me?&quot;&lt;/p&gt;
+
+&lt;p&gt;I turn. A guy, college age, tall, backward cap, easy grin. He&#39;s jogging the last few steps to close the gap, a little out of breath, hands up in a non-threatening gesture like he knows he just startled me.&lt;/p&gt;
+
+&lt;p&gt;&quot;Sorry, I didn&#39;t mean to... I just had to come tell you. You&#39;re really pretty. That&#39;s all. Just wanted to say it.&quot;&lt;/p&gt;
+
+&lt;p&gt;My brain stalls.&lt;/p&gt;
+
+&lt;p&gt;A guy just ran down the sidewalk to tell me I&#39;m pretty. This is a thing that happens to women. I knew this in theory. Marcus knew this in theory. But standing here with a bag of groceries and two razor nicks on my legs, being told by a stranger that I&#39;m pretty, the theory evaporates and I&#39;m left with nothing but a blank internal screen and a face that&#39;s probably doing something embarrassing.&lt;/p&gt;
+
+&lt;p&gt;&quot;Oh. Um. Thanks?&quot;&lt;/p&gt;
+
+&lt;p&gt;He laughs, a nice laugh, the kind that comes easy. &quot;Sorry, was that weird? That was definitely weird.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;A little.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;My bad. I&#39;m Jordan, by the way. In case you wanted to know the name of the weirdo who chased you down the street.&quot;&lt;/p&gt;
+
+&lt;p&gt;Despite everything, despite the absurdity, despite the fact that I was a man four days ago and this guy has no idea and would probably have some kind of existential crisis if he did, I almost laugh.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;😊 &quot;Thanks. That&amp;apos;s sweet.&quot;&lt;/span&gt;&#39; &quot;D04_Jordan_Polite&quot;&gt;&gt;
+		&lt;&lt;run window.statChange(&quot;con&quot;, 1)&gt;&gt;
+	&lt;&lt;/link&gt;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;😤 &quot;Don&amp;apos;t chase people on the street.&quot;&lt;/span&gt;&#39; &quot;D04_Jordan_Boundary&quot;&gt;&gt;
+		&lt;&lt;run window.statChange(&quot;con&quot;, 2)&gt;&gt;
+	&lt;&lt;/link&gt;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;😏 &quot;I&amp;apos;m Mia.&quot;&lt;/span&gt;&#39; &quot;D04_Jordan_Number&quot;&gt;&gt;
+		&lt;&lt;run window.statChange(&quot;cor&quot;, 3)&gt;&gt;
+	&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="D04_Jordan_Polite" tags="nobr" position="475,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;&quot;That&#39;s... thanks. That&#39;s sweet of you.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;I&#39;m Jordan.&quot; He sticks out his hand like we&#39;re at a networking event, then realizes how formal that is and pulls it back, laughing at himself. &quot;Sorry. I don&#39;t actually do this ever. You can probably tell.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;I can tell.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;Okay, I&#39;m going to go die of embarrassment now. Have a great day.&quot; He finger-guns, actually finger-guns, then catches himself doing it and winces. &quot;I&#39;m making it worse, aren&#39;t I.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;A little.&quot;&lt;/p&gt;
+
+&lt;p&gt;He backs away, grinning, both hands in the air like he&#39;s surrendering. &quot;I&#39;m leaving. You&#39;re pretty. That&#39;s all. Bye.&quot;&lt;/p&gt;
+
+&lt;p&gt;He jogs back the way he came. I watch him go. At the corner he looks back, gives a little wave, and disappears.&lt;/p&gt;
+
+&lt;p&gt;I stand there holding my groceries. The paper bag crinkles in my grip. My cheeks are hot, which is a physiological betrayal I didn&#39;t consent to. Marcus would have laughed this off, maybe felt secondhand embarrassment for the guy. But I&#39;m not Marcus standing on this sidewalk. A cute guy just told me I&#39;m pretty, and my face is red, and this is apparently my life now.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;run window.statChange(&quot;fem&quot;, 1)&gt;&gt;
+&lt;&lt;set $d04MetJordan to true&gt;&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;🚪 Keep walking&lt;/span&gt;&#39; &quot;Outside&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="D04_Jordan_Boundary" tags="nobr" position="600,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;&quot;I don&#39;t know you. Don&#39;t run up on people on the street.&quot;&lt;/p&gt;
+
+&lt;p&gt;The grin drops. Not anger, not defensiveness, genuine recalibration. His hands come up higher, more deliberate.&lt;/p&gt;
+
+&lt;p&gt;&quot;You&#39;re absolutely right. I&#39;m sorry. That was thoughtless.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;It&#39;s not a good feeling, having someone chase you.&quot;&lt;/p&gt;
+
+&lt;p&gt;He flinches. The word &quot;chase&quot; lands and I can see him replaying the last thirty seconds from my side of it. &quot;Yeah. Shit, yeah, I can see how that... I&#39;m really sorry. That won&#39;t happen again.&quot;&lt;/p&gt;
+
+&lt;p&gt;He takes a step back, then another, his body language shifting from confident casual to small and sorry. &quot;I&#39;ll go. I&#39;m sorry.&quot;&lt;/p&gt;
+
+&lt;p&gt;He turns and walks away, not jogging, walking slowly, shoulders hunched slightly, the confidence knocked out of him. At the corner he glances back once, not smiling, then rounds it and is gone.&lt;/p&gt;
+
+&lt;p&gt;I breathe. My hands are shaking around the grocery bag. The shake isn&#39;t fear. It&#39;s the adrenaline dump of confrontation, the chemical aftermath of standing your ground. Marcus would have said &quot;no worries, man&quot; and moved on. Mia said &quot;don&#39;t do that&quot; and meant it.&lt;/p&gt;
+
+&lt;p&gt;My hands shake for two blocks. I let them.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;run window.statChange(&quot;fem&quot;, 1)&gt;&gt;
+&lt;&lt;set $d04MetJordan to true&gt;&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;🏠 Get home. Lock the door.&lt;/span&gt;&#39; &quot;Outside&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="D04_Jordan_Number" tags="nobr" position="725,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;The word thanks is already forming on my lips but something else comes out instead. Something reckless and terrifying and alive.&lt;/p&gt;
+
+&lt;p&gt;&quot;I&#39;m Mia.&quot;&lt;/p&gt;
+
+&lt;p&gt;His face does a thing. The grin broadens, the eyes widen, the whole expression reorganizes around a new piece of information. He&#39;s genuinely surprised I engaged. Maybe he expected the brush-off. Maybe he does this all the time and usually gets rejected. Maybe this is the first time he&#39;s ever chased a girl down the street and can&#39;t believe it worked.&lt;/p&gt;
+
+&lt;p&gt;&quot;Mia. I love that name.&quot; He says it like he means it, not like a line. &quot;I&#39;m Jordan. Can I... would it be weird if I texted you sometime?&quot;&lt;/p&gt;
+
+&lt;p&gt;I pull my phone from my criminally shallow pocket. My fingers are buzzing. &quot;What&#39;s your number?&quot;&lt;/p&gt;
+
+&lt;p&gt;He recites it. I punch it in, my thumbs clumsy, having to delete and retype because the adrenaline is making my fine motor skills drunk. I send him a text, just a period, a dot, the smallest possible footprint of contact.&lt;/p&gt;
+
+&lt;p&gt;His pocket buzzes. He pulls out his phone, sees the dot, grins.&lt;/p&gt;
+
+&lt;p&gt;&quot;Mia with the period. I&#39;ll remember that.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;Don&#39;t be weird about it.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;I literally chased you down the street. That ship has sailed.&quot; He laughs. I laugh. The laughter breaks something open, and for three seconds I&#39;m not a person in crisis, not a body in transition, not a question mark in jeans. I&#39;m just a girl laughing on a sidewalk with a guy who has a nice smile and no idea what he&#39;s gotten himself into.&lt;/p&gt;
+
+&lt;p&gt;&quot;I&#39;ll text you,&quot; he says. &quot;Promise.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;You better.&quot;&lt;/p&gt;
+
+&lt;p&gt;Where did that come from? Who said that? That was not Marcus. Marcus didn&#39;t &quot;you better&quot; anyone. That was Mia, and Mia apparently has a flirtatious streak that showed up uninvited.&lt;/p&gt;
+
+&lt;p&gt;He jogs off. I watch him go, this tall ridiculous person who ran after me on the street because he thought I was pretty. When he rounds the corner I look down at my phone. His name is in my contacts now, Jordan, the first male contact I&#39;ve saved as Mia.&lt;/p&gt;
+
+&lt;p&gt;I walk home. The grocery bag bumps my leg. My phone feels heavier in my pocket, like it&#39;s gained mass from the new number.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;run window.statChange(&quot;fem&quot;, 2)&gt;&gt;
+&lt;&lt;set $jordan.met to true&gt;&gt;
+&lt;&lt;set $d04MetJordan to true&gt;&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;🏠 Walk home with a phone number&lt;/span&gt;&#39; &quot;Outside&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="47" name="D04_Phone_Jordan" tags="nobr" position="850,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;&lt;ImagePlaceholder &quot;A phone screen lit up with a new text message, held against a couch cushion&quot; &quot;float&quot; &quot;assets/ui/phone/jordan-texting.png&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;6:47 PM. My phone buzzes on the couch cushion. Unknown number.&lt;/p&gt;
+
+&lt;p&gt;&quot;Hey it&#39;s Jordan from outside the store 😊 still think you&#39;re pretty btw&quot;&lt;/p&gt;
+
+&lt;p&gt;I stare at the screen. Read it twice. Three times. A boy is texting me. A boy who met me for ninety seconds on a sidewalk and went home and waited hours and then typed out a message with an emoji and hit send.&lt;/p&gt;
+
+&lt;p&gt;The emoji gets me. The smiley face, like he&#39;s trying to project warmth through pixels, trying to make sure the text doesn&#39;t read as creepy. He&#39;s trying. It&#39;s kind of endearing.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;😊 Reply politely&lt;/span&gt;&#39; &quot;D04_Jordan_Text_Polite&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;😏 Flirt back&lt;/span&gt;&#39; &quot;D04_Jordan_Text_Flirty&quot;&gt;&gt;
+		&lt;&lt;run window.statChange(&quot;cor&quot;, 2)&gt;&gt;
+	&lt;&lt;/link&gt;&gt;
+	&lt;&lt;if $player.cor gte 5&gt;&gt;
+		&lt;&lt;link &#39;&lt;span&gt;🔥 Let it go further...&lt;/span&gt;&#39; &quot;D04_Jordan_Text_Sext&quot;&gt;&gt;
+			&lt;&lt;run window.statChange(&quot;cor&quot;, 4)&gt;&gt;
+		&lt;&lt;/link&gt;&gt;
+	&lt;&lt;/if&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="D04_Jordan_Text_Polite" tags="nobr" position="975,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;I type, delete, type, delete, type. &quot;Thanks Jordan. That&#39;s sweet of you.&quot;&lt;/p&gt;
+
+&lt;p&gt;I send it, then put the phone down, pick it up, and put it down again.&lt;/p&gt;
+
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;So what are you up to tonight? Anything fun?&quot; &quot;&quot;&gt;&gt;
+
+&lt;p&gt;&quot;Just chilling at home. Cooking.&quot; I don&#39;t know why I add the cooking detail. To seem normal, maybe. To seem like a person with a life that involves activities beyond lying in bed questioning her entire existence.&lt;/p&gt;
+
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;Nice. I&#39;m watching the game with my roommate. He&#39;s yelling at the TV. It&#39;s a whole thing.&quot; &quot;&quot;&gt;&gt;
+
+&lt;p&gt;I smile at that, just a small one. &quot;Sounds intense.&quot;&lt;/p&gt;
+
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;It&#39;s always intense. We take our losses personally. Anyway just wanted to say hey. Hope your night is good, Mia.&quot; &quot;&quot;&gt;&gt;
+
+&lt;p&gt;&quot;Yours too.&quot;&lt;/p&gt;
+
+&lt;p&gt;The conversation ends there. Natural, easy, no pressure. He didn&#39;t push, didn&#39;t ask for a photo or a date or anything beyond a few minutes of texting. I read the exchange back. It reads normal. It reads like two people who just met, being casual, being cautious.&lt;/p&gt;
+
+&lt;p&gt;This is what people do, I think. They meet. They text. They feel each other out.&lt;/p&gt;
+
+&lt;p&gt;My phone sits dark on the cushion. I sit in the quiet.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;set $d04JordanTexted to true&gt;&gt;
+&lt;&lt;set $jordan.flags.relation to &quot;casual&quot;&gt;&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;🏠 Back&lt;/span&gt;&#39; &quot;Home_Bedroom&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="49" name="D04_Jordan_Text_Flirty" tags="nobr" position="1100,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;I type back without overthinking it, which is either brave or stupid. &quot;You always chase girls on the street? 😏&quot;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;Only the ones I can&#39;t stop thinking about.&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;The line is corny, objectively corny. Marcus would have cringed. But I don&#39;t cringe, because it&#39;s directed at me, and corny hits different when you&#39;re the target. My stomach does a small, warm flip.&lt;/p&gt;
+
+&lt;p&gt;&quot;That&#39;s a line.&quot;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;Was it good though?&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;&quot;3 out of 10.&quot;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;Ouch. I&#39;ll workshop it.&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;&quot;You do that.&quot;&lt;/p&gt;
+
+&lt;p&gt;The texting picks up a rhythm. He asks where I go to school. I tell him the university. He&#39;s there too, communications major, senior year. He lives off campus with two roommates in a house he describes as one health code violation away from being condemned. He likes basketball, bad movies, and cooking, which he claims to be good at. I tell him I just made spaghetti for the first time in weeks and he sends back a chef&#39;s kiss emoji.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;We should cook together sometime. I make a mean stir-fry.&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;The invitation sits on my screen glowing. Together, at his place or mine, in a kitchen, near each other, him tall and me short, and the space between us full of something I can feel through the phone.&lt;/p&gt;
+
+&lt;p&gt;&quot;Maybe,&quot; I type. The most noncommittal commitment in the English language.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;I&#39;ll take a maybe 🙌&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;I put the phone down. My face is warm. My stomach is doing the flip thing again. I&#39;m flirting. I, Mia Cole, formerly Marcus Cole, am lying on a couch in panties and an oversized t-shirt flirting with a boy I met on the street hours ago.&lt;/p&gt;
+
+&lt;p&gt;The absurdity is total. The feeling is real.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;set $d04JordanTexted to true&gt;&gt;
+&lt;&lt;set $jordan.flags.relation to &quot;flirty&quot;&gt;&gt;
+&lt;&lt;run window.statChange(&quot;fem&quot;, 1)&gt;&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;🏠 Back&lt;/span&gt;&#39; &quot;Home_Bedroom&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="50" name="D04_Jordan_Text_Sext" tags="nobr" position="1225,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;The texting starts casual but the undertow pulls it somewhere else. It happens gradually, one message at a time, each one a centimeter past the last.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;What are you wearing rn?&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;He texts it at 9:14 PM, after an hour of back and forth that started at banter and has been slowly heating up. The question is a door. I can close it or walk through it.&lt;/p&gt;
+
+&lt;p&gt;I look down at myself. Oversized t-shirt, cotton panties, bare legs. My hair is down and messy. My face is bare. I look like a girl who was not expecting to receive a &quot;what are you wearing&quot; text and is now confronted with the reality of her own appearance.&lt;/p&gt;
+
+&lt;p&gt;&quot;T-shirt and underwear. Very glamorous.&quot;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;That&#39;s actually pretty hot.&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;&quot;It&#39;s a free XL shirt from a campus event.&quot;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;Still hot.&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;I feel the warmth spread across my chest, up my neck, into my cheeks. This body blushes easily. Marcus never blushed. Mia is a blusher. The blood rises and the skin flushes and there&#39;s nothing I can do about it even though nobody is watching.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;Prove it.&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;The request sits on my screen like a dare. Send a selfie. My first selfie as a woman. The phone&#39;s front camera has seen Marcus&#39;s face a thousand times for video calls and the occasional mirror check. It has never seen Mia.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;set $d04JordanTexted to true&gt;&gt;
+&lt;&lt;set $jordan.flags.relation to &quot;sexual&quot;&gt;&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;📸 Send a mirror selfie&lt;/span&gt;&#39; &quot;D04_Jordan_Selfie&quot;&gt;&gt;
+		&lt;&lt;run window.statChange(&quot;cor&quot;, 3)&gt;&gt;
+	&lt;&lt;/link&gt;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;✋ Pull back. &quot;Goodnight Jordan.&quot;&lt;/span&gt;&#39; &quot;D04_Jordan_Text_End&quot;&gt;&gt;
+		&lt;&lt;set $jordan.flags.relation to &quot;flirty&quot;&gt;&gt;
+	&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="51" name="D04_Jordan_Selfie" tags="nobr" position="100,725" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;&lt;ImagePlaceholder &quot;Taking a mirror selfie in a dim bedroom, oversized t-shirt slipping off one shoulder&quot; &quot;portrait&quot; &quot;assets/characters/mc-female-phase1/d04-mirror-selfie.png&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;I open the camera, hold the phone above my face, the angle women do, chin down, eyes up. The girl on the screen looks back at me. Dark hair fanned on the pillow. Hazel-green eyes, wide, a little surprised. Lips slightly parted. The t-shirt&#39;s neckline has slipped off one shoulder.&lt;/p&gt;
+
+&lt;p&gt;I stare at her for a long time, studying her face the way I&#39;ve been studying everything about this body. The freckles. The curve of the jaw. The way the pillow light softens everything into something almost pretty.&lt;/p&gt;
+
+&lt;p&gt;Almost, no. Not almost.&lt;/p&gt;
+
+&lt;p&gt;I take the photo, check it, delete it, take another, and another. Seven photos in two minutes, each with a slightly different angle or expression, each scrutinized and discarded until I find one that looks like a person and not a hostage photo.&lt;/p&gt;
+
+&lt;p&gt;I send it, and the three seconds between sending and his response are the longest three seconds of my life.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;holy shit. You&#39;re gorgeous.&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;The validation hits like a drug, instant and chemical, a flood of warmth that starts in my chest and radiates outward to the tips of my fingers. A stranger thinks I&#39;m gorgeous. A guy who met me for ninety seconds thinks the face he&#39;s looking at on his phone right now is gorgeous.&lt;/p&gt;
+
+&lt;p&gt;I hate that I like it. I like it anyway. I like it so much that when he sends a shirtless photo back, flexed and grinning in his bathroom mirror, I save it without thinking.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;Your turn. Fair&#39;s fair 😏&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;My turn. For more. For a body shot, presumably. Me in the t-shirt and panties. The thought makes my pulse hammer in a way that&#39;s partly fear and partly something else, something that lives lower than fear, hotter, wetter.&lt;/p&gt;
+
+&lt;p&gt;I sit up, pull the shirt down to cover more, then realize that&#39;s the wrong direction if I&#39;m actually doing this.&lt;/p&gt;
+
+&lt;p&gt;I get up, stand in front of the bedroom mirror, hold the phone at waist height, angled up. The mirror shows me from the thighs up. T-shirt hanging off one shoulder, long enough to cover the panties, legs bare and smooth from today&#39;s shave. I look like a girl who just got out of bed, tousled and soft and real.&lt;/p&gt;
+
+&lt;p&gt;I take the photo, look at it. It&#39;s good. Not posed, not performative, just me standing in my bedroom looking at my phone, the mirror catching it.&lt;/p&gt;
+
+&lt;p&gt;I send it before the voice of reason can stop me.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;wow. I cannot believe you talked to me on the street today. I am the luckiest guy.&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;The warmth again. The drug again. I lie back on the bed with my phone on my chest and my heart rate elevated and something happening between my thighs that I&#39;ve been trying not to notice for the last twenty minutes.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;Goodnight gorgeous 😘&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;I type &quot;goodnight&quot; and add a 😊 and agonize over the emoji for thirty full seconds before sending it. Is the smiley too eager? Too casual? Too much? Not enough? Would a 😘 back be an escalation or a reciprocation? Does it matter? Why do I care?&lt;/p&gt;
+
+&lt;p&gt;I send it anyway and put the phone on the nightstand, screen down. The room is dark. My body hums with something that isn&#39;t quite arousal and isn&#39;t quite happiness and isn&#39;t quite fear. It&#39;s all three, braided together, vibrating at a frequency I&#39;ve never felt before.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;set $d04SentSelfie to true&gt;&gt;
+&lt;&lt;run window.statChange(&quot;cor&quot;, 2)&gt;&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;🏠 Put the phone down&lt;/span&gt;&#39; &quot;Home_Bedroom&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="52" name="D04_Jordan_Text_End" tags="nobr" position="225,725" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;&lt;Dialogue &quot;You&quot; &quot;🙂&quot; &quot;Goodnight Jordan.&quot; &quot;you&quot;&gt;&gt;
+&lt;&lt;Dialogue &quot;Jordan&quot; &quot;😎&quot; &quot;Sweet dreams Mia ✨&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+&lt;p&gt;I set the phone down and lie there in the dark for a while, not quite ready to call it arousal, not quite ready to call it anything.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;&lt;set $d04JordanTexted to true&gt;&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;🏠 Back&lt;/span&gt;&#39; &quot;Home_Bedroom&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="53" name="D04_Morning" tags="nobr" position="350,725" size="100,100">&lt;&lt;set $day to 4&gt;&gt;
+&lt;&lt;set $timeslot to &quot;Morning&quot;&gt;&gt;
+&lt;&lt;set $weekDay to &quot;Monday&quot;&gt;&gt;
+&lt;&lt;HUD&gt;&gt;
+
+&lt;&lt;SceneDivider &quot;Monday Morning&quot;&gt;&gt;
+
+&lt;&lt;ImagePlaceholder &quot;Waking up to daylight, studying her reflection in the mirror&quot; &quot;banner&quot; &quot;assets/characters/mc-female-phase1/d04-wakeup-mirror.png&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;I open my eyes to daylight instead of panic, for the first time since it happened.&lt;/p&gt;
+
+&lt;p&gt;The ceiling fan turns. The sheets smell like me, which still means something floral I can&#39;t quite name, nothing like what Marcus smelled like. Four days of sweat and lotion and whatever shampoo came in Marlene&#39;s thrift bag. My scent. Still foreign. Still mine.&lt;/p&gt;
+
+&lt;p&gt;I sit up. The sports bra rode up in my sleep and my breasts settle when I straighten, a soft weight shifting against my ribs. I pull the bra down, adjusting without thinking. Four days and muscle memory is already forming around things I never had before.&lt;/p&gt;
+
+&lt;p&gt;The apartment looks the same. Dirty dishes in the sink. The laptop open on the couch from last night. The measuring string still draped over the bathroom doorknob. But I feel different. Yesterday I mapped every inch of this body, clinically, methodically, like a mechanic learning a new engine. Today I need to take that engine outside.&lt;/p&gt;
+
+&lt;p&gt;I swing my legs off the bed. My feet hit the cold floor, smaller feet, size seven and a half I think. Marcus wore an eleven.&lt;/p&gt;
+
+&lt;p&gt;The mirror catches me before I&#39;m ready. I&#39;ve been avoiding full length encounters, but this morning I walk right up to it and stand there in the sports bra and cotton panties from the thrift store haul.&lt;/p&gt;
+
+&lt;p&gt;The girl in the mirror looks tired but real. Dark hair past her shoulders, messy from sleep. Hazel-green eyes with circles under them that say she hasn&#39;t been sleeping great, which is fair. Freckles across her nose and cheeks, scattered like someone flicked a paintbrush. She&#39;s thin, not unhealthy thin, just the kind that comes from four days of ramen and cereal. Her collarbones show. The sports bra compresses her breasts into a modest shelf, but when she reaches up to fix her hair they shift, and the shape is unmistakable.&lt;/p&gt;
+
+&lt;p&gt;I drop my arms. She drops hers.&lt;/p&gt;
+
+&lt;p&gt;Today I go outside. Not a panicked thrift store run. Not a dark apartment cave day. Real outside, where the sun hits and people look at you and the world doesn&#39;t pause while you figure yourself out.&lt;/p&gt;
+
+&lt;p&gt;The thought makes my stomach knot up.&lt;/p&gt;
+
+&lt;p&gt;I pull the bra off over my head because it&#39;s uncomfortable to sleep in and I need to shower anyway. My breasts hang free, firm but with enough weight to move when I bend forward. A 32B, I decided yesterday, though bra math still feels like advanced calculus. I cup one in my hand, absent, not sexual, just checking. Still there. Still real.&lt;/p&gt;
+
+&lt;p&gt;I need a shower.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;🚿 Shower and get ready&lt;/span&gt;&#39; &quot;D04_Morning_Shower&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="54" name="D04_Morning_Shower" tags="nobr" position="475,725" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;&lt;ImagePlaceholder &quot;Shaving her legs in the shower, a small nick on the ankle&quot; &quot;portrait&quot; &quot;assets/characters/mc-female-phase1/d04-shower-shave.png&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;The bathroom is small and the mirror fogs fast, which is a mercy. I turn the water to hot and step in.&lt;/p&gt;
+
+&lt;p&gt;Four days in and I have a shower routine now. I work the shampoo through to the ends, and the weight of wet hair against my back is a sensation I don&#39;t think I&#39;ll ever fully get used to. Conditioner next. I didn&#39;t used to bother, but two days of tangled knots taught me the lesson fast.&lt;/p&gt;
+
+&lt;p&gt;The razor sits on the shower ledge. I watched a tutorial last night, long strokes upward, rinse the blade, repeat. The woman in the video made it look easy, legs like polished marble and a voice like she was narrating a spa commercial.&lt;/p&gt;
+
+&lt;p&gt;I prop my left foot on the shower wall&#39;s tiny ledge, lather up with body wash, and start at the ankle. The first stroke catches and I jerk. A thin line of red appears on my ankle bone. &quot;Shit.&quot; The cut stings under the water. I press my thumb against it and watch pink swirl down the drain.&lt;/p&gt;
+
+&lt;p&gt;Second attempt, lighter pressure. The razor glides. A strip of smooth skin appears where stubble was. I go again, strip by strip, ankle to knee, rinsing the blade every few strokes. The inner shin is easy. The knee is a nightmare of angles and bone, and I nick it too. Two cuts now, both minor, both annoying in a way that feels like a rite of passage nobody warns you about.&lt;/p&gt;
+
+&lt;p&gt;The right leg goes smoother. I&#39;m learning the pressure, the angle, the way you have to pull the skin taut on the kneecap. By the time I&#39;m done, both legs are smooth from ankle to mid-thigh. I run my palm up my calf. The difference is absurd. Silk where sandpaper was.&lt;/p&gt;
+
+&lt;p&gt;I stand under the water a minute longer, just feeling it. Smooth legs, wet hair plastered down my back, water streaming over breasts and hips and a body that&#39;s learning to be mine. Yesterday I explored it with a mirror and a ruler. Today I explore it with a razor and soap. Each day adds another layer of knowing.&lt;/p&gt;
+
+&lt;p&gt;I shut the water off and towel dry. The towel wraps differently now, tucked above the breasts instead of at the waist. It holds better up here, a small engineering marvel I never would have considered before.&lt;/p&gt;
+
+&lt;p&gt;No moisturizer yet. That&#39;s on the research list. The skincare rabbit hole from yesterday&#39;s internet session is still fresh and overwhelming. Cleanser, toner, serum, moisturizer, SPF. Marcus&#39;s skincare was water and sometimes bar soap. This feels like enrolling in a university program.&lt;/p&gt;
+
+&lt;p&gt;For now I just look at my face. Clean, bare, damp. The freckles pop when my skin is wet. My lips are fuller than Marcus&#39;s ever were. My jaw is softer. My eyebrows are thicker than most women&#39;s, but shaped in a natural arch that doesn&#39;t look wrong, just ungroomed. My eyelashes are long enough that I can feel them when I blink hard.&lt;/p&gt;
+
+&lt;p&gt;I look like a girl who doesn&#39;t own makeup. Which is exactly what I am.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;set $d04ShavedLegs to true&gt;&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;👖 Get dressed&lt;/span&gt;&#39; &quot;D04_Morning_Dressing&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="55" name="D04_Morning_Dressing" tags="nobr" position="600,725" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;The clothes from Marlene&#39;s thrift bag are folded on the dresser, clean, since I washed them in the sink yesterday and hung them over the shower rod. The apartment doesn&#39;t have a dryer and the building&#39;s laundry room costs four quarters a load.&lt;/p&gt;
+
+&lt;p&gt;I lay the outfit on the bed. New black cotton panties. Sports bra. The black fitted tee. The dark blue skinny jeans. I line them up like I&#39;m dressing a mannequin, which I sort of am.&lt;/p&gt;
+
+&lt;p&gt;Panties first, step in, pull up. The elastic sits on my hips, snug, correct. These fit like they belong here. Four days ago my first pair of women&#39;s underwear felt like a costume. Now it just feels like getting dressed.&lt;/p&gt;
+
+&lt;p&gt;Sports bra next. I&#39;ve mastered the over the head method, arms through the straps, pull down, adjust, then the scoop thing from the tutorial, repositioning each breast into the cup properly. The difference is subtle but real. Everything sits better.&lt;/p&gt;
+
+&lt;p&gt;The black tee goes on easy, cotton, fitted, crew neck. It hugs my torso in a way Marcus&#39;s shirts never did, since his were loose and boxy by design. This one shows the curve from ribcage to waist, the slight flare at the hips. I tug the hem down. It hits just below my waistband.&lt;/p&gt;
+
+&lt;p&gt;The jeans are the hardest part. I&#39;ve learned the shimmy now, step in, pull up to the knees, then wiggle pull in alternating hip motions to work the denim over my thighs. The fabric stretches but it&#39;s tight, snug through the thigh, form fitting through the calf. I button them, zip them. The waistband sits at my natural waist, higher than where Marcus ever wore his.&lt;/p&gt;
+
+&lt;p&gt;I look down at myself. The jeans shape my legs into something that looks like a woman&#39;s legs. Because they are.&lt;/p&gt;
+
+&lt;p&gt;Shoes are still the problem. Marcus&#39;s beaten up sneakers are a men&#39;s eleven, and my feet are smaller now, swimming in them. I double up on socks, stuffing the toes, and lace them tight. They look clunky and wrong, like clown shoes on a mannequin. Better shoes are on the mental list, but not in today&#39;s budget.&lt;/p&gt;
+
+&lt;p&gt;I brush my hair out, which takes five minutes of working through tangles. No products, no dryer, no styling tools. I just brush until it&#39;s smooth and let it hang past my shoulders, a natural part down the middle. It frames my face in a way that looks intentional even though I have zero idea what I&#39;m doing.&lt;/p&gt;
+
+&lt;p&gt;No makeup. No jewelry. No perfume.&lt;/p&gt;
+
+&lt;p&gt;I stand in front of the full length mirror. The girl looking back looks like a college student running weekend errands. Basic outfit, bare face, messy clean hair, bad shoes. Nothing remarkable about her. She could be anyone on any sidewalk on any Monday morning.&lt;/p&gt;
+
+&lt;p&gt;That&#39;s the goal. Blend in. Be invisible. Be normal.&lt;/p&gt;
+
+&lt;p&gt;My heart is hammering like I&#39;m about to skydive.&lt;/p&gt;
+
+&lt;p&gt;I grab my keys, my phone, a twenty dollar bill from the kitchen drawer plus some change. I don&#39;t own a purse. Marcus didn&#39;t own a purse. I shove everything into my jeans pockets, which are shallow, because women&#39;s jeans have decorative pockets designed by someone who apparently hates women. The phone barely fits. The keys jab my thigh.&lt;/p&gt;
+
+&lt;p&gt;I need a purse. Adding it to the list.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;📞 Call Owen before you go&lt;/span&gt;&#39; &quot;D04_CallingOwen&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="56" name="D04_CallingOwen" tags="nobr" position="725,725" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;I make the call standing in the kitchen, pacing, the way I pace when I&#39;m nervous, which is a smaller orbit now since my stride is shorter.&lt;/p&gt;
+
+&lt;p&gt;Owen picks up on the third ring. &quot;DashDrop Downtown, this is Owen.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;Hey Owen, it&#39;s... it&#39;s me.&quot; I catch myself before saying Marcus. What do I even say? My voice sounds nothing like his. &quot;It&#39;s the rider for Route 7. I&#39;m still sick.&quot;&lt;/p&gt;
+
+&lt;&lt;Dialogue &quot;Owen&quot; &quot;☎️&quot; &quot;You sound different. Sore throat?&quot; &quot;&quot;&gt;&gt;
+
+&lt;p&gt;&quot;Yeah. Throat thing. Bad one.&quot;&lt;/p&gt;
+
+&lt;&lt;Dialogue &quot;Owen&quot; &quot;☎️&quot; &quot;Alright. Listen, I need you back by Friday or I gotta fill your shifts. I&#39;ve got two riders out already and the weekend rush is gonna be ugly.&quot; &quot;&quot;&gt;&gt;
+
+&lt;p&gt;&quot;Friday. Yeah. I&#39;ll be there.&quot;&lt;/p&gt;
+
+&lt;&lt;Dialogue &quot;Owen&quot; &quot;☎️&quot; &quot;Feel better.&quot; &quot;&quot;&gt;&gt;
+
+&lt;p&gt;He hangs up. I put the phone down on the counter and grip the edge with both hands.&lt;/p&gt;
+
+&lt;p&gt;Friday is still Friday. I&#39;ll have to go to the depot, pick up the delivery bag, get on the scooter, drive through traffic, ring doorbells, smile, say &quot;here&#39;s your order&quot; in a voice that isn&#39;t his to customers who might recognize his route. Owen will see me. The other riders will see me.&lt;/p&gt;
+
+&lt;p&gt;My license photo is still Marcus&#39;s face. The height says 5&#39;9&quot;. The sex marker says M. That&#39;s a tomorrow problem. Today I survive the sidewalk.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;set $d04CalledOwen to true&gt;&gt;
+&lt;&lt;run window.rbAddJournalEntry(&quot;Still Calling In&quot;, &quot;Bought myself until Friday again. Owen still doesn&#39;t know. The license photo isn&#39;t even close anymore.&quot;)&gt;&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;🚪 Step outside&lt;/span&gt;&#39; &quot;Outside&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="57" name="Home_Bathroom" tags="nobr" position="850,725" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;map-here&quot;&gt;📍 Home → Bathroom&lt;/div&gt;
 &lt;h1&gt;The &lt;span class=&quot;accent&quot;&gt;Bathroom&lt;/span&gt;&lt;/h1&gt;
@@ -5083,7 +5875,7 @@ $(document).on(":passageend", function () {
 
 &lt;div class=&quot;choice-block&quot; style=&quot;margin-top:2rem;&quot;&gt;
 	&lt;&lt;link &#39;&lt;span&gt;← Back to the apartment&lt;/span&gt;&#39; &quot;Home&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Home_Bathroom_Wash" tags="nobr" position="850,475" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="58" name="Home_Bathroom_Wash" tags="nobr" position="975,725" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;&lt;ImagePlaceholder &quot;Male Marcus, bathroom mirror, tired, stubble, freckles&quot; &quot;portrait&quot; &quot;assets/characters/mc-male/mirror-morning.png&quot;&gt;&gt;
 
@@ -5112,7 +5904,7 @@ $(document).on(":passageend", function () {
 		&lt;&lt;set $washedUp to true&gt;&gt;
 		&lt;&lt;set $player.stress to Math.clamp($player.stress - 2, 0, 100)&gt;&gt;
 	&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Home_Bathroom_Alone" tags="nobr" position="975,475" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="59" name="Home_Bathroom_Alone" tags="nobr" position="1100,725" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;prose-block&quot;&gt;
 
@@ -5129,7 +5921,7 @@ $(document).on(":passageend", function () {
 		&lt;&lt;set $player.stress to Math.clamp($player.stress - 8, 0, 100)&gt;&gt;
 		&lt;&lt;set $player.energy to Math.clamp($player.energy - 3, 0, 100)&gt;&gt;
 	&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="Home_Bathroom_ShowerD1" tags="nobr" position="1100,475" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="60" name="Home_Bathroom_ShowerD1" tags="nobr" position="1225,725" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;&lt;ImagePlaceholder &quot;First shower, water cascading over new skin&quot; &quot;portrait&quot; &quot;assets/characters/mc-female-phase1/shower-first.gif&quot;&gt;&gt;
 
@@ -5174,7 +5966,7 @@ $(document).on(":passageend", function () {
 &lt;div class=&quot;choice-block&quot;&gt;
 	&lt;&lt;link &#39;&lt;span&gt;🔍 Keep exploring... (curiosity wins)&lt;/span&gt;&#39; &quot;Home_Bathroom_ShowerExplore&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 	&lt;&lt;link &#39;&lt;span&gt;🚿 Finish quickly and get out (not ready)&lt;/span&gt;&#39; &quot;Home_Bathroom_ShowerAvoid&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="40" name="Home_Bathroom_ShowerExplore" tags="nobr" position="1225,475" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="61" name="Home_Bathroom_ShowerExplore" tags="nobr" position="100,850" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;prose-block&quot;&gt;
 
@@ -5234,7 +6026,7 @@ $(document).on(":passageend", function () {
 		&lt;&lt;set $player.cor to Math.clamp($player.cor + 2, 0, 100)&gt;&gt;
 		&lt;&lt;run window.rbAddMilestone(&quot;First orgasm, in this body.&quot;)&gt;&gt;
 	&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="Home_Bathroom_ShowerAvoid" tags="nobr" position="100,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="62" name="Home_Bathroom_ShowerAvoid" tags="nobr" position="225,850" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;prose-block&quot;&gt;
 
@@ -5255,7 +6047,7 @@ $(document).on(":passageend", function () {
 		&lt;&lt;set $player.fem to Math.clamp($player.fem + 1, 0, 100)&gt;&gt;
 		&lt;&lt;set $player.stress to Math.clamp($player.stress + 5, 0, 100)&gt;&gt;
 	&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Home_Bedroom" tags="nobr" position="225,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="63" name="Home_Bedroom" tags="nobr" position="350,850" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;map-here&quot;&gt;📍 Home → My Room&lt;/div&gt;
 &lt;h1&gt;My &lt;span class=&quot;accent&quot;&gt;Room&lt;/span&gt;&lt;/h1&gt;
@@ -5325,12 +6117,42 @@ $(document).on(":passageend", function () {
 		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🛏️&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Go to bed&lt;span class=&quot;action-sub&quot;&gt;It&amp;apos;s been enough for one day.&lt;/span&gt;&lt;/span&gt;&#39; &quot;D03_Bedtime&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 	&lt;&lt;/if&gt;&gt;
 
-	&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🛒&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Browse online shopping&lt;span class=&quot;action-sub&quot;&gt;The laptop&amp;apos;s already open&lt;/span&gt;&lt;/span&gt;&#39; &quot;D03_OnlineShopping&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-
 	&lt;&lt;if $timeslot is &quot;Night&quot; and not $d03PornExplored&gt;&gt;
 		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;💻&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Browse... other things on the laptop&lt;/span&gt;&#39; &quot;D03_PornExplore&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 	&lt;&lt;/if&gt;&gt;
 
+&lt;&lt;elseif $day is 4&gt;&gt;
+
+	&lt;&lt;if not $d04VisitedCornerStore&gt;&gt;
+		&lt;p class=&quot;text3 small&quot;&gt;The kitchen&#39;s empty. The corner store&amp;apos;s a few blocks out.&lt;/p&gt;
+	&lt;&lt;elseif not $d04CookedMeal&gt;&gt;
+		&lt;p class=&quot;text3 small&quot;&gt;You&amp;apos;ve got groceries now. The kitchen&amp;apos;s where the pasta is.&lt;/p&gt;
+	&lt;&lt;elseif not $d04NolanTexted&gt;&gt;
+		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;📱&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Check your phone&lt;span class=&quot;action-sub&quot;&gt;Nolan&amp;apos;s not going to stop&lt;/span&gt;&lt;/span&gt;&#39; &quot;D04_Evening_Phone&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+	&lt;&lt;elseif $timeslot isnot &quot;Night&quot;&gt;&gt;
+		&lt;p class=&quot;text3 small&quot;&gt;The rest of the day is yours. Wander, or just stay in.&lt;/p&gt;
+	&lt;&lt;else&gt;&gt;
+		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🛏️&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Go to bed&lt;span class=&quot;action-sub&quot;&gt;It&amp;apos;s been enough for one day.&lt;/span&gt;&lt;/span&gt;&#39; &quot;D04_Bedtime&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+	&lt;&lt;/if&gt;&gt;
+
+	&lt;&lt;if not $d04PracticedWalking&gt;&gt;
+		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;👠&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Practice walking&lt;span class=&quot;action-sub&quot;&gt;Shorter stride. Let the hips move.&lt;/span&gt;&lt;/span&gt;&#39; &quot;D04_WalkPractice&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+	&lt;&lt;/if&gt;&gt;
+
+	&lt;&lt;if $timeslot is &quot;Night&quot; and not $d04OrientationExplored&gt;&gt;
+		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;💻&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Browse... other things on the laptop&lt;/span&gt;&#39; &quot;D04_OrientationExplore&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+	&lt;&lt;/if&gt;&gt;
+
+	&lt;&lt;if $timeslot is &quot;Night&quot; and $d04SentSelfie and not $d04JordanSelfPleasure&gt;&gt;
+		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🔥&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Lie here with his texts&lt;span class=&quot;action-sub&quot;&gt;You know what you&amp;apos;re about to do&lt;/span&gt;&lt;/span&gt;&#39; &quot;D04_SelfPleasure_Jordan&quot;&gt;&gt;
+			&lt;&lt;set $d04JordanSelfPleasure to true&gt;&gt;
+		&lt;&lt;/link&gt;&gt;
+	&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $day gte 3&gt;&gt;
+	&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🛒&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Browse online shopping&lt;span class=&quot;action-sub&quot;&gt;The laptop&amp;apos;s already open&lt;/span&gt;&lt;/span&gt;&#39; &quot;D03_OnlineShopping&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🪞&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Check the mirror&lt;span class=&quot;action-sub&quot;&gt;See what&amp;apos;s looking back today&lt;/span&gt;&lt;/span&gt;&#39; &quot;Home_Bedroom_Mirror&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -5343,7 +6165,7 @@ $(document).on(":passageend", function () {
 
 &lt;div class=&quot;choice-block&quot; style=&quot;margin-top:2rem;&quot;&gt;
 	&lt;&lt;link &#39;&lt;span&gt;← Back to the apartment&lt;/span&gt;&#39; &quot;Home&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Home_Bedroom_Mirror" tags="nobr" position="350,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="64" name="Home_Bedroom_Mirror" tags="nobr" position="475,850" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;prose-block&quot;&gt;
 
@@ -5361,7 +6183,7 @@ $(document).on(":passageend", function () {
 
 &lt;div class=&quot;choice-block&quot;&gt;
 	&lt;&lt;link &#39;&lt;span&gt;← Step away&lt;/span&gt;&#39; &quot;Home_Bedroom&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Home_Bedroom_Alone" tags="nobr" position="475,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="65" name="Home_Bedroom_Alone" tags="nobr" position="600,850" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;prose-block&quot;&gt;
 
@@ -5387,7 +6209,7 @@ $(document).on(":passageend", function () {
 			&lt;&lt;run window.rbAddMilestone(&quot;First orgasm, in this body.&quot;)&gt;&gt;
 		&lt;&lt;/if&gt;&gt;
 	&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="Home_Bedroom_TryOnD2" tags="nobr" position="600,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="66" name="Home_Bedroom_TryOnD2" tags="nobr" position="725,850" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;prose-block&quot;&gt;
 
@@ -5476,7 +6298,7 @@ $(document).on(":passageend", function () {
 		&lt;&lt;set $equipped.underwear to {id:&quot;panties_cotton_3pk&quot;,name:&quot;Cotton Bikini Panties (3-pack)&quot;}&gt;&gt;
 		&lt;&lt;run window.rbAddMilestone(&quot;Wore women&#39;s clothes for the first time.&quot;)&gt;&gt;
 	&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="Home_Bedroom_MirrorExploreD2" tags="nobr" position="725,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="67" name="Home_Bedroom_MirrorExploreD2" tags="nobr" position="850,850" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;prose-block&quot;&gt;
 
@@ -5524,7 +6346,7 @@ $(document).on(":passageend", function () {
 		&lt;&lt;set $equipped.underwear to {id:&quot;panties_cotton_3pk&quot;,name:&quot;Cotton Bikini Panties (3-pack)&quot;}&gt;&gt;
 		&lt;&lt;run window.rbAddMilestone(&quot;Wore women&#39;s clothes for the first time.&quot;)&gt;&gt;
 	&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="47" name="Home_Bedroom_DressDay1" tags="nobr" position="850,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="68" name="Home_Bedroom_DressDay1" tags="nobr" position="975,850" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;prose-block&quot;&gt;
 
@@ -5550,7 +6372,7 @@ $(document).on(":passageend", function () {
 		&lt;&lt;set $player.stress to Math.clamp($player.stress - 5, 0, 100)&gt;&gt;
 		&lt;&lt;set $player.energy to Math.clamp($player.energy - 10, 0, 100)&gt;&gt;
 	&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="D02_Bedtime" tags="nobr" position="975,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="69" name="D02_Bedtime" tags="nobr" position="1100,850" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;&lt;SceneDivider &quot;Night&quot;&gt;&gt;
 
@@ -5578,7 +6400,7 @@ $(document).on(":passageend", function () {
 		&lt;&lt;set $player.fem to Math.clamp($player.fem + 2, 0, 100)&gt;&gt;
 		&lt;&lt;set $player.cor to Math.clamp($player.cor + 1, 0, 100)&gt;&gt;
 	&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="49" name="D02_SelfExplore" tags="nobr" position="1100,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="70" name="D02_SelfExplore" tags="nobr" position="1225,850" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;prose-block&quot;&gt;
 
@@ -5620,7 +6442,7 @@ $(document).on(":passageend", function () {
 			&lt;&lt;run window.rbAddMilestone(&quot;First orgasm, in this body.&quot;)&gt;&gt;
 		&lt;&lt;/if&gt;&gt;
 	&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="50" name="Home_Kitchen" tags="nobr" position="1225,600" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="71" name="Home_Kitchen" tags="nobr" position="100,975" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;map-here&quot;&gt;📍 Home → Kitchen&lt;/div&gt;
 &lt;h1&gt;The &lt;span class=&quot;accent&quot;&gt;Kitchen&lt;/span&gt;&lt;/h1&gt;
@@ -5654,6 +6476,12 @@ $(document).on(":passageend", function () {
 	&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🍝&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Cook something&lt;span class=&quot;action-sub&quot;&gt;Pasta, jar sauce, sitting down for once&lt;/span&gt;&lt;/span&gt;&#39; &quot;D03_Evening_Cook&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;&lt;elseif $day is 3&gt;&gt;
 	&lt;p class=&quot;text3 small&quot;&gt;You already ate. Small victory, but it counts.&lt;/p&gt;
+&lt;&lt;elseif $day is 4 and not $d04VisitedCornerStore&gt;&gt;
+	&lt;p class=&quot;text3 small&quot;&gt;The cabinet&amp;apos;s nearly bare. You need groceries first.&lt;/p&gt;
+&lt;&lt;elseif $day is 4 and not $d04CookedMeal&gt;&gt;
+	&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🍝&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Cook something&lt;span class=&quot;action-sub&quot;&gt;Pasta, jar sauce, sitting at the table this time&lt;/span&gt;&lt;/span&gt;&#39; &quot;D04_Evening_Cook&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;elseif $day is 4&gt;&gt;
+	&lt;p class=&quot;text3 small&quot;&gt;The kitchen&amp;apos;s clean. You already ate.&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🥤&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Drink some water&lt;span class=&quot;action-sub&quot;&gt;Free, at least.&lt;/span&gt;&lt;/span&gt;&#39; &quot;Home_Kitchen&quot;&gt;&gt;
@@ -5687,7 +6515,7 @@ $(document).on(":passageend", function () {
 
 &lt;div class=&quot;choice-block&quot; style=&quot;margin-top:2rem;&quot;&gt;
 	&lt;&lt;link &#39;&lt;span&gt;← Back to the apartment&lt;/span&gt;&#39; &quot;Home&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="51" name="Home_Kitchen_OrderDelivery" tags="nobr" position="100,725" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="72" name="Home_Kitchen_OrderDelivery" tags="nobr" position="225,975" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;&lt;if $day is 2 and not $metCody&gt;&gt;
 
@@ -5854,7 +6682,7 @@ $(document).on(":passageend", function () {
 	&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="Home_Kitchen_CookD2" tags="nobr" position="225,725" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="Home_Kitchen_CookD2" tags="nobr" position="350,975" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;prose-block&quot;&gt;
 
@@ -5883,7 +6711,7 @@ $(document).on(":passageend", function () {
 		&lt;&lt;set $player.energy to Math.clamp($player.energy + 30, 0, 100)&gt;&gt;
 		&lt;&lt;set $cookingSkill to 1&gt;&gt;
 	&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="53" name="Home_Kitchen_Breakfast" tags="nobr" position="350,725" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="74" name="Home_Kitchen_Breakfast" tags="nobr" position="475,975" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;prose-block&quot;&gt;
 
@@ -5909,7 +6737,7 @@ $(document).on(":passageend", function () {
 		&lt;&lt;set $player.energy to Math.clamp($player.energy + 8, 0, 100)&gt;&gt;
 		&lt;&lt;run window.rbSendSMS(&quot;nolan&quot;, false, &quot;Gym tomorrow? 💪&quot;)&gt;&gt;
 	&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="54" name="Home" tags="nobr" position="475,725" size="100,100">&lt;&lt;CurrentObjective&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="75" name="Home" tags="nobr" position="600,975" size="100,100">&lt;&lt;CurrentObjective&gt;&gt;
 &lt;&lt;HUD&gt;&gt;
 &lt;&lt;ObjectiveBanner&gt;&gt;
 
@@ -5947,7 +6775,7 @@ $(document).on(":passageend", function () {
 			&lt;&lt;set $player.stress to Math.clamp($player.stress - 3, 0, 100)&gt;&gt;
 		&lt;&lt;/link&gt;&gt;
 	&lt;&lt;/if&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="55" name="Campus" tags="nobr" position="600,725" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="76" name="Campus" tags="nobr" position="725,975" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;&lt;if $dashdropDone and not $flyerFound&gt;&gt;
 
@@ -6029,7 +6857,7 @@ Call: (555) 0147-CURE
 	&lt;&lt;link &#39;&lt;span&gt;← Back outside&lt;/span&gt;&#39; &quot;District_Northgate&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="CornerStore" tags="nobr" position="725,725" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="77" name="CornerStore" tags="nobr" position="850,975" size="100,100">&lt;&lt;HUD&gt;&gt;
 &lt;&lt;set $luckyMartVisits += 1&gt;&gt;
 
 &lt;&lt;if not $metHector&gt;&gt;
@@ -6052,6 +6880,12 @@ Call: (555) 0147-CURE
 &lt;&lt;/switch&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
+&lt;&lt;if $day is 4 and $d04VisitedCornerStore&gt;&gt;
+&lt;div class=&quot;prose-block&quot;&gt;
+&lt;p&gt;I browse the magazine rack while Hector goes back to his phone. Cosmopolitan, Seventeen, People, a bodybuilding magazine with a guy on the cover whose veins have veins. The women on the covers look like a species I&#39;m only tangentially related to, airbrushed, contoured, styled within an inch of their lives. I catch my reflection in the slushie machine&#39;s plexiglass, bare face, messy hair, thrift store tee. We are not the same.&lt;/p&gt;
+&lt;/div&gt;
+&lt;&lt;/if&gt;&gt;
+
 &lt;div class=&quot;action-list&quot;&gt;
 
 &lt;&lt;if $player.money gte 2&gt;&gt;
@@ -6067,6 +6901,10 @@ Call: (555) 0147-CURE
 &lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;💬&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Make small talk with Hector&lt;span class=&quot;action-sub&quot;&gt;He&amp;apos;s always got something to say&lt;/span&gt;&lt;/span&gt;&#39; &quot;CornerStore_SmallTalk&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 
 &lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;👀&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Just look around&lt;span class=&quot;action-sub&quot;&gt;Window shopping, apparently, applies to gas station snacks too&lt;/span&gt;&lt;/span&gt;&#39; &quot;CornerStore&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;if $day is 4 and not $d04VisitedCornerStore&gt;&gt;
+	&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🛒&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Get groceries&lt;span class=&quot;action-sub&quot;&gt;Eggs, bread, bananas, something for your hair&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;action-cost&quot;&gt;$23.50&lt;/span&gt;&#39; &quot;CornerStore_D04Groceries&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $day gte 3 and not $metMangoCraving&gt;&gt;
 	&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🥭&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Get groceries (and those mangoes)&lt;span class=&quot;action-sub&quot;&gt;Pasta, sauce, eggs, bananas, and two bruised mangoes calling your name&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;action-cost&quot;&gt;$18.40&lt;/span&gt;&#39; &quot;CornerStore_Mango&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -6164,7 +7002,7 @@ Call: (555) 0147-CURE
 
 &lt;div class=&quot;choice-block&quot; style=&quot;margin-top:2rem;&quot;&gt;
 	&lt;&lt;link &#39;&lt;span&gt;← Back outside&lt;/span&gt;&#39; &quot;Outside&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="57" name="CornerStore_Mango" tags="nobr" position="850,725" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="78" name="CornerStore_Mango" tags="nobr" position="975,975" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;&lt;ImagePlaceholder &quot;Interior of Lucky Mart, a cardboard box of mangoes by the register&quot; &quot;banner&quot; &quot;assets/locations/cornerstore/interior.png&quot;&gt;&gt;
 
@@ -6188,7 +7026,7 @@ Call: (555) 0147-CURE
 
 &lt;div class=&quot;choice-block&quot;&gt;
 	&lt;&lt;link &#39;&lt;span&gt;← Back to the counter&lt;/span&gt;&#39; &quot;CornerStore&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="58" name="CornerStore_SmallTalk" tags="nobr" position="975,725" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="79" name="CornerStore_SmallTalk" tags="nobr" position="1100,975" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;prose-block&quot;&gt;
 
@@ -6212,7 +7050,50 @@ Call: (555) 0147-CURE
 		&lt;&lt;/if&gt;&gt;
 		&lt;&lt;set $player.stress to Math.clamp($player.stress - 2, 0, 100)&gt;&gt;
 	&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="59" name="District_Central" tags="nobr" position="1100,725" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="80" name="CornerStore_D04Groceries" tags="nobr" position="1225,975" size="100,100">&lt;&lt;HUD&gt;&gt;
+
+&lt;&lt;ImagePlaceholder &quot;Hector behind the register, bachata playing, ringing up groceries&quot; &quot;banner&quot; &quot;assets/characters/supporting/hector-bodega.png&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+
+&lt;p&gt;Hector is behind the counter. He&#39;s always behind the counter. Forties, mustached, a Mets cap over thinning hair and a gold chain that disappears into his collar. Hector has known Marcus for two years. Marcus came in three times a week for energy drinks and frozen burritos. Hector called him &quot;my man&quot; and once spotted him two dollars on a Monster when he was broke.&lt;/p&gt;
+
+&lt;p&gt;Hector looks up. Looks at me. No flash of recognition. Not even a flicker.&lt;/p&gt;
+
+&lt;&lt;Dialogue &quot;Hector&quot; &quot;🧔&quot; &quot;Morning, miss. Need a bag?&quot; &quot;&quot;&gt;&gt;
+
+&lt;p&gt;Miss, the word lands in my chest like a small, warm detonation.&lt;/p&gt;
+
+&lt;p&gt;&quot;Yeah. Thanks.&quot;&lt;/p&gt;
+
+&lt;p&gt;My voice comes out and it sounds like mine. Alto, feminine, a little raspy from four days of barely talking to anyone. Not his voice. Not even close. Hector doesn&#39;t blink. I&#39;m just another customer to him. A girl buying groceries on a Monday.&lt;/p&gt;
+
+&lt;p&gt;I grab a basket. The fluorescent lights buzz overhead. Bachata plays from a cheap speaker behind the register. I navigate the aisles on autopilot, since I know this store&#39;s layout blindfolded. Eggs, bread, bananas, a whole bunch of them, because my body has been craving fruit in a way Marcus&#39;s never did. Two packs of instant noodles, since I&#39;m still broke. A box of cereal in the generic bag. A half gallon of milk.&lt;/p&gt;
+
+&lt;p&gt;I pause in the hygiene aisle. Women&#39;s shampoo, bottles pink and purple, promising things like hydrating radiance and keratin repair. Marcus bought the blue bottle that said 3-in-1 and smelled like a locker room. I pick up a lilac bottle, nourishing moisture, smell it, lavender and something soft. I put it in the basket along with conditioner from the same brand, body lotion, the basic kind with cocoa butter, and a candy bar, because stress eating is a valid coping mechanism and I refuse to be judged.&lt;/p&gt;
+
+&lt;p&gt;Total at the register is $23.50. Hector rings me up, bags everything in practiced motions. His hands are fast. He&#39;s been doing this forever.&lt;/p&gt;
+
+&lt;&lt;Dialogue &quot;Hector&quot; &quot;🧔&quot; &quot;Have a good one, sweetheart.&quot; &quot;&quot;&gt;&gt;
+
+&lt;p&gt;Sweetheart, not &quot;my man,&quot; not &quot;bro,&quot; just sweetheart.&lt;/p&gt;
+
+&lt;p&gt;&quot;You too.&quot;&lt;/p&gt;
+
+&lt;p&gt;I take the bag and walk out. The bell jingles behind me. The sun hits my face. I just completed a transaction in public as a woman, and nothing happened. Nobody pointed. Nobody screamed. Nobody said wait, aren&#39;t you that guy who buys Monster Energy at 2 AM.&lt;/p&gt;
+
+&lt;p&gt;I am invisible in a whole new way.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;set $d04VisitedCornerStore to true&gt;&gt;
+&lt;&lt;run window.rbSpend(23.50, &quot;food&quot;)&gt;&gt;
+&lt;&lt;run window.statChange(&quot;fem&quot;, 1)&gt;&gt;
+&lt;&lt;run window.rbAddMilestone(&quot;Did a full grocery run alone, unrecognized.&quot;)&gt;&gt;
+
+&lt;div class=&quot;choice-block&quot;&gt;
+	&lt;&lt;link &#39;&lt;span&gt;🚪 Back outside&lt;/span&gt;&#39; &quot;Outside&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="81" name="District_Central" tags="nobr" position="100,1100" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;map-here&quot;&gt;📍 Central City&lt;/div&gt;
 &lt;h1&gt;Glass and &lt;span class=&quot;accent&quot;&gt;Steel&lt;/span&gt;&lt;/h1&gt;
@@ -6297,7 +7178,7 @@ Call: (555) 0147-CURE
 
 &lt;div class=&quot;choice-block&quot; style=&quot;margin-top:2rem;&quot;&gt;
 	&lt;&lt;link &#39;&lt;span&gt;🗺️ Back to the city map&lt;/span&gt;&#39; &quot;WorldMap&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="60" name="District_Northgate" tags="nobr" position="1225,725" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="82" name="District_Northgate" tags="nobr" position="225,1100" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;map-here&quot;&gt;📍 Northgate University Quarter&lt;/div&gt;
 &lt;h1&gt;Someone Else&amp;apos;s &lt;span class=&quot;accent&quot;&gt;Normal&lt;/span&gt;&lt;/h1&gt;
@@ -6344,7 +7225,7 @@ Call: (555) 0147-CURE
 
 &lt;div class=&quot;choice-block&quot; style=&quot;margin-top:2rem;&quot;&gt;
 	&lt;&lt;link &#39;&lt;span&gt;🗺️ Back to the city map&lt;/span&gt;&#39; &quot;WorldMap&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="61" name="Laundromat" tags="nobr" position="100,850" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="83" name="Laundromat" tags="nobr" position="350,1100" size="100,100">&lt;&lt;HUD&gt;&gt;
 &lt;&lt;set $laundromatVisits += 1&gt;&gt;
 
 &lt;&lt;if $laundromatVisits is 1&gt;&gt;
@@ -6445,7 +7326,7 @@ Call: (555) 0147-CURE
 
 &lt;div class=&quot;choice-block&quot; style=&quot;margin-top:2rem;&quot;&gt;
 	&lt;&lt;link &#39;&lt;span&gt;← Back outside&lt;/span&gt;&#39; &quot;Outside&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="62" name="Outside" tags="nobr" position="225,850" size="100,100">&lt;&lt;CurrentObjective&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="84" name="Outside" tags="nobr" position="475,1100" size="100,100">&lt;&lt;CurrentObjective&gt;&gt;
 &lt;&lt;HUD&gt;&gt;
 
 &lt;&lt;if not $leftApartmentOnce&gt;&gt;
@@ -6523,6 +7404,42 @@ Call: (555) 0147-CURE
 &lt;&lt;run window.rbAddJournalEntry(&quot;Marcus&#39;s Sister&quot;, &quot;Told Mrs. Park I&#39;m Marcus&#39;s sister. She didn&#39;t believe me. She still wants her $1,300.&quot;)&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
+&lt;&lt;if $day is 4 and $d04VisitedCornerStore and not $d04MetJordan&gt;&gt;
+	&lt;&lt;goto &quot;D04_Transit_Jordan&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $day is 4 and $d04VisitedCornerStore and $d04MetJordan and not $d04MetDenise and window.rbRandom(1, 10) lte 4&gt;&gt;
+&lt;&lt;SceneDivider &quot;The Laundry Room&quot;&gt;&gt;
+&lt;&lt;ImagePlaceholder &quot;A woman reading on a folding table in the building&#39;s laundry room&quot; &quot;portrait&quot; &quot;assets/characters/supporting/denise-laundry.png&quot;&gt;&gt;
+&lt;div class=&quot;prose-block&quot;&gt;
+&lt;p&gt;I pass the building&#39;s laundry room on the way back up. The door is propped open with a sneaker, a dryer tumbling inside, and a woman sits on the folding table reading a thick paperback.&lt;/p&gt;
+&lt;p&gt;Forties, glasses, braids pulled up in a wrap, sweatpants and a university hoodie. She looks like she&#39;s been here a while and intends to stay a while longer.&lt;/p&gt;
+&lt;p&gt;She glances up when I pass and nods. &quot;Hey.&quot;&lt;/p&gt;
+&lt;/div&gt;
+&lt;&lt;Dialogue &quot;Denise&quot; &quot;📖&quot; &quot;You in 4B?&quot; &quot;&quot;&gt;&gt;
+&lt;&lt;Dialogue &quot;You&quot; &quot;😶&quot; &quot;Yeah.&quot; &quot;you&quot;&gt;&gt;
+&lt;&lt;Dialogue &quot;Denise&quot; &quot;📖&quot; &quot;Thought so. I&#39;m in 4D. Denise.&quot; &quot;&quot;&gt;&gt;
+&lt;div class=&quot;prose-block&quot;&gt;
+&lt;p&gt;She doesn&#39;t extend a hand, just offers the name casually, like dropping a coin in a jar.&lt;/p&gt;
+&lt;/div&gt;
+&lt;&lt;Dialogue &quot;Denise&quot; &quot;📖&quot; &quot;Haven&#39;t seen you before. You Marcus&#39;s girlfriend?&quot; &quot;&quot;&gt;&gt;
+&lt;div class=&quot;prose-block&quot;&gt;
+&lt;p&gt;The question lands in my sternum. She knows Marcus, of course she knows Marcus, she lives on the same floor, she&#39;s seen him carrying groceries and checking the mail for two years.&lt;/p&gt;
+&lt;p&gt;&quot;He&#39;s, um. He moved. I&#39;m... subletting.&quot;&lt;/p&gt;
+&lt;p&gt;The lie lands rough, unpolished. But Denise nods like she doesn&#39;t care enough to interrogate it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;&lt;Dialogue &quot;Denise&quot; &quot;📖&quot; &quot;Good riddance. That boy played music too loud. What&#39;s your name?&quot; &quot;&quot;&gt;&gt;
+&lt;&lt;Dialogue &quot;You&quot; &quot;🙂&quot; &quot;Mia.&quot; &quot;you&quot;&gt;&gt;
+&lt;&lt;Dialogue &quot;Denise&quot; &quot;📖&quot; &quot;Nice to meet you, Mia. Need quarters for the machines, I keep a roll in my kitchen.&quot; &quot;&quot;&gt;&gt;
+&lt;&lt;Dialogue &quot;You&quot; &quot;🙂&quot; &quot;Thanks.&quot; &quot;you&quot;&gt;&gt;
+&lt;&lt;Dialogue &quot;Denise&quot; &quot;📖&quot; &quot;And don&#39;t use dryer three. It eats socks.&quot; &quot;&quot;&gt;&gt;
+&lt;div class=&quot;prose-block&quot;&gt;
+&lt;p&gt;I walk the rest of the way up, lock the door, lean against it. Marcus&#39;s girlfriend. That&#39;s the story the building will build around this, a simple one, a boring one. Marcus moved, a girl moved in. Nobody needs to know the truth, because the truth is insane and the lie is boring and people prefer boring.&lt;/p&gt;
+&lt;p&gt;I can work with boring.&lt;/p&gt;
+&lt;/div&gt;
+&lt;&lt;set $d04MetDenise to true&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
 &lt;&lt;ObjectiveBanner&gt;&gt;
 
 &lt;div class=&quot;map-here&quot;&gt;📍 Southbank Residential&lt;/div&gt;
@@ -6571,7 +7488,7 @@ Call: (555) 0147-CURE
 &lt;div class=&quot;choice-block&quot; style=&quot;margin-top:2rem;&quot;&gt;
 	&lt;&lt;link &#39;&lt;span&gt;🗺️ Leave the neighborhood&lt;/span&gt;&#39; &quot;WorldMap&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 	&lt;&lt;link &#39;&lt;span&gt;🏠 Head back home&lt;/span&gt;&#39; &quot;Home&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="63" name="ThriftStore" tags="nobr" position="350,850" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="85" name="ThriftStore" tags="nobr" position="600,1100" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;&lt;if $day is 2 and not $d02BoughtClothes&gt;&gt;
 
@@ -6683,7 +7600,7 @@ Call: (555) 0147-CURE
 	&lt;&lt;link &#39;&lt;span&gt;← Back outside&lt;/span&gt;&#39; &quot;Outside&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="64" name="WalkingTrail" tags="nobr" position="475,850" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="86" name="WalkingTrail" tags="nobr" position="725,1100" size="100,100">&lt;&lt;HUD&gt;&gt;
 &lt;&lt;set $trailVisits += 1&gt;&gt;
 
 &lt;&lt;if $trailVisits is 1&gt;&gt;
@@ -6792,6 +7709,46 @@ Call: (555) 0147-CURE
 
 &lt;&lt;/if&gt;&gt;
 
+&lt;&lt;if $day is 4 and not $d04MetDogWalker&gt;&gt;
+
+&lt;&lt;SceneDivider &quot;A Dog Named Maple&quot;&gt;&gt;
+
+&lt;&lt;ImagePlaceholder &quot;A tan and white dog with its paws up on a bench, licking her hand&quot; &quot;float&quot; &quot;assets/characters/supporting/maple-dog-walker.png&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+&lt;p&gt;I find a bench away from the crowds, under a tree dropping leaves in slow spirals, and just sit. Just watch people.&lt;/p&gt;
+&lt;p&gt;A woman jogs past in leggings and a sports tank, ponytail swinging. I study her stride, the way her hips rotate, the ease of it. She&#39;s not thinking about how to move. She just moves. Her body and her brain are on the same page. Mine are still negotiating terms.&lt;/p&gt;
+&lt;p&gt;A dog appears. No leash, just a medium-sized mutt, tan and white, tongue out, galumphing toward me with the single minded purpose of dogs who have identified a sitting human. It reaches my bench and shoves its nose into my hand.&lt;/p&gt;
+&lt;p&gt;&quot;Oh. Hey.&quot; I scratch behind its ears. The dog&#39;s tail goes nuclear. It puts its front paws on the bench next to me and licks my wrist.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Dog Walker&quot; &quot;🐕&quot; &quot;Maple! Maple, get down!&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+&lt;p&gt;A guy, thirties, out of breath, leash dangling from his hand, jogs over looking mortified. &quot;I&#39;m so sorry. She slipped her collar. She does that.&quot;&lt;/p&gt;
+&lt;p&gt;&quot;She&#39;s fine.&quot; I&#39;m still petting Maple, who has decided I&#39;m her new best friend and is attempting to climb into my lap. &quot;She&#39;s sweet.&quot;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Dog Walker&quot; &quot;🐕&quot; &quot;She&#39;s a menace disguised as a sweetheart.&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+&lt;p&gt;He clips the leash back on. Maple whines. &quot;Sorry again. She just goes for the nearest person and demands love.&quot;&lt;/p&gt;
+&lt;p&gt;&quot;I don&#39;t mind. I like dogs.&quot;&lt;/p&gt;
+&lt;p&gt;Marcus liked dogs too. Some things carry over.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;&lt;Dialogue &quot;Dog Walker&quot; &quot;🐕&quot; &quot;Well, Maple clearly likes you. Have a good one.&quot; &quot;&quot;&gt;&gt;
+
+&lt;div class=&quot;prose-block&quot;&gt;
+&lt;p&gt;He walks off. Maple looks back at me with tragic eyes, like I&#39;m abandoning her. I wave. I&#39;m waving at a dog. The dog pulls her owner forward and they disappear around the path.&lt;/p&gt;
+&lt;p&gt;I sit on the bench another twenty minutes. The leaves fall. The world spins, and nobody in it knows that the girl on the bench used to be a guy on a scooter and the only thing that changed was everything.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;&lt;set $d04MetDogWalker to true&gt;&gt;
+&lt;&lt;run window.statChange(&quot;stress&quot;, -5)&gt;&gt;
+
+&lt;&lt;/if&gt;&gt;
+
 &lt;div class=&quot;action-list&quot;&gt;
 
 &lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🏃&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Jog the loop&lt;span class=&quot;action-sub&quot;&gt;Lungs burning, legs unfamiliar, keep going&lt;/span&gt;&lt;/span&gt;&#39; &quot;WalkingTrail&quot;&gt;&gt;
@@ -6817,7 +7774,7 @@ Call: (555) 0147-CURE
 
 &lt;div class=&quot;choice-block&quot; style=&quot;margin-top:2rem;&quot;&gt;
 	&lt;&lt;link &#39;&lt;span&gt;← Back outside&lt;/span&gt;&#39; &quot;Outside&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="65" name="WorldMap" tags="nobr" position="600,850" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="87" name="WorldMap" tags="nobr" position="850,1100" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;map-here&quot;&gt;🗺️ The City&lt;/div&gt;
 &lt;h1&gt;Where To &lt;span class=&quot;accent&quot;&gt;Next&lt;/span&gt;&lt;/h1&gt;
@@ -6889,7 +7846,7 @@ Call: (555) 0147-CURE
 
 &lt;div class=&quot;choice-block&quot; style=&quot;margin-top:2rem;&quot;&gt;
 	&lt;&lt;link &#39;&lt;span&gt;🏠 Just go home&lt;/span&gt;&#39; &quot;Home&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="66" name="AgeGate" tags="nobr" position="725,850" size="100,100">&lt;div class=&quot;age-gate&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="88" name="AgeGate" tags="nobr" position="975,1100" size="100,100">&lt;div class=&quot;age-gate&quot;&gt;
 	&lt;div class=&quot;age-gate-icon&quot;&gt;🔞&lt;/div&gt;
 	&lt;h1&gt;Age Verification&lt;/h1&gt;
 	&lt;p class=&quot;age-gate-sub&quot;&gt;REWIRED contains explicit sexual content, mature themes, and graphic descriptions. You must be 18 or older to continue.&lt;/p&gt;
@@ -6903,7 +7860,7 @@ Call: (555) 0147-CURE
 		&lt;&lt;/link&gt;&gt;
 		&lt;&lt;link &#39;&lt;span class=&quot;btn-secondary btn-block&quot;&gt;I am under 18, Leave&lt;/span&gt;&#39; &quot;Start&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 	&lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="67" name="StoryCaption" tags="nobr" position="850,850" size="100,100">&lt;div class=&quot;rb-side&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="89" name="StoryCaption" tags="nobr" position="1100,1100" size="100,100">&lt;div class=&quot;rb-side&quot;&gt;
 
 &lt;div class=&quot;rb-side-section rb-side-daytime&quot;&gt;
 	&lt;div&gt;
@@ -6937,7 +7894,7 @@ Call: (555) 0147-CURE
 	&lt;&lt;if Story.has(&quot;StatsPage&quot;)&gt;&gt;&lt;&lt;link &#39;&lt;span class=&quot;rb-side-link&quot;&gt;📊 Full Stats&lt;/span&gt;&#39; &quot;StatsPage&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;rb-side-link disabled&quot;&gt;📊 Full Stats&lt;/span&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="68" name="Sleep" tags="nobr" position="975,850" size="100,100">&lt;div class=&quot;sleep-screen&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="90" name="Sleep" tags="nobr" position="1225,1100" size="100,100">&lt;div class=&quot;sleep-screen&quot;&gt;
 	&lt;div class=&quot;big-icon&quot;&gt;🌙&lt;/div&gt;
 	&lt;div class=&quot;day-badge&quot;&gt;Day &lt;strong&gt;$day&lt;/strong&gt;, Complete&lt;/div&gt;
 
@@ -6964,10 +7921,13 @@ Call: (555) 0147-CURE
 		&lt;h1&gt;Body Inventory&lt;/h1&gt;
 		&lt;p style=&quot;color:var(--text2); max-width:36ch; margin:0 auto;&quot;&gt;You know the measurements now. You know the anatomy. You know what makes you gasp and what makes you arch your back. This body is getting less foreign by the hour.&lt;/p&gt;
 		&lt;p style=&quot;color:var(--text2); max-width:36ch; margin:.8rem auto 0;&quot;&gt;The name on the university records says Mia Cole. You&amp;apos;re not sure what that means yet. But you didn&amp;apos;t change it back.&lt;/p&gt;
+	&lt;&lt;elseif $day is 4&gt;&gt;
+		&lt;h1&gt;First Public Day&lt;/h1&gt;
+		&lt;p style=&quot;color:var(--text2); max-width:36ch; margin:0 auto;&quot;&gt;Groceries bought. A razor nick on your ankle. A stranger told you that you&#39;re pretty. You survived being seen.&lt;/p&gt;
 
 		&lt;div style=&quot;margin-top:2.4rem; padding-top:2rem; border-top:1px solid var(--border);&quot;&gt;
-			&lt;div class=&quot;day-badge&quot; style=&quot;margin-bottom:1rem;&quot;&gt;🦋 End of Version &lt;strong&gt;0.3&lt;/strong&gt;&lt;/div&gt;
-			&lt;p style=&quot;color:var(--text2); max-width:38ch; margin:0 auto 1.6rem;&quot;&gt;That&amp;apos;s everything built so far. Day 4 and beyond, Mia&amp;apos;s life as it actually unfolds, is still being written.&lt;/p&gt;
+			&lt;div class=&quot;day-badge&quot; style=&quot;margin-bottom:1rem;&quot;&gt;🦋 End of Version &lt;strong&gt;0.4&lt;/strong&gt;&lt;/div&gt;
+			&lt;p style=&quot;color:var(--text2); max-width:38ch; margin:0 auto 1.6rem;&quot;&gt;That&amp;apos;s everything built so far. Day 5 and beyond, Mia&amp;apos;s life as it actually unfolds, is still being written.&lt;/p&gt;
 			&lt;a href=&quot;https://www.patreon.com/c/toxicvipergames&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; class=&quot;btn-primary&quot;&gt;💜 Support REWIRED on Patreon&lt;/a&gt;
 
 			&lt;p style=&quot;color:var(--text3); font-size:.78rem; max-width:34ch; margin:1.8rem auto .8rem;&quot;&gt;No more story past this point yet, but the apartment, the neighborhood, and the people in it still work, if you&amp;apos;d rather just wander.&lt;/p&gt;
@@ -6985,7 +7945,7 @@ Call: (555) 0147-CURE
 		&lt;p style=&quot;color:var(--text2); max-width:36ch; margin:0 auto;&quot;&gt;You made it through. That still counts for something.&lt;/p&gt;
 	&lt;&lt;/if&gt;&gt;
 
-	&lt;&lt;if $day isnot 3&gt;&gt;
+	&lt;&lt;if $day isnot 4&gt;&gt;
 	&lt;&lt;set _wakeLabel to &#39;&lt;span class=&quot;btn-primary&quot;&gt;Wake Up → Day &#39; + ($day + 1) + &#39;&lt;/span&gt;&#39;&gt;&gt;
 	&lt;div style=&quot;margin-top:2rem;&quot;&gt;
 		&lt;&lt;link _wakeLabel&gt;&gt;
@@ -7021,6 +7981,10 @@ Call: (555) 0147-CURE
 				&lt;&lt;set $weekDay to &quot;Sunday&quot;&gt;&gt;
 				&lt;&lt;set $player.energy to 100&gt;&gt;
 				&lt;&lt;goto &quot;D03_Morning&quot;&gt;&gt;
+			&lt;&lt;elseif _fromDay is 3&gt;&gt;
+				&lt;&lt;set $weekDay to &quot;Monday&quot;&gt;&gt;
+				&lt;&lt;set $player.energy to 100&gt;&gt;
+				&lt;&lt;goto &quot;D04_Morning&quot;&gt;&gt;
 			&lt;&lt;else&gt;&gt;
 				&lt;&lt;set $player.energy to 100&gt;&gt;
 				&lt;&lt;goto &quot;Home&quot;&gt;&gt;
@@ -7028,7 +7992,7 @@ Call: (555) 0147-CURE
 		&lt;&lt;/link&gt;&gt;
 	&lt;/div&gt;
 	&lt;&lt;/if&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="69" name="Start" tags="nobr" position="1100,850" size="100,100">&lt;div class=&quot;screen-center sleep-screen&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="91" name="Start" tags="nobr" position="100,1225" size="100,100">&lt;div class=&quot;screen-center sleep-screen&quot;&gt;
 	&lt;div class=&quot;big-icon&quot;&gt;🦋&lt;/div&gt;
 	&lt;h1&gt;RE&lt;span class=&quot;accent&quot;&gt;WIRED&lt;/span&gt;&lt;/h1&gt;
 	&lt;p class=&quot;eyebrow&quot;&gt;A TRANSFORMATION STORY&lt;/p&gt;
@@ -7037,7 +8001,7 @@ Call: (555) 0147-CURE
 		&lt;&lt;link &#39;&lt;span class=&quot;btn-primary&quot;&gt;Enter&lt;/span&gt;&#39; &quot;AgeGate&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 	&lt;/div&gt;
 	&lt;p style=&quot;font-size:.7rem; color:var(--text3); margin-top:2rem;&quot;&gt;v1.0, SugarCube 2.37, Content updates monthly&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="70" name="Widgets" tags="widget nobr" position="1225,850" size="100,100">/* ==========================================================================
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="92" name="Widgets" tags="widget nobr" position="225,1225" size="100,100">/* ==========================================================================
    HUD   sticky top-of-passage stat bar. Call with &lt;&lt;HUD&gt;&gt; at the top of
    any gameplay passage.
    ========================================================================== */
@@ -7216,6 +8180,23 @@ Call: (555) 0147-CURE
 &lt;&lt;/widget&gt;&gt;
 
 /* ==========================================================================
+   Day4Objective   recomputes $objective from Day 4&#39;s progress flags.
+   ========================================================================== */
+&lt;&lt;widget &quot;Day4Objective&quot;&gt;&gt;
+&lt;&lt;if not $d04VisitedCornerStore&gt;&gt;
+	&lt;&lt;set $objective to &quot;The kitchen&#39;s empty. Corner store, a few blocks out.&quot;&gt;&gt;
+&lt;&lt;elseif not $d04CookedMeal&gt;&gt;
+	&lt;&lt;set $objective to &quot;You&#39;ve got groceries now. Cook something at home.&quot;&gt;&gt;
+&lt;&lt;elseif not $d04NolanTexted&gt;&gt;
+	&lt;&lt;set $objective to &quot;Check your phone. Nolan&#39;s not going to stop texting.&quot;&gt;&gt;
+&lt;&lt;elseif $timeslot isnot &quot;Night&quot;&gt;&gt;
+	&lt;&lt;set $objective to &quot;The day&#39;s still open. Go wherever, or just sit with it at home.&quot;&gt;&gt;
+&lt;&lt;else&gt;&gt;
+	&lt;&lt;set $objective to &quot;You made it through the first real day outside. Time to sleep.&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;/widget&gt;&gt;
+
+/* ==========================================================================
    CurrentObjective   dispatches to the correct day&#39;s objective widget.
    Hubs should always call THIS, never a specific day&#39;s widget directly,
    so adding a new day never means touching Home/Outside again.
@@ -7226,9 +8207,10 @@ Call: (555) 0147-CURE
 &lt;&lt;case 1&gt;&gt;&lt;&lt;Day1Objective&gt;&gt;
 &lt;&lt;case 2&gt;&gt;&lt;&lt;Day2Objective&gt;&gt;
 &lt;&lt;case 3&gt;&gt;&lt;&lt;Day3Objective&gt;&gt;
+&lt;&lt;case 4&gt;&gt;&lt;&lt;Day4Objective&gt;&gt;
 &lt;&lt;default&gt;&gt;&lt;&lt;set $objective to &quot;Another day. Figure out what&#39;s next.&quot;&gt;&gt;
 &lt;&lt;/switch&gt;&gt;
-&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="71" name="Journal" tags="nobr" position="100,975" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="93" name="Journal" tags="nobr" position="350,1225" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;eyebrow&quot;&gt;RECORD&lt;/div&gt;
 &lt;h1&gt;Your &lt;span class=&quot;accent&quot;&gt;Journal&lt;/span&gt;&lt;/h1&gt;
@@ -7275,7 +8257,7 @@ Call: (555) 0147-CURE
 	&lt;&lt;back &#39;&lt;span&gt;← Back&lt;/span&gt;&#39;&gt;&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="72" name="StatsPage" tags="nobr" position="225,975" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="94" name="StatsPage" tags="nobr" position="475,1225" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;eyebrow&quot;&gt;CHARACTER SHEET&lt;/div&gt;
 &lt;h1&gt;&lt;span class=&quot;accent&quot;&gt;$player.name&lt;/span&gt;&lt;/h1&gt;
@@ -7313,7 +8295,7 @@ Call: (555) 0147-CURE
 	&lt;&lt;back &#39;&lt;span&gt;← Back&lt;/span&gt;&#39;&gt;&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="73" name="Wardrobe" tags="nobr" position="350,975" size="100,100">&lt;&lt;HUD&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="95" name="Wardrobe" tags="nobr" position="600,1225" size="100,100">&lt;&lt;HUD&gt;&gt;
 
 &lt;div class=&quot;eyebrow&quot;&gt;CLOSET&lt;/div&gt;
 &lt;h1&gt;Your &lt;span class=&quot;accent&quot;&gt;Wardrobe&lt;/span&gt;&lt;/h1&gt;

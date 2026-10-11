@@ -33,6 +33,12 @@
 	<<link '<span class="action-icon">🍝</span><span class="action-text">Cook something<span class="action-sub">Pasta, jar sauce, sitting down for once</span></span>' "D03_Evening_Cook">><</link>>
 <<elseif $day is 3>>
 	<p class="text3 small">You already ate. Small victory, but it counts.</p>
+<<elseif $day is 4 and not $d04VisitedCornerStore>>
+	<p class="text3 small">The cabinet&apos;s nearly bare. You need groceries first.</p>
+<<elseif $day is 4 and not $d04CookedMeal>>
+	<<link '<span class="action-icon">🍝</span><span class="action-text">Cook something<span class="action-sub">Pasta, jar sauce, sitting at the table this time</span></span>' "D04_Evening_Cook">><</link>>
+<<elseif $day is 4>>
+	<p class="text3 small">The kitchen&apos;s clean. You already ate.</p>
 <</if>>
 
 <<link '<span class="action-icon">🥤</span><span class="action-text">Drink some water<span class="action-sub">Free, at least.</span></span>' "Home_Kitchen">>

@@ -178,6 +178,22 @@ REWIRED
 <<set $seenParkNeedAir to false>>
 <<set $hasGroceries to false>>
 
+/* ---------- Day 4 open-world progress flags ---------- */
+<<set $d04VisitedCornerStore to false>>
+<<set $d04CookedMeal to false>>
+<<set $d04NolanTexted to false>>
+<<set $d04CalledOwen to false>>
+<<set $d04ShavedLegs to false>>
+<<set $d04PracticedWalking to false>>
+<<set $d04MetJordan to false>>
+<<set $d04JordanTexted to false>>
+<<set $d04MetDenise to false>>
+<<set $d04MetDogWalker to false>>
+<<set $d04OrientationExplored to false>>
+<<set $d04DressTuckDone to false>>
+<<set $d04SentSelfie to false>>
+<<set $d04JordanSelfPleasure to false>>
+
 /* ---------- First-time event flags ---------- */
 <<set $firstCatcall to false>>
 <<set $firstPeriod to false>>

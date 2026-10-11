@@ -22,6 +22,12 @@
 <</switch>>
 <</if>>
 
+<<if $day is 4 and $d04VisitedCornerStore>>
+<div class="prose-block">
+<p>I browse the magazine rack while Hector goes back to his phone. Cosmopolitan, Seventeen, People, a bodybuilding magazine with a guy on the cover whose veins have veins. The women on the covers look like a species I'm only tangentially related to, airbrushed, contoured, styled within an inch of their lives. I catch my reflection in the slushie machine's plexiglass, bare face, messy hair, thrift store tee. We are not the same.</p>
+</div>
+<</if>>
+
 <div class="action-list">
 
 <<if $player.money gte 2>>
@@ -37,6 +43,10 @@
 <<link '<span class="action-icon">💬</span><span class="action-text">Make small talk with Hector<span class="action-sub">He&apos;s always got something to say</span></span>' "CornerStore_SmallTalk">><</link>>
 
 <<link '<span class="action-icon">👀</span><span class="action-text">Just look around<span class="action-sub">Window shopping, apparently, applies to gas station snacks too</span></span>' "CornerStore">><</link>>
+
+<<if $day is 4 and not $d04VisitedCornerStore>>
+	<<link '<span class="action-icon">🛒</span><span class="action-text">Get groceries<span class="action-sub">Eggs, bread, bananas, something for your hair</span></span><span class="action-cost">$23.50</span>' "CornerStore_D04Groceries">><</link>>
+<</if>>
 
 <<if $day gte 3 and not $metMangoCraving>>
 	<<link '<span class="action-icon">🥭</span><span class="action-text">Get groceries (and those mangoes)<span class="action-sub">Pasta, sauce, eggs, bananas, and two bruised mangoes calling your name</span></span><span class="action-cost">$18.40</span>' "CornerStore_Mango">><</link>>
@@ -188,4 +198,50 @@
 		<</if>>
 		<<set $player.stress to Math.clamp($player.stress - 2, 0, 100)>>
 	<</link>>
+</div>
+
+:: CornerStore_D04Groceries [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Hector behind the register, bachata playing, ringing up groceries" "banner" "assets/characters/supporting/hector-bodega.png">>
+
+<div class="prose-block">
+
+<p>Hector is behind the counter. He's always behind the counter. Forties, mustached, a Mets cap over thinning hair and a gold chain that disappears into his collar. Hector has known Marcus for two years. Marcus came in three times a week for energy drinks and frozen burritos. Hector called him "my man" and once spotted him two dollars on a Monster when he was broke.</p>
+
+<p>Hector looks up. Looks at me. No flash of recognition. Not even a flicker.</p>
+
+<<Dialogue "Hector" "🧔" "Morning, miss. Need a bag?" "">>
+
+<p>Miss, the word lands in my chest like a small, warm detonation.</p>
+
+<p>"Yeah. Thanks."</p>
+
+<p>My voice comes out and it sounds like mine. Alto, feminine, a little raspy from four days of barely talking to anyone. Not his voice. Not even close. Hector doesn't blink. I'm just another customer to him. A girl buying groceries on a Monday.</p>
+
+<p>I grab a basket. The fluorescent lights buzz overhead. Bachata plays from a cheap speaker behind the register. I navigate the aisles on autopilot, since I know this store's layout blindfolded. Eggs, bread, bananas, a whole bunch of them, because my body has been craving fruit in a way Marcus's never did. Two packs of instant noodles, since I'm still broke. A box of cereal in the generic bag. A half gallon of milk.</p>
+
+<p>I pause in the hygiene aisle. Women's shampoo, bottles pink and purple, promising things like hydrating radiance and keratin repair. Marcus bought the blue bottle that said 3-in-1 and smelled like a locker room. I pick up a lilac bottle, nourishing moisture, smell it, lavender and something soft. I put it in the basket along with conditioner from the same brand, body lotion, the basic kind with cocoa butter, and a candy bar, because stress eating is a valid coping mechanism and I refuse to be judged.</p>
+
+<p>Total at the register is $23.50. Hector rings me up, bags everything in practiced motions. His hands are fast. He's been doing this forever.</p>
+
+<<Dialogue "Hector" "🧔" "Have a good one, sweetheart." "">>
+
+<p>Sweetheart, not "my man," not "bro," just sweetheart.</p>
+
+<p>"You too."</p>
+
+<p>I take the bag and walk out. The bell jingles behind me. The sun hits my face. I just completed a transaction in public as a woman, and nothing happened. Nobody pointed. Nobody screamed. Nobody said wait, aren't you that guy who buys Monster Energy at 2 AM.</p>
+
+<p>I am invisible in a whole new way.</p>
+
+</div>
+
+<<set $d04VisitedCornerStore to true>>
+<<run window.rbSpend(23.50, "food")>>
+<<run window.statChange("fem", 1)>>
+<<run window.rbAddMilestone("Did a full grocery run alone, unrecognized.")>>
+
+<div class="choice-block">
+	<<link '<span>🚪 Back outside</span>' "Outside">><</link>>
 </div>
