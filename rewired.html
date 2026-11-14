@@ -7905,6 +7905,8 @@ $(document).on(":passageend", function () {
 
 	&lt;&lt;if not $d05WorkComplete&gt;&gt;
 		&lt;p class=&quot;text3 small&quot;&gt;The DashDrop jacket is hanging by the door. Owen is waiting.&lt;/p&gt;
+	&lt;&lt;elseif $d05Cooked and not $d05NolanCalled&gt;&gt;
+		&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;📞&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Answer the phone&lt;span class=&quot;action-sub&quot;&gt;Nolan. He is not going to stop.&lt;/span&gt;&lt;/span&gt;&#39; &quot;D05_Nolan_Call&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 	&lt;&lt;elseif $timeslot isnot &quot;Night&quot;&gt;&gt;
 		&lt;p class=&quot;text3 small&quot;&gt;The evening isn&amp;apos;t over yet. Eat something, let the day settle.&lt;/p&gt;
 	&lt;&lt;else&gt;&gt;
@@ -8254,8 +8256,12 @@ $(document).on(":passageend", function () {
 	&lt;p class=&quot;text3 small&quot;&gt;The kitchen&amp;apos;s clean. You already ate.&lt;/p&gt;
 &lt;&lt;elseif $day is 5 and not $d05WorkComplete&gt;&gt;
 	&lt;p class=&quot;text3 small&quot;&gt;No time for breakfast. Owen is expecting you.&lt;/p&gt;
+&lt;&lt;elseif $day is 5 and not $d05GroundedVisited&gt;&gt;
+	&lt;p class=&quot;text3 small&quot;&gt;You&amp;apos;re not hungry yet. You keep thinking about the long way home through Central City.&lt;/p&gt;
 &lt;&lt;elseif $day is 5 and not $d05Cooked&gt;&gt;
 	&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🍳&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Make eggs on toast&lt;span class=&quot;action-sub&quot;&gt;Basic, but it&amp;apos;s protein&lt;/span&gt;&lt;/span&gt;&#39; &quot;D05_Evening_Home&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;elseif $day is 5 and not $d05NolanCalled&gt;&gt;
+	&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;📞&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Answer the phone&lt;span class=&quot;action-sub&quot;&gt;Nolan. He is not going to stop.&lt;/span&gt;&lt;/span&gt;&#39; &quot;D05_Nolan_Call&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;&lt;elseif $day is 5&gt;&gt;
 	&lt;p class=&quot;text3 small&quot;&gt;You already ate. One burnt edge of toast and the day is a little more bearable.&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
@@ -8264,7 +8270,7 @@ $(document).on(":passageend", function () {
 	&lt;&lt;set $player.stress to Math.clamp($player.stress - 1, 0, 100)&gt;&gt;
 &lt;&lt;/link&gt;&gt;
 
-&lt;&lt;if $day is 3 or ($day is 5 and not $d05Cooked)&gt;&gt;
+&lt;&lt;if $day is 3 or ($day is 5 and not $d05Cooked and $d05GroundedVisited)&gt;&gt;
 	/* Day 3 and Day 5 have their own &quot;Cook something&quot; action above. */
 &lt;&lt;elseif $day is 2 and $cookingSkill is 0&gt;&gt;
 	&lt;&lt;link &#39;&lt;span class=&quot;action-icon&quot;&gt;🍝&lt;/span&gt;&lt;span class=&quot;action-text&quot;&gt;Cook something&lt;span class=&quot;action-sub&quot;&gt;Try actual pasta, not just ramen&lt;/span&gt;&lt;/span&gt;&#39; &quot;Home_Kitchen_CookD2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -8455,6 +8461,8 @@ $(document).on(":passageend", function () {
 		&lt;&lt;set $player.energy to Math.clamp($player.energy + 30, 0, 100)&gt;&gt;
 		&lt;&lt;set $player.stress to Math.clamp($player.stress - 3, 0, 100)&gt;&gt;
 		&lt;&lt;if $day is 2&gt;&gt;&lt;&lt;set $d02Ate to true&gt;&gt;&lt;&lt;/if&gt;&gt;
+		&lt;&lt;if $day is 5 and $d05GroundedVisited&gt;&gt;&lt;&lt;set $d05Cooked to true&gt;&gt;&lt;&lt;/if&gt;&gt;
+		&lt;&lt;if $day isnot 5 and $timeslot is &quot;Evening&quot;&gt;&gt;&lt;&lt;set $timeslot to &quot;Night&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
 	&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 
@@ -10045,12 +10053,12 @@ Call: (555) 0147-CURE
 	&lt;&lt;set $objective to &quot;Time to get ready. DashDrop is expecting you.&quot;&gt;&gt;
 &lt;&lt;elseif not $d05WorkComplete&gt;&gt;
 	&lt;&lt;set $objective to &quot;Head outside to DashDrop. Owen needs to see your new ID.&quot;&gt;&gt;
-&lt;&lt;elseif not $d05GroundedVisited and $timeslot isnot &quot;Night&quot;&gt;&gt;
-	&lt;&lt;set $objective to &quot;Shift&#39;s done. You could ride the long way home through Central City.&quot;&gt;&gt;
-&lt;&lt;elseif not $d05Cooked and $timeslot isnot &quot;Night&quot;&gt;&gt;
+&lt;&lt;elseif not $d05GroundedVisited&gt;&gt;
+	&lt;&lt;set $objective to &quot;Shift&#39;s done. Ride the long way home through Central City before you head in.&quot;&gt;&gt;
+&lt;&lt;elseif not $d05Cooked&gt;&gt;
 	&lt;&lt;set $objective to &quot;Long day. Eat something at home.&quot;&gt;&gt;
 &lt;&lt;elseif not $d05NolanCalled&gt;&gt;
-	&lt;&lt;set $objective to &quot;Nolan keeps calling. Maybe pick up.&quot;&gt;&gt;
+	&lt;&lt;set $objective to &quot;Your phone is ringing. It is Nolan. Maybe pick up.&quot;&gt;&gt;
 &lt;&lt;elseif not $d05EveningDone&gt;&gt;
 	&lt;&lt;set $objective to &quot;Evening. Your phone&#39;s buzzing. Or just rest.&quot;&gt;&gt;
 &lt;&lt;else&gt;&gt;

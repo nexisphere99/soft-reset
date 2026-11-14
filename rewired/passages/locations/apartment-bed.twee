@@ -105,6 +105,8 @@
 
 	<<if not $d05WorkComplete>>
 		<p class="text3 small">The DashDrop jacket is hanging by the door. Owen is waiting.</p>
+	<<elseif $d05Cooked and not $d05NolanCalled>>
+		<<link '<span class="action-icon">📞</span><span class="action-text">Answer the phone<span class="action-sub">Nolan. He is not going to stop.</span></span>' "D05_Nolan_Call">><</link>>
 	<<elseif $timeslot isnot "Night">>
 		<p class="text3 small">The evening isn&apos;t over yet. Eat something, let the day settle.</p>
 	<<else>>

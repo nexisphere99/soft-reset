@@ -203,12 +203,12 @@
 	<<set $objective to "Time to get ready. DashDrop is expecting you.">>
 <<elseif not $d05WorkComplete>>
 	<<set $objective to "Head outside to DashDrop. Owen needs to see your new ID.">>
-<<elseif not $d05GroundedVisited and $timeslot isnot "Night">>
-	<<set $objective to "Shift's done. You could ride the long way home through Central City.">>
-<<elseif not $d05Cooked and $timeslot isnot "Night">>
+<<elseif not $d05GroundedVisited>>
+	<<set $objective to "Shift's done. Ride the long way home through Central City before you head in.">>
+<<elseif not $d05Cooked>>
 	<<set $objective to "Long day. Eat something at home.">>
 <<elseif not $d05NolanCalled>>
-	<<set $objective to "Nolan keeps calling. Maybe pick up.">>
+	<<set $objective to "Your phone is ringing. It is Nolan. Maybe pick up.">>
 <<elseif not $d05EveningDone>>
 	<<set $objective to "Evening. Your phone's buzzing. Or just rest.">>
 <<else>>
