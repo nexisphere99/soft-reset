@@ -1,0 +1,148 @@
+:: D05_Downtown_Explore [nobr]
+<<HUD>>
+
+<<SceneDivider "The Long Way Home">>
+
+<div class="prose-block">
+
+<p>The route from DashDrop to my apartment goes through downtown, and normally I take it straight, no detours, because normally I want to get home and eat and stare at the wall. But today I'm wired. The nervous energy from this morning burned off somewhere around Delivery 3 and what's left is something lighter. Not confidence exactly. More like proof of concept. I went outside. People saw me. Nobody screamed. The world continued.</p>
+
+<p>So instead of turning left on Barker toward home, I go straight. Past the library. Past the courthouse. Into the stretch of downtown where the chain stores gave up and the independent shops took over, the ones with hand-painted signs and irregular hours and owners who smoke out back.</p>
+
+<p>I'm riding slow. Looking. Seeing the city the way you see a place you think you might actually live in, rather than just survive in.</p>
+
+</div>
+
+<<ImagePlaceholder "Black Line Studio storefront, golden hour" "banner" "assets/locations/downtown/blackline-storefront.png">>
+
+<div class="prose-block">
+
+<p>I notice it because of the light. Late afternoon sun hits the storefront at an angle that turns the plate glass into a screen, and through it I can see the interior lit warm and golden. Clean. Not the grungy tattoo parlor I would have expected. This place looks like a gallery that happens to do tattoos.</p>
+
+<p>BLACK LINE STUDIO. The sign is simple. Black letters on white. No skulls, no flames, no tribal bullshit. Just a name and a window full of framed flash art that looks more like illustration than tattoo design.</p>
+
+<p>Through the glass I can see someone working. A man. Lean, tattooed, focused on a client's arm with the kind of concentration that bends the air around him. I can't see his face clearly but I can see his hands, and they move with a precision that makes the needle look like a pen.</p>
+
+<p>I slow down. Something about this place. I don't know what. I don't have tattoos. Marcus never wanted one. But Mia stops her scooter and looks through the window for a full ten seconds longer than someone who doesn't want a tattoo should.</p>
+
+<p>I pull away. File it somewhere in the back of my head under "later."</p>
+
+<p>The location sits in my mental map now. Black Line Studio. Downtown, between a bookshop and a place that sells vinyl records. Not enterable. Not yet. But noticed.</p>
+
+</div>
+
+<<set $d05BlacklineSeen to true>>
+
+<div class="choice-block">
+	<<link '<span>🛵 Keep riding</span>' "D05_Downtown_Nocturne">><</link>>
+</div>
+
+
+:: D05_Downtown_Nocturne [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Nocturne Bar exterior with the Help Wanted sign" "banner" "assets/locations/nocturne/exterior-day.png">>
+
+<div class="prose-block">
+
+<p>Three blocks east, another storefront catches my eye. This one is closed. Dark windows, heavy wooden door, the kind of place that only comes alive after sunset. The sign reads NOCTURNE in art deco lettering, gold on black, with a crescent moon dotting the 'N'.</p>
+
+<p>A woman in business attire is unlocking the front door as I pass. I can't see her face. Heels on concrete. Keys jangling. She moves like someone who owns the place, or manages it, or both.</p>
+
+<p>In the window, a cardboard sign in neat handwriting.</p>
+
+<p>HELP WANTED. BARTENDER. INQUIRE WITHIN.</p>
+
+<p>I read it twice. Bartender. I've never bartended. Marcus never bartended. But the sign sits in my head next to the tattoo shop, both of them little seeds dropped into soil I didn't know was there.</p>
+
+<p>Not now. Not yet. But the sign says HELP WANTED and something in me hears it differently than it's meant.</p>
+
+</div>
+
+<<set $d05NocturneSeen to true>>
+
+<div class="choice-block">
+	<<link '<span>🛵 Keep riding</span>' "D05_Downtown_Grounded">><</link>>
+</div>
+
+
+:: D05_Downtown_Grounded [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>Two more blocks and the smell gets me before the sign does. Coffee. Real coffee, not the chemical nonsense from DashDrop's industrial pot. The deep, roasted, slightly chocolaty smell of beans that someone actually cared about grinding.</p>
+
+<p>GROUNDED COFFEE HOUSE. Open. Busy. Warm light through big windows. People at laptops, people reading, people talking over cups that trail steam. The kind of place that exists in every college town but this one looks good. Lived in. Like the furniture was chosen for comfort instead of durability.</p>
+
+<p>I need caffeine. That's my excuse and it's valid. I park the scooter, pull off my helmet, shake out my ponytail, and walk in.</p>
+
+</div>
+
+<<ImagePlaceholder "Grounded Coffee House interior, warm light" "banner" "assets/locations/grounded/interior.png">>
+
+<div class="prose-block">
+
+<p>The smell is better inside. Coffee and something baking. Cinnamon, maybe. Brown sugar. The floor is reclaimed wood and the walls are exposed brick and there's a chalkboard menu behind the counter that someone drew little leaf designs on. A string of Edison bulbs runs across the ceiling. It should feel tryhard. It doesn't. It feels like someone's very specific, very warm living room that happens to serve lattes.</p>
+
+<p>Behind the counter stands a guy. Maybe twenty-two. Shaggy black hair pushed under a grey beanie. He's got a pronoun pin on his apron, small, he/him, the kind you have to be looking for to notice. Easy smile. Quick hands. He's steaming milk and chatting with the woman at the register at the same time, making both look effortless.</p>
+
+<p>I join the short line. When I reach the front, he turns the full wattage of that smile on me.</p>
+
+<p>"Hey! What can I get you?"</p>
+
+<p>His name tag says RIVER. The handwriting is his own, slightly crooked, like he wrote it on a moving bus.</p>
+
+<p>"Latte, please. Oat milk if you have it."</p>
+
+<p>"We do. Good choice." He grabs a cup, writes something on it. "Size?"</p>
+
+<p>"Medium. Regular."</p>
+
+<p>"Coming right up."</p>
+
+</div>
+
+<<ImagePlaceholder "River making a latte" "portrait" "assets/characters/river/river-making-latte.png">>
+
+<div class="prose-block">
+
+<p>He makes it fast and well. The pour is practiced. When he sets it on the counter, there's a little swirl in the foam. Not a full latte art heart or leaf, just a swirl that says "I gave a shit about this specific cup." I appreciate that.</p>
+
+<p>"I'm River, by the way." He leans on the counter for a half-second. Not lingering. Just present. "You look like you had a day."</p>
+
+<p>"You have no idea."</p>
+
+<p>"Those are the ones that make the coffee taste best." The smile again. Then a new customer appears behind me and he's already moving, already shifting attention, but he glances back. "Enjoy."</p>
+
+</div>
+
+<<ImagePlaceholder "Corner booth, first latte" "portrait" "assets/characters/mc-female-phase1/d05-corner-booth-latte.png">>
+
+<div class="prose-block">
+
+<p>I take the latte to a corner booth. The seat is old leather, cracked and soft. I sit down and wrap my hands around the cup and drink.</p>
+
+<p>It's perfect. Not in a transcendent way. In a "this is exactly what coffee should taste like and I haven't had that in a long time" way. Hot without burning. Sweet without sugar. The oat milk gives it this velvety thing that regular milk never does.</p>
+
+<p>I sit there for twenty minutes. Watching people. A woman typing furiously on a laptop. Two students sharing a pastry and arguing about something that involves a lot of hand gestures. An older man reading a paperback with a cracked spine. River behind the counter, laughing at something a coworker said.</p>
+
+<p>For the first time in five days, peace. Not happiness. Not the absence of fear. Just a moment where the noise in my head drops to a hum instead of a roar and I can sit in a public place and drink coffee and be a person who drinks coffee in public places.</p>
+
+<p>The latte costs five dollars. I leave a two-dollar tip. I'll be back.</p>
+
+</div>
+
+<<if not $d05GroundedVisited>>
+	<<set $d05GroundedVisited to true>>
+	<<set $d05RiverMet to true>>
+	<<set $river.met to true>>
+	<<run window.rbSpend(7, "coffee")>>
+	<<run window.statChange("stress", -4)>>
+	<<run window.rbAddMilestone("Found Grounded Coffee House.")>>
+<</if>>
+
+<div class="choice-block">
+	<<link '<span>🛵 Ride home</span>' "Outside">><</link>>
+</div>
+

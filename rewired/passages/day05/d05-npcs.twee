@@ -1,0 +1,598 @@
+:: D05_Trent_Hallway [nobr]
+<<HUD>>
+
+<<SceneDivider "The Basement Laundry">>
+
+<<ImagePlaceholder "Trent in the hallway with a protein shake" "portrait" "assets/characters/supporting/trent-hallway.png">>
+
+<div class="prose-block">
+
+<p>The elevator opens on his floor and I'm here because his building has a laundromat in the basement that doesn't require quarters, just an app, and my clothes situation is critical. That's the reason. That's definitely the only reason.</p>
+
+<p>I'm carrying a garbage bag of laundry past his door when it opens.</p>
+
+<p>"Oh shit, Mia!" Trent leans against the frame. Different shirt. Still fitted. Still doing the thing where the sleeve ends exactly where the bicep begins to make the arm look bigger. He's holding a protein shake. Of course he is.</p>
+
+<p>"Hey."</p>
+
+<p>"You live in this building?"</p>
+
+<p>"No, just using the laundry."</p>
+
+<p>"Oh word, the basement machines? Those are clutch." He sips his shake. Studies me over the rim. "Nina's back, by the way. My girl. She wants to meet you."</p>
+
+<p>"Meet me."</p>
+
+<p>"Yeah, I told her about the cute delivery girl and she got all interested. She's like that." He grins. "We're both like that."</p>
+
+<p>The implication is not subtle. It's barely even implied. It's the conversational equivalent of a neon sign that says WE WANT A THREESOME in sixty-point font.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>😳 "I&apos;m flattered. Both of you?"</span>' "D05_Trent_Engage">><</link>>
+	<<link '<span>🙂 Decline politely</span>' "D05_Trent_Decline">><</link>>
+</div>
+
+
+:: D05_Trent_Engage [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>"I'm... flattered. Both of you?"</p>
+
+<p>"Both of us." No shame. No hesitation. Trent says it the way you'd say "we both like Italian food." Casual. "No pressure. We just think you're gorgeous. Nina especially. She'll probably be more into you than I am, honestly. She's got a thing for brunettes."</p>
+
+<p>My face is doing something I can't control. Heat. Not just embarrassment. Something underneath the embarrassment that feels like a door opening onto a room I didn't know was in my house.</p>
+
+<p>"I'll think about it."</p>
+
+<p>"Take your time." He writes a number on the back of a protein bar wrapper and hands it to me. "Nina's number. So you know it's real. She'd text you herself but she doesn't want to be creepy." He pauses. "I mean, this is already kind of creepy, right? Am I being creepy?"</p>
+
+<p>"A little."</p>
+
+<p>"Fair." He retreats into his apartment. "Offer stands, Mia. No weirdness either way."</p>
+
+<p>The door closes. I stand in the hallway holding a garbage bag of dirty clothes and a protein bar wrapper with a phone number on it and try to remember the last time Marcus had this kind of problem.</p>
+
+<p>Never. Marcus never had this kind of problem.</p>
+
+</div>
+
+<<set $trentNinaNumber to true>>
+<<set $d05TrentHallwayDone to true>>
+<<run window.statChange("cor", 2)>>
+<<run window.statChange("arousal", 5)>>
+
+<div class="choice-block">
+	<<link '<span>🚪 Back outside</span>' "District_Central">><</link>>
+</div>
+
+
+:: D05_Trent_Decline [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>"That's sweet but I'm not really in a place for... that. Right now."</p>
+
+<p>"Totally." He doesn't miss a beat. Not offended. Not even disappointed, really. "Hey, you're welcome to hang out regardless. Nina makes insane pasta. Like, life-changing penne."</p>
+
+<p>"Maybe sometime."</p>
+
+<p>"Cool. You know where we live." He raises his shake. "Cheers, Mia."</p>
+
+<p>The door closes. I shift the laundry bag to my other hand and keep walking. The offer sits in my head like a candy wrapper in a pocket. I know it's there. I don't have to unwrap it.</p>
+
+</div>
+
+<<set $trentDeclinedD05 to true>>
+<<set $d05TrentHallwayDone to true>>
+
+<div class="choice-block">
+	<<link '<span>🚪 Back outside</span>' "District_Central">><</link>>
+</div>
+
+
+:: D05_Kevin_Campus [nobr]
+<<HUD>>
+
+<<SceneDivider "The Quad">>
+
+<<ImagePlaceholder "Kevin jogging across the quad" "portrait" "assets/characters/supporting/kevin-campus.png">>
+
+<div class="prose-block">
+
+<p>I'm cutting through the campus quad when I hear it.</p>
+
+<p>"MIAAAAAA!"</p>
+
+<p>Kevin is jogging across the grass like a Labrador who just spotted his owner at the park. He's wearing the same basketball shorts but has added a hoodie that says LEGALIZE RANCH in letters that definitely mean something I don't understand.</p>
+
+<p>"Hey, Mia! Delivery girl! It's me, Kevin! From room 412! I ordered the Pad Thai!"</p>
+
+<p>"I remember."</p>
+
+<p>"Sick! Hey, so, my buddy Deshawn is having a party this weekend. Nothing crazy, just like thirty people, music, drinks, his cousin's edibles again. You should come."</p>
+
+<p>"I don't even know you."</p>
+
+<p>"I know! That's the beautiful thing about parties, they're where you get to know people!" He says this like he's quoting a TED Talk he found deeply moving. "Here, give me your number and I'll text you the address."</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>📱 Give him your number</span>' "D05_Kevin_Give">><</link>>
+	<<link '<span>🙅 "I&apos;m good. But thanks."</span>' "D05_Kevin_Decline">><</link>>
+</div>
+
+
+:: D05_Kevin_Give [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I don't know why I do it. Maybe because Kevin is so profoundly non-threatening that saying no feels like kicking a puppy. Maybe because somewhere in the back of my brain, behind the fear and the dysphoria and the endless loop of "what am I becoming," there's a twenty-year-old who hasn't been to a party in months.</p>
+
+<p>I give him my number. He types it in with one thumb, tongue out, concentrating like he's defusing a bomb.</p>
+
+<p>"Got it. I'm going to text you so you have mine. Ready?"</p>
+
+<p>My phone buzzes. The text says: "its kevin 🤙 from room 412 pad thai guy"</p>
+
+<p>"Perfect. Party's Saturday. Wear whatever. Bring whoever. It's chill."</p>
+
+<p>"Okay, Kevin."</p>
+
+<p>"Okay, Mia!" He starts jogging backward, waving. "This is going to be awesome!" He trips over a landscaping brick but catches himself. "I'm good! I'm fine!"</p>
+
+<p>He disappears around the corner of the science building. I stand in the quad holding my phone and wondering what exactly just happened to my social life.</p>
+
+</div>
+
+<<set $kevinNumber to true>>
+<<set $kevinPartyInvite to true>>
+<<set $d05KevinCampusDone to true>>
+
+<div class="choice-block">
+	<<link '<span>🏛️ Back to the quad</span>' "Campus">><</link>>
+</div>
+
+
+:: D05_Kevin_Decline [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>"I'm good. But thanks."</p>
+
+<p>"No worries! Offer's open! Room 412! Tell your friends!" He jogs backward, still waving. "I'm Kevin!"</p>
+
+<p>"I know, Kevin."</p>
+
+<p>He vanishes around a building. I watch him go and feel a small, unexpected pang of something that might be affection. Kevin is exhausting. Kevin is also the first person in five days who looked at me and saw nothing but a potential friend.</p>
+
+</div>
+
+<<set $kevinDeclinedD05 to true>>
+<<set $d05KevinCampusDone to true>>
+
+<div class="choice-block">
+	<<link '<span>🏛️ Back to the quad</span>' "Campus">><</link>>
+</div>
+
+
+:: D05_Jess_Second [nobr]
+<<HUD>>
+
+<<SceneDivider "Jess, Again">>
+
+<<ImagePlaceholder "Jess at her door, the toddler redecorating the carpet" "portrait" "assets/characters/supporting/jess-second.png">>
+
+<div class="prose-block">
+
+<p>The door opens and the toddler is on the floor behind her, surrounded by what appears to be every single crayon in the house, grinding a red one into the carpet with the focus of a master painter.</p>
+
+<p>"Oh, it's you! Mia!" Jess looks relieved. "Please tell me that's my sandwich."</p>
+
+<p>"Two clubs, one cookie."</p>
+
+<p>"You are a saint." She takes the bag. "Hey, can I ask you something? And feel free to tell me to mind my own business."</p>
+
+<p>"Shoot."</p>
+
+<p>"Are you okay? Like, genuinely. Because the other day when you were here, you had this look. Not a bad look, just a... heavy look. I know that look because I invented that look. I see that look in the mirror every morning before my coffee kicks in."</p>
+
+<p>Nobody has asked me that in five days. Not "what happened to you" or "why do you look different" or "are you sick." Just "are you okay." The simplest question. The hardest one.</p>
+
+<p>"I'm getting there."</p>
+
+<p>She nods. Not pushing. "Good. Getting there is good." She leans against the doorframe, one ear tilted toward the interior of the house where the carpet is definitely being ruined. "Listen, I don't have a lot of friends in this neighborhood. I moved here after the divorce and it's been me and this tiny terrorist for eight months. If you ever want to grab coffee or just sit in silence while small humans destroy furniture, I'm here. That's all."</p>
+
+<p>"I might take you up on that."</p>
+
+<p>"Please do. I'm losing my mind talking exclusively to a person whose vocabulary is twenty words, eleven of which are 'no.'"</p>
+
+<p>Behind her, the toddler looks up from the carpet, makes direct eye contact with me, and says, "No."</p>
+
+<p>Jess closes her eyes. "See?"</p>
+
+</div>
+
+<<set $jessAffinity to ($jessAffinity || 0) + 5>>
+<<set $jessCoffeeInvite to true>>
+<<set $d05JessSecondDone to true>>
+
+<div class="choice-block">
+	<<link '<span>🚪 Head back</span>' "Outside">><</link>>
+</div>
+
+
+:: D05_River_Return [nobr]
+<<HUD>>
+
+<<SceneDivider "Grounded, Evening">>
+
+<<ImagePlaceholder "River leaning on the counter, jazz and low light" "portrait" "assets/characters/river/river-evening-counter.png">>
+
+<div class="prose-block">
+
+<p>The evening crowd is thinner. Two laptops. One couple sharing a muffin. The ambient playlist has shifted from upbeat acoustic to something moodier, jazz with a piano that sounds like rain.</p>
+
+<p>River spots me before I reach the counter.</p>
+
+<p>"Hey! Latte girl!" He snaps his fingers. "Mia, right?"</p>
+
+<p>"Good memory."</p>
+
+<p>"It's the job. Also, you tipped well. I remember good tippers." He's already reaching for a cup. "Same thing? Oat latte?"</p>
+
+<p>"Yeah."</p>
+
+<p>He makes it with the same easy precision. This time I watch his hands more closely. The way he tamps the espresso with three firm pushes. The angle of the steaming wand. He's good at this. Not performatively good. Quietly good. The kind of good that comes from repetition and genuine interest.</p>
+
+<p>"So." He sets the latte down. The swirl is better this time. More deliberate. "Day get any better?"</p>
+
+<p>"Actually, yeah."</p>
+
+<p>"Glad to hear it." He leans on the counter again. The apron is a little crooked. The beanie has slipped slightly. He looks comfortable in a way that radiates outward, like warmth from a wood stove. "I'm here most days, if you need a spot. Wi-Fi's good. Music's curated, not algorithmic. And nobody'll bother you in the corner booth."</p>
+
+<p>"You sell coffee like a real estate agent."</p>
+
+<p>He laughs. Full, open, surprised. "I've never gotten that one before. I'll put it on Yelp." He straightens up, grabs a rag, wipes the counter in a circular motion that's pure muscle memory. "Hey, can I ask you something kind of personal?"</p>
+
+<p>My guard goes up. Not all the way. But it lifts.</p>
+
+<p>"Depends."</p>
+
+<p>"What do you do? Like, when you're not delivering food in a very orange jacket."</p>
+
+<p>I think about that. What do I do. What did Marcus do. What does Mia do. The answer to all three is essentially the same, which is "not much," but it sounds worse for Mia because at least Marcus was theoretically enrolled in college.</p>
+
+<p>"I'm figuring that out."</p>
+
+<p>He nods. No judgment. "Same, honestly. I'm a barista who plays drums in a band that practices in my bassist's garage. We're terrible but enthusiastic."</p>
+
+<p>"What kind of music?"</p>
+
+<p>"We call it 'indie' but that's what everybody calls it when they can't pick a genre. It's basically sad white-boy guitar with too much reverb." He grins. "You should come to a gig."</p>
+
+<p>"Where do you play?"</p>
+
+<p>"Wherever will have us. Mostly house shows. Last one was in a yoga studio, which was weird. Great acoustics though."</p>
+
+<p>"Was it Sage's studio?"</p>
+
+<p>"You know Sage?" His eyebrows go up. "Small world. Yeah, she lets us use the space on Sundays when it's closed. She does guided meditation during our set break and honestly it kind of works."</p>
+
+<p>I sip my latte. He wipes the counter. The jazz piano keeps falling like rain. Something about this moment feels important in a way I can't name. Not romantic, not yet, maybe not ever. But present. Connected. Like two people standing in the same warm room during a storm.</p>
+
+<p>"I'm carrying something heavy." I don't know why I say it. It just comes out, the way things come out in coffee shops at dusk when the light is low and the person across the counter has kind eyes.</p>
+
+<p>River stops wiping. Looks at me. Really looks. Not the way men usually look, assessing, categorizing, deciding. He looks the way you look at someone who just said something true.</p>
+
+<p>"I figured." He sets the rag down. "Well. Coffee helps. And if it doesn't, I make a mean hot chocolate."</p>
+
+<p>"I'll keep that in mind."</p>
+
+<p>"Do." He taps the counter twice. A punctuation mark. Then the next customer arrives and he pivots and he's River again, easy smile, quick hands, a question about oat versus almond. But he glances back once. Just once. Quick enough to miss if you weren't watching.</p>
+
+<p>I was watching.</p>
+
+</div>
+
+<<set $river.affinity to $river.affinity + 5>>
+<<set $riverPersonalMoment to true>>
+<<run window.statChange("stress", -5)>>
+<<run window.rbSpend(5, "coffee")>>
+<<run window.rbAddJournalEntry("Heavy", "Told River I was carrying something heavy. He didn't ask what. He offered hot chocolate.")>>
+
+<div class="choice-block">
+	<<link '<span>☕ Back to the booth</span>' "Grounded_Main">><</link>>
+</div>
+
+
+:: D05_Random_BusStop [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "The bus stop, a man glancing up from his phone" "float" "assets/characters/mc-female-phase1/d05-bus-stop.png">>
+
+<div class="prose-block">
+
+<p>I stop at the bus shelter on Garfield, scooter idling at the curb, to check the next address on my phone. That's when I notice the man on the bench.</p>
+
+<p>He's maybe forty. Khakis. Polo. The kind of guy who blends into any office in the country. He's looking at his phone but his eyes keep flicking up. Toward me. Then back to the phone. Up. Phone. Up. Phone.</p>
+
+<p>I know what he's doing because I used to do it. The subtle checkout. The look-without-looking. The peripheral surveillance that men learn to do so early it becomes automatic, this constant low-level scanning of every woman in visual range, filing them under categories they didn't ask to be filed under.</p>
+
+<p>He's not being threatening. He's not approaching. He's not saying anything. He's just looking, in that way men look, like women are channels on a TV and they're deciding whether to stop flipping.</p>
+
+<p>I shift my weight. Cross my arms. Turn slightly so my body faces away from him. All of these are things I'm doing without thinking. Defensive posture. Making myself smaller. Closing off access. Five days ago I wouldn't have understood any of these movements. Now my body performs them like choreography it learned in a dream.</p>
+
+<p>The light changes. I pull the helmet back on and go. In the mirror he's already looking at his phone again, and he never looks at me once more.</p>
+
+<p>Nothing happened. That's the point. Nothing happened and yet something happened, something invisible and pervasive that takes up space in my head for the next three blocks. This is it. This is what women mean when they say "the weight of being looked at." Not violence. Not harassment. Just the steady, ambient pressure of existing inside someone else's gaze.</p>
+
+<p>Marcus never understood. Mia is learning.</p>
+
+</div>
+
+<<set $d05SeenBusStop to true>>
+<<run window.statChange("fem", 1)>>
+
+<div class="choice-block">
+	<<link '<span>🛵 Back to the route</span>' "D05_Delivery2">><</link>>
+</div>
+
+
+:: D05_Random_Scooter [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "The truck guy fixing the dead scooter" "float" "assets/locations/misc/d05-scooter-breakdown.png">>
+
+<div class="prose-block">
+
+<p>No warning. No sputtering. It just stops, the motor cutting out mid-block and the wheels coasting on momentum alone until friction takes over and I roll to a stop next to a hydrant.</p>
+
+<p>"No. No, no, no." I turn the key. Nothing. Turn it again. The dashboard flickers once and goes dark. Battery, probably. The charging cable at DashDrop has been sketchy for weeks.</p>
+
+<p>I'm standing on the sidewalk with a dead scooter and two more deliveries left when a pickup truck slows down. The window rolls down. A guy leans out. Big. Beard. Ball cap. The kind of guy who has "strong opinions about trucks" as a personality trait.</p>
+
+<p>"You okay?"</p>
+
+<p>"Scooter died."</p>
+
+<p>"Hang on." He pulls over, gets out. I tense. Five days of being a woman in the world and my body already has an opinion about strange men who approach on empty sidewalks.</p>
+
+<p>But he walks past me to the scooter, crouches, jiggles something near the battery housing. "These DashDrop units are garbage. The connector gets loose." He pushes something and I hear a click. Stands up, wipes his hands on his jeans. "Try it now."</p>
+
+<p>I turn the key. The motor hums. The dashboard lights up.</p>
+
+<p>"That should hold for a few hours. Get dispatch to look at the connector though. It'll happen again."</p>
+
+<p>"Thank you. Seriously."</p>
+
+<p>"No problem. My daughter rides one of these for school. Same issue." He tips his hat, literally tips his hat, like a character in a movie about the South, and gets back in his truck.</p>
+
+<p>I watch him pull away and let go of the tension I was holding in my shoulders and my jaw and my fists. He was just a guy who knew about scooters. That's all. But the three seconds between him approaching and him crouching next to the battery were three seconds where my body prepared for something else. Something worse.</p>
+
+<p>This is new math. Every stranger is a problem until they prove they're not. Marcus walked through the world assuming safety. Mia walks through the world calculating risk.</p>
+
+</div>
+
+<<set $d05SeenScooter to true>>
+<<run window.statChange("stress", 2)>>
+
+<div class="choice-block">
+	<<link '<span>🛵 Back to the route</span>' "D05_Delivery4">><</link>>
+</div>
+
+
+:: D05_Random_Grocery [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Helen and Biscuit in the snack aisle" "float" "assets/characters/supporting/helen-biscuit.png">>
+
+<div class="prose-block">
+
+<p>I'm in the snack aisle at the corner store reaching for granola bars when an older woman stops beside me. She's got a cart with one of those small dogs sitting in the child seat, which I'm fairly sure violates several health codes but nobody in this store has ever enforced a health code and the dog seems happy.</p>
+
+<p>"Excuse me, sweetie, can you reach that?" She points to the top shelf. Rice cakes. The kind that taste like flavored styrofoam.</p>
+
+<p>"Sure." I stretch up and grab the box and hand it to her. My shirt rides up and I feel the air on a strip of belly and yank it down reflexively.</p>
+
+<p>"Thank you, dear. My shoulders don't do what they used to." She puts the rice cakes in the cart next to the dog, who sniffs them. "Are you new in the neighborhood? I haven't seen you before."</p>
+
+<p>"Sort of. I've been here a while but I've been... staying in."</p>
+
+<p>"Well, you're too pretty to be staying in." She says it the way grandmothers say things, as fact rather than flattery, the way they'd say "it's cold outside" or "you should eat more." "I'm Helen. This is Biscuit."</p>
+
+<p>Biscuit regards me with the ancient, judgmental eyes of a dog who has seen everything and approves of nothing.</p>
+
+<p>"Mia."</p>
+
+<p>"Pretty name for a pretty girl. You take care now."</p>
+
+<p>She wheels her cart away. Biscuit watches me over her shoulder until they round the corner.</p>
+
+<p>Pretty name for a pretty girl. She said it like it was obvious. Like there was no other possibility. Like the person standing in the granola bar aisle in a DashDrop jacket and day-old jeans was, unquestionably, a pretty girl.</p>
+
+<p>Marcus would have been invisible to Helen. Men in their twenties are invisible to women in their seventies. But a girl in the snack aisle is someone Helen talks to. Someone Helen calls "sweetie." Someone who exists in Helen's world in a way that Marcus never would have.</p>
+
+<p>I carry the granola bars and a banana up to the register.</p>
+
+</div>
+
+<<set $d05MetHelen to true>>
+<<run window.statChange("fem", 1)>>
+
+<div class="choice-block">
+	<<link '<span>🧾 To the register</span>' "D05_Shop_CornerStore">><</link>>
+</div>
+
+
+:: D05_Shop_CornerStore [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Hector at the register, telenovela murmuring behind him" "portrait" "assets/characters/supporting/hector-register-d05.png">>
+
+<div class="prose-block">
+
+<p>Hector is behind the register. Same position as yesterday, same comfortable lean, same warm face that doesn't change whether you're buying eggs or condoms. He's got a novela playing on a small TV behind the counter, the sound turned low, the drama turned high.</p>
+
+<p>"Hey, you." He recognizes me. Not as Marcus. As the girl who came in yesterday. As Mia. "Back so soon?"</p>
+
+<p>"Needed granola bars."</p>
+
+<p>"Aisle three, halfway down, next to the trail mix." He knows this store the way some people know their own body. Every item filed and retrievable. "You eating enough? You look skinny."</p>
+
+<p>"I'm fine."</p>
+
+<p>"Everybody who says they're fine is not fine. My wife says that." He rings up the granola bars and the banana. "Six forty-two."</p>
+
+<p>I pay. He bags it. The transaction is simple and warm and entirely unremarkable, which is exactly what makes it valuable. Hector treats me like a regular. Like someone who belongs here. Like someone who will keep coming back.</p>
+
+<p>"You have a good day, mija."</p>
+
+<p>Mija. Little daughter. He says it casually, the way you'd say "buddy" or "pal." But it goes through me like voltage. Little daughter. A term of endearment from a stranger who sees me as a young woman he is mildly protective of. A role Marcus was never cast in.</p>
+
+<p>"You too, Hector."</p>
+
+</div>
+
+<<if not $d05HectorReturn>>
+	<<set $d05HectorReturn to true>>
+	<<set $hectorAffinity to ($hectorAffinity || 0) + 3>>
+	<<run window.rbSpend(6.42, "food")>>
+	<<run window.statChange("fem", 1)>>
+<</if>>
+
+<div class="choice-block">
+	<<link '<span>🚪 Back to the counter</span>' "CornerStore">><</link>>
+</div>
+
+
+:: D05_Random_Musician [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "The cellist on the corner of Bell and Third" "float" "assets/characters/supporting/street-cellist.png">>
+
+<div class="prose-block">
+
+<p>I stop. Something about it hooks me. The sound. Rich and low and physical, the kind of music you feel in your sternum before you hear it in your ears. She's got her eyes closed. Her bow arm moves in long, confident strokes. She's not performing. She's just playing, the way you breathe, because stopping is not an option.</p>
+
+<p>I stand there for two songs. The first is sad and the second is sadder and both of them are beautiful in the way that things are beautiful when they don't know they're being watched.</p>
+
+<p>When she opens her eyes, she sees me. Smiles.</p>
+
+<p>"You looked like you needed that."</p>
+
+<p>"Maybe I did."</p>
+
+<p>"Bach does that. He wrote the sadness out so you don't have to carry it yourself." She adjusts a tuning peg. "I'm here most evenings. If you need him again."</p>
+
+<p>I put three dollars in the case. She plays another note, single and clear, and nods.</p>
+
+</div>
+
+<<set $d05SeenMusician to true>>
+<<run window.rbSpend(3, "tip")>>
+<<run window.statChange("stress", -3)>>
+
+<div class="choice-block">
+	<<link '<span>🚶 Walk on</span>' "District_Central">><</link>>
+</div>
+
+
+:: Grounded_Main [nobr]
+<<HUD>>
+
+<<set $groundedVisits to ($groundedVisits || 0) + 1>>
+
+<div class="map-here">📍 Northgate → Grounded Coffee House</div>
+<h1>Grounded <span class="accent">Coffee House</span></h1>
+
+<div class="prose-block">
+
+<p>Warm light, exposed brick, the smell of something baking in the back. The chalkboard behind the counter is the same, someone's drawn new little leaves around the specials.</p>
+
+<<if $riverPersonalMoment>>
+<p>River looks up, taps the counter twice. Hello, without saying hello.</p>
+<<else>>
+<p>River is behind the counter, steaming milk, laughing at something a coworker said.</p>
+<</if>>
+
+</div>
+
+<blockquote>ESPRESSO $3<br>AMERICANO $3.50<br>LATTE $5<br>CAPPUCCINO $5<br>MOCHA $5.50<br>CHAI $4.50<br>HOT CHOCOLATE $4<br>DRIP $2.50<br>MUFFIN $3<br>SCONE $3.50<br>COOKIE $2.50<br>BANANA BREAD $3</blockquote>
+
+<div class="action-list">
+<<if $d05GroundedVisited and not $riverPersonalMoment>>
+	<<link '<span class="action-icon">☕</span><span class="action-text">Order from River<span class="action-sub">He remembers your order</span></span>' "D05_River_Return">><</link>>
+<</if>>
+<<if $player.money gte 5>>
+	<<link '<span class="action-icon">☕</span><span class="action-text">Buy a latte<span class="action-sub">Oat milk, with the swirl</span></span><span class="action-cost">$5</span>' "Grounded_Main">>
+		<<run window.rbSpend(5, "coffee")>>
+		<<set $player.energy to Math.clamp($player.energy + 8, 0, 100)>>
+		<<run window.statChange("stress", -2)>>
+	<</link>>
+<<else>>
+	<div class="action-btn action-locked"><span class="action-icon">☕</span><span class="action-text">Buy a latte<span class="action-sub">You&apos;re short</span></span></div>
+<</if>>
+<<if $player.money gte 3>>
+	<<link '<span class="action-icon">🧁</span><span class="action-text">Buy a muffin<span class="action-sub">Blueberry, still warm</span></span><span class="action-cost">$3</span>' "Grounded_Main">>
+		<<run window.rbSpend(3, "food")>>
+		<<set $player.energy to Math.clamp($player.energy + 10, 0, 100)>>
+	<</link>>
+<<else>>
+	<div class="action-btn action-locked"><span class="action-icon">🧁</span><span class="action-text">Buy a muffin<span class="action-sub">You&apos;re short</span></span></div>
+<</if>>
+<<if $player.money gte 4>>
+	<<link '<span class="action-icon">🍫</span><span class="action-text">Buy a hot chocolate<span class="action-sub">River swears by it</span></span><span class="action-cost">$4</span>' "Grounded_Main">>
+		<<run window.rbSpend(4, "coffee")>>
+		<<run window.statChange("stress", -3)>>
+	<</link>>
+<<else>>
+	<div class="action-btn action-locked"><span class="action-icon">🍫</span><span class="action-text">Buy a hot chocolate<span class="action-sub">You&apos;re short</span></span></div>
+<</if>>
+<<link '<span class="action-icon">🛋️</span><span class="action-text">Sit in the corner booth<span class="action-sub">Cracked leather, a view of the room</span></span>' "Grounded_Booth">><</link>>
+<<link '<span class="action-icon">👀</span><span class="action-text">People-watch<span class="action-sub">Everyone here is in the middle of something</span></span>' "Grounded_PeopleWatch">><</link>>
+</div>
+
+<div class="choice-block">
+	<<link '<span>🗺️ Back to Northgate</span>' "District_Northgate">><</link>>
+</div>
+
+
+:: Grounded_Booth [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>The booth is the same one from earlier. Same cracked leather. Same view of the room. I pull out my phone and for a while I'm just a girl in a coffee shop on her phone and that's enough.</p>
+
+</div>
+
+<<run window.statChange("stress", -2)>>
+
+<div class="choice-block">
+	<<link '<span>← Back to the counter</span>' "Grounded_Main">><</link>>
+</div>
+
+
+:: Grounded_PeopleWatch [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>A woman at the window table is editing what looks like a novel manuscript, crossing out whole paragraphs with a red pen and the savage joy of someone who loves killing their own words. Two students are arguing about Foucault. An older man reads a biography of someone I don't recognize. River stocks cups and hums something tuneless and catches my eye once and raises an eyebrow and I look away too fast.</p>
+
+<p>This place is good. This place feels like somewhere I could be a person.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>← Back to the counter</span>' "Grounded_Main">><</link>>
+</div>
+

@@ -1,4 +1,7 @@
 :: District_Central [nobr]
+<<if $day is 5 and $d05WorkComplete and $timeslot is "Evening" and not $d05SeenMusician and window.rbRandom(1, 10) lte 5>>
+	<<goto "D05_Random_Musician">>
+<</if>>
 <<HUD>>
 
 <div class="map-here">📍 Central City</div>
@@ -50,6 +53,22 @@
 	</div>
 <</if>>
 
+<<if $d05WorkComplete and not $d05GroundedVisited and $timeslot isnot "Night">>
+	<<link '<div class="loc-card"><span class="loc-icon">🛵</span><span class="loc-name">Downtown Streets</span><span class="loc-hint">Ride the long way home</span></div>' "D05_Downtown_Explore">><</link>>
+<</if>>
+
+<<if $d05BlacklineSeen>>
+	<div class="loc-card locked">
+		<span class="loc-icon">🖋️</span>
+		<span class="loc-name">Black Line Studio</span>
+		<span class="loc-lock-req">Looks interesting. Maybe check it out another day.</span>
+	</div>
+<</if>>
+
+<<if $d05TrentCallback and not $d05TrentHallwayDone>>
+	<<link '<div class="loc-card"><span class="loc-icon">🧺</span><span class="loc-name">Trent&apos;s Building</span><span class="loc-hint">The basement laundry takes an app, not quarters</span></div>' "D05_Trent_Hallway">><</link>>
+<</if>>
+
 <div class="loc-card locked">
 	<span class="loc-icon">🌳</span>
 	<span class="loc-name">Meridian Gardens</span>
@@ -59,7 +78,11 @@
 <div class="loc-card locked">
 	<span class="loc-icon">🍸</span>
 	<span class="loc-name">Nocturne Bar &amp; Lounge</span>
-	<span class="loc-lock-req">Not today</span>
+	<<if $d05NocturneSeen>>
+		<span class="loc-lock-req">Closed during the day. Help Wanted sign in the window.</span>
+	<<else>>
+		<span class="loc-lock-req">Not today</span>
+	<</if>>
 </div>
 
 <div class="loc-card locked">

@@ -194,6 +194,57 @@ REWIRED
 <<set $d04SentSelfie to false>>
 <<set $d04JordanSelfPleasure to false>>
 
+/* ---------- Day 5 open-world progress flags ---------- */
+<<set $d05Dressed to false>>
+<<set $d05OwenSeen to false>>
+<<set $d05WorkComplete to false>>
+<<set $d05DeliveryCount to 0>>
+<<set $d05TrentCallback to false>>
+<<set $d05SageMet to false>>
+<<set $d05KevinMet to false>>
+<<set $d05JessMet to false>>
+<<set $d05BlacklineSeen to false>>
+<<set $d05NocturneSeen to false>>
+<<set $d05GroundedVisited to false>>
+<<set $d05RiverMet to false>>
+<<set $d05Cooked to false>>
+<<set $d05NolanCalled to false>>
+<<set $d05NolanTomorrow to false>>
+<<set $d05EveningDone to false>>
+<<set $d05JordanResolved to false>>
+<<set $d05SocialBrowsed to false>>
+<<set $d05SelfieTaken to false>>
+<<set $d05SelfPleasure to false>>
+<<set $d05SeenBusStop to false>>
+<<set $d05SeenScooter to false>>
+<<set $d05SeenMusician to false>>
+<<set $d05MetHelen to false>>
+<<set $d05HectorReturn to false>>
+<<set $d05TrentHallwayDone to false>>
+<<set $d05KevinCampusDone to false>>
+<<set $d05JessSecondDone to false>>
+<<set $groundedVisits to 0>>
+<<set $owenAffinity to 0>>
+<<set $jessAffinity to 0>>
+<<set $hectorAffinity to 0>>
+<<set $trentNinaNumber to false>>
+<<set $trentDeclinedD05 to false>>
+<<set $sageFlyer to false>>
+<<set $sageFlyerFridge to false>>
+<<set $kevinNumber to false>>
+<<set $kevinPartyInvite to false>>
+<<set $kevinDeclinedD05 to false>>
+<<set $jessCoffeeInvite to false>>
+<<set $riverPersonalMoment to false>>
+<<set $nolanTextsRead to false>>
+<<set $datingAppCreated to false>>
+<<set $chrisMatched to false>>
+<<set $jordanDateFriday to false>>
+<<set $jordanStallD05 to false>>
+<<set $jordanGhostedD05 to false>>
+<<set $blacklineEnterable to false>>
+<<set $nocturneApply to false>>
+
 /* ---------- First-time event flags ---------- */
 <<set $firstCatcall to false>>
 <<set $firstPeriod to false>>

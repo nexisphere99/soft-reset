@@ -1,0 +1,80 @@
+:: D05_Morning [nobr]
+<<set $day to 5>>
+<<set $timeslot to "Morning">>
+<<set $weekDay to "Tuesday">>
+<<HUD>>
+
+<<SceneDivider "Tuesday Morning">>
+
+<div class="prose-block">
+
+<p>The alarm goes off at seven and I lie there staring at the fist on the ceiling. Five days since that stain meant anything normal. Five days since Marcus swallowed a pill and woke up someone else entirely.</p>
+
+<p>Today I go back to DashDrop. Today Owen sees me.</p>
+
+<p>I roll out of bed and my feet hit cold floor and my hair falls across my face and both of those things feel unremarkable now. That's the strangest part. Not the breasts or the hips or the voice. The strangest part is how quickly strange becomes Tuesday.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🚿 Shower first</span>' "D05_Morning_Shower">><</link>>
+</div>
+
+
+:: D05_Morning_Shower [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>Shower first. Hot water, which I still haven't stopped appreciating. I stand under the stream and wash my hair with the coconut shampoo from the corner store and the lather smells like a vacation I can't afford. Conditioner after. Leave it in two minutes while I shave my legs, which takes longer than it should because my hands are shaking and it's not from the razor.</p>
+
+<p>I'm nervous. Genuinely, stomach-flipping, might-throw-up nervous. The kind of nervous I used to get before exams back when I still went to class. Except this exam is walking into a dispatch office full of guys who knew me as Marcus and hoping the floor doesn't open up.</p>
+
+<p>Towel off. Lotion. I smooth it across my calves and my skin drinks the moisture in and for a second I just stand there with one foot up on the toilet lid, looking at my own leg like it belongs to somebody I'm getting to know. Soft. Smooth. Mine, allegedly.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>👖 Get dressed</span>' "D05_Morning_Dressing">><</link>>
+</div>
+
+
+:: D05_Morning_Dressing [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>Clothes. I've thought about this. Overthought it, probably. Sports bra first. The one from Marlene's shop, the plain black one that holds everything flat enough to not bounce when I lean over a scooter. Black t-shirt, fitted but not tight. Jeans. The jeans fit different now, snug at the hip and the thigh and loose at the ankle. Five days ago these were Marcus's jeans. Now they're jeans that happen to be on a woman.</p>
+
+<p>The DashDrop jacket comes off the hook. Orange polyester, reflective strip on the back, smells like exhaust and old coffee. I pull it on and the shoulders swim. Too wide. The waist pulls at my hips. I zip it anyway. It'll have to do until I can swap it.</p>
+
+</div>
+
+<div class="prose-block">
+
+<p>Hair. This is new territory. I pull it back into a low ponytail and use one of the black elastics I bought at the corner store on a whim two days ago. First ponytail. The pull at my temples feels intentional in a way that nothing about my hair ever did when it was short. Practical, not cute. But it shows my face clearly. My female face. Cheekbones higher than Marcus ever had. Jaw softer. Lips fuller. Eyes the same hazel-green but somehow wider now, like they opened up when the rest of my face changed.</p>
+
+</div>
+
+<<ImagePlaceholder "Morning mirror, delivery jacket, nervous but determined" "portrait" "assets/characters/mc-female-phase1/d05-morning-mirror.png">>
+
+<div class="prose-block">
+
+<p>I look at the mirror. A girl in a delivery jacket looks back.</p>
+
+<p>She looks scared.</p>
+
+<p>Helmet. Keys. Phone. Deep breath that fills lungs that sit higher in a chest that curves where it used to be flat.</p>
+
+<p>I go.</p>
+
+</div>
+
+<<set $d05Dressed to true>>
+<<run window.statChange("fem", 1)>>
+<<run window.rbAddMilestone("First ponytail.")>>
+
+<div class="choice-block">
+	<<link '<span>🚪 Go</span>' "Outside">><</link>>
+</div>
+

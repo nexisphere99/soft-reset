@@ -1,0 +1,426 @@
+:: D05_DashDrop_Arrival [nobr]
+<<HUD>>
+
+<<SceneDivider "DashDrop Dispatch">>
+
+<div class="prose-block">
+
+<p>The dispatch office sits behind a strip mall on Garfield, wedged between a vape shop and a laundromat that's been "temporarily closed" since before I started working here. The parking lot smells like burned coffee and two-stroke exhaust from the scooter fleet. Three other drivers lounge against the wall outside, scrolling phones, none of them people I know well enough to worry about.</p>
+
+<p>I park. Kill the motor. Sit on the scooter for a full minute, gripping the handlebars, watching my knuckles go white. In my pocket, the new ID. The one with the F on it and the photo that looks like me now instead of the person I used to be. NovaCure did the paperwork fast. Suspiciously fast. Like they'd done it before.</p>
+
+<p>My legs carry me inside before my brain agrees to it.</p>
+
+</div>
+
+<<ImagePlaceholder "DashDrop dispatch office interior" "banner" "assets/locations/dashdrop/dispatch-office.png">>
+
+<div class="prose-block">
+
+<p>The office is exactly the same. Corkboard with shift schedules pinned crookedly. A desk buried in takeout menus and dispatch tablets. A calendar on the wall still turned to two months ago. The industrial coffee pot that produces something technically drinkable but spiritually hostile.</p>
+
+<p>Owen stands behind the counter sorting route sheets. Owen is thirty-four, ex-Army, has a mustache he thinks makes him look like a 70s cop but actually makes him look like a guy who lost a bet. He's been my manager for eight months. He calls everyone "buddy" regardless of gender, which is either progressive or lazy depending on how charitable you feel.</p>
+
+<p>He looks up when the door chimes.</p>
+
+<p>Full stop. Dead halt. His brain visibly crashes and reboots behind his eyes. He looks at me. At the ID badge on the counter. Back at me. Down at the dispatch tablet, like maybe the answer is there. Back at me.</p>
+
+<p>I slide the new legal ID across the counter. My hand is steady. That surprises me.</p>
+
+<p>"I need to update my profile."</p>
+
+<p>Owen picks up the ID. Looks at the photo. Looks at me. The photo is maybe two days old, taken in one of those pharmacy photo booths where the fluorescent light makes everyone look like a suspect. But it's clearly me. Clearly female. Clearly not Marcus.</p>
+
+<p>"So... this is... you're..."</p>
+
+<p>"Yeah."</p>
+
+<p>Processing. I can almost hear the fans spinning behind his forehead. Owen is not a complicated man. Owen likes football, his daughter's soccer games, and cheap beer. Owen's worldview does not include a framework for his twenty-year-old delivery driver showing up as a woman on a Tuesday morning.</p>
+
+<p>But Owen is also, and I will remember this for the rest of my life, a fundamentally decent human being.</p>
+
+<p>"...Okay." He sets the ID down. "You still know the routes?"</p>
+
+<p>"Yeah."</p>
+
+<p>"Cool. I'll update the system." He turns toward the back room, stops, turns back. "You need a smaller jacket? That one's swimming on you."</p>
+
+<p>Something hot and wet presses behind my eyes and I blink it back so fast it never reaches my cheeks.</p>
+
+<p>"A smaller jacket would be great."</p>
+
+<p>He disappears into the storeroom. I hear boxes shifting, hangers sliding. He comes back with a women's small DashDrop jacket. Same ugly orange. Same reflective strip. But when I put it on, it fits. The shoulders sit where shoulders should sit. The waist follows a curve instead of hanging straight down. The zipper doesn't gap at my chest.</p>
+
+</div>
+
+<<ImagePlaceholder "Owen handing over the women's jacket" "portrait" "assets/characters/supporting/owen-jacket.png">>
+
+<div class="prose-block">
+
+<p>"Thanks, Owen."</p>
+
+<p>He waves me off. "Don't mention it. Literally. I got no idea how to talk about this so I'm just gonna pretend it's normal. That cool?"</p>
+
+<p>"That's perfect."</p>
+
+<p>He nods once. Goes back to sorting route sheets. And that's it. No speech. No questions. No awkward attempt at wokeness. Just a guy who decided this was above his pay grade and chose the path of least drama, which accidentally made it the kindest thing anyone's done for me in five days.</p>
+
+<p>He never brings it up again. Treats me exactly the same as before. Still calls me "buddy," except now in a slightly higher pitch, like he's not sure if the word still applies.</p>
+
+<p>It does. He's the best.</p>
+
+</div>
+
+<<set $d05OwenSeen to true>>
+<<set $equipped.outerwear to {id:"dashdrop_jacket_womens", name:"DashDrop Jacket (Women's S)"}>>
+<<run window.rbAddMilestone("Walked into DashDrop as a woman.")>>
+
+<div class="choice-block">
+	<<link '<span>🛵 Start the shift</span>' "D05_Delivery1">><</link>>
+</div>
+
+
+:: D05_Delivery1 [nobr]
+<<set $timeslot to "Afternoon">>
+<<set $player.energy to Math.clamp($player.energy - 10, 0, 100)>>
+<<HUD>>
+
+<<SceneDivider "DashDrop Shift, 11:00 AM">>
+
+<<ImagePlaceholder "Riding the scooter to the first delivery" "banner" "assets/characters/mc-female-phase1/d05-scooter-ride.png">>
+
+<div class="prose-block">
+
+<p>The route is the same. Highway to Oak, left on Third, pull around to the service entrance of the Lexington office park. I've done this run six times as Marcus. My body knows the turns.</p>
+
+<p>What my body doesn't know is how the wind hits differently when your hair is in a ponytail instead of buzzed short. The way it whips the tail against the back of my neck. The way the helmet sits different with more hair underneath, pressing at the temples. Small things. Stupid things. Things that shouldn't matter but do because they keep reminding me that the person on this scooter is not the person who was on this scooter last week.</p>
+
+<p>I park at the loading dock, grab the bag, take the service elevator to the seventh floor. The receptionist is a woman in her fifties with reading glasses on a chain. She signs the receipt without looking up from her monitor.</p>
+
+<p>"Thanks, hon."</p>
+
+<p>"You're welcome."</p>
+
+<p>She doesn't look twice. Doesn't register anything unusual. I'm just a delivery girl dropping off California rolls on a Tuesday afternoon. Background character in someone else's day.</p>
+
+<p>I walk back to the elevator and my reflection passes in the hallway glass and for one disorienting second I almost nod at the woman walking toward me before I realize she's me.</p>
+
+<p>Tip: $3. Standard. Same as Marcus would've gotten.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🛵 Next delivery</span>'>>
+		<<if not $d05SeenBusStop and window.rbRandom(1, 100) lte 30>>
+			<<goto "D05_Random_BusStop">>
+		<<else>>
+			<<goto "D05_Delivery2">>
+		<</if>>
+	<</link>>
+</div>
+
+
+:: D05_Delivery2 [nobr]
+<<HUD>>
+
+<<SceneDivider "Delivery Two">>
+
+<div class="prose-block">
+
+<p>The address pops up on my dispatch screen and my stomach does something complicated. I know this building. I know this apartment. Specifically, I know the couple inside it, because five days ago I delivered their pizza while they were clearly in the middle of having sex. She answered the door in an oversized shirt and nothing else. He was shirtless behind her, grinning. They tipped me ten bucks and I walked away feeling lonely in a way that sat in my chest for hours.</p>
+
+<p>That was Marcus. This is me.</p>
+
+<p>I take the elevator up. Knock. Wait.</p>
+
+<p>The door opens. It's him. Alone this time. His girlfriend must be out. He's wearing grey sweats and a tank top that shows off arms he clearly works on. He was expecting a different delivery person. Was probably expecting Marcus, if he remembered Marcus at all.</p>
+
+</div>
+
+<<ImagePlaceholder "Trent leaning in the doorframe" "portrait" "assets/characters/supporting/trent-doorframe.png">>
+
+<div class="prose-block">
+
+<p>He sees me. Does a double-take so quick it almost looks like a glitch. His eyes track from my face to the DashDrop bag to my body and back to my face in a route that takes about half a second and covers a lot of territory.</p>
+
+<p>"Hey, you're new? Haven't seen you before."</p>
+
+<p>The lie comes easy. "Yeah, just started."</p>
+
+<p>He leans against the doorframe. Tips his chin up. Smiles. It's the kind of smile that knows exactly what it's doing and has been doing it successfully since high school. "I'm Trent."</p>
+
+<p>"Mia."</p>
+
+<p>"Mia." He says it back like he's tasting it. "Cool. You should come by sometime. We have, like, parties and stuff."</p>
+
+<p>He hands me the tip. Fifteen dollars. Five more than he gave Marcus. The math on that is not subtle.</p>
+
+<p>"Thanks, Trent."</p>
+
+<p>I walk away. I can feel his eyes on my ass. Not a suspicion. A certainty. A physical weight tracing the shape of the jeans across my hips and down. Five days ago he didn't look twice at the dude in the same orange jacket. Today he's watching me walk to the elevator with the kind of attention that starts in the eyes and ends somewhere lower.</p>
+
+<p>I press the elevator button and wait and don't turn around and my face is hot and I don't know if it's anger or embarrassment or something else entirely. Something that might be the beginning of liking being looked at.</p>
+
+<p>The elevator doors close. I breathe.</p>
+
+</div>
+
+<<if not $d05TrentCallback>>
+	<<set $d05TrentCallback to true>>
+	<<run window.statChange("arousal", 10)>>
+<</if>>
+
+<div class="choice-block">
+	<<link '<span>🛵 Next delivery</span>' "D05_Delivery3">><</link>>
+</div>
+
+
+:: D05_Delivery3 [nobr]
+<<HUD>>
+
+<<SceneDivider "Delivery Three">>
+
+<div class="prose-block">
+
+<p>The yoga studio is in a converted storefront on Bell Street, sandwiched between a dry cleaner and a place that sells crystals. The windows are covered in mandala decals and through the glass I can see hardwood floors and a wall of mirrors and a woman mid-warrior-pose who looks like she could bend in ways that would send me to the emergency room.</p>
+
+<p>I carry the smoothie order inside. The smell hits me first. Incense, clean sweat, eucalyptus. The sound second. Some kind of ambient music that's either deeply relaxing or deeply annoying depending on your tolerance for synthesized wind chimes.</p>
+
+<p>"Oh yay, my mango bliss!"</p>
+
+<p>She bounces over from behind a small reception desk. Sage. That's the name on the order. She's about thirty, athletic, deeply tan, with blonde hair in two long braids and the kind of energy that makes you tired just standing near her. She radiates health the way a space heater radiates warmth, aggressively and from every direction.</p>
+
+</div>
+
+<<ImagePlaceholder "Sage at the yoga studio with a smoothie" "portrait" "assets/characters/supporting/sage-yoga-studio.png">>
+
+<div class="prose-block">
+
+<p>"I'm Sage." She takes the smoothie bag and pulls it open like it's a present. "Oh my god, you're a lifesaver. I've been teaching since seven and I forgot to eat and I was about to start gnawing on a yoga block."</p>
+
+<p>She looks at my jacket. Then at me. Tilts her head the way a golden retriever does when you make a weird noise.</p>
+
+<p>"You look like you need a stretch."</p>
+
+<p>"I'm okay."</p>
+
+<p>"No, I mean like, your shoulders are up by your ears. That's cortisol. First class is free if you ever want to try." She grabs a flyer from the desk and hands it to me. It's printed on lavender paper and says SUNRISE YOGA in a font that's trying very hard to look hand-lettered. Class schedule on the back. "I teach the morning flow and the sunset yin. The morning one will change your life. The sunset one will put you to sleep. Both good things."</p>
+
+<p>I take the flyer because refusing would require more energy than accepting. "Thanks."</p>
+
+<p>"I'm serious. Come in. You've got good bones for it." She sips her smoothie through a metal straw and makes a sound that's either satisfaction or something more private. "Mmmm. Okay. Perfection. Thank you..."</p>
+
+<p>"Mia."</p>
+
+<p>"Mia! Love it. Come to class, Mia. Your spine will thank me."</p>
+
+<p>I leave with the flyer folded in my back pocket. Behind me, Sage has already turned back to her studio, smoothie in hand, humming something that sounds like it was composed by dolphins.</p>
+
+<p>Tip: $8. Generous for a smoothie order. She probably tips everyone well. She seems like the type.</p>
+
+</div>
+
+<<if not $d05SageMet>>
+	<<set $d05SageMet to true>>
+	<<set $sageFlyer to true>>
+	<<run window.statChange("arousal", 2)>>
+<</if>>
+
+<div class="choice-block">
+	<<link '<span>🛵 Next delivery</span>'>>
+		<<if not $d05SeenScooter and window.rbRandom(1, 100) lte 20>>
+			<<goto "D05_Random_Scooter">>
+		<<else>>
+			<<goto "D05_Delivery4">>
+		<</if>>
+	<</link>>
+</div>
+
+
+:: D05_Delivery4 [nobr]
+<<HUD>>
+
+<<SceneDivider "Delivery Four">>
+
+<div class="prose-block">
+
+<p>The college dorms are brutalist concrete towers that look like someone designed a parking garage and then said "what if people lived here." I used to walk past them when I was still enrolled. Used to think they looked depressing from outside. Now I think they look depressing from inside too, because I'm standing in a hallway that smells like Febreze and desperation, knocking on door 412.</p>
+
+<p>Music thumps behind the door. Bass. Something with a lot of 808.</p>
+
+<p>The door swings open and a cloud of something sweet and illegal rolls out. Behind the cloud stands a guy in basketball shorts and no shirt. He's maybe twenty, built like he just discovered the gym six months ago and hasn't stopped going since. His eyes are red. His grin is wide. He is profoundly, emphatically baked.</p>
+
+</div>
+
+<<ImagePlaceholder "Kevin at the dorm door" "portrait" "assets/characters/supporting/kevin-dorm-door.png">>
+
+<div class="prose-block">
+
+<p>"YOOOOO! Food's here!" He turns back to the room. "Kevin, food's here, bro!"</p>
+
+<p>Another voice from inside. "I'm Kevin, dumbass. You're the one who ordered it."</p>
+
+<p>The guy at the door blinks. Processes. "Oh shit. Right. I'm Kevin." He looks at me. "Sorry, I'm Kevin. I ordered this."</p>
+
+<p>"Pad Thai and spring rolls."</p>
+
+<p>"That's the one!" He takes the bag like I'm handing him an award. "You're the best. Hey, what's your name?"</p>
+
+<p>"Mia."</p>
+
+<p>"Mia! Sick name. Hey Mia, you want to come in? We're playing Mario Kart and Deshawn brought edibles. They're like, really good edibles. His cousin makes them."</p>
+
+<p>From inside the room, a third voice. "Bro, don't invite the delivery girl in. That's weird."</p>
+
+<p>Kevin turns back. "Why is that weird? She seems cool!"</p>
+
+<p>"Kevin. No."</p>
+
+<p>Kevin turns back to me. "Sorry. My roommates are socially rigid." He says it like he learned the phrase yesterday and is very proud of it. "But hey, if you ever want to, like, hang out or whatever. Room 412. We're here, like, always."</p>
+
+<p>He tips me twelve dollars on a sixteen-dollar order, which is either very generous or a math error. Based on Kevin, probably both.</p>
+
+<p>I leave. Behind me, I hear Kevin announce to the room, "She was cute, right? Am I wrong? I'm not wrong."</p>
+
+<p>I'm smiling in the elevator. I didn't expect that.</p>
+
+</div>
+
+<<if not $d05KevinMet>>
+	<<set $d05KevinMet to true>>
+	<<run window.statChange("arousal", 3)>>
+<</if>>
+
+<div class="choice-block">
+	<<link '<span>🛵 Last delivery</span>' "D05_Delivery5">><</link>>
+</div>
+
+
+:: D05_Delivery5 [nobr]
+<<HUD>>
+
+<<SceneDivider "Delivery Five">>
+
+<div class="prose-block">
+
+<p>The house is small. Single story. A lawn that needs mowing and a porch with a plastic tricycle tipped on its side. The garden hose is coiled beside the front steps like a green snake. There are crayon drawings taped to the inside of the front window.</p>
+
+</div>
+
+<<ImagePlaceholder "Jess with her toddler at the front door" "portrait" "assets/characters/supporting/jess-toddler-door.png">>
+
+<div class="prose-block">
+
+<p>I knock. The door opens and a woman stands there with a toddler on her hip. She's maybe twenty-five, dark circles under her eyes, hair in a messy bun that's less "intentional messy" and more "I haven't slept in three days messy." The kid is chewing on a plastic dinosaur and staring at me with the profound suspicion that toddlers reserve for all strangers.</p>
+
+<p>"Oh thank god." She shifts the kid to her other hip and reaches for the bag. "I have been thinking about this sandwich since nine this morning. I placed the order at eleven and then stared at the tracking screen for forty-five minutes like a psychopath."</p>
+
+<p>"Two clubs and a cookie?"</p>
+
+<p>"The cookie is mine. The clubs are for me and my future self at midnight when I'm up with this one." She jerks her head at the toddler, who responds by throwing the dinosaur on the floor. She doesn't pick it up. Practiced indifference. "Sorry about him. He throws things. It's his whole personality right now."</p>
+
+<p>"It's fine."</p>
+
+<p>She looks at me. Really looks. Not the way Trent looked, calculating and weighted. This is the look of one tired person recognizing something in another tired person.</p>
+
+<p>"Long day?"</p>
+
+<p>"Getting there."</p>
+
+<p>"Tell me about it." She fishes a ten out of her pocket. "I'm Jess, by the way. If you ever deliver here again, and you probably will because I am a creature of habit and this sandwich shop is the only thing keeping me sane, just know the door might take a minute because small humans are slow."</p>
+
+<p>"I'm Mia."</p>
+
+<p>"Mia." She smiles. It's a good smile. Exhausted but genuine. "Nice to meet you, Mia. Thanks for the food."</p>
+
+<p>The door closes. Through the window I can see her walking back toward a kitchen table covered in crayons and sippy cups, the sandwich bag held up like a trophy. The kid toddles after her, dinosaur forgotten on the porch.</p>
+
+<p>I pick up the dinosaur. Set it on the railing where she'll see it. Get back on my scooter.</p>
+
+<p>Tip: $10. She can probably barely afford it. I appreciate it more for that.</p>
+
+</div>
+
+<<set $d05JessMet to true>>
+
+<div class="choice-block">
+	<<link '<span>🏁 Finish the shift</span>' "D05_Owen_CheckIn">><</link>>
+</div>
+
+
+:: D05_Owen_CheckIn [nobr]
+<<HUD>>
+
+<<SceneDivider "Back at Dispatch">>
+
+<<ImagePlaceholder "Owen at the counter, trying to say the right thing" "portrait" "assets/characters/supporting/owen-checkin.png">>
+
+<div class="prose-block">
+
+<p>Owen is still behind the counter when I drop off the dispatch tablet. Same position. Same mustache. Same energy of a man who has achieved perfect equilibrium between caring about his job and not caring about his job.</p>
+
+<p>"Hey, buddy." The pitch goes up slightly on "buddy." There it is. "Good shift?"</p>
+
+<p>"Yeah. Eighty-seven for the day."</p>
+
+<p>He whistles low through his teeth. "Damn. That's your best one." He pauses. Chews the inside of his cheek. Something is working its way through his brain, slow and cautious, like a man walking through a dark room trying not to step on Legos.</p>
+
+<p>"Hey, so, uh." He scratches the back of his neck. "The system updated fine. Your new name and everything. Photo too. But some of the other drivers might, y'know, ask questions. If you want me to say something, or not say something, or just..."</p>
+
+<p>"Just pretend it's normal."</p>
+
+<p>"Right. Normal." He nods like I've given him a gift. "Normal, I can do normal. I'm extremely normal. Ask anyone."</p>
+
+<p>"Thanks, Owen."</p>
+
+<p>He does the wave-off thing again. Don't mention it. Literally. But then he stops me at the door.</p>
+
+<p>"Hey, buddy?"</p>
+
+<p>I turn.</p>
+
+<p>"You did good today. Whatever's going on with..." He gestures at all of me. "Whatever this is. You showed up. That's the job."</p>
+
+<p>I nod because speaking right now would involve my voice cracking, and I refuse to cry in a DashDrop dispatch office that smells like scorched Folgers.</p>
+
+</div>
+
+<<set $owenAffinity to ($owenAffinity || 0) + 5>>
+<<run window.statChange("stress", -3)>>
+
+<div class="choice-block">
+	<<link '<span>🚪 Head out to the lot</span>' "D05_Delivery_End">><</link>>
+</div>
+
+
+:: D05_Delivery_End [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>Five deliveries. Forty-eight dollars in tips, eighty-seven once base pay and the time bonus come in. Best day I've ever had at DashDrop.</p>
+
+<p>I park the scooter at the dispatch lot and sit there doing the math I don't want to do. Marcus averaged fifty to sixty on a good shift. Same routes. Same distances. Same mediocre food handed to the same hungry people. The only variable that changed is the body doing the handing.</p>
+
+<p>Eighty-seven. Twenty-seven more than usual. Because I'm pretty now. Because Trent tipped extra to keep the cute delivery girl coming back. Because Kevin was stoned and friendly and my face made him friendlier. Because being a woman in a service job comes with a tax levied on the men you serve, paid in crumpled bills and lingering eye contact.</p>
+
+<p>This is a fact of the world I never had to confront before. Attractiveness has a market value. Marcus knew this intellectually. Mia is learning it in her tip jar.</p>
+
+<p>I don't know how to feel about it. So I don't. I pocket the money and think about taking the long way home.</p>
+
+</div>
+
+<<if not $d05WorkComplete>>
+	<<set $d05WorkComplete to true>>
+	<<set $timeslot to "Evening">>
+	<<run window.rbEarn(87, "dashdrop")>>
+	<<run window.statChange("fem", 3)>>
+	<<set $d05DeliveryCount to 5>>
+	<<run window.rbAddMilestone("First public workday as a woman.")>>
+	<<run window.rbAddJournalEntry("Day Five", "Went back to DashDrop as myself. Owen didn't flinch. Eighty-seven dollars, my best shift yet, and I know exactly why.")>>
+<</if>>
+
+<div class="choice-block">
+	<<link '<span>🛵 Head out</span>' "Outside">><</link>>
+</div>
+

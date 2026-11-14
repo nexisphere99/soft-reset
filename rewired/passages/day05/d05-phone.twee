@@ -1,0 +1,489 @@
+:: D05_Phone_Hub [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I sit on the edge of the mattress with the phone in my hands. The screen is already lit.</p>
+
+</div>
+
+<div class="action-list">
+<<if $d04JordanTexted and not $d05JordanResolved>>
+	<<link '<span class="action-icon">💬</span><span class="action-text">Jordan<span class="action-sub">Three new messages</span></span>' "D05_Phone_Jordan">><</link>>
+<</if>>
+<<if $d05NolanCalled and not $nolanTextsRead>>
+	<<link '<span class="action-icon">💬</span><span class="action-text">Nolan<span class="action-sub">Sixteen unread</span></span>' "D05_Phone_Nolan">><</link>>
+<</if>>
+<<if $player.cor gte 5>>
+	<<if not $datingAppCreated>>
+		<<link '<span class="action-icon">❤️</span><span class="action-text">Set up a dating profile<span class="action-sub">Just to see what happens</span></span>' "D05_Phone_DatingApp">><</link>>
+	<<else>>
+		<p class="text3 small">The dating app badge keeps climbing. Nothing you need to answer tonight.</p>
+	<</if>>
+<</if>>
+<<if not $d05SocialBrowsed>>
+	<<link '<span class="action-icon">📸</span><span class="action-text">Scroll Instagram<span class="action-sub">Same feed as always</span></span>' "D05_Phone_Social">><</link>>
+<</if>>
+<<if not $d05SelfieTaken>>
+	<<link '<span class="action-icon">🤳</span><span class="action-text">Open the camera<span class="action-sub">Just your own face</span></span>' "D05_Phone_Selfie">><</link>>
+<</if>>
+</div>
+
+<div class="choice-block">
+	<<link '<span>← Put the phone down</span>' "Home_Bedroom">>
+		<<set $d05EveningDone to true>>
+	<</link>>
+</div>
+
+
+:: D05_Phone_Jordan [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>The notification badge says 3. Jordan's been busy.</p>
+
+</div>
+
+<<Dialogue "Jordan" "😎" "hey gorgeous" "">>
+
+<<Dialogue "Jordan" "😎" "thinking about you today" "">>
+
+<<Dialogue "Jordan" "😎" "is that weird? probably weird right lol" "">>
+
+<div class="prose-block">
+
+<p>Three messages spread across the afternoon, the first at 1 PM and the last at 4. He's thinking about me during class hours. Either his lectures are boring or I made an impression. Probably both.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>😏 Respond</span>' "D05_Phone_Jordan_Flirt">><</link>>
+	<<link '<span>🫥 Don&apos;t respond</span>' "D05_Phone_Jordan_Ghost">><</link>>
+</div>
+
+
+:: D05_Phone_Jordan_Flirt [nobr]
+<<HUD>>
+
+<<Dialogue "You" "🙂" "not weird 🙂" "you">>
+
+<<Dialogue "Jordan" "😎" "oh good. I was sitting here like 'should I text her again' and then I texted you again so clearly the answer was yes" "">>
+
+<<Dialogue "You" "🙂" "lol you're honest at least" "you">>
+
+<<Dialogue "Jordan" "😎" "that's my whole thing. no games no bullshit just vibes. so when can I take you out? 😏" "">>
+
+<div class="prose-block">
+
+<p>The question. Direct. No hedging.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>📅 How about Friday?</span>' "D05_Phone_Jordan_Accept">><</link>>
+	<<link '<span>😊 We&apos;ll see</span>' "D05_Phone_Jordan_Stall">><</link>>
+</div>
+
+
+:: D05_Phone_Jordan_Accept [nobr]
+<<HUD>>
+
+<<Dialogue "You" "🙂" "how about Friday?" "you">>
+
+<<Dialogue "Jordan" "😎" "friday's perfect. I know a spot. low key, good food, zero pressure. I'll text you the address" "">>
+
+<<Dialogue "You" "🙂" "sounds good" "you">>
+
+<<Dialogue "Jordan" "😎" "it's a date. wear whatever you want. you looked incredible holding a grocery bag so honestly you could show up in a garbage bag and I'd still be staring" "">>
+
+<div class="prose-block">
+
+<p>I'm going to ignore how good that made me feel. I'm going to lock my phone and set it down and not smile and not think about what I'm going to wear on Friday.</p>
+
+<p>I do all of those things except for not smiling.</p>
+
+</div>
+
+<<set $jordanDateFriday to true>>
+<<set $d05JordanResolved to true>>
+<<set $jordan.flags.relation to "dating">>
+<<run window.statChange("arousal", 5)>>
+<<run window.rbAddJournalEntry("A Date", "Friday. Jordan. A real date, with a man, as a woman. I'm going to need an outfit.")>>
+
+<div class="choice-block">
+	<<link '<span>📱 Back to the phone</span>' "D05_Phone_Hub">><</link>>
+</div>
+
+
+:: D05_Phone_Jordan_Stall [nobr]
+<<HUD>>
+
+<<Dialogue "You" "🙂" "we'll see 😊" "you">>
+
+<<Dialogue "Jordan" "😎" "playing hard to get?" "">>
+
+<<Dialogue "You" "🙂" "not playing anything. just figuring stuff out" "you">>
+
+<<Dialogue "Jordan" "😎" "I get it. no rush. just know the offer stands. whenever you're ready, wherever you want, I'm there" "">>
+
+<<Dialogue "You" "🙂" "that's sweet" "you">>
+
+<<Dialogue "Jordan" "😎" "I am sweet. I'm also tall and I've been told I smell good. just throwing that out there" "">>
+
+<div class="prose-block">
+
+<p>Okay. Okay, he's funny. That's annoying because funny makes it harder to keep distance. Funny gets in through cracks that serious can't find.</p>
+
+</div>
+
+<<set $jordanStallD05 to true>>
+<<set $d05JordanResolved to true>>
+<<run window.statChange("arousal", 5)>>
+
+<div class="choice-block">
+	<<link '<span>📱 Back to the phone</span>' "D05_Phone_Hub">><</link>>
+</div>
+
+
+:: D05_Phone_Jordan_Ghost [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>Jordan is fine. Jordan is attractive and interested and available and none of those things are wrong and I still can't bring myself to type back. Not tonight. Tonight the thought of someone new in my life, someone who only knows Mia, someone who would have to learn me from scratch because the person I used to be is not a person they'll ever meet, is exhausting.</p>
+
+<p>The messages sit there. Delivered. Read. Unanswered.</p>
+
+<p><strong>Flag:</strong> `$tyler_ghosted_d05 = true`</p>
+
+</div>
+
+<<set $jordanGhostedD05 to true>>
+<<set $d05JordanResolved to true>>
+
+<div class="choice-block">
+	<<link '<span>📱 Back to the phone</span>' "D05_Phone_Hub">><</link>>
+</div>
+
+
+:: D05_Phone_Nolan [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Nolan's text spiral" "float" "assets/ui/phone/nolan-text-spiral.png">>
+
+<div class="prose-block">
+
+<p>Forty minutes after the call, the texts start.</p>
+
+</div>
+
+<<Dialogue "Nolan" "💪" "ok I can't sleep now" "">>
+<<Dialogue "Nolan" "💪" "what the hell is going on with you" "">>
+<<Dialogue "Nolan" "💪" "are you in witness protection" "">>
+<<Dialogue "Nolan" "💪" "did you join a cult" "">>
+<<Dialogue "Nolan" "💪" "is it a sex thing" "">>
+<<Dialogue "Nolan" "💪" "whatever it is I've probably seen weirder" "">>
+<<Dialogue "Nolan" "💪" "remember when Deshawn ate that entire ghost pepper on a dare and we had to take him to urgent care" "">>
+<<Dialogue "Nolan" "💪" "whatever you're about to tell me can't be worse than that" "">>
+<<Dialogue "Nolan" "💪" "right?" "">>
+<<Dialogue "Nolan" "💪" "marcus?" "">>
+<<Dialogue "Nolan" "💪" "ok going to sleep for real now" "">>
+<<Dialogue "Nolan" "💪" "but I'm coming tomorrow at 6 and I'm bringing beer and you better explain everything" "">>
+<<Dialogue "Nolan" "💪" "love you bro" "">>
+<<Dialogue "Nolan" "💪" "no homo" "">>
+<<Dialogue "Nolan" "💪" "ok maybe a little homo" "">>
+<<Dialogue "Nolan" "💪" "goodnight" "">>
+
+<div class="prose-block">
+
+<p>Sixteen texts in forty minutes. Classic Nolan. He processes anxiety through volume. The more worried he is, the more he talks, a reverse relationship between fear and silence that makes him the worst person to ever play poker and the best person to have in a crisis.</p>
+
+<p>I read them all. I don't respond to any of them. Not because I don't want to. Because anything I type right now is either a lie or a truth he's not ready for, and he deserves better than both.</p>
+
+<p>Tomorrow. Six o'clock. Beer and a revelation.</p>
+
+<p>I turn the phone face-down. The screen glows faintly against the nightstand. Nolan's contact photo catches light. Freshman year. Orientation shirts. Both of us grinning.</p>
+
+<p>Tomorrow that grin is going to fall off his face like a painting off a wall.</p>
+
+<p>Or it won't. Maybe it won't. Maybe Nolan, who once drove forty minutes at 2 AM to bring me Gatorade when I had food poisoning, who threatened to fight my student loan company on the phone like a suburban attorney, who sends "love you bro no homo ok maybe a little homo" at midnight on a Tuesday, maybe that Nolan will look at Mia and see Marcus underneath and decide the outside is just packaging.</p>
+
+<p>Maybe.</p>
+
+<p>I turn off the light. The fist on the ceiling disappears into dark.</p>
+
+</div>
+
+<<if not $nolanTextsRead>>
+	<<set $nolanTextsRead to true>>
+	<<run window.rbSendSMS("nolan", false, "ok I can't sleep now")>>
+	<<run window.rbSendSMS("nolan", false, "what the hell is going on with you")>>
+	<<run window.rbSendSMS("nolan", false, "are you in witness protection")>>
+	<<run window.rbSendSMS("nolan", false, "did you join a cult")>>
+	<<run window.rbSendSMS("nolan", false, "is it a sex thing")>>
+	<<run window.rbSendSMS("nolan", false, "whatever it is I've probably seen weirder")>>
+	<<run window.rbSendSMS("nolan", false, "remember when Deshawn ate that entire ghost pepper on a dare and we had to take him to urgent care")>>
+	<<run window.rbSendSMS("nolan", false, "whatever you're about to tell me can't be worse than that")>>
+	<<run window.rbSendSMS("nolan", false, "right?")>>
+	<<run window.rbSendSMS("nolan", false, "marcus?")>>
+	<<run window.rbSendSMS("nolan", false, "ok going to sleep for real now")>>
+	<<run window.rbSendSMS("nolan", false, "but I'm coming tomorrow at 6 and I'm bringing beer and you better explain everything")>>
+	<<run window.rbSendSMS("nolan", false, "love you bro")>>
+	<<run window.rbSendSMS("nolan", false, "no homo")>>
+	<<run window.rbSendSMS("nolan", false, "ok maybe a little homo")>>
+	<<run window.rbSendSMS("nolan", false, "goodnight")>>
+<</if>>
+
+<div class="choice-block">
+	<<link '<span>📱 Back to the phone</span>' "D05_Phone_Hub">><</link>>
+</div>
+
+
+:: D05_Phone_DatingApp [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Dating profile setup, mirror selfie" "portrait" "assets/ui/phone/dating-app-profile.png">>
+
+<div class="prose-block">
+
+<p>The profile setup takes ten minutes. One photo. The bathroom selfie with the good angle, the one where the light from the window catches my cheekbones and my eyes look green instead of hazel. I look at it for a long time before I upload it.</p>
+
+<p>This is Mia. This is what Mia looks like to strangers on the internet.</p>
+
+<p>She looks good. That's not vanity. That's data. The bones NovaCure built from Marcus's raw material are symmetrical and sharp and assembled in a combination that the algorithm is going to love.</p>
+
+<p>Bio. Four words.</p>
+
+<p><strong>Mia, 20, figuring things out.</strong></p>
+
+<p>Submit.</p>
+
+<p>I make tea. Earl Grey, which Marcus hated and Mia is discovering she likes. The kettle boils. The tea steeps. I add honey because there's no sugar.</p>
+
+<p>Eleven minutes later I pick up the phone.</p>
+
+</div>
+
+<div class="prose-block">
+
+<p>Forty-seven likes. Twelve matches. Six messages.</p>
+
+<p>I scroll through the messages. Each one is a man who saw my photo and decided I was worth three to seven words of his time.</p>
+
+</div>
+
+<div class="prose-block">
+
+<p>"hey beautiful." Low effort. Casting a wide net.</p>
+
+<p>"you're gorgeous." See above but with better vocabulary.</p>
+
+<p>"you seem cool, want to grab coffee?" Reasonable. Normal. The kind of message a human sends.</p>
+
+<p>"sit on my face." And there it is. Six minutes into having a dating profile and someone has already suggested I use their face as furniture.</p>
+
+<p>"hi! love your vibe." What vibe. My bio is four words long. What vibe is he detecting.</p>
+
+<p>"dtf?" Three letters. No greeting. No punctuation. The absolute minimum viable product of human communication.</p>
+
+</div>
+
+<div class="prose-block">
+
+<p>So this is dating for women. The volume is insane. Marcus went weeks without a match. Mia has been live for eleven minutes and six men have entered the chat, two of them with their dicks as their primary credential.</p>
+
+<p>I close the app. The notification badge will keep climbing. By morning it'll be triple digits. The algorithm feeds fresh faces to hungry eyes and my face is very, very fresh.</p>
+
+</div>
+
+<<set $datingAppCreated to true>>
+<<set $phone.datingActive to true>>
+
+<div class="choice-block">
+	<<link '<span>☕ Reply to the coffee message</span>' "D05_Phone_DatingApp_Chris">><</link>>
+	<<link '<span>✋ Read and close</span>' "D05_Phone_DatingApp_Close">><</link>>
+</div>
+
+
+:: D05_Phone_DatingApp_Chris [nobr]
+<<HUD>>
+
+<<Dialogue "You" "🙂" "coffee sounds nice! where do you have in mind?" "you">>
+
+<<Dialogue "Chris" "🚒" "there's this spot called Grounded on the east side. best oat lattes in town" "">>
+
+<<Dialogue "You" "🙂" "I actually just discovered that place. it's great" "you">>
+
+<<Dialogue "Chris" "🚒" "no way! small world. I'm Chris btw" "">>
+
+<div class="prose-block">
+
+<p>Chris. Twenty-six. Firefighter, according to his profile. Two photos, both in full gear, one with a dalmatian that's definitely not his but suggests emotional intelligence.</p>
+
+<p>He seems normal. Which in the context of dating apps is so remarkable it's almost suspicious.</p>
+
+</div>
+
+<<set $chrisMatched to true>>
+
+<div class="choice-block">
+	<<link '<span>📱 Back to the phone</span>' "D05_Phone_Hub">><</link>>
+</div>
+
+
+:: D05_Phone_DatingApp_Close [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I close the app without responding to anyone. Not tonight. Tonight the messages are data, not invitations. Evidence that the world sees Mia and finds her desirable. That's worth knowing. It's not worth acting on. Not yet.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>📱 Back to the phone</span>' "D05_Phone_Hub">><</link>>
+</div>
+
+
+:: D05_Phone_Social [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I open Instagram. Same feed as always. Same people from campus I haven't talked to since dropping out. Same brunch photos and gym selfies and sunset shots that all look identical.</p>
+
+<p>But tonight I'm looking differently. I'm looking at the women. Not their bodies, not like that, but their presentation. How they pose. Which angles they use. The way they hold a coffee cup so their nails show. The tilt of a chin. The placement of hair.</p>
+
+<p>I'm studying. I don't call it that, not even to myself. I'm scrolling, that's all, the way everyone scrolls. But my eyes linger on the outfit posts. The before-and-after skincare transformations. The tutorials where someone turns a plain face into something polished and glowing with nothing but concealer and confidence.</p>
+
+<p>Three months ago Marcus would have scrolled past all of this without registering it. He existed in a different feed, a different algorithm, a different internet. The internet for men is sports and memes and rage bait. The internet for women is a masterclass in self-presentation disguised as entertainment.</p>
+
+<p>I'm learning. Unconsciously, involuntarily, in the way you learn a language by listening to it spoken around you. Not fluent yet. Not even conversational. But the words are starting to stick.</p>
+
+<p>I double-tap a photo of a girl in a sundress standing in front of a mural. She has good style. The kind of style that looks effortless but probably took thirty minutes and six outfit changes. I want to learn how to do that. I want to stand in front of something beautiful and look like I belong there.</p>
+
+<p>The thought startles me. Not because it's new. Because it isn't. Because some version of this thought has been sitting in my head since Day 2, growing quietly like a vine I didn't plant.</p>
+
+<p>I close the app. Plug in my phone. Roll over.</p>
+
+</div>
+
+<<set $d05SocialBrowsed to true>>
+<<run window.statChange("fem", 1)>>
+
+<div class="choice-block">
+	<<link '<span>📱 Back to the phone</span>' "D05_Phone_Hub">><</link>>
+</div>
+
+
+:: D05_Phone_Selfie [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "The first selfie, by Mia, for Mia" "portrait" "assets/characters/mc-female-phase1/d05-first-selfie.png">>
+
+<div class="prose-block">
+
+<p>I hold the phone up. The front camera shows me my own face against the ceiling.</p>
+
+<p>I take a photo. Look at it. Delete it. Take another. The angle's wrong. Another. Too close. Another. There.</p>
+
+<p>This one is good. Not posed, not filtered, just me looking at the camera with an expression that's somewhere between tired and curious. My hair is down now, the ponytail taken out, and it falls in loose waves that weren't there when it was short. The light from the bedside lamp is warm. My eyes look big.</p>
+
+<p>I look like someone I'd want to know.</p>
+
+<p>I save it. Don't post it. Don't send it. Just save it. Evidence. This is what I look like at the end of Day 5. When I look back at this photo in a week or a month or a year, I'll remember this specific version of myself. The one who had just worked her first shift and drunk her first latte and been asked to a party by a stoned kid named Kevin.</p>
+
+<p>The camera rolls into my gallery. One photo. The first photo of Mia, by Mia, for Mia.</p>
+
+</div>
+
+<<set $d05SelfieTaken to true>>
+<<run window.rbAddMilestone("Took the first selfie, for nobody.")>>
+
+<div class="choice-block">
+	<<link '<span>📱 Back to the phone</span>' "D05_Phone_Hub">><</link>>
+</div>
+
+
+:: D05_SelfPleasure [nobr]
+<<HUD>>
+
+<<ImagePlaceholder "Alone in bed, the day sitting in her body" "portrait" "assets/characters/mc-female-phase1/d05-self-pleasure.png">>
+
+<div class="prose-block">
+
+<p>The day sits in my body like sediment. Every interaction, every glance, every moment of being perceived collects somewhere below my navel and hums.</p>
+
+<p>Trent watching me walk away. Kevin calling me cute. The bus stop man with his sideways glances. River's eyes when I said I was carrying something heavy. <<if $d04JordanTexted>>Jordan's texts<<else>>the whole day of being looked at<</if>>. All of it pooled in one place, warm and insistent.</p>
+
+<p>I lie on my bed. My hand finds the waistband of my sweats without my brain giving permission. Familiar now. Not clinical the way it was on Day 2, not exploratory. My fingers know the route. They know the pressure and the pace and the small circle on the left side that sends voltage up my spine.</p>
+
+<p>I close my eyes.</p>
+
+<p>The images come. Trent's arms in that tank top. The way he leaned in the doorframe. Confident. Hungry. Both of them. Him and Nina. What would that even look like. Three bodies. His hands on my hips. Her mouth on my neck. The thought sends a pulse through me so sharp I gasp and my hips roll upward into my own hand.</p>
+
+<p>Or River. Quieter. His hands, the ones that hold a coffee cup so carefully. Those hands on my waist. In my hair. His mouth tasting like espresso and chocolate. Slow. Patient. The opposite of Trent. Taking his time until I can't take mine.</p>
+
+<p>Or nobody. Just sensation. Circles and pressure and the slick heat that builds from warm to unbearable. My fingers slide inside, two of them, curled forward against the spot that makes my thighs clench. My thumb stays on the clit. I rock against my own hand, slow then faster, and the sounds that come out of me are sounds Mia makes that Marcus never could. High, breathy, desperate. "Ahh... mmn... fuck..."</p>
+
+<p>I come with my face in the pillow and my back arched and the orgasm rolls through me in contractions I count without meaning to. Seven. Eight. Each one sends a wave from my center to my fingertips and my toes curl and my mouth opens and the last one is so deep it feels like it starts in my spine.</p>
+
+<p>After. Lying there. Hand still between my legs, cupped over the warmth. The dampness. The pulse that keeps going, little aftershocks, for a full minute after the main event.</p>
+
+<p>I'm getting used to this body. More than used to it. I'm starting to enjoy it. Not in a grateful way, not "at least the orgasms are good." In an actual, unqualified, I-want-to-feel-this-again way. My body is not a consolation prize. My body is the venue.</p>
+
+<p>I clean up. Pull my sweats back up.</p>
+
+
+</div>
+<<if $d04JordanTexted>>
+<<Dialogue "Jordan" "😎" "goodnight gorgeous 😘" "">>
+<div class="prose-block">
+
+<p>I type "goodnight" and add a 😊 emoji and stare at the emoji for thirty seconds weighing its implications before hitting send.</p>
+
+</div>
+<</if>>
+<div class="prose-block">
+
+<p>Then I pull the blanket up and let sleep come.</p>
+
+</div>
+
+<<set $d05SelfPleasure to true>>
+<<set $player.arousal to 0>>
+<<run window.statChange("stress", -5)>>
+
+<div class="choice-block">
+	<<link '<span>🛏️ Back to my room</span>' "Home_Bedroom">><</link>>
+</div>
+
+
+:: D05_Sage_Flyer [nobr]
+<<HUD>>
+
+<div class="prose-block">
+
+<p>I unfold the lavender flyer on my kitchen counter. SUNRISE YOGA. The schedule is simple. Morning flow at 7 AM, Monday through Friday. Sunset yin at 6 PM, Tuesday and Thursday. Drop-ins welcome. First class free.</p>
+
+<p>There's a small photo of Sage in a pose that shouldn't be physically possible, one leg behind her head while the other supports her entire body weight. She looks like she's enjoying it. Below the photo, a quote in italic.</p>
+
+<p><em>"Your body is not a problem to solve. It's a place to live."</em></p>
+
+<p>I read that three times. The words hit differently when you're standing in a body you've had for five days. A body that still surprises me every morning in the mirror. A body I'm learning to navigate like a rental car with controls in unfamiliar places.</p>
+
+<p>Not a problem to solve. A place to live.</p>
+
+<p>I stick the flyer to the fridge with a magnet shaped like a cactus that was here when I moved in. Maybe next week. Maybe the morning flow. Maybe I'll walk in and Sage will beam at me and tell me my chakras are misaligned and I'll have to pretend I know what that means.</p>
+
+<p>But the flyer stays on the fridge.</p>
+
+</div>
+
+<<set $sageFlyerFridge to true>>
+
+<div class="choice-block">
+	<<link '<span>🛏️ Back to my room</span>' "Home_Bedroom">><</link>>
+</div>
+

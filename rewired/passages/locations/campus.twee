@@ -71,6 +71,10 @@ Call: (555) 0147-CURE
 	<<link '<span>← Back outside</span>' "District_Northgate">><</link>>
 </div>
 
+<<elseif $d05KevinMet and not $d05KevinCampusDone>>
+
+<<goto "D05_Kevin_Campus">>
+
 <<else>>
 
 <div class="prose-block">

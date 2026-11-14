@@ -120,7 +120,15 @@
 
 <div class="location-grid">
 
-<<if $dashdropDone and $day is 0>>
+<<if $day is 5 and $d05Dressed and not $d05WorkComplete>>
+	<<link '<div class="loc-card"><span class="loc-icon">🛵</span><span class="loc-name">DashDrop Zone</span><span class="loc-hint">Owen is expecting you</span></div>' "D05_DashDrop_Arrival">><</link>>
+<<elseif $day is 5>>
+	<div class="loc-card locked">
+		<span class="loc-icon">🛵</span>
+		<span class="loc-name">DashDrop Zone</span>
+		<span class="loc-lock-req">Shift&apos;s done for today</span>
+	</div>
+<<elseif $dashdropDone and $day is 0>>
 	<div class="loc-card locked">
 		<span class="loc-icon">🛵</span>
 		<span class="loc-name">DashDrop Zone</span>
@@ -155,6 +163,10 @@
 </div>
 
 <<link '<div class="loc-card"><span class="loc-icon">🛤️</span><span class="loc-name">Walking Trail</span><span class="loc-hint">Jog, walk, the pond, a bench</span></div>' "WalkingTrail">><</link>>
+
+<<if $day gte 7 and $d05JessMet and not $d05JessSecondDone>>
+	<<link '<div class="loc-card"><span class="loc-icon">🏡</span><span class="loc-name">Jess&apos;s House</span><span class="loc-hint">The one with the tricycle on the porch</span></div>' "D05_Jess_Second">><</link>>
+<</if>>
 
 </div>
 

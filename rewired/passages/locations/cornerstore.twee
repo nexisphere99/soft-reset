@@ -44,6 +44,16 @@
 
 <<link '<span class="action-icon">👀</span><span class="action-text">Just look around<span class="action-sub">Window shopping, apparently, applies to gas station snacks too</span></span>' "CornerStore">><</link>>
 
+<<if $day gte 5 and not $d05HectorReturn>>
+	<<link '<span class="action-icon">🥣</span><span class="action-text">Get granola bars and a banana<span class="action-sub">Aisle three, next to the trail mix</span></span><span class="action-cost">$6.42</span>'>>
+		<<if not $d05MetHelen and window.rbRandom(1, 10) lte 4>>
+			<<goto "D05_Random_Grocery">>
+		<<else>>
+			<<goto "D05_Shop_CornerStore">>
+		<</if>>
+	<</link>>
+<</if>>
+
 <<if $day is 4 and not $d04VisitedCornerStore>>
 	<<link '<span class="action-icon">🛒</span><span class="action-text">Get groceries<span class="action-sub">Eggs, bread, bananas, something for your hair</span></span><span class="action-cost">$23.50</span>' "CornerStore_D04Groceries">><</link>>
 <</if>>

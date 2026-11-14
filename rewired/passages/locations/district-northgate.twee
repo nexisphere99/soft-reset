@@ -18,11 +18,15 @@
 	<span class="loc-lock-req">Not today</span>
 </div>
 
-<div class="loc-card locked">
-	<span class="loc-icon">☕</span>
-	<span class="loc-name">Grounded Coffee House</span>
-	<span class="loc-lock-req">Not today</span>
-</div>
+<<if $d05GroundedVisited>>
+	<<link '<div class="loc-card"><span class="loc-icon">☕</span><span class="loc-name">Grounded Coffee House</span><span class="loc-hint">Coffee, study, Wi-Fi</span></div>' "Grounded_Main">><</link>>
+<<else>>
+	<div class="loc-card locked">
+		<span class="loc-icon">☕</span>
+		<span class="loc-name">Grounded Coffee House</span>
+		<span class="loc-lock-req">Not today</span>
+	</div>
+<</if>>
 
 <div class="loc-card locked">
 	<span class="loc-icon">🍕</span>
@@ -39,7 +43,11 @@
 <div class="loc-card locked">
 	<span class="loc-icon">🧘</span>
 	<span class="loc-name">Sunrise Yoga Studio</span>
-	<span class="loc-lock-req">Not today</span>
+	<<if $sageFlyer>>
+		<span class="loc-lock-req">You have the flyer. Classes start next week.</span>
+	<<else>>
+		<span class="loc-lock-req">Not today</span>
+	<</if>>
 </div>
 
 </div>

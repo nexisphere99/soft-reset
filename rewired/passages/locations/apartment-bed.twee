@@ -101,6 +101,24 @@
 		<</link>>
 	<</if>>
 
+<<elseif $day is 5>>
+
+	<<if not $d05WorkComplete>>
+		<p class="text3 small">The DashDrop jacket is hanging by the door. Owen is waiting.</p>
+	<<elseif $timeslot isnot "Night">>
+		<p class="text3 small">The evening isn&apos;t over yet. Eat something, let the day settle.</p>
+	<<else>>
+		<<link '<span class="action-icon">📱</span><span class="action-text">Check your phone<span class="action-sub">It keeps buzzing</span></span>' "D05_Phone_Hub">><</link>>
+		<<if $player.arousal gte 15 and not $d05SelfPleasure>>
+			<<link '<span class="action-icon">🔥</span><span class="action-text">Let the day catch up with you<span class="action-sub">Everything you collected, all in one place</span></span>' "D05_SelfPleasure">><</link>>
+		<</if>>
+		<<link '<span class="action-icon">🛏️</span><span class="action-text">Go to bed<span class="action-sub">It&apos;s been enough for one day.</span></span>' "D05_Bedtime">><</link>>
+	<</if>>
+
+	<<if $sageFlyer and not $sageFlyerFridge>>
+		<<link '<span class="action-icon">🧘</span><span class="action-text">Look at the yoga flyer<span class="action-sub">Lavender paper, folded in your jacket pocket</span></span>' "D05_Sage_Flyer">><</link>>
+	<</if>>
+
 <</if>>
 
 <<if $day gte 3>>

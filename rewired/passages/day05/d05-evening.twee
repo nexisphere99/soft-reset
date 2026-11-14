@@ -1,0 +1,130 @@
+:: D05_Evening_Home [nobr]
+<<HUD>>
+
+<<SceneDivider "Home, Six O'Clock">>
+
+<div class="prose-block">
+
+<p>I get home at six. Lock the door. Drop my bag. Stand in the kitchen doing nothing for about ninety seconds, which is how long it takes for the adrenaline of an entire day of public-facing womanhood to finish leaving my body.</p>
+
+</div>
+
+<<ImagePlaceholder "Eating eggs on toast standing at the counter" "float" "assets/characters/mc-female-phase1/d05-evening-kitchen.png">>
+
+<div class="prose-block">
+
+<p>Then I cook. Eggs on toast. Basic but protein. I eat standing at the counter because sitting down feels too official for a meal this simple. The eggs taste good. The toast is burnt on one edge. I eat the burnt edge too because wasting food when the rent is overdue and Mrs. Park would evict me for fun feels like tempting fate.</p>
+
+<p>The math from today keeps circling. Eighty-seven dollars for the shift. Twenty-seven more than Marcus averaged. Because I'm attractive now. Because the world pays pretty women a little more and uglier women a little less and men whatever they want to pay men, and none of this is fair and all of it is true.</p>
+
+<p>I should feel something about this. Outrage, maybe. Or gratitude. Or guilt. Instead I feel practical. I feel like a person who just learned the exchange rate in a country they didn't choose to move to.</p>
+
+</div>
+
+<<set $d05Cooked to true>>
+<<run window.statChange("energy", 15)>>
+
+<div class="choice-block">
+	<<link '<span>📱 The phone is ringing</span>' "D05_Nolan_Call">><</link>>
+</div>
+
+
+:: D05_Nolan_Call [nobr]
+<<HUD>>
+
+<<SceneDivider "Seven Thirty">>
+
+<<ImagePlaceholder "Nolan calling, contact photo from freshman orientation" "portrait" "assets/ui/phone/nolan-incoming-call.png">>
+
+<div class="prose-block">
+
+<p>The phone rings at seven-thirty. Nolan's name on the screen. His contact photo is from freshman year, both of us in those stupid orientation shirts, both of us grinning like we'd just been let off leash.</p>
+
+<p>I stare at it. Three rings. Four. I can't dodge him forever. He's been texting every day since the transformation and my responses have gotten shorter and vaguer and eventually he's going to show up at my door whether I answer the phone or not. That's who Nolan is. He doesn't take hints. He takes doors off hinges.</p>
+
+<p>I pick up.</p>
+
+<p>"FINALLY." His voice blasts through the speaker loud enough to make me wince. "What the hell, dude? You've been MIA for like five days."</p>
+
+<p>"I know. I... something happened." My voice. My new voice. Alto where it used to be baritone. Softer. I can hear him hearing it. A half-second pause where his brain stumbles.</p>
+
+<p>"You sound weird. Are you sick?"</p>
+
+<p>"Not exactly."</p>
+
+<p>"Not exactly? What does 'not exactly' mean? Are you dying? Do you have cancer? Because if you have cancer I swear to god I will personally fight every cancer cell in your body. I'll throw hands with your tumors."</p>
+
+<p>Despite everything, I almost smile. That's Nolan. Threatens to fistfight disease.</p>
+
+<p>"I'm not dying. It's just... you need to see it. In person. Can you come over tomorrow?"</p>
+
+<p>"See what? See it? What am I seeing? Are you being vague on purpose because I gotta tell you, it's working, I'm freaking out over here."</p>
+
+<p>"I know. I'm sorry. Just come over. After your shift. Like six."</p>
+
+<p>Silence. Long enough that I check the screen to make sure the call didn't drop.</p>
+
+<p>"...Okay." His voice is different now. Quieter. Nolan is never quiet. When Nolan is quiet it means he's actually worried, not performatively worried. "Tomorrow at six. But Marcus, whatever this is, it's gonna be fine. You know that, right?"</p>
+
+<p>Marcus. The name lands in my chest like a fist through a window. He still calls me Marcus. Of course he does. What else would he call me.</p>
+
+<p>"Yeah. It's gonna be fine."</p>
+
+<p>"Promise?"</p>
+
+<p>"Promise."</p>
+
+<p>He hangs up. I put the phone face-down on the counter and press both palms flat against the laminate and breathe.</p>
+
+<p>Tomorrow, Nolan sees me. Nolan, who I've known since freshman orientation. Nolan, who sat next to me on the first day of Econ 101 and whispered "this professor sucks, wanna get food?" and became the closest thing I have to a best friend in this city. Nolan, who thinks he's coming to check on Marcus.</p>
+
+<p>Tomorrow, he walks into this apartment and sees the girl his friend became.</p>
+
+<p>I wash the dishes. I dry them. I put them away in the cabinet where they go and the whole time my hands are steady because if I let them shake now they might never stop.</p>
+
+</div>
+
+<<set $d05NolanCalled to true>>
+<<set $d05NolanTomorrow to true>>
+<<set $nolan.flags.visitingDay6 to true>>
+<<set $timeslot to "Night">>
+<<run window.rbAddJournalEntry("Nolan Is Coming", "He wouldn't wait. Tomorrow at six he walks into this apartment and meets the girl his friend became.")>>
+
+<div class="choice-block">
+	<<link '<span>🛏️ Back to my room</span>' "Home_Bedroom">><</link>>
+</div>
+
+
+:: D05_Bedtime [nobr]
+<<HUD>>
+
+<<SceneDivider "Night">>
+
+<<ImagePlaceholder "Looking up at the fist-shaped stain on the ceiling" "banner" "assets/characters/mc-female-phase1/d05-night-ceiling.png">>
+
+<div class="prose-block">
+
+<p>I lie in bed. The fist on the ceiling stares down at me. I stare back.</p>
+
+<p>Today I left the apartment and worked a shift and earned money and talked to people and nobody called the police. Nobody screamed. Nobody pointed. A receptionist called me "hon." A college kid called me "cute." A yoga instructor said I have good bones. A barista made me a latte and told me bad days make good coffee.</p>
+
+<p>I am Mia. I went outside and the world accepted me as Mia. Not enthusiastically, not with fanfare, but with the casual indifference that is, it turns out, the highest form of acceptance. Nobody cared. Everyone moved on. I was just another girl on a scooter delivering sushi in an orange jacket.</p>
+
+<p>Tomorrow, Nolan comes. Tomorrow is different. Tomorrow is someone who knew Marcus looking at Mia and trying to make those two people exist in the same body. That's harder than strangers. Strangers don't have context. Strangers don't have memories. Strangers don't look at you and see the ghost of who you used to be standing behind the person you are now.</p>
+
+<p>But that's tomorrow.</p>
+
+<p>Tonight, I pull the blanket up. I touch my ponytail, still in, still pulling gently at my temples. I should take it out. I leave it. It feels like something I earned.</p>
+
+<p>My phone buzzes one more time. I don't check it. Whatever it is, it can wait until morning. My eyes close. Sleep comes faster than it has in days.</p>
+
+<p>Eighty-seven dollars. Five deliveries. One kind manager. One stoned kid. One tired mom. One hot guy who stared at my ass. One yoga instructor who wants to fix my spine. One barista who makes good coffee.</p>
+
+<p>Day five. Still here.</p>
+
+</div>
+
+<div class="choice-block">
+	<<link '<span>🌙 Sleep</span>' "Sleep">><</link>>
+</div>
+

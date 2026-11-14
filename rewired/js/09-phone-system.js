@@ -113,7 +113,14 @@ window.rbPhoneRender = function () {
 	if (window.REWIRED.phone.tab === "messages") {
 		screen.innerHTML = window.rbPhoneMessagesView(sv);
 	} else if (window.REWIRED.phone.tab === "dating") {
-		screen.innerHTML = '<div class="phone-app-title">Dating</div><p class="text3 small" style="padding:0 .3rem;">No matches yet. Check back after you start settling into your new life.</p>';
+		if (sv.datingAppCreated) {
+			screen.innerHTML = '<div class="phone-app-title">Dating</div>' +
+				'<p class="text3 small" style="padding:0 .3rem;">Mia, 20, figuring things out.</p>' +
+				'<p class="text3 small" style="padding:0 .3rem;">47 likes. 12 matches. 6 messages.' +
+				(sv.chrisMatched ? ' Chris, 26, firefighter, is waiting on a coffee.' : '') + '</p>';
+		} else {
+			screen.innerHTML = '<div class="phone-app-title">Dating</div><p class="text3 small" style="padding:0 .3rem;">No matches yet. Check back after you start settling into your new life.</p>';
+		}
 	} else if (window.REWIRED.phone.tab === "social") {
 		screen.innerHTML = '<div class="phone-app-title">Social</div><p class="text3 small" style="padding:0 .3rem;">' + (sv.phone.socialMedia.followers || 0) + ' followers. No posts yet.</p>';
 	} else if (window.REWIRED.phone.tab === "gallery") {

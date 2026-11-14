@@ -36,6 +36,7 @@
 </div>
 
 <<set $d04CookedMeal to true>>
+<<set $timeslot to "Evening">>
 <<run window.statChange("fem", 1)>>
 <<run window.rbAddMilestone("Cooked a real meal and sat down to eat it.")>>
 
@@ -88,11 +89,15 @@
 
 <<if $jordan.met and not $d04JordanTexted and ($timeslot is "Evening" or $timeslot is "Night")>>
 <div class="choice-block">
-	<<link '<span>💬 A text from Jordan</span>' "D04_Phone_Jordan">><</link>>
+	<<link '<span>💬 A text from Jordan</span>' "D04_Phone_Jordan">>
+		<<set $timeslot to "Night">>
+	<</link>>
 </div>
 <<else>>
 <div class="choice-block">
-	<<link '<span>🏠 Put the phone down</span>' "Home_Bedroom">><</link>>
+	<<link '<span>🏠 Put the phone down</span>' "Home_Bedroom">>
+		<<set $timeslot to "Night">>
+	<</link>>
 </div>
 <</if>>
 
