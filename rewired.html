@@ -3342,7 +3342,8 @@ $(document).on(":storyready", function () {
 $(document).on(":passageend", function () {
 	window.rbNavSync();
 });
-</script><tw-passagedata pid="1" name="StoryInit" tags="" position="100,100" size="100,100">&lt;&lt;set $archetype to &quot;&quot;&gt;&gt;
+</script><tw-passagedata pid="1" name="StoryInit" tags="" position="100,100" size="100,100">&lt;&lt;set $gameVersion to &quot;0.5&quot;&gt;&gt;
+&lt;&lt;set $archetype to &quot;&quot;&gt;&gt;
 &lt;&lt;set $statGrowthMultiplier to 1.0&gt;&gt;
 &lt;&lt;set $thresholdsFired to {}&gt;&gt;
 &lt;&lt;set $objective to &quot;Wake up.&quot;&gt;&gt;
@@ -9771,7 +9772,7 @@ Call: (555) 0147-CURE
 		&lt;p style=&quot;color:var(--text2); max-width:36ch; margin:0 auto;&quot;&gt;Eighty-seven dollars. A manager who didn&amp;apos;t flinch. A latte, a stranger&amp;apos;s kind word, a phone call you couldn&amp;apos;t dodge. You went outside as her and the world let you.&lt;/p&gt;
 
 		&lt;div style=&quot;margin-top:2.4rem; padding-top:2rem; border-top:1px solid var(--border);&quot;&gt;
-			&lt;div class=&quot;day-badge&quot; style=&quot;margin-bottom:1rem;&quot;&gt;🦋 End of Version &lt;strong&gt;0.5&lt;/strong&gt;&lt;/div&gt;
+			&lt;div class=&quot;day-badge&quot; style=&quot;margin-bottom:1rem;&quot;&gt;🦋 End of Version &lt;strong&gt;&lt;&lt;print $gameVersion&gt;&gt;&lt;/strong&gt;&lt;/div&gt;
 			&lt;p style=&quot;color:var(--text2); max-width:38ch; margin:0 auto 1.6rem;&quot;&gt;That&amp;apos;s everything built so far. Day 6 and beyond, Nolan at the door, Mia&amp;apos;s life as it actually unfolds, is still being written.&lt;/p&gt;
 			&lt;a href=&quot;https://www.patreon.com/c/toxicvipergames&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; class=&quot;btn-primary&quot;&gt;💜 Support REWIRED on Patreon&lt;/a&gt;
 
@@ -9849,7 +9850,7 @@ Call: (555) 0147-CURE
 	&lt;div style=&quot;margin-top:1.5rem&quot;&gt;
 		&lt;&lt;link &#39;&lt;span class=&quot;btn-primary&quot;&gt;Enter&lt;/span&gt;&#39; &quot;AgeGate&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 	&lt;/div&gt;
-	&lt;p style=&quot;font-size:.7rem; color:var(--text3); margin-top:2rem;&quot;&gt;v1.0, SugarCube 2.37, Content updates monthly&lt;/p&gt;
+	&lt;p style=&quot;font-size:.7rem; color:var(--text3); margin-top:2rem;&quot;&gt;v&lt;&lt;print $gameVersion&gt;&gt;, SugarCube 2.37, Content updates monthly&lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="139" name="Widgets" tags="widget nobr" position="1100,1725" size="100,100">/* ==========================================================================
    HUD   sticky top-of-passage stat bar. Call with &lt;&lt;HUD&gt;&gt; at the top of
    any gameplay passage.

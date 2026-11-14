@@ -12,6 +12,7 @@ REWIRED
 }
 
 :: StoryInit
+<<set $gameVersion to "0.5">>
 <<set $archetype to "">>
 <<set $statGrowthMultiplier to 1.0>>
 <<set $thresholdsFired to {}>>

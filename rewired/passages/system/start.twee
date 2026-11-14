@@ -7,5 +7,5 @@
 	<div style="margin-top:1.5rem">
 		<<link '<span class="btn-primary">Enter</span>' "AgeGate">><</link>>
 	</div>
-	<p style="font-size:.7rem; color:var(--text3); margin-top:2rem;">v1.0, SugarCube 2.37, Content updates monthly</p>
+	<p style="font-size:.7rem; color:var(--text3); margin-top:2rem;">v<<print $gameVersion>>, SugarCube 2.37, Content updates monthly</p>
 </div>
